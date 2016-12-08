@@ -13,7 +13,7 @@ var autoprefixer = require('gulp-autoprefixer');
 
 
 gulp.task('front', function() {
-    gulp.src('css/front.less')
+    gulp.src('src/front.less')
         .pipe(less())
         .pipe(cssnano({
             'postcss-minify-font-values': true
@@ -22,11 +22,11 @@ gulp.task('front', function() {
             browsers:"> 1%, last 2 versions, Safari >= 8"
         }))
         .pipe(rename({basename: 'front', suffix: '.min'}))
-        .pipe(gulp.dest('css/'));
+        .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('watch', function() {
-    gulp.watch('css/**/*.less', ['front']);
+    gulp.watch('src/**/*.less', ['front']);
 });
 
 gulp.task('default', [
