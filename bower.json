@@ -1,0 +1,19 @@
+{
+  "name": "ChuckCSS",
+  "version": "1.0",
+  "authors": [
+    "ALPIXEL <dev@alpixel.fr>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ChuckCSS": "master",
+    "cssuseragent": "^2"
+  }
+}
