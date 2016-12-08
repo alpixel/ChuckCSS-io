@@ -1,0 +1,24 @@
+{
+  "name": "ChuckCSS",
+  "version": "1.0",
+  "authors": [
+    "ALPIXEL <dev@alpixel.fr>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "font-awesome": "4.*",
+    "ionicons": "2.*",
+    "ChuckCSS": "master"
+  },
+  "resolutions": {
+    "jquery": "~2.2.0"
+  }
+}
