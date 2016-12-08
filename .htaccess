@@ -16,34 +16,3 @@ RewriteEngine on
 ###########
 RewriteRule ^index$ index.html [L,QSA]
 RewriteRule ^reminder$ reminder.php [L,QSA]
-RewriteRule ^getting-started-with-chuckcss$ getting-started.php [L,QSA]
-RewriteRule ^combine-chuckcss-bootstrap$ combine-chuckcss-bootstrap.php [L,QSA]
-#RewriteRule ^legal-informations$ legal-informations.php [L,QSA]
-
-# GRIDS #
-RewriteRule ^grids/flexbox-grids-chuckcss$ regular-grids.php [L,QSA]
-RewriteRule ^grids/responsive-flexbox-grids-chuckcss$ responsive-grids.php [L,QSA]
-RewriteRule ^grids/masonry-layout-chuckcss$ masonry-layout.php [L,QSA]
-
-# ELEMENTS #
-RewriteRule ^elements/typography$ typography.php [L,QSA]
-RewriteRule ^elements/lists$ lists.php [L,QSA]
-RewriteRule ^elements/blockquotes$ blockquotes.php [L,QSA]
-RewriteRule ^elements/tables$ tables.php [L,QSA]
-RewriteRule ^elements/forms$ forms.php [L,QSA]
-RewriteRule ^elements/links-buttons$ links-buttons.php [L,QSA]
-RewriteRule ^elements/images$ images.php [L,QSA]
-RewriteRule ^elements/loaders$ loaders.php [L,QSA]
-
-# COMPONENTS #
-RewriteRule ^components/alerts$ alerts.php [L,QSA]
-RewriteRule ^components/messages$ messages.php [L,QSA]
-RewriteRule ^components/tabs$ tabs.php [L,QSA]
-RewriteRule ^components/modals$ modals.php [L,QSA]
-RewriteRule ^components/badges$ badges.php [L,QSA]
-
-# HELPERS #
-RewriteRule ^helpers/fontawesome-ionicons$ fontawesome-ionicons.php [L,QSA]
-RewriteRule ^helpers/texts$ texts.php [L,QSA]
-RewriteRule ^helpers/blocks$ blocks.php [L,QSA]
-RewriteRule ^helpers/colors$ colors.php [L,QSA]

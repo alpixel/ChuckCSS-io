@@ -6,9 +6,9 @@ Full documentation on [ChuckCSS website]
 
 
 ### Official Github Repository
-To download ChuckCSS, please go to the [official chuckcss repository]
+To download ChuckCSS, please check the [official ChuckCSS repository]
 
 
 
-[official chuckcss repository]: <https://github.com/alpixel/ChuckCSS>
+[official ChuckCSS repository]: <https://github.com/alpixel/ChuckCSS>
 [ChuckCSS website]: <http://chuckcss.io/>

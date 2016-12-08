@@ -13,7 +13,6 @@
     "tests"
   ],
   "dependencies": {
-    "ChuckCSS": "master",
-    "cssuseragent": "^2"
+    "ChuckCSS": "master"
   }
 }
