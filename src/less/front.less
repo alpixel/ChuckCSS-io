@@ -8,12 +8,72 @@
 @chuckgreen : #35d7be; // Light green in logo
 @chuckgreen-da : #2fc0aa; // Dark green in logo
 
-body {
-    min-height:100vh;
+._roboto() {
+    font-family: 'Roboto', sans-serif;
 }
 
-.open-menu {
-    ._media-s-up({
-        display:none;
+body {
+    min-height:100vh;
+    ._roboto;
+}
+
+// HEADER
+#main-header {
+    text-align:center;
+    padding:20px;
+
+    ._media-m-up({
+        padding:50px;
     });
+
+    .open-menu {
+        margin-bottom:20px;
+        ._media-s-up({
+            display:none;
+        });
+    }
+
+
+    a.logo {
+        display:inline-block;
+
+        img {
+            vertical-align: bototm;
+        }
+    }
+
+    h1 {
+        text-align:center;
+        font-size:2.4rem;
+        line-height: 3rem;
+        padding:30px 0;
+
+        small {
+            display:block;
+            margin-top:20px;
+        }
+
+        ._media-s-up({
+            font-size:3rem;
+            line-height: 5.4rem;
+        });
+    }
+    .install {
+        text-align:center;
+        a {
+            // $ bower && npm
+            &.black {
+                background-color:#2A2A2A;
+                color:white;
+                font-family:monospace;
+                font-size:1.85rem;
+            }
+            // Twitter btn
+            &.fa-twitter {
+                ._btn(#6cadde);
+                border-color:#6cadde;
+                color:white;
+            }
+        }
+    }
 }
