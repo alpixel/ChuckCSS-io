@@ -5,8 +5,25 @@
 @import "cookies";
 @import "hamburger";
 
-@chuckgreen : #35d7be; // Light green in logo
-@chuckgreen-da : #2fc0aa; // Dark green in logo
+@text-fs-old:16px; // font-size
+
+// colors
+@chuckgreen : #35d7be;
+@chuckgreen-na : chuckgreen;
+
+@chuckgreen-da : #2fc0aa;
+@chuckgreen-da-na : chuckgreen-da;
+@aColors :
+    @primary-na @primary,
+    @green-na @green,
+    @red-na @red,
+    @blue-na @blue,
+    @purple-na @purple,
+    @orange-na @orange,
+    @yellow-na @yellow,
+    @chuckgreen-na @chuckgreen,
+    @chuckgreen-da-na @chuckgreen-da;
+
 
 ._roboto() {
     font-family: 'Roboto', sans-serif;
@@ -17,10 +34,26 @@ body {
     ._roboto;
 }
 
+.inside {
+    width:90%;
+    margin:0 auto;
+
+    // medium screen
+    ._media-m-up({
+        ._inside((@m-media-mw + 1));
+    });
+
+    // large screen
+    ._media-l-up({
+        ._inside((@l-media-mw + 1));
+    });
+}
+
 // HEADER
 #main-header {
     text-align:center;
     padding:20px;
+    background-color:#fafafa;
 
     ._media-m-up({
         padding:50px;
@@ -51,6 +84,28 @@ body {
         small {
             display:block;
             margin-top:20px;
+
+            a {
+                display:inline-block;
+                color:@chuckgreen-da;
+                line-height: initial;
+
+                &:after {
+                    content:' ';
+                    display:block;
+                    height:1px;
+                    width:0px;
+                    background-color:@chuckgreen-da;
+                    ._transition;
+                }
+
+                &:hover {
+                    &:after {
+                        width:100%;
+                    }
+                }
+
+            }
         }
 
         ._media-s-up({
@@ -66,14 +121,19 @@ body {
                 background-color:#2A2A2A;
                 color:white;
                 font-family:monospace;
-                font-size:1.85rem;
-            }
-            // Twitter btn
-            &.fa-twitter {
-                ._btn(#6cadde);
-                border-color:#6cadde;
-                color:white;
             }
         }
+    }
+}
+
+// MAIN
+main {
+    .wrap-feature {
+        padding:30px 0;
+        border-bottom:4px dashed #cccccc;
+
+        ._media-m-up({
+            padding:50px 0;
+        });
     }
 }

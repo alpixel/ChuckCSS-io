@@ -70,5 +70,54 @@
             }
         });
 
+
+        // HOMEPAGE : Demo add / remove columns
+        var homeCols = function(type) {
+            var
+                colContainer = $('.js-home-add-colmn').parent().next(),
+                colNb = colContainer.children().length,
+                preCode = $('.js-home-add-colmn').parent().prev();
+
+            if(type == 'add') {
+                if(colNb < 12) {
+                    var
+                        newKlass = 'cc-bg-chuckgreen',
+                        lastKlass = colContainer.find('>div:last').attr('class');
+
+                    if(lastKlass == 'cc-bg-chuckgreen')
+                        newKlass = 'cc-bg-chuckgreen-da';
+
+                    var newCol = $('<div />',{
+                        'class' : newKlass,
+                        'text' : "Hello World!"
+                    }).appendTo(colContainer);
+                }
+            } else {
+                if(colNb > 1) {
+                    colContainer.find('>div:last').remove();
+                }
+            }
+
+            // Change markup for demo
+            var markup = '<span class="token comment" spellcheck="true">&lt;!-- Grid container --&gt;</span>\n<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>columns<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>\n';
+            for(var i=1; i <= colContainer.children().length; i++) {
+                markup += '&nbsp;&nbsp;&nbsp;&nbsp;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>Hello World!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>\n';
+            }
+            markup += '<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>';
+
+            // Fill the new markup
+            preCode.html(markup);
+        };
+
+        $('.js-home-add-colmn').on('click',function(e){
+            e.preventDefault();
+            homeCols('add');
+        });
+
+        $('.js-home-remove-colmn').on('click',function(e){
+            e.preventDefault();
+            homeCols();
+        })
+
     });
 })(jQuery);

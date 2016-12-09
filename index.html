@@ -34,6 +34,9 @@
             ga('create', 'UA-9271946-14', 'auto');
             ga('send', 'pageview');
         </script>
+
+        <!-- Place this tag in your head or just before your close body tag. -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
     </head>
 
     <body class="homepage">
@@ -53,6 +56,8 @@
                 </button>
             </div>
 
+
+
             <a href="index" class="logo">
                 <img src="img/logo-chuckcss-header.png" alt="ChuckCSS framework : responsive CSS framework" />
             </a>
@@ -63,7 +68,7 @@
             </h1>
 
             <div class="install columns">
-                <div class="cc-12 cc-6-m cc-3-l">
+                <div class="cc-12 cc-4-m">
                     <p class="cc-pab-5">
                         Bower package
                     </p>
@@ -71,7 +76,8 @@
                         $ bower install ChuckCSS
                     </a>
                 </div>
-                <div class="cc-12 cc-6-m cc-3-l">
+
+                <div class="cc-12 cc-4-m">
                     <p class="cc-pab-5">
                         NPM package
                     </p>
@@ -79,27 +85,112 @@
                         $ npm install ChuckCSS
                     </a>
                 </div>
-                <div class="cc-12 cc-6-m cc-3-l">
+
+                <div class="cc-12 cc-4-m">
                     <p class="cc-pab-5">
-                        GitHub Repository
+                        GitHub
                     </p>
-                    <a href="https://github.com/alpixel/ChuckCSS" class="btn external-link cc-bg-primary fa-github">
-                        Download on GitHub
-                    </a>
-                </div>
-                <div class="cc-12 cc-6-m cc-3-l">
-                    <p class="cc-pab-5">
-                        Twitter
-                    </p>
-                    <a href="https://twitter.com/chuckcss" class="btn external-link fa-twitter">
-                        ChuckCSS on Twitter
-                    </a>
+                    <!-- Place this tag where you want the button to render. -->
+                    <a class="github-button" href="https://github.com/alpixel/ChuckCSS/fork" data-icon="octicon-repo-forked" data-style="mega" aria-label="Fork alpixel/ChuckCSS on GitHub">Fork</a>
+                    <a class="github-button" href="https://github.com/alpixel/ChuckCSS" data-icon="octicon-star" data-style="mega" aria-label="Star alpixel/ChuckCSS on GitHub">Star</a>
                 </div>
             </div>
         </header>
 
         <main>
+            <section class="inside">
 
+                <div class="wrap-feature">
+                    <h2>Grids</h2>
+                    <pre class="HTML">
+                        <code class="language-markup"><!-- -->
+                            &lt;!-- Grid container -->
+                            &lt;div class="columns">
+                                &lt;div>Hello World!&lt;/div>
+                                &lt;div>Hello World!&lt;/div>
+                                &lt;div>Hello World!&lt;/div>
+                            &lt;/div>
+                        </code>
+                    </pre>
+
+                    <p class="cc-txt-center cc-mab-20">
+                        <a href="#" class="btn fa-magic cc-bg-primary js-home-add-colmn">Add a column</a>
+                        <a href="#" class="btn fa-times cc-bg-red js-home-remove-colmn">Remove a column</a>
+                    </p>
+
+                    <div class="columns">
+                        <div class="cc-bg-chuckgreen">
+                            Hello World!
+                        </div>
+                        <div class="cc-bg-chuckgreen-da">
+                            Hello World!
+                        </div>
+                        <div class="cc-bg-chuckgreen">
+                            Hello World!
+                        </div>
+                    </div>
+
+                    <div class="columns cc-mat-10 cc-txt-center cc-hidden-s-down">
+                        <div class="cc-bg-primary cc-1">1</div>
+                        <div class="cc-bg-blue cc-1">1</div>
+                        <div class="cc-bg-primary cc-1">1</div>
+                        <div class="cc-bg-blue cc-1">1</div>
+                        <div class="cc-bg-primary cc-1">1</div>
+                        <div class="cc-bg-blue cc-1">1</div>
+                        <div class="cc-bg-primary cc-1">1</div>
+                        <div class="cc-bg-blue cc-1">1</div>
+                        <div class="cc-bg-primary cc-1">1</div>
+                        <div class="cc-bg-blue cc-1">1</div>
+                        <div class="cc-bg-primary cc-1">1</div>
+                        <div class="cc-bg-blue cc-1">1</div>
+                    </div>
+                </div>
+
+                <div class="wrap-feature">
+                    <h2>The same but responsive ?</h2>
+                    <pre class="HTML">
+                        <code class="language-markup"><!-- -->
+                            &lt;!-- Grid container -->
+                            &lt;div class="columns">
+                                &lt;div class="cc-12 cc-4-m">Bacon ipsum...&lt;/div>
+                                &lt;div class="cc-12 cc-3-m cc-5-xl">Bacon ipsum...&lt;/div>
+                                &lt;div class="cc-12 cc-5-m cc-3-xl">Bacon ipsum...&lt;/div>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                    <div class="columns cc-txt-center">
+                        <div class="cc-bg-chuckgreen cc-12 cc-4-m">
+                            Medium  : 4 / 12<br />
+                            Default : 12 / 12
+                        </div>
+                        <div class="cc-bg-chuckgreen-da cc-12 cc-3-m cc-5-xl">
+                            X-Large : 5 / 12<br />
+                            Medium  : 3 / 12<br />
+                            Default : 12 / 12
+                        </div>
+                        <div class="cc-bg-chuckgreen cc-12 cc-5-m cc-3-xl">
+                            X-Large : 3 / 12<br />
+                            Medium  : 5 / 12<br />
+                            Default : 12 / 12
+                        </div>
+                    </div>
+                    <div class="columns cc-mat-10 cc-txt-center cc-hidden-s-down">
+                        <div class="cc-bg-primary cc-1">1</div>
+                        <div class="cc-bg-blue cc-1">1</div>
+                        <div class="cc-bg-primary cc-1">1</div>
+                        <div class="cc-bg-blue cc-1">1</div>
+                        <div class="cc-bg-primary cc-1">1</div>
+                        <div class="cc-bg-blue cc-1">1</div>
+                        <div class="cc-bg-primary cc-1">1</div>
+                        <div class="cc-bg-blue cc-1">1</div>
+                        <div class="cc-bg-primary cc-1">1</div>
+                        <div class="cc-bg-blue cc-1">1</div>
+                        <div class="cc-bg-primary cc-1">1</div>
+                        <div class="cc-bg-blue cc-1">1</div>
+                    </div>
+                </div>
+
+            </section>
         </main>
 
         <footer id="main-footer">

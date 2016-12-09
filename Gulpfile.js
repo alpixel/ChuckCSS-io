@@ -15,9 +15,9 @@ var autoprefixer = require('gulp-autoprefixer');
 gulp.task('front', function() {
     gulp.src('src/less/front.less')
         .pipe(less())
-        .pipe(cssnano({
-            'postcss-minify-font-values': true
-        }))
+        // .pipe(cssnano({
+        //     'postcss-minify-font-values': true
+        // }))
         .pipe(autoprefixer({
             browsers:"> 1%, last 2 versions, Safari >= 8"
         }))
