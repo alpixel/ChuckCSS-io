@@ -29,6 +29,21 @@
     font-family: 'Roboto', sans-serif;
 }
 
+._expandcode(@duration:1s){
+    animation-name: expandcode;
+    animation-duration: @duration;
+    animation-fill-mode: forwards;
+}
+@keyframes expandcode {
+    from {
+        max-height:150px;
+    }
+    to {
+        max-height:600px;
+        overflow-y: auto;
+    }
+}
+
 body {
     min-height:100vh;
     ._roboto;
@@ -130,10 +145,51 @@ body {
 main {
     .wrap-feature {
         padding:30px 0;
-        border-bottom:4px dashed #cccccc;
+        border-top:4px dashed #cccccc;
+
+        &:nth-child(1) {
+            border-top-width:0px;
+        }
 
         ._media-m-up({
             padding:50px 0;
         });
+
+        // Codes - Markup - Btn "View Code"
+        pre {
+            &.collapsed {
+                max-height:150px;
+                overflow: hidden;
+                position:relative;
+                z-index:10;
+
+                &:after {
+                    content : ' ';
+                    display:block;
+                    position:absolute;
+                    height:100px;
+                    bottom:0;
+                    left:0;
+                    right:0;
+                    z-index:11;
+                    background: linear-gradient(to bottom,  rgba(39,40,34,0) 0%,rgba(39,40,34,1) 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                }
+            }
+
+            &.expanded {
+                ._expandcode;
+
+                &:after {
+                    display:none;
+                }
+            }
+        }
+        .js-view-code {
+            padding-bottom:1em;
+
+            a {
+                font-size:1.2rem;
+            }
+        }
     }
 }

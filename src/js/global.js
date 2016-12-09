@@ -76,7 +76,7 @@
             var
                 colContainer = $('.js-home-add-colmn').parent().next(),
                 colNb = colContainer.children().length,
-                preCode = $('.js-home-add-colmn').parent().prev();
+                preCode = $('.js-home-add-colmn').parents('.wrap-feature').find('pre');
 
             if(type == 'add') {
                 if(colNb < 12) {
@@ -117,6 +117,24 @@
         $('.js-home-remove-colmn').on('click',function(e){
             e.preventDefault();
             homeCols();
+        });
+
+
+        $('.js-view-code').find('a').on('click',function(e){
+            e.preventDefault();
+
+            var wrapper = $(this).parent().prev();
+
+            // Remove button
+            $(this).fadeOut(300,function(){
+                $(this).remove();
+
+                // Animate <pre>
+                if(!wrapper.hasClass('expanded'))
+                    wrapper.addClass('expanded');
+            });
+
+
         })
 
     });
