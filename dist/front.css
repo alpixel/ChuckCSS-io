@@ -7344,6 +7344,7 @@ body.opened {
           justify-content: center;
 }
 #main-header nav ul li a {
+  font-size: 2rem;
   text-transform: uppercase;
   color: #2fc0aa;
 }
@@ -7419,6 +7420,7 @@ body.opened {
     line-height: 3rem;
     text-transform: none;
     color: inherit;
+    font-size: inherit;
   }
   #main-header nav ul li:not(.first):not(.last) a:after {
     content: ' ';
