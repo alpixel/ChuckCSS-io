@@ -7341,6 +7341,18 @@ body {
   text-transform: uppercase;
   color: #2fc0aa;
 }
+#main-header nav ul li.last a {
+  background-color: #55acee;
+  border: 0;
+  color: white;
+  text-transform: none;
+  font-size: 1.3rem;
+  -webkit-transition: 0.2s all ease-out 0s;
+          transition: 0.2s all ease-out 0s;
+}
+#main-header nav ul li.last a:hover {
+  background-color: #359ceb;
+}
 @media screen and (min-width: 768px) {
   #main-header nav {
     padding: 10px 0 50px;
@@ -7383,6 +7395,11 @@ body {
     padding: 0 1em;
     height: inherit;
     margin: 0;
+    display: block;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
   }
   #main-header nav ul li.first {
     margin-right: auto;
@@ -7391,13 +7408,13 @@ body {
   #main-header nav ul li.first a img {
     vertical-align: bottom;
   }
-  #main-header nav ul li:not(.first) a {
+  #main-header nav ul li:not(.first):not(.last) a {
     display: inline-block;
     line-height: 3rem;
     text-transform: none;
     color: inherit;
   }
-  #main-header nav ul li:not(.first) a:after {
+  #main-header nav ul li:not(.first):not(.last) a:after {
     content: ' ';
     display: block;
     height: 1px;
@@ -7406,10 +7423,10 @@ body {
     -webkit-transition: 0.2s all ease-out 0s;
             transition: 0.2s all ease-out 0s;
   }
-  #main-header nav ul li:not(.first) a:hover {
+  #main-header nav ul li:not(.first):not(.last) a:hover {
     color: #2fc0aa;
   }
-  #main-header nav ul li:not(.first) a:hover:after {
+  #main-header nav ul li:not(.first):not(.last) a:hover:after {
     width: 100%;
   }
 }

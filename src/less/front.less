@@ -122,6 +122,22 @@ body {
                     color:@chuckgreen-da;
                 }
 
+                &.last {
+                    a {                 
+                        background-color:#55acee;
+                        border:0;
+                        color:white;
+                        text-transform: none;
+                        font-size:1.3rem;
+                        ._transition;
+
+                        &:hover {
+                            background-color:darken(#55acee,7%);
+
+                        }
+                    }
+                }
+
             }
         }
 
@@ -151,6 +167,8 @@ body {
                     padding:0 1em;
                     height:inherit;
                     margin:0;
+                    display:block;
+                    flex:0 1 auto;
 
                     &.first {
                         margin-right:auto;
@@ -159,10 +177,9 @@ body {
                         a img {
                             vertical-align: bottom
                         }
-                    }
-                
+                    }                
 
-                    &:not(.first) a {
+                    &:not(.first):not(.last) a {
                         display:inline-block;
                         line-height:3rem;
                         text-transform: none;
