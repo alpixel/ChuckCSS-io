@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import "bower_components/ChuckCSS/chuckcss/front";
+@import "../../bower_components/ChuckCSS/chuckcss/front";
 @import "prism";
 @import "cookies";
 @import "hamburger";
@@ -67,17 +67,126 @@ body {
 // HEADER
 #main-header {
     text-align:center;
-    padding:20px;
+    padding:0 20px 20px;
     background-color:#fafafa;
 
     ._media-m-up({
-        padding:50px;
+        padding:0 50px 50px;
     });
 
     .open-menu {
-        margin-bottom:20px;
+        padding:10px 0;
+
         ._media-s-up({
             display:none;
+        });
+    }
+
+    nav {
+        position:fixed;
+        z-index:-2;
+        top:68px;
+        left:0;
+        right:0;
+        width:100%;
+        height: calc(~"100vh - 61px");
+        opacity:0;
+        background-color: white;
+        overflow-y: auto;
+        ._transition;
+        ._scale(0);
+
+        &.opened {
+            opacity: 1;
+            z-index:9999;
+            ._scale(1);
+        }
+
+        ul {
+            display:flex;
+            flex-direction:column;
+            margin:0;
+            height:100%;
+            max-height:300px;
+            padding-top:50px;
+
+            li {
+                list-style:none;
+                flex: 1;
+                display: flex;
+                align-items:center;
+                justify-content:center;
+
+                a {
+                    text-transform: uppercase;
+                    color:@chuckgreen-da;
+                }
+
+            }
+        }
+
+
+        ._media-s-up({
+            padding:10px 0 50px;
+            background-color:inherit;
+            display:block;
+            position: static;
+            opacity:1;
+            ._scale(1);
+            height:inherit;
+
+            
+            ul {
+                border-bottom:1px solid #eeeeee;
+                padding-bottom:10px;
+                padding-top:0;
+                flex-direction:row;
+                flex-wrap:wrap;
+                align-items:center;
+                justify-content:flex-end;
+                height:auto;
+            
+                li {
+                    list-style:none;
+                    padding:0 1em;
+                    height:inherit;
+                    margin:0;
+
+                    &.first {
+                        margin-right:auto;
+                        height:auto;
+
+                        a img {
+                            vertical-align: bottom
+                        }
+                    }
+                
+
+                    &:not(.first) a {
+                        display:inline-block;
+                        line-height:3rem;
+                        text-transform: none;
+                        color:inherit;
+
+                        &:after {
+                            content:' ';
+                            display:block;
+                            height:1px;
+                            width:0px;
+                            background-color:@chuckgreen-da;
+                            ._transition;
+                        }
+
+                        &:hover {
+                            color:@chuckgreen-da;
+
+                            &:after {
+                                width:100%;
+                            }
+                        }
+                    }
+                }
+            }
         });
     }
 
@@ -159,7 +268,7 @@ main {
         pre {
             &.collapsed {
                 max-height:150px;
-                overflow: hidden;
+                overflow-y: hidden;
                 position:relative;
                 z-index:10;
 

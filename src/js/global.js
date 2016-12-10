@@ -62,10 +62,10 @@
             e.preventDefault();
 
             if($(this).hasClass('is-active')) {
-                $('#fp-nav, #menu').removeClass('opened');
+                $('.js-nav').removeClass('opened');
                 $(this).removeClass('is-active');
             } else {
-                $('#menu, #fp-nav').addClass('opened');
+                $('.js-nav').addClass('opened');
                 $(this).addClass('is-active');
             }
         });
