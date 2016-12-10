@@ -7235,6 +7235,9 @@ body {
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
 }
+body.opened {
+  overflow: hidden !important;
+}
 .inside {
   width: 90%;
   margin: 0 auto;
