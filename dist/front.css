@@ -7231,6 +7231,9 @@ pre[class*="language-"] {
     overflow-y: auto;
   }
 }
+html.opened {
+  overflow: hidden !important;
+}
 body {
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
@@ -7323,10 +7326,10 @@ body.opened {
 }
 #main-header nav ul li {
   list-style: none;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 70px;
+      -ms-flex: 0 0 70px;
+          flex: 0 0 70px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
