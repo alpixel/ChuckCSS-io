@@ -21,7 +21,7 @@
         <meta name="theme-color" content="#ffffff">
 
 
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
         <link rel="stylesheet" href="dist/front.css" type="text/css" media="screen" />
@@ -79,47 +79,97 @@
             </nav>
 
 
+            <div class="inside">
+                <a href="index" class="logo">
+                    <img src="img/logo-chuckcss-header.png" alt="ChuckCSS framework : responsive CSS framework" />
+                </a>
 
-            <a href="index" class="logo">
-                <img src="img/logo-chuckcss-header.png" alt="ChuckCSS framework : responsive CSS framework" />
-            </a>
+                <h1>
+                    ChuckCSS v3.0.0
+                    <small>A mobile-first, responsive CSS framework, compiled with <a href="http://lesscss.org/" class="external-link">LESS</a> and <a href="https://github.com/postcss/autoprefixer" class="external-link">Autoprefixer</a>, based on <span>FlexBox grids</span></small>
+                </h1>
 
-            <h1>
-                ChuckCSS v3.0.0
-                <small>A mobile-first, responsive CSS framework, compiled with <a href="http://lesscss.org/" class="external-link">LESS</a> and <a href="https://github.com/postcss/autoprefixer" class="external-link">Autoprefixer</a>, based on <span>FlexBox grids</span></small>
-            </h1>
+                <div class="install columns">
+                    <div class="cc-4-m">
+                        <p class="cc-pab-5">
+                            Bower package
+                        </p>
+                        <a href="https://github.com/alpixel/ChuckCSS" class="btn external-link black">
+                            $ bower install ChuckCSS
+                        </a>
+                    </div>
 
-            <div class="install columns">
-                <div class="cc-4-m">
-                    <p class="cc-pab-5">
-                        Bower package
-                    </p>
-                    <a href="https://github.com/alpixel/ChuckCSS" class="btn external-link black">
-                        $ bower install ChuckCSS
-                    </a>
-                </div>
+                    <div class="cc-4-m">
+                        <p class="cc-pab-5">
+                            NPM package
+                        </p>
+                        <a href="https://www.npmjs.com/package/ChuckCSS" class="btn external-link black">
+                            $ npm install ChuckCSS
+                        </a>
+                    </div>
 
-                <div class="cc-4-m">
-                    <p class="cc-pab-5">
-                        NPM package
-                    </p>
-                    <a href="https://www.npmjs.com/package/ChuckCSS" class="btn external-link black">
-                        $ npm install ChuckCSS
-                    </a>
-                </div>
-
-                <div class="cc-4-m">
-                    <p class="cc-pab-5">
-                        GitHub
-                    </p>
-                    <!-- Place this tag where you want the button to render. -->
-                    <a class="github-button" href="https://github.com/alpixel/ChuckCSS/fork" data-icon="octicon-repo-forked" data-style="mega" aria-label="Fork alpixel/ChuckCSS on GitHub">Fork</a>
-                    <a class="github-button" href="https://github.com/alpixel/ChuckCSS" data-icon="octicon-star" data-style="mega" aria-label="Star alpixel/ChuckCSS on GitHub">Star</a>
+                    <div class="cc-4-m">
+                        <p class="cc-pab-5">
+                            GitHub
+                        </p>
+                        <!-- Place this tag where you want the button to render. -->
+                        <a class="github-button" href="https://github.com/alpixel/ChuckCSS/fork" data-icon="octicon-repo-forked" data-style="mega" aria-label="Fork alpixel/ChuckCSS on GitHub">Fork</a>
+                        <a class="github-button" href="https://github.com/alpixel/ChuckCSS" data-icon="octicon-star" data-style="mega" aria-label="Star alpixel/ChuckCSS on GitHub">Star</a>
+                    </div>
                 </div>
             </div>
         </header>
 
         <main>
+            <section class="home-features">
+                <canvas id="anim-bg-1" class="anim-bg"></canvas>
+                <div class="inside">
+                    <div class="columns">
+                        <div class="cc-12 introduction">
+                            <h2>Why ChuckCSS and what is it?</h2>
+                            <p>
+                                Hi i'm Mickaël, a french front-end developer since 10 years. Bacon ipsum dolor amet ham hock biltong flank pancetta bresaola. Short ribs shoulder tenderloin sirloin, tri-tip picanha shankle ground round leberkas. Frankfurter andouille capicola cow salami shankle, kevin bresaola corned beef leberkas strip steak tongue jowl boudin. Beef ribs kevin cow, jerky prosciutto fatback pork loin cupim chicken sausage bacon corned beef salami brisket kielbasa. Kielbasa drumstick ground round jowl, pancetta prosciutto meatball landjaeger. Shankle pig drumstick chuck, corned beef t-bone porchetta rump. Beef fatback ball tip, bacon pork loin bresaola kielbasa.
+                            </p>
+                        </div>
+                        <div>
+                            <span>
+                                <i class="ion-social-css3"></i>
+                            </span>
+                            <h2>
+                                Plenty of features
+                                <small>
+                                    Alerts, modals, buttons, typography...
+                                </small>
+                            </h2>
+                        </div>
+                        <div>
+                            <span>
+                                <i class="ion-android-phone-portrait"></i>
+                                <i class="ion-ios-arrow-thin-right"></i>
+                                <i class="ion-monitor"></i>
+                            </span>
+                            <h2>
+                                Mobile-first
+                                <small>
+                                    4 breakpoints for adaptative websites.
+                                </small>
+                            </h2>
+                        </div>
+                        <div>
+                            <span>
+                                <i class="ion-ios-grid-view-outline"></i>
+                            </span>
+                            <h2>
+                                Flexbox grids
+                                <small>
+                                    Build grids easily!
+                                </small>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section class="inside">
 
                 <div class="wrap-feature">
@@ -136,8 +186,8 @@
                     </pre>
 
                     <p class="cc-txt-center cc-mab-20">
-                        <a href="#" class="btn fa-magic cc-bg-primary js-home-add-colmn">Add a column</a>
-                        <a href="#" class="btn fa-times cc-bg-red js-home-remove-colmn">Remove a column</a>
+                        <a href="#" class="btn fa-magic cc-bg-primary js-home-column" data-action="add">Add a column</a>
+                        <a href="#" class="btn fa-times cc-bg-red js-home-column" data-action="remove">Remove a column</a>
                     </p>
 
                     <div class="columns">
@@ -169,14 +219,20 @@
                 </div>
 
                 <div class="wrap-feature">
-                    <h2>The same grid but with responsive width columns?</h2>
+                    <h2>The same grid with adaptative columns?</h2>
                     <pre class="HTML collapsed">
                         <code class="language-markup"><!-- -->
                             &lt;!-- Grid container -->
                             &lt;div class="columns">
-                                &lt;div class="cc-12 cc-4-m">...&lt;/div>
-                                &lt;div class="cc-12 cc-3-m cc-5-xl">...&lt;/div>
-                                &lt;div class="cc-12 cc-5-m cc-3-xl">...&lt;/div>
+
+                                &lt;!-- Screen >= Medium : 4 cols -->
+                                &lt;div class="cc-4-m">...&lt;/div>
+
+                                &lt;!-- Screen >= Medium : 3 cols | Screen > Large : 5 cols -->
+                                &lt;div class="cc-3-m cc-5-xl">...&lt;/div>
+
+                                &lt;!-- Screen >= Medium : 5 cols | Screen > Large : 3 cols -->
+                                &lt;div class="cc-5-m cc-3-xl">...&lt;/div>
                             &lt;/div>
                         </code>
                     </pre>
@@ -224,5 +280,7 @@
 
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="dist/app.min.js"></script>
+        <script type="text/javascript" src="dist/granim.js"></script>
+        <script type="text/javascript" src="dist/global.js"></script>
     </body>
 </html>

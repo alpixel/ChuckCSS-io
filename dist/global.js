@@ -74,9 +74,9 @@
         // HOMEPAGE : Demo add / remove columns
         var homeCols = function(type) {
             var
-                colContainer = $('.js-home-add-colmn').parent().next(),
+                colContainer = $('.js-home-column').parent().next(),
                 colNb = colContainer.children().length,
-                preCode = $('.js-home-add-colmn').parents('.wrap-feature').find('pre');
+                preCode = $('.js-home-column').parents('.wrap-feature').find('pre');
 
             if(type == 'add') {
                 if(colNb < 12) {
@@ -108,33 +108,46 @@
             // Fill the new markup
             preCode.html(markup);
         };
-
-        $('.js-home-add-colmn').on('click',function(e){
+        $('.js-home-column').on('click',function(e){
             e.preventDefault();
-            homeCols('add');
+            $(this).data('action') == 'add' ? homeCols('add') : homeCols();
         });
 
-        $('.js-home-remove-colmn').on('click',function(e){
-            e.preventDefault();
-            homeCols();
+        // GRANIM
+        var granimInstance = new Granim({
+            element: '.anim-bg',
+            name: 'basic-gradient',
+            direction: 'radial',
+            opacity: [1, 1],
+            isPausedWhenNotInView: true,
+            states : {
+                "default-state": {
+                    gradients: [
+                        ['#35d7be', '#2fc0aa'],
+                        ['#9D50BB', '#6E48AA']
+                    ],
+                    transitionSpeed: 5000
+                }
+            }
         });
 
 
+        // View Code
         $('.js-view-code').find('a').on('click',function(e){
             e.preventDefault();
-
             var wrapper = $(this).parent().prev();
 
             // Remove button
-            $(this).fadeOut(300,function(){
-                $(this).remove();
+            $(this).remove();
+            
 
-                // Animate <pre>
-                if(!wrapper.hasClass('expanded'))
-                    wrapper.addClass('expanded');
-            });
-
-
+            // Animate <pre>
+            if(!wrapper.hasClass('expanded'))
+                wrapper.addClass('expanded');
+        })
+        $('pre.collapsed').on('click',function(e){
+            e.preventDefault();
+            $(this).next().find('a').trigger('click');
         })
 
     });
