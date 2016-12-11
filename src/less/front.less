@@ -87,11 +87,11 @@ body {
 // HEADER
 #main-header {
     text-align:center;
-    padding:0 20px 20px;
+    padding:0 20px 0px;
     background-color:#fafafa;
 
     ._media-m-up({
-        padding:0 50px 50px;
+        padding:0 50px 0px;
     });
 
     .open-menu {
@@ -123,48 +123,40 @@ body {
         }
 
         ul {
-            display:flex;
-            flex-direction:column;
-            margin:0;
-            height:100%;
-            max-height:300px;
-            padding-top:50px;
+            ._reset;
 
             li {
                 list-style:none;
-                flex: 0 0 70px;
-                display: flex;
-                align-items:center;
-                justify-content:center;
+                ._reset;
 
                 a {
+                    display:block;
+                    padding:15px;
                     font-size:2rem;
-                    text-transform: uppercase;
-                    color:@chuckgreen-da;
-                }
+                    font-weight: 300;
 
-                &.last {
-                    a {                 
-                        background-color:#55acee;
-                        border:0;
+                    &.active {
+                        background-color:  @chuckgreen-da;
                         color:white;
-                        text-transform: none;
-                        font-size:1.3rem;
-                        ._transition;
-
-                        &:hover {
-                            background-color:darken(#55acee,7%);
-
-                        }
                     }
                 }
 
+                &.last {
+                    margin-top:30px;
+                    a {
+                        display:inline-block;
+                        background-color:#4099FF;
+                        color:white;
+                        padding:0.4em 1em;
+                        border:0;
+                    }
+                }
             }
         }
 
 
         ._media-s-up({
-            padding:10px 0 50px;
+            padding:10px 0 0px;
             background-color:inherit;
             display:block;
             position: static;
@@ -172,40 +164,43 @@ body {
             ._scale(1);
             height:initial;
 
+            .homepage & {
+                padding:10px 0 50px;
+            }
             
             ul {
                 border-bottom:1px solid #eeeeee;
                 padding-bottom:10px;
-                padding-top:0;
                 flex-direction:row;
+                display:flex;
                 flex-wrap:wrap;
                 align-items:center;
                 justify-content:flex-end;
-                height:auto;
             
                 li {
-                    list-style:none;
-                    padding:0 1em;
-                    height:inherit;
-                    margin:0;
-                    display:block;
                     flex:0 1 auto;
+                    padding:0 1em;
 
                     &.first {
                         margin-right:auto;
-                        height:auto;
 
-                        a img {
-                            vertical-align: bottom
+                        a {
+                            padding:0;
+
+                            img {
+                                vertical-align: bottom
+                            }
                         }
                     }                
 
                     &:not(.first):not(.last) a {
-                        display:inline-block;
-                        line-height:3rem;
+                        display: inline-block;
+                        line-height: 3rem;
                         text-transform: none;
-                        color:inherit;
-                        font-size:inherit;
+                        color: inherit;
+                        font-size: inherit;
+                        padding:0;
+                        font-weight:400;
 
                         &:after {
                             content:' ';
@@ -216,12 +211,27 @@ body {
                             ._transition;
                         }
 
+                        &.active,
                         &:hover {
                             color:@chuckgreen-da;
+                            background-color:inherit;
 
                             &:after {
                                 width:100%;
                             }
+                        }
+                    }
+                    &.last {
+                        margin:0;
+
+                        a {
+                            background-color: #55acee;
+                            border: 0;
+                            color: white;
+                            text-transform: none;
+                            font-size: 1.3rem;
+                            -webkit-transition: 0.2s all ease-out 0s;
+                            transition: 0.2s all ease-out 0s;
                         }
                     }
                 }
@@ -288,11 +298,20 @@ body {
             }
         }
     }
+
+    // Specific for homepage
+    .homepage & {
+        padding:0 20px 20px;
+
+        ._media-m-up({
+            padding:0 50px 50px;
+        });
+    }
 }
 
 // MAIN
 main {
-    .home-presentation {
+    .page-presentation {
         color:white;
         text-align:center;
         position:relative;
@@ -304,8 +323,37 @@ main {
                 ._reset;
             }
         }
+
+        // H1 on all pages but homepage
+        h1 {
+            color:white;
+            font-size:2.5rem;
+            padding:20px 0;
+
+            &:after {
+                display:block;
+                height:1px;
+                background-color:white;
+                content:' ';
+                width:20%;
+                margin:15px auto;
+            }
+
+            ._media-m-up({
+                font-size:4rem;
+                padding-top:40px;
+
+                &:after {
+                    margin:30px auto;
+                }
+                
+            });
+        }
+
+        // H2 on homepage
         h2 {
             color:white;
+            font-size:2.5rem;
 
             small {
                 display:block;
@@ -313,8 +361,13 @@ main {
                 color:white;
                 font-weight:300;
             }
+
+            ._media-s-up({
+                font-size:@title-h2-fs;
+            });
         }
 
+        // Homepage
         .introduction {
             padding-top:20px;
             

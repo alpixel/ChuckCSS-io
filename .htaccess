@@ -15,4 +15,6 @@ RewriteEngine on
 # GENERAL #
 ###########
 RewriteRule ^index$ index.html [L,QSA]
-RewriteRule ^reminder$ reminder.php [L,QSA]
+RewriteRule ^reminder$ reminder.html [L,QSA]
+RewriteRule ^getting-started$ getting-started.html [L,QSA]
+RewriteRule ^documentation$ documentation.html [L,QSA]
