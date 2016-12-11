@@ -292,7 +292,7 @@ body {
 
 // MAIN
 main {
-    .home-features {
+    .home-presentation {
         color:white;
         text-align:center;
         position:relative;
@@ -303,7 +303,6 @@ main {
             i:before {
                 ._reset;
             }
-
         }
         h2 {
             color:white;
@@ -330,6 +329,29 @@ main {
                 }
             }
 
+            p {
+                a {
+                    color:white;
+                    display:inline-block;
+
+                    &:after {
+                        content:' ';
+                        display:block;
+                        height:1px;
+                        width:0px;
+                        border-bottom:1px dotted white;
+                        ._transition;
+                    }
+
+                    &:hover {
+                        &:after {
+                            width:100%;
+                        }
+                    }
+                }
+
+            }
+
             ._media-m-up({
                 padding-top:50px;
                 
@@ -344,6 +366,11 @@ main {
                 }
             });
         }
+    }
+
+    h2.main {
+        text-align: center;
+        padding:50px 0;
     }
 
     .wrap-feature {

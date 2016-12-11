@@ -86,7 +86,7 @@
 
                 <h1>
                     ChuckCSS v3.0.0
-                    <small>A mobile-first, responsive CSS framework, compiled with <a href="http://lesscss.org/" class="external-link">LESS</a> and <a href="https://github.com/postcss/autoprefixer" class="external-link">Autoprefixer</a>, based on <span>FlexBox grids</span></small>
+                    <small>A mobile-first, responsive CSS framework, compiled with <a href="http://lesscss.org/" class="external-link">LESS</a> and <a href="https://github.com/postcss/autoprefixer" class="external-link">Autoprefixer</a>, based on FlexBox grids</small>
                 </h1>
 
                 <div class="install columns">
@@ -121,14 +121,15 @@
         </header>
 
         <main>
-            <section class="home-features">
+            <section class="home-presentation">
                 <canvas id="anim-bg-1" class="anim-bg"></canvas>
                 <div class="inside">
                     <div class="columns">
                         <div class="cc-12 introduction">
                             <h2>Why ChuckCSS and what is it?</h2>
                             <p>
-                                Hi i'm Mickaël, a french front-end developer since 10 years. Bacon ipsum dolor amet ham hock biltong flank pancetta bresaola. Short ribs shoulder tenderloin sirloin, tri-tip picanha shankle ground round leberkas. Frankfurter andouille capicola cow salami shankle, kevin bresaola corned beef leberkas strip steak tongue jowl boudin. Beef ribs kevin cow, jerky prosciutto fatback pork loin cupim chicken sausage bacon corned beef salami brisket kielbasa. Kielbasa drumstick ground round jowl, pancetta prosciutto meatball landjaeger. Shankle pig drumstick chuck, corned beef t-bone porchetta rump. Beef fatback ball tip, bacon pork loin bresaola kielbasa.
+                                Hi i'm Mickaël, a french front-end developer since 10 years. ChuckCSS is born from the desire to make my own CSS framework, to ensure the projects maintainabilities i'm working on, and to increase my work speed. ChuckCSS is the result of my experience in front-end developments since many years. ChuckCSS is a responsive and mobile-first CSS framework compiled with <a href="http://lesscss.org/" class="external-link">LESS</a> and <a href="https://github.com/postcss/autoprefixer" class="external-link">Autoprefixer</a>, based on FlexBox grids.<br /><br />
+                                Even if i would like ChuckCSS perfect, <a href="https://github.com/alpixel/ChuckCSS/issues/new" class="external-link">please open an issue on Github</a> if you find a problem.
                             </p>
                         </div>
                         <div>
@@ -171,9 +172,10 @@
             </section>
 
             <section class="inside">
+                <h2 class="main">Few exemples of what ChuckCSS can do for you</h2>
 
                 <div class="wrap-feature">
-                    <h2>Grids</h2>
+                    <h3>Grids with ChuckCSS</h3>
                     <pre class="HTML">
                         <code class="language-markup"><!-- -->
                             &lt;!-- Grid container -->
@@ -219,7 +221,7 @@
                 </div>
 
                 <div class="wrap-feature">
-                    <h2>The same grid with adaptative columns?</h2>
+                    <h3>Grid with adaptative columns</h3>
                     <pre class="HTML collapsed">
                         <code class="language-markup"><!-- -->
                             &lt;!-- Grid container -->
@@ -270,12 +272,322 @@
                     </div>
                 </div>
 
+                <div class="wrap-feature">
+                    <h3>Alerts box with ChuckCSS</h3>
+                    <pre class="HTML collapsed">
+                        <code class="language-markup"><!-- -->
+                            &lt;!-- Success -->
+                            &lt;div class="alert alert-success fa-thumbs-up">
+                                &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
+                                It's a success! Good job :)
+                            &lt;/div>
+
+                            &lt;!-- Error -->
+                            &lt;div class="alert alert-error fa-thumbs-down">
+                                &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
+                                It's an error!&lt;br />
+                                Please check the list below :
+                                &lt;ul>
+                                    &lt;li>&lt;strong>Error 1 :&lt;/strong> Nunc...&lt;/li>
+                                    &lt;li>&lt;strong>Error 2 :&lt;/strong> Nunc...&lt;/li>
+                                    &lt;li>&lt;strong>Error 3 :&lt;/strong> Nunc...&lt;/li>
+                                &lt;/ul>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                    <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+
+                    <div class="alert alert-success fa-thumbs-up">
+                        <button class="close"><i class="ion-ios-close-outline"></i></button>
+                        It's a success! Good job :)
+                    </div>
+                    <div class="alert alert-error fa-thumbs-down">
+                        <button class="close"><i class="ion-ios-close-outline"></i></button>
+                        It's an error!<br />
+                        Please check the list below :
+                        <ul>
+                            <li><strong>Error 1 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
+                            <li><strong>Error 2 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
+                            <li><strong>Error 3 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="wrap-feature">
+                    <h3>Buttons / Links with ChuckCSS</h3>
+                    <pre class="HTML collapsed">
+                        <code class="language-markup"><!-- -->
+                            &lt;!-- Few exemples of buttons -->
+                            &lt;button>Classical button&lt;/button>
+                            &lt;button class="cc-bg-primary">Primary button&lt;/button>
+                            &lt;button class="cc-bg-primary cc-outlined">Outlined button&lt;/button>
+                            &lt;button class="cc-bg-primary fa-times">Iconed button&lt;/button>
+                            &lt;button class="cc-bg-primary cc-disabled">Disabled button&lt;/button>
+                            &lt;button class="cc-bg-primary cc-loading">Loading&lt;/button>
+                            
+                            &lt;!-- Few exemples of buttons-like links -->
+                            &lt;a href="#" class="btn">Classical Btn link&lt;/a>
+                            &lt;a href="#" class="btn cc-bg-primary">Primary link&lt;/a>
+                            &lt;a href="#" class="btn cc-bg-primary cc-outlined">Outlined link&lt;/a>
+                            &lt;a href="#" class="btn cc-bg-primary fa-times">Iconed link&lt;/a>
+                            &lt;a href="#" class="btn cc-bg-primary cc-disabled">Disabled link&lt;/a>
+                            &lt;a href="#" class="btn cc-bg-primary cc-loading">Loading&lt;/a>
+                        </code>
+                    </pre>
+                    <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+
+                    <div class="columns">
+                        <div class="cc-txt-center">
+                            <button>Classical button</button>
+                        </div>
+                        <div class="cc-txt-center">
+                            <button class="cc-bg-primary">Primary button</button>
+                        </div>
+                        <div class="cc-txt-center">
+                            <button class="cc-bg-primary cc-outlined">Outlined button</button>
+                        </div>
+                        <div class="cc-txt-center">
+                            <button class="cc-bg-primary fa-times">Iconed button</button>
+                        </div>
+                        <div class="cc-txt-center">
+                            <button class="cc-bg-primary cc-disabled">Disabled button</button>
+                        </div>
+                        <div class="cc-txt-center">
+                            <button class="cc-bg-primary cc-loading">Loading</button>
+                        </div>
+                    </div>
+
+                    <div class="columns">
+                        <div class="cc-txt-center">
+                            <a href="#" class="btn">Classical Btn link</a>
+                        </div>
+                        <div class="cc-txt-center">
+                            <a href="#" class="btn cc-bg-primary">Primary link</a>
+                        </div>
+                        <div class="cc-txt-center">
+                            <a href="#" class="btn cc-bg-primary cc-outlined">Outlined link</a>
+                        </div>
+                        <div class="cc-txt-center">
+                            <a href="#" class="btn cc-bg-primary fa-times">Iconed link</a>
+                        </div>
+                        <div class="cc-txt-center">
+                            <a href="#" class="btn cc-bg-primary cc-disabled">Disabled link</a>
+                        </div>
+                        <div class="cc-txt-center">
+                            <a href="#" class="btn cc-bg-primary cc-loading">Loading</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrap-feature">
+                    <h3>Modals with ChuckCSS</h3>
+                    
+                    <div class="alert alert-info ion-alert-circled">
+                        Using modals required the <strong>chuckcss.js file.</strong>
+                    </div>
+
+                    <pre class="HTML collapsed">
+                        <code class="language-markup"><!-- -->
+                            &lt;!-- Classic modal -->
+                            &lt;button data-target="modal-id" class="cc-bg-primary modal-open">Launch classic modal&lt;/button>
+
+                            &lt;!-- Modal minimal structure -->
+                            &lt;div id="modal-id" class="modal">
+                                &lt;!-- Close button -->
+                                &lt;button class="modal-close">&lt;/button>
+                                &lt;!-- Overlay -->
+                                &lt;div class="modal-overlay">&lt;/div>
+                                &lt;!-- Modal content -->
+                                &lt;div class="modal-content">
+                                    &lt;div class="modal-header">
+                                        ...
+                                    &lt;/div>
+                                    &lt;div class="modal-body">
+                                        ...
+                                    &lt;/div>
+                                    &lt;div class="modal-footer cc-txt-center">
+                                        ...
+                                    &lt;/div>
+                                &lt;/div>
+                            &lt;/div>
+
+                            &lt;!-- ALL EXEMPLES IN THE DOCUMENTATION SECTION -->
+                        </code>
+                    </pre>
+                    <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+
+                    <div class="columns">
+                        <div class="cc-txt-center">
+                            <button data-target="modal-id" class="cc-bg-primary modal-open">Launch classic modal</button>
+                        </div>
+                        <div class="cc-txt-center">
+                            <button data-target="modal-id-fixed-hf" class="cc-bg-primary modal-open">Fixed Header & Footer</button>
+                        </div>
+                        <div class="cc-txt-center">
+                            <button data-target="modal-id-no-closable" class="cc-bg-primary modal-open">Disabled overlay</button>
+                        </div>
+                        <div class="cc-txt-center">
+                            <button data-target="modal-id-nested" class="cc-bg-primary modal-open">Nested modals</button>
+                        </div>
+                    </div>
+                </div>
+
             </section>
         </main>
 
         <footer id="main-footer">
 
         </footer>
+
+        <!-- Modals exemples -->
+        <div id="modal-id" class="modal">
+            <button class="modal-close"></button>
+
+            <div class="modal-overlay"></div>
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    I'm a default modal (50% width)
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Hamburger doner alcatra sirloin bresaola porchetta tenderloin. Ribeye bacon meatball ball tip beef ribs leberkas capicola corned beef.
+                    </p>
+
+                    <h3 class="cc-mat-30">A grid layout into a modal ?..</h3>
+
+                    <div class="columns cc-mat-30">
+                        
+                            <div class="cc-3-m cc-bg-chuckgreen">Hamburger</div>
+                            <div class="cc-3-m cc-bg-chuckgreen-da">Hamburger</div>
+                            <div class="cc-3-m cc-bg-chuckgreen">Hamburger</div>
+                            <div class="cc-3-m cc-bg-chuckgreen-da">Hamburger</div>
+                        
+                    </div>
+                </div>
+                <div class="modal-footer cc-txt-center">
+                    <button type="submit" class="cc-bg-primary fa-save">I'm a button</button>
+                </div>
+            </div>
+        </div>
+        <div id="modal-id-fixed-hf" class="modal" data-fixed-hf>
+            <button class="modal-close"></button>
+
+            <div class="modal-overlay"></div>
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    I'm a default modal with fixed header & footer
+                </div>
+                <section class="wrap-modal-body">
+                    <div class="modal-body">
+                        <p>
+                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                        </p>
+                    </div>
+                </section>
+                <div class="modal-footer cc-txt-center">
+                    <button type="submit" class="cc-bg-primary fa-save">I'm a button</button>
+                </div>
+            </div>
+        </div>
+        <div id="modal-id-no-closable" class="modal" data-disabled-overlay>
+            <button class="modal-close"></button>
+
+            <div class="modal-overlay"></div>
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    Disabled overlay
+                </div>
+                <div class="modal-body">
+                    <p>
+                        You have to click on close button to close this modal.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="modal-id-nested" class="modal modal-large">
+            <button class="modal-close"></button>
+
+            <div class="modal-overlay"></div>
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    I'm the modal Header
+                </div>
+                <div class="modal-body">
+                    <p><strong>I'm a large modal:</strong></p>
+                    <div class="view-code shown">
+                        <pre class="HTML">
+                            <code class="language-markup"><!-- -->
+                                &lt;!-- Button in footer -->
+                                &lt;button data-target="modal-id-2" class="cc-bg-primary modal-open">Open a second modal&lt;/button>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <div class="modal-footer cc-txt-center">
+                    <button data-target="modal-id-2" class="cc-bg-primary modal-open">Open a second modal</button>
+                </div>
+            </div>
+        </div>
+        <div id="modal-id-2" class="modal">
+            <button class="modal-close"></button>
+
+            <div class="modal-overlay"></div>
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    I'm a default modal (50% width)
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <strong>I'm the second modal with id="modal-id-2"</strong>
+                    </p>
+                    <div class="view-code shown">
+                        <pre class="HTML">
+                            <code class="language-markup"><!-- -->
+                                &lt;!-- Button in footer -->
+                                &lt;button data-target="modal-id-3" class="cc-bg-primary modal-open">
+                                    Open a small modal with disabled overlay
+                                &lt;/button>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <div class="modal-footer cc-txt-center">
+                    <button data-target="modal-id-3" class="cc-bg-primary modal-open">Open a small modal with disabled overlay</button>
+                </div>
+            </div>
+        </div>
+        <div id="modal-id-3" class="modal modal-small" data-disabled-overlay>
+            <button class="modal-close"></button>
+
+            <div class="modal-overlay"></div>
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    Small modal (30% width)
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <strong>I'm the third modal</strong> and you can't close me by clicking on overlay!
+                    </p>
+                </div>
+            </div>
+        </div>
 
 
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
