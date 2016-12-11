@@ -116,7 +116,6 @@
         // GRANIM
         var granimInstance = new Granim({
             element: '.anim-bg',
-            name: 'basic-gradient',
             direction: 'radial',
             opacity: [1, 1],
             isPausedWhenNotInView: true,
