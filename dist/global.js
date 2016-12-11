@@ -126,7 +126,7 @@
                         ['#35d7be', '#2fc0aa'],
                         ['#9D50BB', '#6E48AA']
                     ],
-                    transitionSpeed: 5000
+                    transitionSpeed: 9000
                 }
             }
         });
