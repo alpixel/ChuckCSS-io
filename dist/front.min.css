@@ -3933,6 +3933,7 @@ a.btn.cc-fat span.badge:before {
 /** MODALS **/
 /* ******** */
 /* ********************* */
+html.opened-modal,
 body.opened-modal {
   overflow: hidden !important;
 }
