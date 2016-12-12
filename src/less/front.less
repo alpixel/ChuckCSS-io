@@ -44,11 +44,33 @@
     }
 }
 
+// Link with after animation on hover
+._animateLink(@bgColor:@chuckgreen-da) {
+    display: inline-block;
+
+    &:after {
+        content:' ';
+        display:block;
+        height:1px;
+        width:0px;
+        border-bottom:1px solid @bgColor;
+        ._transition;
+    }
+
+    &.active,
+    &:hover {
+        &:after {
+            width:100%;
+        }
+    }
+}
+
 html.opened {
     overflow:hidden !important;
 }
 
 body {
+    position:relative;
     min-height:100vh;
     ._roboto;
 
@@ -105,7 +127,7 @@ body {
     nav {
         position:fixed;
         z-index:-2;
-        top:68px;
+        top:66px;
         left:0;
         right:0;
         width:100%;
@@ -194,31 +216,18 @@ body {
                     }
 
                     &:not(.first):not(.last) a {
-                        display: inline-block;
                         line-height: 3rem;
                         text-transform: none;
                         color: inherit;
                         font-size: inherit;
                         padding:0;
                         font-weight:400;
-
-                        &:after {
-                            content:' ';
-                            display:block;
-                            height:1px;
-                            width:0px;
-                            background-color:@chuckgreen-da;
-                            ._transition;
-                        }
+                        ._animateLink;
 
                         &.active,
                         &:hover {
                             color:@chuckgreen-da;
                             background-color:inherit;
-
-                            &:after {
-                                width:100%;
-                            }
                         }
                     }
                     &.last {
@@ -262,22 +271,7 @@ body {
                 display:inline-block;
                 color:@chuckgreen-da;
                 line-height: initial;
-
-                &:after {
-                    content:' ';
-                    display:block;
-                    height:1px;
-                    width:0px;
-                    background-color:@chuckgreen-da;
-                    ._transition;
-                }
-
-                &:hover {
-                    &:after {
-                        width:100%;
-                    }
-                }
-
+                ._animateLink;
             }
         }
 
@@ -328,22 +322,7 @@ body {
 
     a {
         color:white;
-        display:inline-block;
-
-        &:after {
-            content:' ';
-            display:block;
-            height:1px;
-            width:0px;
-            background-color:white;
-            ._transition;
-        }
-
-        &:hover {
-            &:after {
-                width:100%;
-            }
-        }
+        ._animateLink(white);
     }
 
 }
@@ -426,23 +405,8 @@ main {
                 a {
                     color:white;
                     display:inline-block;
-
-                    &:after {
-                        content:' ';
-                        display:block;
-                        height:1px;
-                        width:0px;
-                        border-bottom:1px dotted white;
-                        ._transition;
-                    }
-
-                    &:hover {
-                        &:after {
-                            width:100%;
-                        }
-                    }
+                    ._animateLink(white);
                 }
-
             }
 
             ._media-m-up({
@@ -544,6 +508,68 @@ main {
 
                 em {
                     color:black;
+                }
+            }
+        }
+    }
+
+    // Menu navigation
+    .menu-summary {
+
+        #left-navbar {
+            &.affix {
+                position:fixed;
+                top:0;
+            }
+        }
+
+        h3 {
+            padding-top:50px;
+        }
+
+        ul {
+            font-size:1.4rem;
+
+            li {
+                padding-top:10px;
+
+                &:nth-child(1) {
+                    padding:0;
+                }
+
+                &.active {
+                    color:@chuckgreen-da;
+
+                    &> a {
+                        ._animateLink;
+                        color:@chuckgreen-da;
+
+                        &:after {
+                            width:100%;
+                        }
+                    }
+
+                    ul {
+                        display:block;
+                    }
+                }
+
+                // Sub-menus
+                ul {
+                    display:none;
+
+                    li {
+                        padding-top:5px;
+                        list-style:none;
+                    }
+                }
+
+                a {
+                    ._animateLink;
+
+                    &:hover {
+                        color:@chuckgreen-da;
+                    }
                 }
             }
         }

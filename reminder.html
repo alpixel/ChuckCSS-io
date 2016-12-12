@@ -89,446 +89,558 @@
             </section>
 
             <section class="inside">
-                <div class="wrap-feature">
-                    <h3>Grids / Masonry layouts</h3>
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            &lt;!-- General structure -->
-                            &lt;div class="columns"> &lt;!-- Grid container (row) -->
-                                &lt;div>Column 1&lt;/div> &lt;!-- Grid item (child) -->
-                                &lt;div>Column 2&lt;/div> &lt;!-- Grid item (child) -->
-                                &lt;!-- etc... -->
-                            &lt;/div>
-                        </code>
-                    </pre>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th class="cc-w-40">
-                                    class
-                                </th>
-                                <th class="cc-w-20">
-                                    apply to element
-                                </th>
-                                <th>
-                                    effect
-                                </th>
-                            </tr>
-                        </thead>
-                        <tfoot>
-                            <tr>
-                                <th>
-                                    class
-                                </th>
-                                <th>
-                                    apply to element
-                                </th>
-                                <th>
-                                    effect
-                                </th>
-                            </tr>
-                        </tfoot>
+                <div class="columns">
+                    <aside class="cc-3 menu-summary cc-hidden-m-down">
+                        <div id="left-navbar">
+                            <h3>Navigation</h3>
+                            <ul class="nav" role="tablist">
+                                <li>
+                                    <a href="#grids">Grids / Masonry layouts</a>
+                                </li>
+                                <li>
+                                    <a href="#alerts">Alerts</a>
+                                </li>
+                                <li>
+                                    <a href="#messages">Messages</a>
+                                </li>
+                                <li>
+                                    <a href="#badges">Badges</a>
+                                </li>
+                                <li>
+                                    <a href="#tabs">Tabs</a>
+                                </li>
+                                <li>
+                                    <a href="#modals">Modals</a>
+                                </li>
+                                <li>
+                                    <a href="#loaders">Loaders</a>
+                                </li>
+                                <li>
+                                    <a href="#icones">FontAwesome / Ionicons</a>
+                                </li>
+                                <li>
+                                    <a href="#block-helpers">Block helpers</a>
+                                </li>
+                                <li>
+                                    <a href="#texts-helpers">Texts helpers</a>
+                                </li>
+                                <li>
+                                    <a href="#images">Images</a>
+                                </li>
+                                <li>
+                                    <a href="#buttons">Buttons / Links</a>
+                                </li>
+                                <li>
+                                    <a href="#forms">Forms</a>
+                                </li>
+                                <li>
+                                    <a href="#tables">Tables</a>
+                                </li>
+                                <li>
+                                    <a href="#blockquotes">Blockquotes</a>
+                                </li>
+                                <li>
+                                    <a href="#lists">Lists</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <section>
+                        <div class="wrap-feature">
+                            <h3 id="grids">Grids / Masonry layouts</h3>
+                            <pre class="HTML">
+                                <code class="language-markup"><!-- -->
+                                    &lt;!-- General structure -->
+                                    &lt;div class="columns"> &lt;!-- Grid container (row) -->
+                                        &lt;div>Column 1&lt;/div> &lt;!-- Grid item (child) -->
+                                        &lt;div>Column 2&lt;/div> &lt;!-- Grid item (child) -->
+                                        &lt;!-- etc... -->
+                                    &lt;/div>
+                                </code>
+                            </pre>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="cc-w-40">
+                                            class
+                                        </th>
+                                        <th class="cc-w-20">
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>
+                                            class
+                                        </th>
+                                        <th>
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </tfoot>
 
-                        <tbody>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="columns"</span>
-                                </td>
-                                <td>
-                                    Grid container (row)
-                                </td>
-                                <td>
-                                    Create a new grid container
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-no-multiligne"</span>
-                                </td>
-                                <td>
-                                    Grid container (row)
-                                </td>
-                                <td>
-                                    Disabled multiligne display
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-reverse"</span>
-                                </td>
-                                <td>
-                                    Grid container (row)
-                                </td>
-                                <td>
-                                    Reverse all columns order
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-masonry"</span>
-                                </td>
-                                <td>
-                                    Grid container (row)
-                                </td>
-                                <td>
-                                    Display columns as a verticaly Masonry layout
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-masonry cc-{number}"</span>
-                                </td>
-                                <td>
-                                    Grid container (row)
-                                </td>
-                                <td>
-                                    Display <em>{number}</em> columns as a verticaly Masonry layout<br />
-                                    <strong>{number} :</strong> can be set from 1 to {@cols-total} (default : 12)
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-masonry cc-{number}-{letter}"</span>
-                                </td>
-                                <td>
-                                    Grid container (row)
-                                </td>
-                                <td>
-                                    Display <em>{number}</em> columns as a verticaly Masonry layout on <em>{letter}</em> screens and up<br />
-                                    <strong>{number} :</strong> can be set from 1 to {@cols-total} (default : 12)<br />
-                                    <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-justify-start"</span>
-                                </td>
-                                <td>
-                                    Grid container (row)
-                                </td>
-                                <td>
-                                    In a row, all columns are <em>pulled to the left</em>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-justify-end"</span>
-                                </td>
-                                <td>
-                                    Grid container (row)
-                                </td>
-                                <td>
-                                    In a row, all columns are <em>pulled to the right</em>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-justify-center"</span>
-                                </td>
-                                <td>
-                                    Grid container (row)
-                                </td>
-                                <td>
-                                    In a row, all columns are <em>centered</em>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-justify-between"</span>
-                                </td>
-                                <td>
-                                    Grid container (row)
-                                </td>
-                                <td>
-                                    In a row, all columns are evenly distributed in the line (first item is on the start line, last item on the end line)
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-justify-around"</span>
-                                </td>
-                                <td>
-                                    Grid container (row)
-                                </td>
-                                <td>
-                                    In a row, all columns are evenly distributed in the line with <em>equal space around them</em>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-align-start"</span>
-                                </td>
-                                <td>
-                                    Grid container (row)
-                                </td>
-                                <td>
-                                    Positioning all columns at the <em>top</em> of the grid container
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-align-end"</span>
-                                </td>
-                                <td>
-                                    Grid container (row)
-                                </td>
-                                <td>
-                                    Positioning all columns at the <em>bottom</em> of the grid container
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-align-center"</span>
-                                </td>
-                                <td>
-                                    Grid container (row)
-                                </td>
-                                <td>
-                                    Center all columns <em>on Y axis</em>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-align-baseline"</span>
-                                </td>
-                                <td>
-                                    Grid container (row)
-                                </td>
-                                <td>
-                                    Positioning all columns on <em>baseline</em>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-align-stretch"</span>
-                                </td>
-                                <td>
-                                    Grid container (row)
-                                </td>
-                                <td>
-                                    Stretch all columns <em>on Y axis</em>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-{number}"</span>
-                                </td>
-                                <td>
-                                    Grid item (child)
-                                </td>
-                                <td>
-                                    Set the column width<br />
-                                    <strong>{number} :</strong> can be set from 1 to {@cols-total} (default : 12)
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-{number}-{letter}"</span>
-                                </td>
-                                <td>
-                                    Grid item (child)
-                                </td>
-                                <td>
-                                    Set the column width<br />
-                                    <strong>{number} :</strong> can be set from 1 to {@cols-total} (default : 12)<br />
-                                    <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
-                                </td>
-                            </tr>
-
-
-
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-offset-{number}"</span>
-                                </td>
-                                <td>
-                                    Grid item (child)
-                                </td>
-                                <td>
-                                    Set offset to column<br />
-                                    <strong>{number} :</strong> can be set from 1 to {@cols-total} (default : 12)<br />
-                                    <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-offset-{number}-{letter}"</span>
-                                </td>
-                                <td>
-                                    Grid item (child)
-                                </td>
-                                <td>
-                                    Set offset to column<br />
-                                    <strong>{number} :</strong> can be set from 1 to {@cols-total} (default : 12)<br />
-                                    <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
-                                </td>
-                            </tr>
-
-
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-first"</span>
-                                </td>
-                                <td>
-                                    Grid item (child)
-                                </td>
-                                <td>
-                                    This column is diplayed <em>first on the X axis</em>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-first-{letter}"</span>
-                                </td>
-                                <td>
-                                    Grid item (child)
-                                </td>
-                                <td>
-                                    This column is diplayed <em>first on the X axis</em> for <em>{letter}</em> screens and up<br />
-                                    <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-last"</span>
-                                </td>
-                                <td>
-                                    Grid item (child)
-                                </td>
-                                <td>
-                                    This column is diplayed <em>last on the X axis</em>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-last-{letter}"</span>
-                                </td>
-                                <td>
-                                    Grid item (child)
-                                </td>
-                                <td>
-                                    This column is diplayed <em>last on the X axis</em> for <em>{letter}</em> screens and up<br />
-                                    <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
-                                </td>
-                            </tr>
+                                <tbody>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="columns"</span>
+                                        </td>
+                                        <td>
+                                            Grid container (row)
+                                        </td>
+                                        <td>
+                                            Create a new grid container
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-no-multiligne"</span>
+                                        </td>
+                                        <td>
+                                            Grid container (row)
+                                        </td>
+                                        <td>
+                                            Disabled multiligne display
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-reverse"</span>
+                                        </td>
+                                        <td>
+                                            Grid container (row)
+                                        </td>
+                                        <td>
+                                            Reverse all columns order
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-masonry"</span>
+                                        </td>
+                                        <td>
+                                            Grid container (row)
+                                        </td>
+                                        <td>
+                                            Display columns as a verticaly Masonry layout
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-masonry cc-{number}"</span>
+                                        </td>
+                                        <td>
+                                            Grid container (row)
+                                        </td>
+                                        <td>
+                                            Display <em>{number}</em> columns as a verticaly Masonry layout<br />
+                                            <strong>{number} :</strong> can be set from 1 to {@cols-total} (default : 12)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-masonry cc-{number}-{letter}"</span>
+                                        </td>
+                                        <td>
+                                            Grid container (row)
+                                        </td>
+                                        <td>
+                                            Display <em>{number}</em> columns as a verticaly Masonry layout on <em>{letter}</em> screens and up<br />
+                                            <strong>{number} :</strong> can be set from 1 to {@cols-total} (default : 12)<br />
+                                            <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-justify-start"</span>
+                                        </td>
+                                        <td>
+                                            Grid container (row)
+                                        </td>
+                                        <td>
+                                            In a row, all columns are <em>pulled to the left</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-justify-end"</span>
+                                        </td>
+                                        <td>
+                                            Grid container (row)
+                                        </td>
+                                        <td>
+                                            In a row, all columns are <em>pulled to the right</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-justify-center"</span>
+                                        </td>
+                                        <td>
+                                            Grid container (row)
+                                        </td>
+                                        <td>
+                                            In a row, all columns are <em>centered</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-justify-between"</span>
+                                        </td>
+                                        <td>
+                                            Grid container (row)
+                                        </td>
+                                        <td>
+                                            In a row, all columns are evenly distributed in the line (first item is on the start line, last item on the end line)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-justify-around"</span>
+                                        </td>
+                                        <td>
+                                            Grid container (row)
+                                        </td>
+                                        <td>
+                                            In a row, all columns are evenly distributed in the line with <em>equal space around them</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-align-start"</span>
+                                        </td>
+                                        <td>
+                                            Grid container (row)
+                                        </td>
+                                        <td>
+                                            Positioning all columns at the <em>top</em> of the grid container
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-align-end"</span>
+                                        </td>
+                                        <td>
+                                            Grid container (row)
+                                        </td>
+                                        <td>
+                                            Positioning all columns at the <em>bottom</em> of the grid container
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-align-center"</span>
+                                        </td>
+                                        <td>
+                                            Grid container (row)
+                                        </td>
+                                        <td>
+                                            Center all columns <em>on Y axis</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-align-baseline"</span>
+                                        </td>
+                                        <td>
+                                            Grid container (row)
+                                        </td>
+                                        <td>
+                                            Positioning all columns on <em>baseline</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-align-stretch"</span>
+                                        </td>
+                                        <td>
+                                            Grid container (row)
+                                        </td>
+                                        <td>
+                                            Stretch all columns <em>on Y axis</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-{number}"</span>
+                                        </td>
+                                        <td>
+                                            Grid item (child)
+                                        </td>
+                                        <td>
+                                            Set the column width<br />
+                                            <strong>{number} :</strong> can be set from 1 to {@cols-total} (default : 12)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-{number}-{letter}"</span>
+                                        </td>
+                                        <td>
+                                            Grid item (child)
+                                        </td>
+                                        <td>
+                                            Set the column width<br />
+                                            <strong>{number} :</strong> can be set from 1 to {@cols-total} (default : 12)<br />
+                                            <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
+                                        </td>
+                                    </tr>
 
 
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-left"</span>
-                                </td>
-                                <td>
-                                    Grid item (child)
-                                </td>
-                                <td>
-                                    Target column is pulled <em>to the left</em>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-center"</span>
-                                </td>
-                                <td>
-                                    Grid item (child)
-                                </td>
-                                <td>
-                                    Target column is <em>centered</em>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-right"</span>
-                                </td>
-                                <td>
-                                    Grid item (child)
-                                </td>
-                                <td>
-                                    Target column is pulled <em>to the right</em>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-w-auto cc-right"</span>
-                                </td>
-                                <td>
-                                    Grid item (child)
-                                </td>
-                                <td>
-                                    Target column has a <em>"float : right;"</em>-like performance
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-w-auto cc-left"</span>
-                                </td>
-                                <td>
-                                    Grid item (child)
-                                </td>
-                                <td>
-                                    Target column has a <em>"float : left;"</em>-like performance
-                                </td>
-                            </tr>
+
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-offset-{number}"</span>
+                                        </td>
+                                        <td>
+                                            Grid item (child)
+                                        </td>
+                                        <td>
+                                            Set offset to column<br />
+                                            <strong>{number} :</strong> can be set from 1 to {@cols-total} (default : 12)<br />
+                                            <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-offset-{number}-{letter}"</span>
+                                        </td>
+                                        <td>
+                                            Grid item (child)
+                                        </td>
+                                        <td>
+                                            Set offset to column<br />
+                                            <strong>{number} :</strong> can be set from 1 to {@cols-total} (default : 12)<br />
+                                            <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
+                                        </td>
+                                    </tr>
 
 
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-align-self-top"</span>
-                                </td>
-                                <td>
-                                    Grid item (child)
-                                </td>
-                                <td>
-                                    This targeted column has a top alignment <em>on Y axis</em>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-align-self-center"</span>
-                                </td>
-                                <td>
-                                    Grid item (child)
-                                </td>
-                                <td>
-                                    This targeted column is centered verticaly <em>on Y axis</em>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-align-self-bottom"</span>
-                                </td>
-                                <td>
-                                    Grid item (child)
-                                </td>
-                                <td>
-                                    This targeted column has a bottom alignment <em>on Y axis</em>
-                                </td>
-                            </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-first"</span>
+                                        </td>
+                                        <td>
+                                            Grid item (child)
+                                        </td>
+                                        <td>
+                                            This column is diplayed <em>first on the X axis</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-first-{letter}"</span>
+                                        </td>
+                                        <td>
+                                            Grid item (child)
+                                        </td>
+                                        <td>
+                                            This column is diplayed <em>first on the X axis</em> for <em>{letter}</em> screens and up<br />
+                                            <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-last"</span>
+                                        </td>
+                                        <td>
+                                            Grid item (child)
+                                        </td>
+                                        <td>
+                                            This column is diplayed <em>last on the X axis</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-last-{letter}"</span>
+                                        </td>
+                                        <td>
+                                            Grid item (child)
+                                        </td>
+                                        <td>
+                                            This column is diplayed <em>last on the X axis</em> for <em>{letter}</em> screens and up<br />
+                                            <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
+                                        </td>
+                                    </tr>
 
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-align-self-baseline"</span>
-                                </td>
-                                <td>
-                                    Grid item (child)
-                                </td>
-                                <td>
-                                    This targeted column has a baseline alignment <em>on Y axis</em>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="reminder-class">
-                                    <span>class="cc-align-self-stretch"</span>
-                                </td>
-                                <td>
-                                    Grid item (child)
-                                </td>
-                                <td>
-                                    This targeted column is stretched <em>on Y axis</em>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-left"</span>
+                                        </td>
+                                        <td>
+                                            Grid item (child)
+                                        </td>
+                                        <td>
+                                            Target column is pulled <em>to the left</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-center"</span>
+                                        </td>
+                                        <td>
+                                            Grid item (child)
+                                        </td>
+                                        <td>
+                                            Target column is <em>centered</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-right"</span>
+                                        </td>
+                                        <td>
+                                            Grid item (child)
+                                        </td>
+                                        <td>
+                                            Target column is pulled <em>to the right</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-w-auto cc-right"</span>
+                                        </td>
+                                        <td>
+                                            Grid item (child)
+                                        </td>
+                                        <td>
+                                            Target column has a <em>"float : right;"</em>-like performance
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-w-auto cc-left"</span>
+                                        </td>
+                                        <td>
+                                            Grid item (child)
+                                        </td>
+                                        <td>
+                                            Target column has a <em>"float : left;"</em>-like performance
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-align-self-top"</span>
+                                        </td>
+                                        <td>
+                                            Grid item (child)
+                                        </td>
+                                        <td>
+                                            This targeted column has a top alignment <em>on Y axis</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-align-self-center"</span>
+                                        </td>
+                                        <td>
+                                            Grid item (child)
+                                        </td>
+                                        <td>
+                                            This targeted column is centered verticaly <em>on Y axis</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-align-self-bottom"</span>
+                                        </td>
+                                        <td>
+                                            Grid item (child)
+                                        </td>
+                                        <td>
+                                            This targeted column has a bottom alignment <em>on Y axis</em>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-align-self-baseline"</span>
+                                        </td>
+                                        <td>
+                                            Grid item (child)
+                                        </td>
+                                        <td>
+                                            This targeted column has a baseline alignment <em>on Y axis</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-align-self-stretch"</span>
+                                        </td>
+                                        <td>
+                                            Grid item (child)
+                                        </td>
+                                        <td>
+                                            This targeted column is stretched <em>on Y axis</em>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="wrap-feature">
+                            <h3 id="alerts">Alerts</h3>
+                            <pre class="HTML">
+                                <code class="language-markup"><!-- -->
+                                    &lt;!-- General structure -->
+                                    &lt;div class="alert alert-{type}">
+                                        ...your alert text...
+                                    &lt;/div>
+                                </code>
+                            </pre>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="cc-w-40">
+                                            class
+                                        </th>
+                                        <th class="cc-w-20">
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>
+                                            class
+                                        </th>
+                                        <th>
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </tfoot>
+
+                                <tbody>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="alert alert-{type}"</span>
+                                        </td>
+                                        <td>
+                                            &lt;div>
+                                        </td>
+                                        <td>
+                                            Display an alert box<br />
+                                            <strong>{type} :</strong> Can be set to 'primary', 'info', 'warning', 'error' or 'success'
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                            </table>
+                        </div>
+                    </section>
             </section>
         </main>
 

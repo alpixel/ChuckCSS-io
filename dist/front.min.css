@@ -7240,6 +7240,7 @@ html.opened {
   overflow: hidden !important;
 }
 body {
+  position: relative;
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
 }
@@ -7298,7 +7299,7 @@ body.opened {
 #main-header nav {
   position: fixed;
   z-index: -2;
-  top: 68px;
+  top: 66px;
   left: 0;
   right: 0;
   width: 100%;
@@ -7412,31 +7413,31 @@ body.opened {
     vertical-align: bottom;
   }
   #main-header nav ul li:not(.first):not(.last) a {
-    display: inline-block;
     line-height: 3rem;
     text-transform: none;
     color: inherit;
     font-size: inherit;
     padding: 0;
     font-weight: 400;
+    display: inline-block;
   }
   #main-header nav ul li:not(.first):not(.last) a:after {
     content: ' ';
     display: block;
     height: 1px;
     width: 0px;
-    background-color: #2fc0aa;
+    border-bottom: 1px solid #2fc0aa;
     -webkit-transition: 0.2s all ease-out 0s;
     transition: 0.2s all ease-out 0s;
+  }
+  #main-header nav ul li:not(.first):not(.last) a.active:after,
+  #main-header nav ul li:not(.first):not(.last) a:hover:after {
+    width: 100%;
   }
   #main-header nav ul li:not(.first):not(.last) a.active,
   #main-header nav ul li:not(.first):not(.last) a:hover {
     color: #2fc0aa;
     background-color: inherit;
-  }
-  #main-header nav ul li:not(.first):not(.last) a.active:after,
-  #main-header nav ul li:not(.first):not(.last) a:hover:after {
-    width: 100%;
   }
   #main-header nav ul li.last {
     margin: 0;
@@ -7468,19 +7469,20 @@ body.opened {
   margin-top: 20px;
 }
 #main-header h1 small a {
-  display: inline-block;
   color: #2fc0aa;
   line-height: initial;
+  display: inline-block;
 }
 #main-header h1 small a:after {
   content: ' ';
   display: block;
   height: 1px;
   width: 0px;
-  background-color: #2fc0aa;
+  border-bottom: 1px solid #2fc0aa;
   -webkit-transition: 0.2s all ease-out 0s;
   transition: 0.2s all ease-out 0s;
 }
+#main-header h1 small a.active:after,
 #main-header h1 small a:hover:after {
   width: 100%;
 }
@@ -7529,10 +7531,11 @@ body.opened {
   display: block;
   height: 1px;
   width: 0px;
-  background-color: white;
+  border-bottom: 1px solid white;
   -webkit-transition: 0.2s all ease-out 0s;
   transition: 0.2s all ease-out 0s;
 }
+#main-footer a.active:after,
 #main-footer a:hover:after {
   width: 100%;
 }
@@ -7607,10 +7610,11 @@ main .page-presentation .introduction p a:after {
   display: block;
   height: 1px;
   width: 0px;
-  border-bottom: 1px dotted white;
+  border-bottom: 1px solid white;
   -webkit-transition: 0.2s all ease-out 0s;
   transition: 0.2s all ease-out 0s;
 }
+main .page-presentation .introduction p a.active:after,
 main .page-presentation .introduction p a:hover:after {
   width: 100%;
 }
@@ -7699,4 +7703,72 @@ main .wrap-feature .js-view-code a {
 }
 .reminder main table tbody td:nth-child(3) em {
   color: black;
+}
+main .menu-summary #left-navbar.affix {
+  position: fixed;
+  top: 0;
+}
+main .menu-summary h3 {
+  padding-top: 50px;
+}
+main .menu-summary ul {
+  font-size: 1.4rem;
+}
+main .menu-summary ul li {
+  padding-top: 10px;
+}
+main .menu-summary ul li:nth-child(1) {
+  padding: 0;
+}
+main .menu-summary ul li.active {
+  color: #2fc0aa;
+}
+main .menu-summary ul li.active > a {
+  display: inline-block;
+  color: #2fc0aa;
+}
+main .menu-summary ul li.active > a:after {
+  content: ' ';
+  display: block;
+  height: 1px;
+  width: 0px;
+  border-bottom: 1px solid #2fc0aa;
+  -webkit-transition: 0.2s all ease-out 0s;
+  transition: 0.2s all ease-out 0s;
+}
+main .menu-summary ul li.active > a.active:after,
+main .menu-summary ul li.active > a:hover:after {
+  width: 100%;
+}
+main .menu-summary ul li.active > a:after {
+  width: 100%;
+}
+main .menu-summary ul li.active ul {
+  display: block;
+}
+main .menu-summary ul li ul {
+  display: none;
+}
+main .menu-summary ul li ul li {
+  padding-top: 5px;
+  list-style: none;
+}
+main .menu-summary ul li a {
+  display: inline-block;
+}
+main .menu-summary ul li a:after {
+  content: ' ';
+  display: block;
+  height: 1px;
+  width: 0px;
+  border-bottom: 1px solid #2fc0aa;
+  -webkit-transition: 0.2s all ease-out 0s;
+  transition: 0.2s all ease-out 0s;
+}
+main .menu-summary ul li a.active:after,
+main .menu-summary ul li a:hover:after {
+  width: 100%;
+}
+main .menu-summary ul li a:hover {
+  color: #2fc0aa;
 }

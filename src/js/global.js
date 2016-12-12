@@ -130,7 +130,6 @@
             }
         });
 
-
         // View Code
         $('.js-view-code').find('a').on('click',function(e){
             e.preventDefault();
@@ -138,7 +137,7 @@
 
             // Remove button
             $(this).remove();
-            
+
 
             // Animate <pre>
             if(!wrapper.hasClass('expanded'))
@@ -147,7 +146,21 @@
         $('pre.collapsed').on('click',function(e){
             e.preventDefault();
             $(this).next().find('a').trigger('click');
-        })
+        });
+
+
+        // Affix
+        if(currentWindowWidth > MWidthMax) {
+            $('#left-navbar').affix({
+                offset: {
+                    top: 264
+                }
+            });
+            $('body').scrollspy({
+                target: '#left-navbar',
+                offset : 400
+            });
+        }
 
     });
 })(jQuery);
