@@ -1000,6 +1000,7 @@ table {
   overflow-x: auto;
   margin: 1em 0;
   display: block;
+  width: 100%;
   /* headers & footer default style */
   /* note : "thead td" has no sense but that is the way some WYSIWYG editors generates tables headers */
   /* Cells default style */
@@ -6822,6 +6823,11 @@ span.badge[class*="ion-"]:before {
     display: none;
   }
 }
+@media screen and (min-width: 360px) {
+  .cc-hidden-s {
+    display: none;
+  }
+}
 @media screen and (max-width: 767px) and (min-width: 360px) {
   .cc-hidden-s-only {
     display: none;
@@ -6829,6 +6835,11 @@ span.badge[class*="ion-"]:before {
 }
 @media screen and (max-width: 767px) {
   .cc-hidden-s-down {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cc-hidden-m {
     display: none;
   }
 }
@@ -6842,6 +6853,11 @@ span.badge[class*="ion-"]:before {
     display: none;
   }
 }
+@media screen and (min-width: 990px) {
+  .cc-hidden-l {
+    display: none;
+  }
+}
 @media screen and (max-width: 1199px) and (min-width: 990px) {
   .cc-hidden-l-only {
     display: none;
@@ -6849,6 +6865,11 @@ span.badge[class*="ion-"]:before {
 }
 @media screen and (max-width: 1199px) {
   .cc-hidden-l-down {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cc-hidden-xl {
     display: none;
   }
 }
@@ -7605,10 +7626,6 @@ main .page-presentation .introduction p a:hover:after {
     font-size: 4rem;
   }
 }
-main h2.main {
-  text-align: center;
-  padding: 50px 0;
-}
 main .wrap-feature {
   padding: 30px 0;
   border-top: 4px dashed #cccccc;
@@ -7656,4 +7673,30 @@ main .wrap-feature .js-view-code {
 }
 main .wrap-feature .js-view-code a {
   font-size: 1.2rem;
+}
+.reminder main table {
+  margin: 0;
+}
+.reminder main table td.reminder-class span {
+  display: inline-block;
+  background-color: #272822;
+  border-radius: 4px;
+  color: white;
+  padding: 3px 1em;
+  font-family: monospace;
+  font-size: 1.3rem;
+}
+.reminder main table tbody td:nth-child(2) {
+  font-weight: 600;
+}
+.reminder main table tbody td:nth-child(3) {
+  font-style: italic;
+  color: #a1a1a1;
+}
+.reminder main table tbody td:nth-child(3) strong {
+  font-weight: 600;
+  color: #29b7e1;
+}
+.reminder main table tbody td:nth-child(3) em {
+  color: black;
 }

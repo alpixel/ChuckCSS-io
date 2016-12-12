@@ -167,7 +167,7 @@ body {
             .homepage & {
                 padding:10px 0 50px;
             }
-            
+
             ul {
                 border-bottom:1px solid #eeeeee;
                 padding-bottom:10px;
@@ -176,7 +176,7 @@ body {
                 flex-wrap:wrap;
                 align-items:center;
                 justify-content:flex-end;
-            
+
                 li {
                     flex:0 1 auto;
                     padding:0 1em;
@@ -191,7 +191,7 @@ body {
                                 vertical-align: bottom
                             }
                         }
-                    }                
+                    }
 
                     &:not(.first):not(.last) a {
                         display: inline-block;
@@ -309,7 +309,7 @@ body {
     }
 }
 
-// FOOTER 
+// FOOTER
 #main-footer {
     background-color:@chuckgreen-da;
     color:white;
@@ -350,6 +350,7 @@ body {
 
 // MAIN
 main {
+    // Top section on all pages
     .page-presentation {
         color:white;
         text-align:center;
@@ -385,7 +386,7 @@ main {
                 &:after {
                     margin:30px auto;
                 }
-                
+
             });
         }
 
@@ -409,7 +410,7 @@ main {
         // Homepage
         .introduction {
             padding-top:20px;
-            
+
             p,h2 {
                 &:after {
                     display:block;
@@ -446,7 +447,7 @@ main {
 
             ._media-m-up({
                 padding-top:50px;
-                
+
                 p,h2 {
                     &:after {
                         margin:30px auto;
@@ -460,11 +461,7 @@ main {
         }
     }
 
-    h2.main {
-        text-align: center;
-        padding:50px 0;
-    }
-
+    // Common to all pages
     .wrap-feature {
         padding:30px 0;
         border-top:4px dashed #cccccc;
@@ -511,6 +508,43 @@ main {
 
             a {
                 font-size:1.2rem;
+            }
+        }
+    }
+
+    // Specific for reminder page
+    .reminder & {
+        table {
+            margin:0;
+
+            td.reminder-class {
+                span {
+                    display:inline-block;
+                    background-color:#272822;
+                    border-radius:4px;
+                    color:white;
+                    padding:3px 1em;
+                    font-family:monospace;
+                    font-size:1.3rem;
+                }
+            }
+
+            tbody td:nth-child(2) {
+                font-weight:600;
+            }
+
+            tbody td:nth-child(3) {
+                font-style:italic;
+                color:@gray-da;
+
+                strong {
+                    font-weight:600;
+                    color:@primary;
+                }
+
+                em {
+                    color:black;
+                }
             }
         }
     }

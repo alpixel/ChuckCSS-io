@@ -5,10 +5,10 @@ RewriteEngine on
 ############
 ## ERRORS ##
 ############
-#ErrorDocument 401 http://chuckcss.io/404.php
-#ErrorDocument 403 http://chuckcss.io/404.php
-#ErrorDocument 404 http://chuckcss.io/404.php
-#ErrorDocument 500 http://chuckcss.io/404.php
+#ErrorDocument 401 http://chuckcss.io/404.html
+#ErrorDocument 403 http://chuckcss.io/404.html
+#ErrorDocument 404 http://chuckcss.io/404.html
+#ErrorDocument 500 http://chuckcss.io/404.html
 
 
 ###########
