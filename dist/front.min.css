@@ -7678,6 +7678,14 @@ main .wrap-feature .js-view-code {
 main .wrap-feature .js-view-code a {
   font-size: 1.2rem;
 }
+.reminder main .reminder-list {
+  padding: 0;
+}
+@media screen and (min-width: 990px) {
+  .reminder main .reminder-list {
+    padding: 1em;
+  }
+}
 .reminder main table {
   margin: 0;
 }
