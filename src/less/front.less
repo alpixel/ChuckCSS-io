@@ -483,6 +483,20 @@ main {
         .reminder-list {
             padding:0;
 
+            h3 a {
+                ._transition;
+
+                &:before {
+                    color:@gray;
+                }
+
+                &:hover {
+                    &:before {
+                        color:@chuckgreen-da;
+                    }
+                }
+            }
+
             ._media-m-up({
                 padding:1em;
             });

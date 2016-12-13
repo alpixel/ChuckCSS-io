@@ -35,6 +35,31 @@
 
         <!-- Place this tag in your head or just before your close body tag. -->
         <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "http://chuckcss.io",
+                        "name": "ChuckCSS"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "http://chuckcss.io/reminder",
+                        "name": "ChuckCSS reminder page"
+                    }
+                }
+            ]
+        }
+        </script>
     </head>
 
     <body class="reminder">
@@ -146,8 +171,12 @@
                         </div>
                     </aside>
                     <section class="reminder-list cc-12 cc-9-l">
+
+                        <!-- Grids -->
                         <div class="wrap-feature">
-                            <h3 id="grids">Grids / Masonry layouts</h3>
+                            <h3 id="grids">
+                                <a href="#grids" class="ion-link">Grids / Masonry layouts</a>
+                            </h3>
                             <pre class="HTML">
                                 <code class="language-markup"><!-- -->
                                     &lt;!-- Grid container (row) -->
@@ -588,8 +617,12 @@
                                 </tbody>
                             </table>
                         </div>
+
+                        <!-- Alerts -->
                         <div class="wrap-feature">
-                            <h3 id="alerts">Alerts</h3>
+                            <h3 id="alerts">
+                                <a href="#alerts" class="ion-link">Alerts</a>
+                                </h3>
                             <pre class="HTML">
                                 <code class="language-markup"><!-- -->
                                     &lt;!-- General structure -->
@@ -635,11 +668,827 @@
                                             &lt;div>
                                         </td>
                                         <td>
-                                            Display an alert box<br />
+                                            Display an <em>alert box</em><br />
                                             <strong>{type} :</strong> Can be set to 'primary', 'info', 'warning', 'error' or 'success'
                                         </td>
                                     </tr>
                                     </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Messages -->
+                        <div class="wrap-feature">
+                            <h3 id="messages">
+                                <a href="#messages" class="ion-link">Messages</a>
+                                </h3>
+                            <pre class="HTML">
+                                <code class="language-markup"><!-- -->
+                                    &lt;!-- General structure -->
+                                    &lt;div class="message message-{type}">
+                                        ...your message text...
+                                    &lt;/div>
+                                </code>
+                            </pre>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="cc-w-40">
+                                            class
+                                        </th>
+                                        <th class="cc-w-20">
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>
+                                            class
+                                        </th>
+                                        <th>
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </tfoot>
+
+                                <tbody>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="message message-{type}"</span>
+                                        </td>
+                                        <td>
+                                            &lt;div>
+                                        </td>
+                                        <td>
+                                            Display a <em>message box</em><br />
+                                            <strong>{type} :</strong> Can be set to 'primary', 'info', 'warning', 'error' or 'success'
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Badges -->
+                        <div class="wrap-feature">
+                            <h3 id="badges">
+                                <a href="#badges" class="ion-link">Badges</a>
+                                </h3>
+                            <pre class="HTML">
+                                <code class="language-markup"><!-- -->
+                                    &lt;span class="badge">...&lt;/span>
+                                </code>
+                            </pre>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="cc-w-40">
+                                            class
+                                        </th>
+                                        <th class="cc-w-20">
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>
+                                            class
+                                        </th>
+                                        <th>
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </tfoot>
+
+                                <tbody>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-bg-{color}"</span>
+                                        </td>
+                                        <td>
+                                            &lt;span>
+                                        </td>
+                                        <td>
+                                            Display badge with a <em>specific background-color</em><br />
+                                            <strong>{color} :</strong> A color defined in ChuckCSS framework
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Tabs -->
+                        <div class="wrap-feature">
+                            <h3 id="tabs">
+                                <a href="#tabs" class="ion-link">Tabs</a>
+                                </h3>
+                            <pre class="HTML">
+                                <code class="language-markup"><!-- -->
+                                    &lt;!-- General structure -->
+                                    &lt;ul class="tabs">
+                                        &lt;li>...&lt;/li>
+                                        &lt;li>...&lt;/li>
+                                    &lt;/ul>
+                                </code>
+                            </pre>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="cc-w-40">
+                                            class
+                                        </th>
+                                        <th class="cc-w-20">
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>
+                                            class
+                                        </th>
+                                        <th>
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </tfoot>
+
+                                <tbody>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="tabs"</span>
+                                        </td>
+                                        <td>
+                                            &lt;ul>
+                                        </td>
+                                        <td>
+                                            Display a <em>default tabs container</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-underlined"</span>
+                                        </td>
+                                        <td>
+                                            &lt;ul>
+                                        </td>
+                                        <td>
+                                            Display an <em>underlined tabs container</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-thin"</span>
+                                        </td>
+                                        <td>
+                                            &lt;ul>
+                                        </td>
+                                        <td>
+                                            Display a <em>thin (narrow) tabs container</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-fat"</span>
+                                        </td>
+                                        <td>
+                                            &lt;ul>
+                                        </td>
+                                        <td>
+                                            Display a <em>fat (large) tabs container</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-bordered"</span>
+                                        </td>
+                                        <td>
+                                            &lt;ul>
+                                        </td>
+                                        <td>
+                                            Display a <em>bordered tabs container</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-{color}"</span>
+                                        </td>
+                                        <td>
+                                            &lt;ul>
+                                        </td>
+                                        <td>
+                                            Change <em>tabs main color</em><br />
+                                            <strong>{color} :</strong> A color defined in ChuckCSS framework
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-align-left"</span>
+                                        </td>
+                                        <td>
+                                            &lt;ul>
+                                        </td>
+                                        <td>
+                                            Align children tabs <em>to the left</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-align-left-{letter}"</span>
+                                        </td>
+                                        <td>
+                                            &lt;ul>
+                                        </td>
+                                        <td>
+                                            Align children tabs <em>to the left</em> for <em>{letter}</em> screen and up<br />
+                                            <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-align-center"</span>
+                                        </td>
+                                        <td>
+                                            &lt;ul>
+                                        </td>
+                                        <td>
+                                            <em>Center children</em> tabs
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-align-center-{letter}"</span>
+                                        </td>
+                                        <td>
+                                            &lt;ul>
+                                        </td>
+                                        <td>
+                                            <em>Center children</em> tabs for <em>{letter}</em> screen and up<br />
+                                            <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-align-right"</span>
+                                        </td>
+                                        <td>
+                                            &lt;ul>
+                                        </td>
+                                        <td>
+                                            Align tabs children <em>to the right</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-align-right-{letter}"</span>
+                                        </td>
+                                        <td>
+                                            &lt;ul>
+                                        </td>
+                                        <td>
+                                            Align tabs children <em>to the right</em> for <em>{letter}</em> screen and up<br />
+                                            <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-align-stretch"</span>
+                                        </td>
+                                        <td>
+                                            &lt;ul>
+                                        </td>
+                                        <td>
+                                            <em>Stretch children tabs</em> on the line
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-align-stretch-{letter}"</span>
+                                        </td>
+                                        <td>
+                                            &lt;ul>
+                                        </td>
+                                        <td>
+                                            <em>Stretch children tabs</em> on the line for <em>{letter}</em> screen and up<br />
+                                            <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-pills"</span>
+                                        </td>
+                                        <td>
+                                            &lt;ul>
+                                        </td>
+                                        <td>
+                                            Tabs children are <em>shown as </em><strong>chained pills</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-pills cc-unchained"</span>
+                                        </td>
+                                        <td>
+                                            &lt;ul>
+                                        </td>
+                                        <td>
+                                            Tabs children are <em>shown as </em><strong>unchained pills</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-last"</span>
+                                        </td>
+                                        <td>
+                                            &lt;li>
+                                        </td>
+                                        <td>
+                                            Pull this target child <em>to the right</em>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Modals -->
+                        <div class="wrap-feature">
+                            <h3 id="modals">
+                                <a href="#modals" class="ion-link">Modals</a>
+                                </h3>
+                            <pre class="HTML">
+                                <code class="language-markup"><!-- -->
+
+                                </code>
+                            </pre>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="cc-w-40">
+                                            class
+                                        </th>
+                                        <th class="cc-w-20">
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>
+                                            class
+                                        </th>
+                                        <th>
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </tfoot>
+
+
+                            </table>
+                        </div>
+
+                        <!-- Loaders -->
+                        <div class="wrap-feature">
+                            <h3 id="loaders">
+                                <a href="#loaders" class="ion-link">Loaders</a>
+                                </h3>
+                            <pre class="HTML">
+                                <code class="language-markup"><!-- -->
+
+                                </code>
+                            </pre>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="cc-w-40">
+                                            class
+                                        </th>
+                                        <th class="cc-w-20">
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>
+                                            class
+                                        </th>
+                                        <th>
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </tfoot>
+
+
+                            </table>
+                        </div>
+
+                        <!-- Icones -->
+                        <div class="wrap-feature">
+                            <h3 id="icones">
+                                <a href="#icones" class="ion-link">FontAwesome / Ionicons</a>
+                                </h3>
+                            <pre class="HTML">
+                                <code class="language-markup"><!-- -->
+
+                                </code>
+                            </pre>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="cc-w-40">
+                                            class
+                                        </th>
+                                        <th class="cc-w-20">
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>
+                                            class
+                                        </th>
+                                        <th>
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </tfoot>
+
+
+                            </table>
+                        </div>
+
+                        <!-- Block helpers -->
+                        <div class="wrap-feature">
+                            <h3 id="block-helpers">
+                                <a href="#block-helpers" class="ion-link">Block helpers</a>
+                                </h3>
+                            <pre class="HTML">
+                                <code class="language-markup"><!-- -->
+
+                                </code>
+                            </pre>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="cc-w-40">
+                                            class
+                                        </th>
+                                        <th class="cc-w-20">
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>
+                                            class
+                                        </th>
+                                        <th>
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </tfoot>
+
+
+                            </table>
+                        </div>
+
+                        <!-- Texts helpers -->
+                        <div class="wrap-feature">
+                            <h3 id="texts-helpers">
+                                <a href="#texts-helpers" class="ion-link">Texts helpers</a>
+                                </h3>
+                            <pre class="HTML">
+                                <code class="language-markup"><!-- -->
+
+                                </code>
+                            </pre>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="cc-w-40">
+                                            class
+                                        </th>
+                                        <th class="cc-w-20">
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>
+                                            class
+                                        </th>
+                                        <th>
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </tfoot>
+
+
+                            </table>
+                        </div>
+
+                        <!-- Images -->
+                        <div class="wrap-feature">
+                            <h3 id="images">
+                                <a href="#images" class="ion-link">Images</a>
+                                </h3>
+                            <pre class="HTML">
+                                <code class="language-markup"><!-- -->
+
+                                </code>
+                            </pre>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="cc-w-40">
+                                            class
+                                        </th>
+                                        <th class="cc-w-20">
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>
+                                            class
+                                        </th>
+                                        <th>
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </tfoot>
+
+
+                            </table>
+                        </div>
+
+                        <!-- Buttons / Links -->
+                        <div class="wrap-feature">
+                            <h3 id="buttons">
+                                <a href="#buttons" class="ion-link">Buttons / Links</a>
+                                </h3>
+                            <pre class="HTML">
+                                <code class="language-markup"><!-- -->
+
+                                </code>
+                            </pre>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="cc-w-40">
+                                            class
+                                        </th>
+                                        <th class="cc-w-20">
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>
+                                            class
+                                        </th>
+                                        <th>
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </tfoot>
+
+
+                            </table>
+                        </div>
+
+                        <!-- Forms -->
+                        <div class="wrap-feature">
+                            <h3 id="forms">
+                                <a href="#forms" class="ion-link">Forms</a>
+                                </h3>
+                            <pre class="HTML">
+                                <code class="language-markup"><!-- -->
+
+                                </code>
+                            </pre>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="cc-w-40">
+                                            class
+                                        </th>
+                                        <th class="cc-w-20">
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>
+                                            class
+                                        </th>
+                                        <th>
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </tfoot>
+
+
+                            </table>
+                        </div>
+
+                        <!-- Tables -->
+                        <div class="wrap-feature">
+                            <h3 id="tables">
+                                <a href="#tables" class="ion-link">Tables</a>
+                                </h3>
+                            <pre class="HTML">
+                                <code class="language-markup"><!-- -->
+
+                                </code>
+                            </pre>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="cc-w-40">
+                                            class
+                                        </th>
+                                        <th class="cc-w-20">
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>
+                                            class
+                                        </th>
+                                        <th>
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </tfoot>
+
+
+                            </table>
+                        </div>
+
+                        <!-- Blockquotes -->
+                        <div class="wrap-feature">
+                            <h3 id="blockquotes">
+                                <a href="#blockquotes" class="ion-link">Blockquotes</a>
+                                </h3>
+                            <pre class="HTML">
+                                <code class="language-markup"><!-- -->
+
+                                </code>
+                            </pre>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="cc-w-40">
+                                            class
+                                        </th>
+                                        <th class="cc-w-20">
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>
+                                            class
+                                        </th>
+                                        <th>
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </tfoot>
+
+
+                            </table>
+                        </div>
+
+                        <!-- Lists -->
+                        <div class="wrap-feature">
+                            <h3 id="lists">
+                                <a href="#lists" class="ion-link">Lists</a>
+                                </h3>
+                            <pre class="HTML">
+                                <code class="language-markup"><!-- -->
+
+                                </code>
+                            </pre>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="cc-w-40">
+                                            class
+                                        </th>
+                                        <th class="cc-w-20">
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>
+                                            class
+                                        </th>
+                                        <th>
+                                            apply to element
+                                        </th>
+                                        <th>
+                                            effect
+                                        </th>
+                                    </tr>
+                                </tfoot>
+
+
                             </table>
                         </div>
                     </section>
