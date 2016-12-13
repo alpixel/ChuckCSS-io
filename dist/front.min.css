@@ -7350,7 +7350,7 @@ pre[class*="language-"] {
     max-height: 150px;
   }
   to {
-    max-height: 600px;
+    max-height: 1200px;
     overflow-y: auto;
   }
 }
@@ -7359,7 +7359,7 @@ pre[class*="language-"] {
     max-height: 150px;
   }
   to {
-    max-height: 600px;
+    max-height: 1200px;
     overflow-y: auto;
   }
 }
@@ -7848,6 +7848,14 @@ main .wrap-feature .js-view-code a {
 }
 .reminder main table tbody td:nth-child(3) em {
   color: black;
+}
+.reminder main table tbody td.colspan {
+  padding-top: 50px;
+}
+.reminder main table tbody td.colspan a {
+  color: #bbbbbb;
+  font-size: 2rem;
+  font-weight: 300;
 }
 main .menu-summary #left-navbar.affix {
   position: fixed;

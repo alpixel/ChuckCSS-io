@@ -121,6 +121,26 @@
                             <ul class="nav" role="tablist">
                                 <li>
                                     <a href="#grids">Grids / Masonry layouts</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#grids-masonry">Masonry layouts</a>
+                                        </li>
+                                        <li>
+                                            <a href="#grids-columns-x-alignments">Columns X alignments</a>
+                                        </li>
+                                        <li>
+                                            <a href="#grids-columns-y-alignments">Columns Y alignments</a>
+                                        </li>
+                                        <li>
+                                            <a href="#grids-items-width-offset">Items width & offset</a>
+                                        </li>
+                                        <li>
+                                            <a href="#grids-items-x-alignments">Items X alignments</a>
+                                        </li>
+                                        <li>
+                                            <a href="#grids-items-y-alignments">Items Y alignments</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="#alerts">Alerts</a>
@@ -133,18 +153,51 @@
                                 </li>
                                 <li>
                                     <a href="#tabs">Tabs</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#tabs-styles">Global styles</a>
+                                        </li>
+                                        <li>
+                                            <a href="#tabs-items-x-alignments">Items X alignments</a>
+                                        </li>
+                                        <li>
+                                            <a href="#tabs-pills">Pills</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="#modals">Modals</a>
                                 </li>
                                 <li>
                                     <a href="#loaders">Loaders</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#dots-loader">Dots loaders</a>
+                                        </li>
+                                        <li>
+                                            <a href="#spinner-loader">Spinner loaders</a>
+                                        </li>
+                                        <li>
+                                            <a href="#caterpillar-loader">Caterpillar loaders</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="#icones">FontAwesome / Ionicons</a>
                                 </li>
                                 <li>
                                     <a href="#block-helpers">Block helpers</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#block-helpers-width">Blocks width</a>
+                                        </li>
+                                        <li>
+                                            <a href="#block-helpers-padding-margin">Blocks padding & margin</a>
+                                        </li>
+                                        <li>
+                                            <a href="#block-helpers-visibility">Blocks visibility</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="#texts-helpers">Texts helpers</a>
@@ -189,7 +242,7 @@
                                     &lt;/div>
                                 </code>
                             </pre>
-                            <table>
+                            <table class="cc-valign-top">
                                 <thead>
                                     <tr>
                                         <th class="cc-w-40">
@@ -251,6 +304,11 @@
                                             Reverse all columns order
                                         </td>
                                     </tr>
+                                    <tr id="grids-masonry">
+                                        <td colspan="3" class="colspan">
+                                            <a href="#grids-masonry">Masonry layouts</a>
+                                        </td>
+                                    </tr>
                                     <tr>
                                         <td class="reminder-class">
                                             <span>class="cc-masonry"</span>
@@ -282,9 +340,16 @@
                                             Grid container (row)
                                         </td>
                                         <td>
-                                            Display <em>{number}</em> columns as a verticaly Masonry layout on <em>{letter}</em> screens and up<br />
+                                            Display <em>{number}</em> columns as a verticaly Masonry layout on <em>{letter}</em> screen and up<br />
                                             <strong>{number} :</strong> can be set from 1 to {@cols-total} (default : 12)<br />
                                             <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
+                                        </td>
+                                    </tr>
+                                    <tr id="grids-columns-x-alignments">
+                                        <td colspan="3" class="colspan">
+                                            <a href="#grids-columns-x-alignments">
+                                                Columns X alignments
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -342,6 +407,13 @@
                                             In a row, all columns are evenly distributed in the line with <em>equal space around them</em>
                                         </td>
                                     </tr>
+                                    <tr id="grids-columns-y-alignments">
+                                        <td colspan="3" class="colspan">
+                                            <a href="#grids-columns-y-alignments">
+                                                Columns Y alignments
+                                            </a>
+                                        </td>
+                                    </tr>
                                     <tr>
                                         <td class="reminder-class">
                                             <span>class="cc-align-start"</span>
@@ -397,6 +469,13 @@
                                             Stretch all columns <em>on Y axis</em>
                                         </td>
                                     </tr>
+                                    <tr id="grids-items-width-offset">
+                                        <td colspan="3" class="colspan">
+                                            <a href="#grids-items-width-offset">
+                                                Items width & offset
+                                            </a>
+                                        </td>
+                                    </tr>
                                     <tr>
                                         <td class="reminder-class">
                                             <span>class="cc-{number}"</span>
@@ -417,13 +496,11 @@
                                             Grid item (child)
                                         </td>
                                         <td>
-                                            Set the column width<br />
+                                            Set the column width <em>on {letter} screen and up</em><br />
                                             <strong>{number} :</strong> can be set from 1 to {@cols-total} (default : 12)<br />
                                             <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>
                                     </tr>
-
-
 
                                     <tr>
                                         <td class="reminder-class">
@@ -433,7 +510,7 @@
                                             Grid item (child)
                                         </td>
                                         <td>
-                                            Set offset to column<br />
+                                            Set offset to column <em>on {letter} screen and up</em><br />
                                             <strong>{number} :</strong> can be set from 1 to {@cols-total} (default : 12)<br />
                                             <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>
@@ -452,7 +529,13 @@
                                         </td>
                                     </tr>
 
-
+                                    <tr id="grids-items-x-alignments">
+                                        <td colspan="3" class="colspan">
+                                            <a href="#grids-items-x-alignments">
+                                                Items alignment on X axis
+                                            </a>
+                                        </td>
+                                    </tr>
                                     <tr>
                                         <td class="reminder-class">
                                             <span>class="cc-first"</span>
@@ -472,7 +555,7 @@
                                             Grid item (child)
                                         </td>
                                         <td>
-                                            This column is diplayed <em>first on the X axis</em> for <em>{letter}</em> screens and up<br />
+                                            This column is diplayed <em>first on the X axis</em> for <em>{letter}</em> screen and up<br />
                                             <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>
                                     </tr>
@@ -495,7 +578,7 @@
                                             Grid item (child)
                                         </td>
                                         <td>
-                                            This column is diplayed <em>last on the X axis</em> for <em>{letter}</em> screens and up<br />
+                                            This column is diplayed <em>last on the X axis</em> for <em>{letter}</em> screen and up<br />
                                             <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>
                                     </tr>
@@ -557,7 +640,13 @@
                                         </td>
                                     </tr>
 
-
+                                    <tr id="grids-items-y-alignments">
+                                        <td colspan="3" class="colspan">
+                                            <a href="#grids-items-y-alignments">
+                                                Items alignment on Y axis
+                                            </a>
+                                        </td>
+                                    </tr>
                                     <tr>
                                         <td class="reminder-class">
                                             <span>class="cc-align-self-top"</span>
@@ -631,7 +720,7 @@
                                     &lt;/div>
                                 </code>
                             </pre>
-                            <table>
+                            <table class="cc-valign-top">
                                 <thead>
                                     <tr>
                                         <th class="cc-w-40">
@@ -669,7 +758,7 @@
                                         </td>
                                         <td>
                                             Display an <em>alert box</em><br />
-                                            <strong>{type} :</strong> Can be set to 'primary', 'info', 'warning', 'error' or 'success'
+                                            <strong>{type} :</strong> can be set to 'primary', 'info', 'warning', 'error' or 'success'
                                         </td>
                                     </tr>
                                     </tbody>
@@ -689,7 +778,7 @@
                                     &lt;/div>
                                 </code>
                             </pre>
-                            <table>
+                            <table class="cc-valign-top">
                                 <thead>
                                     <tr>
                                         <th class="cc-w-40">
@@ -727,7 +816,7 @@
                                         </td>
                                         <td>
                                             Display a <em>message box</em><br />
-                                            <strong>{type} :</strong> Can be set to 'primary', 'info', 'warning', 'error' or 'success'
+                                            <strong>{type} :</strong> can be set to 'primary', 'info', 'warning', 'error' or 'success'
                                         </td>
                                     </tr>
                                     </tbody>
@@ -744,7 +833,7 @@
                                     &lt;span class="badge">...&lt;/span>
                                 </code>
                             </pre>
-                            <table>
+                            <table class="cc-valign-top">
                                 <thead>
                                     <tr>
                                         <th class="cc-w-40">
@@ -803,7 +892,7 @@
                                     &lt;/ul>
                                 </code>
                             </pre>
-                            <table>
+                            <table class="cc-valign-top">
                                 <thead>
                                     <tr>
                                         <th class="cc-w-40">
@@ -841,6 +930,13 @@
                                         </td>
                                         <td>
                                             Display a <em>default tabs container</em>
+                                        </td>
+                                    </tr>
+                                    <tr id="tabs-styles">
+                                        <td colspan="3" class="colspan">
+                                            <a href="#tabs-styles">
+                                                Tabs global styles
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -897,6 +993,13 @@
                                         <td>
                                             Change <em>tabs main color</em><br />
                                             <strong>{color} :</strong> A color defined in ChuckCSS framework
+                                        </td>
+                                    </tr>
+                                    <tr id="tabs-items-x-alignments">
+                                        <td colspan="3" class="colspan">
+                                            <a href="#tabs-items-x-alignments">
+                                                Items alignments on X axis
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -991,7 +1094,24 @@
                                             <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>
                                     </tr>
-
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-last"</span>
+                                        </td>
+                                        <td>
+                                            &lt;li>
+                                        </td>
+                                        <td>
+                                            Pull this target child <em>to the right</em>
+                                        </td>
+                                    </tr>
+                                    <tr id="tabs-pills">
+                                        <td colspan="3" class="colspan">
+                                            <a href="#tabs-pills">
+                                                Tabs pills
+                                            </a>
+                                        </td>
+                                    </tr>
                                     <tr>
                                         <td class="reminder-class">
                                             <span>class="cc-pills"</span>
@@ -1014,18 +1134,6 @@
                                             Tabs children are <em>shown as </em><strong>unchained pills</strong>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td class="reminder-class">
-                                            <span>class="cc-last"</span>
-                                        </td>
-                                        <td>
-                                            &lt;li>
-                                        </td>
-                                        <td>
-                                            Pull this target child <em>to the right</em>
-                                        </td>
-                                    </tr>
-
                                 </tbody>
                             </table>
                         </div>
@@ -1035,12 +1143,58 @@
                             <h3 id="modals">
                                 <a href="#modals" class="ion-link">Modals</a>
                                 </h3>
-                            <pre class="HTML">
+                            <pre class="HTML collapsed">
                                 <code class="language-markup"><!-- -->
+                                    &lt;!-- Button for launching modal -->
+                                    &lt;button data-target="modal-id" class="modal-open">Launch modal&lt;/button>
 
+                                    &lt;!-- Modal structure -->
+                                    &lt;div id="modal-id" class="modal" data-disabled-overlay>
+                                        &lt;!-- Close button -->
+                                        &lt;button class="modal-close">&lt;/button>
+                                        &lt;!-- Overlay -->
+                                        &lt;div class="modal-overlay">&lt;/div>
+                                        &lt;!-- Modal content -->
+                                        &lt;div class="modal-content">
+                                            &lt;div class="modal-header">
+                                                ...
+                                            &lt;/div>
+                                            &lt;div class="modal-body">
+                                                ...modal content...
+                                            &lt;/div>
+                                            &lt;div class="modal-footer">
+                                                ...
+                                            &lt;/div>
+                                        &lt;/div>
+                                    &lt;/div>
+
+
+                                    &lt;!-- Modal structure with fixed Header and Footer -->
+                                    &lt;div id="modal-id" class="modal" data-fixed-hf>
+                                        &lt;!-- Close button -->
+                                        &lt;button class="modal-close">&lt;/button>
+                                        &lt;!-- Overlay -->
+                                        &lt;div class="modal-overlay">&lt;/div>
+                                        &lt;!-- Modal content -->
+                                        &lt;div class="modal-content">
+                                            &lt;div class="modal-header">
+                                                ...
+                                            &lt;/div>
+                                            &lt;!-- ATTENTION, difference with standard modal : the modal-body has a wrapper -->
+                                            &lt;section class="wrap-modal-body">
+                                                &lt;div class="modal-body">
+                                                    ...modal content...
+                                                &lt;/div>
+                                            &lt;/section>
+                                            &lt;div class="modal-footer">
+                                                ...
+                                            &lt;/div>
+                                        &lt;/div>
+                                    &lt;/div>
                                 </code>
                             </pre>
-                            <table>
+                            <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+                            <table class="cc-valign-top">
                                 <thead>
                                     <tr>
                                         <th class="cc-w-40">
@@ -1067,6 +1221,63 @@
                                         </th>
                                     </tr>
                                 </tfoot>
+                                <tbody>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="modal"</span>
+                                        </td>
+                                        <td>
+                                            &lt;div>
+                                        </td>
+                                        <td>
+                                            Default modal with <em>50% width</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="modal modal-large"</span>
+                                        </td>
+                                        <td>
+                                            &lt;div>
+                                        </td>
+                                        <td>
+                                            Large modal with <em>80% width</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="modal modal-small"</span>
+                                        </td>
+                                        <td>
+                                            &lt;div>
+                                        </td>
+                                        <td>
+                                            Small modal with <em>30% width</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>data-disabled-overlay</span>
+                                        </td>
+                                        <td>
+                                            &lt;div>
+                                        </td>
+                                        <td>
+                                            <em>Disabled overlay</em> for closing the modal
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>data-fixed-hf</span>
+                                        </td>
+                                        <td>
+                                            &lt;div>
+                                        </td>
+                                        <td>
+                                            <em>Make the Header and Footer fixed</em> into the modal <em>(need a wrapper around the modal-body element)</em>
+                                        </td>
+                                    </tr>
+                                </tbody>
 
 
                             </table>
@@ -1076,42 +1287,81 @@
                         <div class="wrap-feature">
                             <h3 id="loaders">
                                 <a href="#loaders" class="ion-link">Loaders</a>
-                                </h3>
+                            </h3>
+                            <div class="alert alert-info ion-alert-circled">
+                                Number of dots (only for dots loader),loaders colors, loaders speed <strong>can be set into the settings.less file.</strong>
+                            </div>
+
+                            <h4 id="dots-loader">
+                                <a href="#dots-loader">Dots loader</a>
+                            </h4>
                             <pre class="HTML">
                                 <code class="language-markup"><!-- -->
-
+                                    &lt;!-- Dots loader structure -->
+                                    &lt;div class="cc-loader">
+                                        &lt;div class="dot dot-1">&lt;/div>
+                                        &lt;div class="dot dot-2">&lt;/div>
+                                        &lt;div class="dot dot-3">&lt;/div>
+                                        ...as long as {@loader-dots-count} variable (default : 12 dots)...
+                                        &lt;div class="dot dot-12">&lt;/div>
+                                    &lt;/div>
                                 </code>
                             </pre>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th class="cc-w-40">
-                                            class
-                                        </th>
-                                        <th class="cc-w-20">
-                                            apply to element
-                                        </th>
-                                        <th>
-                                            effect
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tfoot>
-                                    <tr>
-                                        <th>
-                                            class
-                                        </th>
-                                        <th>
-                                            apply to element
-                                        </th>
-                                        <th>
-                                            effect
-                                        </th>
-                                    </tr>
-                                </tfoot>
 
+                            <div class="cc-loader">
+                                <div class="dot dot-1"></div>
+                                <div class="dot dot-2"></div>
+                                <div class="dot dot-3"></div>
+                                <div class="dot dot-4"></div>
+                                <div class="dot dot-5"></div>
+                                <div class="dot dot-6"></div>
+                                <div class="dot dot-7"></div>
+                                <div class="dot dot-8"></div>
+                                <div class="dot dot-9"></div>
+                                <div class="dot dot-10"></div>
+                                <div class="dot dot-11"></div>
+                                <div class="dot dot-12"></div>
+                            </div>
 
-                            </table>
+                            <h4 id="spinner-loader">
+                                <a href="#spinner-loader">Spinner loader</a>
+                            </h4>
+                            <pre class="HTML">
+                                <code class="language-markup"><!-- -->
+                                    &lt;!-- Spinner loader structure -->
+                                    &lt;div class="cc-loader">
+                                        &lt;div class="spinner">&lt;/div>
+                                    &lt;/div>
+                                </code>
+                            </pre>
+
+                            <div class="cc-loader">
+                                <div class="spinner"></div>
+                            </div>
+
+                            <h4 id="caterpillar-loader">
+                                <a href="#caterpillar-loader">Caterpillar loader</a>
+                            </h4>
+                            <pre class="HTML">
+                                <code class="language-markup"><!-- -->
+                                    &lt;!-- Caterpillar loader structure -->
+                                    &lt;div class="cc-loader caterpillar">
+                                        &lt;div class="chain chain-1">&lt;/div>
+                                        &lt;div class="chain chain-2">&lt;/div>
+                                        &lt;div class="chain chain-3">&lt;/div>
+                                        &lt;div class="chain chain-4">&lt;/div>
+                                        &lt;div class="chain chain-5">&lt;/div>
+                                    &lt;/div>
+                                </code>
+                            </pre>
+
+                            <div class="cc-loader caterpillar">
+                                <div class="chain chain-1"></div>
+                                <div class="chain chain-2"></div>
+                                <div class="chain chain-3"></div>
+                                <div class="chain chain-4"></div>
+                                <div class="chain chain-5"></div>
+                            </div>
                         </div>
 
                         <!-- Icones -->
@@ -1121,10 +1371,15 @@
                                 </h3>
                             <pre class="HTML">
                                 <code class="language-markup"><!-- -->
+                                    &lt;!-- Exemple with FA icon -->
+                                    &lt;p class="fa-angle-right">Paragraph with FA icon&lt;/p>
 
+                                    &lt;!-- Exemple with IO icon -->
+                                    &lt;p class="ion-link">Paragraph with IO icon&lt;/p>
                                 </code>
                             </pre>
-                            <table>
+
+                            <table class="cc-valign-top">
                                 <thead>
                                     <tr>
                                         <th class="cc-w-40">
@@ -1151,8 +1406,30 @@
                                         </th>
                                     </tr>
                                 </tfoot>
-
-
+                                <tbody>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="fa-*"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Display a <em>FontAwesome icon</em> at the start of the element
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="ion-*"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Display a <em>Ionicons icon</em> at the start of the element
+                                        </td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
 
@@ -1163,10 +1440,14 @@
                                 </h3>
                             <pre class="HTML">
                                 <code class="language-markup"><!-- -->
-
+                                    &lt;!-- Padding & Margin exemples -->
+                                    &lt;p class="cc-pat-20">I have a padding-top of 20px&lt;/p>
+                                    &lt;p class="cc-pa-20">I have a padding of 20px&lt;/p>
+                                    &lt;p class="cc-ma">I have a margin of 1em&lt;/p>
+                                    &lt;p class="cc-mab-20">I have a margin-bottom of 20px&lt;/p>
                                 </code>
                             </pre>
-                            <table>
+                            <table class="cc-valign-top">
                                 <thead>
                                     <tr>
                                         <th class="cc-w-40">
@@ -1193,6 +1474,307 @@
                                         </th>
                                     </tr>
                                 </tfoot>
+                                <tbody>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-block"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Display element <em>as block</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-inline"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Display element <em>as inline-block</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-clearfix"</span><br />
+                                            <span>class="clearfix"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            <em>Fixing clear</em> of floated elements
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-centered"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Center element <em>into another element</em> on X axis
+                                        </td>
+                                    </tr>
+
+                                    <tr id="block-helpers-width">
+                                        <td colspan="3" class="colspan">
+                                            <a href="#block-helpers-width">
+                                                Blocks width
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-w-{number}"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Apply a <em>width of {number}%</em><br />
+                                            <strong>{number} :</strong> From 0 to 100, multiple of 5
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-w-quarter"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Apply a <em>width of 25.00%</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-w-third"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Apply a <em>width of 33.333%</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-w-half"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Apply a <em>width of 50.00%</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-w-twothird"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Apply a <em>width of 66.666%</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-w-threequarter"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Apply a <em>width of 75.00%</em>
+                                        </td>
+                                    </tr>
+
+                                    <tr id="block-helpers-padding-margin">
+                                        <td colspan="3" class="colspan">
+                                            <a href="#block-helpers-padding-margin">
+                                                Blocks padding & margin
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-pa"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Apply a padding of <em>{@helper-pa} (default : 1em) on the 4 sides</em><br />
+                                            <strong>{@helper-pa} value can be changed in the settings.less file</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-pa{letter}"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Apply a padding of <em>{@helper-pa} in the {letter} side</em><br />
+                                            <strong>{letter} :</strong> can be set to 't' (for "top"), 'r' (for "right"), 'b' (for "bottom") or 'l' (for "left")
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-pa-{number}"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Apply a <em>padding of {number}px on the 4 sides</em><br />
+                                            <strong>{number} :</strong> From 0 to 50, multiple of 5
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-pa{letter}-{number}"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Apply a <em>{number}px padding to the {letter} side</em><br />
+                                            <strong>{number} :</strong> From 0 to 50, multiple of 5<br />
+                                            <strong>{letter} :</strong> can be set to 't' (for "top"), 'r' (for "right"), 'b' (for "bottom") or 'l' (for "left")
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-ma"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Apply a margin of <em>{@helper-ma} (default : 1em) on the 4 sides</em><br />
+                                            <strong>{@helper-ma} value can be changed in the settings.less file</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-ma{letter}"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Apply a margin of <em>{@helper-ma} in the {letter} side</em><br />
+                                            <strong>{letter} :</strong> can be set to 't' (for "top"), 'r' (for "right"), 'b' (for "bottom") or 'l' (for "left")
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-ma-{number}"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Apply a <em>margin of {number}px on the 4 sides</em><br />
+                                            <strong>{number} :</strong> From 0 to 50, multiple of 5
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-ma{letter}-{number}"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Apply a <em>{number}px margin to the {letter} side</em><br />
+                                            <strong>{number} :</strong> From 0 to 50, multiple of 5<br />
+                                            <strong>{letter} :</strong> can be set to 't' (for "top"), 'r' (for "right"), 'b' (for "bottom") or 'l' (for "left")
+
+                                        </td>
+                                    </tr>
+
+                                    <tr id="block-helpers-visibility">
+                                        <td colspan="3" class="colspan">
+                                            <a href="#block-helpers-visibility">
+                                                Blocks visibility
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-hidden"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            <em>Hide element</em> on all devices
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-hidden-{letter}"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            <em>Hide element</em> on <em>{letter}</em> screen and up<br />
+                                            <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-hidden-{letter}-only"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            <em>Hide element</em> on <em>{letter}</em> screen ONLY<br />
+                                            <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-hidden-{letter}-down"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            <em>Hide element</em> on <em>{letter}</em> screen and down<br />
+                                            <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-shown-{letter}-only"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            <em>Show element</em> on <em>{letter}</em> screen ONLY<br />
+                                            <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
+                                        </td>
+                                    </tr>
+
+                                </tbody>
 
 
                             </table>
@@ -1208,7 +1790,7 @@
 
                                 </code>
                             </pre>
-                            <table>
+                            <table class="cc-valign-top">
                                 <thead>
                                     <tr>
                                         <th class="cc-w-40">
@@ -1250,7 +1832,7 @@
 
                                 </code>
                             </pre>
-                            <table>
+                            <table class="cc-valign-top">
                                 <thead>
                                     <tr>
                                         <th class="cc-w-40">
@@ -1292,7 +1874,7 @@
 
                                 </code>
                             </pre>
-                            <table>
+                            <table class="cc-valign-top">
                                 <thead>
                                     <tr>
                                         <th class="cc-w-40">
@@ -1334,7 +1916,7 @@
 
                                 </code>
                             </pre>
-                            <table>
+                            <table class="cc-valign-top">
                                 <thead>
                                     <tr>
                                         <th class="cc-w-40">
@@ -1376,7 +1958,7 @@
 
                                 </code>
                             </pre>
-                            <table>
+                            <table class="cc-valign-top">
                                 <thead>
                                     <tr>
                                         <th class="cc-w-40">
@@ -1418,7 +2000,7 @@
 
                                 </code>
                             </pre>
-                            <table>
+                            <table class="cc-valign-top">
                                 <thead>
                                     <tr>
                                         <th class="cc-w-40">
@@ -1460,7 +2042,7 @@
 
                                 </code>
                             </pre>
-                            <table>
+                            <table class="cc-valign-top">
                                 <thead>
                                     <tr>
                                         <th class="cc-w-40">
