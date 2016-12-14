@@ -7248,7 +7248,7 @@ pre[class*="language-"] {
 }
 .hamburger-box {
   width: 40px;
-  height: 24px;
+  height: 22px;
   display: inline-block;
   position: relative;
 }
@@ -7257,7 +7257,7 @@ pre[class*="language-"] {
   top: 50%;
   margin-top: -2px;
   width: 100%;
-  height: 4px;
+  height: 2px;
   background-color: #2fc0aa;
   border-radius: 4px;
   position: absolute;
@@ -7274,7 +7274,7 @@ pre[class*="language-"] {
   content: "";
   display: block;
   width: 100%;
-  height: 4px;
+  height: 2px;
   background-color: #2fc0aa;
   border-radius: 4px;
   position: absolute;
@@ -7292,7 +7292,7 @@ pre[class*="language-"] {
   content: "";
   display: block;
   width: 100%;
-  height: 4px;
+  height: 2px;
   background-color: #2fc0aa;
   border-radius: 4px;
   position: absolute;
@@ -7378,17 +7378,9 @@ body.opened {
   width: 90%;
   margin: 0 auto;
 }
-@media screen and (min-width: 990px) {
-  .inside {
-    width: 990px;
-    margin: 0 auto;
-    -webkit-transition: 0.2s width ease-out 0s;
-    transition: 0.2s width ease-out 0s;
-  }
-}
 @media screen and (min-width: 1200px) {
   .inside {
-    width: 1200px;
+    width: 990px;
     margin: 0 auto;
     -webkit-transition: 0.2s width ease-out 0s;
     transition: 0.2s width ease-out 0s;
@@ -7405,28 +7397,35 @@ body.opened {
   left: 0;
   z-index: -1;
 }
-#main-header {
-  text-align: center;
-  padding: 0 20px 0px;
-  background-color: #fafafa;
-}
-@media screen and (min-width: 990px) {
-  #main-header {
-    padding: 0 50px 0px;
-  }
-}
-#main-header .open-menu {
+.open-menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  background-color: rgba(250, 250, 250, 0.7);
   padding: 10px 0;
+  text-align: right;
 }
 @media screen and (min-width: 768px) {
-  #main-header .open-menu {
+  .open-menu {
     display: none;
+  }
+}
+#main-header {
+  text-align: center;
+  padding: 65px 20px 0px;
+  background-color: #fafafa;
+}
+@media screen and (min-width: 768px) {
+  #main-header {
+    padding: 0 50px 0px;
   }
 }
 #main-header nav {
   position: fixed;
   z-index: -2;
-  top: 66px;
+  top: 64px;
   left: 0;
   right: 0;
   width: 100%;
@@ -7579,6 +7578,14 @@ body.opened {
     transition: 0.2s all ease-out 0s;
   }
 }
+@media screen and (max-width: 989px) and (min-width: 768px) {
+  #main-header nav ul li {
+    padding: 0 0.5em;
+  }
+  #main-header nav ul li:not(.first):not(.last) a {
+    font-size: 1.5rem;
+  }
+}
 #main-header a.logo {
   display: inline-block;
 }
@@ -7628,9 +7635,9 @@ body.opened {
   font-family: monospace;
 }
 .homepage #main-header {
-  padding: 0 20px 20px;
+  padding: 65px 20px 20px;
 }
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 768px) {
   .homepage #main-header {
     padding: 0 50px 50px;
   }
