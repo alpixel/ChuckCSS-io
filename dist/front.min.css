@@ -7673,6 +7673,26 @@ body a.black:hover {
 #main-footer a:hover:after {
   width: 100%;
 }
+main .import-note {
+  background-color: #ed5252;
+  padding: 50px 0;
+  color: white;
+}
+main .import-note p {
+  font-size: 2rem;
+  padding: 10px 0;
+}
+main .import-note p a {
+  color: white;
+  font-size: 1.6rem;
+  border: 0;
+  color: #ed5252;
+}
+@media screen and (min-width: 768px) {
+  main .import-note p {
+    font-size: 3rem;
+  }
+}
 main .page-presentation {
   color: white;
   text-align: center;
