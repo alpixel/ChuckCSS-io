@@ -7374,6 +7374,14 @@ body {
 body.opened {
   overflow: hidden !important;
 }
+body a.black {
+  background-color: #2A2A2A;
+  color: white;
+  font-family: monospace;
+}
+body a.black:hover {
+  background-color: black;
+}
 .inside {
   width: 90%;
   margin: 0 auto;
@@ -7625,14 +7633,6 @@ body.opened {
     font-size: 3rem;
     line-height: 5.4rem;
   }
-}
-#main-header .install {
-  text-align: center;
-}
-#main-header .install a.black {
-  background-color: #2A2A2A;
-  color: white;
-  font-family: monospace;
 }
 .homepage #main-header {
   padding: 65px 20px 20px;

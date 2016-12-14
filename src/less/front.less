@@ -77,6 +77,19 @@ body {
     &.opened {
         overflow:hidden !important;
     }
+
+    a {
+        // $ bower && npm
+        &.black {
+            background-color:#2A2A2A;
+            color:white;
+            font-family:monospace;
+
+            &:hover {
+                background-color:black;
+            }
+        }
+    }
 }
 
 .inside {
@@ -293,17 +306,9 @@ body {
         });
     }
 
-    .install {
-        text-align:center;
-        a {
-            // $ bower && npm
-            &.black {
-                background-color:#2A2A2A;
-                color:white;
-                font-family:monospace;
-            }
-        }
-    }
+    // .install {
+    //     text-align:center;
+    // }
 
     // Specific for homepage
     .homepage & {
