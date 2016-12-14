@@ -133,7 +133,7 @@
                         </div>
                         <div class="cc-4-m">
                             <h3>GitHub repository</h3>
-                            <a class="github-button" href="https://github.com/alpixel/ChuckCSS/archive/master.zip" data-style="mega" aria-label="Download alpixel/ChuckCSS on GitHub">Download</a>
+                            <a class="github-button" href="https://github.com/alpixel/ChuckCSS/archive/master.zip" data-style="mega" aria-label="Download alpixel/ChuckCSS on GitHub">Download from GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -142,6 +142,13 @@
                     <h2>
                         2. Work with dist files
                     </h2>
+                    <div class="alert alert-info">
+                        When ChuckCSS is download, the dist files to include are into the "dist" folder (css and js files).<br />
+                        <ul>
+                            <li><strong>With NPM :</strong> node_modules/ChuckCSS/dist</li>
+                            <li><strong>With Bower :</strong> bower_components/ChuckCSS/dist</li>
+                        </ul>
+                    </div>
                     <pre class="HTML">
                         <code class="language-markup"><!-- -->
                             &lt;!-- Include the ChuckCSS CSS file -->
@@ -182,7 +189,7 @@
                     </h2>
                     <div class="alert alert-info">
                         Working with source files give you the possibility to customize ChuckCSS with your own settings, colors, etc... but you have to be familiar with <a href="http://lesscss.org/" class="external-link">Less language.</a><br /><br />
-                        <strong>By compiling your own dist file with <a href="http://gruntjs.com/" class="external-link">Grunt</a> or <a href="http://gulpjs.com/" class="external-link">Gulp</a>,</strong> you can use powerfull mixins to build websites easily and faster.
+                        <strong>By compiling your own dist file with <a href="http://gruntjs.com/" class="external-link">Grunt</a> or <a href="http://gulpjs.com/" class="external-link">Gulp</a>, combined with <a href="https://github.com/postcss/autoprefixer" class="external-link">Autoprefixer</a>,</strong> you can use powerfull mixins to build websites easily and faster.
 
                         <ul>
                             <li>
@@ -190,6 +197,9 @@
                             </li>
                             <li>
                                 <a href="http://gruntjs.com/getting-started" class="external-link">Grunt documentation</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/postcss/autoprefixer" class="external-link">Autoprefixer documentation</a> : ChuckCSS uses Autoprefixer to deal with CSS vendor prefixes. If you use the Gulpfile.js downloaded with ChuckCSS, Autoprefixer is already include. If you use your own Gruntfile or Gulpfile, integrate Autoprefixer by yourself.
                             </li>
                         </ul>
                     </div>
