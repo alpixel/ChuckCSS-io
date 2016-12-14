@@ -7849,6 +7849,10 @@ main .wrap-feature .js-view-code a {
 .reminder main table tbody td:nth-child(3) em {
   color: black;
 }
+.reminder main table tbody td:nth-child(3) a {
+  color: black;
+  border-bottom: 1px dotted black;
+}
 .reminder main table tbody td.colspan {
   padding-top: 50px;
 }
