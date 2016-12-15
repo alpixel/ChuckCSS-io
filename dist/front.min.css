@@ -7848,6 +7848,23 @@ main .wrap-feature h4:after {
   border-bottom: 1px dashed #2fc0aa;
   margin-top: 5px;
 }
+main .wrap-feature table.breakpoints-table thead td,
+main .wrap-feature table.breakpoints-table tfoot td,
+main .wrap-feature table.breakpoints-table thead th,
+main .wrap-feature table.breakpoints-table tfoot th {
+  padding: 1em 0;
+}
+main .wrap-feature table.breakpoints-table tbody tr:nth-child(1) td {
+  padding: 1em 0;
+  border: 0;
+}
+main .wrap-feature table.breakpoints-table tbody tr td {
+  padding: 0;
+  border-right: 1px solid #e0e0e0;
+}
+main .wrap-feature table.breakpoints-table i:before {
+  margin-right: 0;
+}
 .reminder main .reminder-list {
   padding: 0;
 }

@@ -531,6 +531,34 @@ main {
                 margin-top:5px;
             }
         }
+
+        table.breakpoints-table {
+            thead,
+            tfoot {
+                td,th {
+                    padding:1em 0;
+                }
+            }
+
+            tbody tr {
+                &:nth-child(1) {
+                    td {
+                        padding:1em 0;
+                        border:0;
+                    }
+                }
+                td{
+                    padding:0;
+                    border-right:1px solid #e0e0e0
+                }
+            }
+
+            i {
+                &:before {
+                    margin-right:0;
+                }
+            }
+        }
     }
 
     // Specific for reminder page
