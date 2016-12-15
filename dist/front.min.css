@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
     == ChuckCSS Framework ==
-    @What : A responsive CSS framework, compiled with LESS and Autoprefixer, based on FlexBox grids
+    @What : A mobile-first, responsive CSS framework, compiled with LESS and Autoprefixer, based on FlexBox grids
     @Author : Mickael SURREL, ALPIXEL Agency : Fresh & French Web Agency (http://www.alpixel.fr)
     @Twitter : https://twitter.com/chuckcss
     @Github : https://github.com/alpixel/ChuckCSS
@@ -7154,8 +7154,7 @@ pre[class*="language-"] {
 .token.entity,
 .token.url,
 .language-css .token.string,
-.style .token.string,
-.token.variable {
+.style .token.string {
   color: #f8f8f2;
 }
 .token.atrule,
@@ -7179,6 +7178,9 @@ pre[class*="language-"] {
 }
 .token.entity {
   cursor: help;
+}
+.token.variable {
+  color: #e90;
 }
 /* ********* */
 /** COOKIES **/
@@ -7388,7 +7390,7 @@ body a.black:hover {
 }
 @media screen and (min-width: 1200px) {
   .inside {
-    width: 990px;
+    width: 1200px;
     margin: 0 auto;
     -webkit-transition: 0.2s width ease-out 0s;
     transition: 0.2s width ease-out 0s;
@@ -7832,6 +7834,20 @@ main .wrap-feature .js-view-code {
 main .wrap-feature .js-view-code a {
   font-size: 1.2rem;
 }
+main .wrap-feature h4 {
+  color: #2fc0aa;
+  margin: 30px 0;
+}
+main .wrap-feature h4 a {
+  color: #2fc0aa;
+}
+main .wrap-feature h4:after {
+  content: ' ';
+  display: block;
+  height: 0px;
+  border-bottom: 1px dashed #2fc0aa;
+  margin-top: 5px;
+}
 .reminder main .reminder-list {
   padding: 0;
 }
@@ -7908,24 +7924,9 @@ main .menu-summary ul li.active {
   color: #2fc0aa;
 }
 main .menu-summary ul li.active > a {
-  display: inline-block;
   color: #2fc0aa;
-}
-main .menu-summary ul li.active > a:after {
-  content: ' ';
-  display: block;
-  height: 1px;
-  width: 0px;
-  border-bottom: 1px solid #2fc0aa;
   -webkit-transition: 0.2s all ease-out 0s;
   transition: 0.2s all ease-out 0s;
-}
-main .menu-summary ul li.active > a.active:after,
-main .menu-summary ul li.active > a:hover:after {
-  width: 100%;
-}
-main .menu-summary ul li.active > a:after {
-  width: 100%;
 }
 main .menu-summary ul li.active ul {
   display: block;
@@ -7938,21 +7939,50 @@ main .menu-summary ul li ul li {
   list-style: none;
 }
 main .menu-summary ul li a {
-  display: inline-block;
-}
-main .menu-summary ul li a:after {
-  content: ' ';
-  display: block;
-  height: 1px;
-  width: 0px;
-  border-bottom: 1px solid #2fc0aa;
   -webkit-transition: 0.2s all ease-out 0s;
   transition: 0.2s all ease-out 0s;
 }
-main .menu-summary ul li a.active:after,
-main .menu-summary ul li a:hover:after {
-  width: 100%;
-}
 main .menu-summary ul li a:hover {
   color: #2fc0aa;
+}
+.documentation main .menu-summary ul {
+  margin: 0;
+}
+.documentation main .menu-summary ul.nav {
+  margin: 1em 0;
+}
+.documentation main .menu-summary ul.nav > li {
+  border-bottom: 1px dashed #2fc0aa;
+  padding: 1em 0;
+}
+.documentation main .menu-summary ul.nav > li > a {
+  font-size: 1.8rem;
+}
+.documentation main .menu-summary ul.nav > li ul {
+  padding-top: 0.5em;
+}
+.documentation main .menu-summary ul.nav > li > ul > li {
+  padding-top: 1em;
+}
+.documentation main .menu-summary ul.nav > li > ul > li:nth-child(1) {
+  padding-top: 0;
+}
+.documentation main .menu-summary ul li {
+  list-style: none;
+}
+.documentation main .menu-summary ul li a:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  font-size: 1.6rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #000;
+  content: '\f105';
+  margin-right: 5px;
+}
+.documentation main .menu-summary ul li ul {
+  padding-left: 20px;
 }

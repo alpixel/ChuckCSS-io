@@ -90,13 +90,13 @@
                         <a href="getting-started">Getting started</a>
                     </li>
                     <li>
-                        <a href="https://github.com/alpixel/ChuckCSS" class="external-link">Download</a>
-                    </li>
-                    <li>
                         <a href="documentation" class="active">Documentation</a>
                     </li>
                     <li>
                         <a href="reminder">Reminder</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/alpixel/ChuckCSS" class="external-link">Download</a>
                     </li>
                     <li class="last">
                         <a href="https://twitter.com/chuckcss" class=" external-link btn fa-twitter">Follow me on Twitter</a>
@@ -126,8 +126,184 @@
             </section>
 
             <section class="inside">
-                <h2 class="cc-txt-center cc-pat-50 cc-pab-50">This page is under development.</h2>
+                <div class="columns">
+                    <aside class="cc-3 menu-summary cc-hidden-m-down">
+                        <div id="left-navbar">
+                            <h3>Documentation</h3>
+                            <ul class="nav" role="tablist">
+                                <li class="active">
+                                    <a href="#general-presentation">
+                                        General presentation
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#chuckcss-default-setups">
+                                        ChuckCSS default setups
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="#chuckcss-default-setups-typography">
+                                                Typography
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Breakpoints (media-queries)
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Colors
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Others settings
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Components</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Alerts</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Badges</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Grids</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Messages</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Modals</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Tabs</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Elements</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Blockquotes</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Buttons</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Forms</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Images</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Lists</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Loaders</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Tables</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Titles</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Helpers</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Texts helpers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Block helpers</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Icons</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">FontAwesome</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ionicons</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <section class="reminder-list cc-12 cc-9-l">
+                        <!-- General presenation -->
+                        <div class="wrap-feature">
+                            <h3 id="general-presentation">
+                                <a href="#general-presentation" class="ion-link">General presentation</a>
+                            </h3>
 
+                            <p>
+                                ChuckCSS is a flexible, adaptative, mobile-first and easy to learn CSS framework.<br /><br />
+                                Including the <strong>chuckcss.min.css</strong> file in your projects provides you just what you need to build modern websites, with flexible grids and powerful class.<br /><br />
+                                <strong>If you are familiar with Less language,</strong> I recommend you to work directly with ChuckCSS source files, and compiling sources by yourself with Gulp or Grunt (or others css compilers). In this way, you can customize ChuckCSS with your own specific needs (colors, font-sizes, breakpoints, loaders speed animations, etc...).
+                            </p>
+
+                            <h4 class="fa-angle-right">Why Less ? Why not SASS ? Why not both ?</h4>
+                            <p>
+                                Even if SASS is the most CSS extension used in the world, I am not familiar enough with it to write a complete CSS framework. I have been particularly concerned by Less language many years ago.<br />
+                                Nevertheless, it is not excluded that one day, the community or I will write ChuckCSS in SASS language :)
+                            </p>
+                        </div>
+
+                        <!-- General presenation -->
+                        <div class="wrap-feature">
+                            <h3 id="chuckcss-default-setups">
+                                <a href="#chuckcss-default-setups" class="ion-link">ChuckCSS default setups</a>
+                            </h3>
+
+                            <p>
+                                All variables are defined in the <strong>settings.less</strong> file (root directory).
+                            </p>
+
+                            <h4 id="chuckcss-default-setups-typography" class="fa-angle-right">
+                                <a href="#chuckcss-default-setups-typography">
+                                    Typography
+                                </a>
+                            </h4>
+                            <p>
+                                ChuckCSS is based on CSS3 units : <strong>rem & em for moderns browsers</strong> and <strong>px unit for olds browsers.</strong><br />
+                                <strong>The rem unit (root em)</strong> is relative to the font-size of the root element &lt;html>.
+                            </p>
+
+                            <div class="alert alert-warning ion-ios-lightbulb">
+                                In ChuckCSS, the following CSS properties are applied to the &lt;body> element :
+                                <ul>
+                                    <li>Font-family : Helvetica Neue</li>
+                                    <li>Font-size : 15px (1.5rem)</li>
+                                    <li>Line-height : 1.5</li>
+                                    <li>Text color : #3a3a3a</li>
+                                </ul>
+                            </div>
+                            <p>
+                                The &lt;html> base font-size is set at 62.5%. By this way, the rems is similar to using px :
+                            </p>
+                            <ul>
+                                <li>1rem = 10px</li>
+                                <li>1.1rem = 11px</li>
+                                <li>1.2rem = 12px</li>
+                                <li>...</li>
+                            </ul>
+                            <div class="alert alert-info fa-thumbs-up">
+                                For your front-end developments, the best way is to define elements font-size <strong>in em units</strong> to keep the typography adaptative.
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </section>
         </main>
 
