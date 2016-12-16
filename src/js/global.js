@@ -62,10 +62,10 @@
             e.preventDefault();
 
             if($(this).hasClass('is-active')) {
-                $('html,body, .js-nav').removeClass('opened');
+                $('html,body').removeClass('opened');
                 $(this).removeClass('is-active');
             } else {
-                $('html,body, .js-nav').addClass('opened');
+                $('html,body').addClass('opened');
                 $(this).addClass('is-active');
             }
         });
@@ -149,9 +149,8 @@
         });
 
 
-        // Affix
+        // Affix + ScrollSpy
         if(currentWindowWidth > MWidthMax) {
-
             if((264 + $('#left-navbar').outerHeight()) < currentWindowHeight) {
                 $('#left-navbar').affix({
                     offset: {
@@ -161,7 +160,7 @@
             }
             $('body').scrollspy({
                 target: '#left-navbar',
-                offset : 150
+                offset : 250
             });
         }
 
