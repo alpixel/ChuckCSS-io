@@ -74,6 +74,7 @@ body {
     min-height:100vh;
     ._roboto;
 
+    // Opened menu on smartphones
     &.opened {
         overflow:hidden !important;
 
@@ -123,6 +124,7 @@ body {
     });
 }
 
+// Granim.js
 .anim-bg {
     position: absolute;
     display: block;
@@ -385,6 +387,7 @@ main {
             }
         });
     }
+
     // Top section on all pages
     .page-presentation {
         color:white;
@@ -531,27 +534,43 @@ main {
             }
         }
 
-        h3 {
-            margin-bottom:10px;
-        }
-
-        h4 {
-            color:@chuckgreen-da;
-            margin:30px 0;
-            border-bottom:1px dashed @chuckgreen-da;
-            padding-bottom:5px;
+        h2 {
+            font-size:1.5em;
+            margin-bottom:30px;
 
             a {
-                color:@chuckgreen-da;
+                ._transition;
+
+                &:before {
+                    color:@gray;
+                }
+
+                &:hover {
+                    &:before {
+                        color:@chuckgreen-da;
+                    }
+                }
             }
         }
 
-        h5 {
+        h3 {
+            font-size:1.3em;
 
+            .documentation & {
+                color:@chuckgreen-da;
+                margin:60px 0 30px;
+
+                border-bottom:1px dashed @chuckgreen-da;
+                padding-bottom:5px;
+
+                a {
+                    color:@chuckgreen-da;
+                }
+            }
         }
     }
 
-    // Menu navigation
+    // Menu navigation in reminder & documentation pages
     .menu-summary {
 
         #left-navbar {
@@ -620,10 +639,6 @@ main {
                         border-bottom:1px dashed @chuckgreen-da;
                         padding:1em 0;
 
-                        & > a {
-                            font-size:1.8rem;
-                        }
-
                         ul {
                             padding-top:0.5em;
                         }
@@ -664,31 +679,6 @@ main {
 
     // Specific for reminder page
     .reminder & {
-
-        // section with tables
-        .reminder-list {
-            padding:0;
-
-            h3 a {
-                ._transition;
-
-                &:before {
-                    color:@gray;
-                }
-
-                &:hover {
-                    &:before {
-                        color:@chuckgreen-da;
-                    }
-                }
-            }
-
-            ._media-m-up({
-                padding:1em;
-            });
-        }
-
-
         table {
             margin:0;
 
@@ -743,16 +733,13 @@ main {
         }
     }
 
-    // Specific for documentation page
-    .documentation & {
-        .documentation-list {
-            padding:0;
 
-            ._media-m-up({
-                padding:1em;
-            });
-        }
+    .reminder-list,
+    .documentation-list {
+        padding:0;
+
+        ._media-m-up({
+            padding:1em;
+        });
     }
-
-
 }
