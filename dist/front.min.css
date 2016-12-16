@@ -999,7 +999,6 @@ table {
   border-collapse: collapse;
   overflow-x: auto;
   margin: 1em 0;
-  display: block;
   width: 100%;
   /* headers & footer default style */
   /* note : "thead td" has no sense but that is the way some WYSIWYG editors generates tables headers */
@@ -1077,7 +1076,6 @@ table.cc-unbordered thead tr th {
 @media screen and (min-width: 768px) {
   table {
     overflow-x: initial;
-    display: table;
   }
   table tbody td {
     font-size: 1.6rem;
@@ -7384,6 +7382,16 @@ body a.black {
 body a.black:hover {
   background-color: black;
 }
+body span.code {
+  display: inline-block;
+  background-color: #2a2a2a;
+  font-family: monospace;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  padding: 0 0.5em;
+  color: white;
+  font-size: 1.3rem;
+}
 .inside {
   width: 90%;
   margin: 0 auto;
@@ -7847,23 +7855,6 @@ main .wrap-feature h4:after {
   height: 0px;
   border-bottom: 1px dashed #2fc0aa;
   margin-top: 5px;
-}
-main .wrap-feature table.breakpoints-table thead td,
-main .wrap-feature table.breakpoints-table tfoot td,
-main .wrap-feature table.breakpoints-table thead th,
-main .wrap-feature table.breakpoints-table tfoot th {
-  padding: 1em 0;
-}
-main .wrap-feature table.breakpoints-table tbody tr:nth-child(1) td {
-  padding: 1em 0;
-  border: 0;
-}
-main .wrap-feature table.breakpoints-table tbody tr td {
-  padding: 0;
-  border-right: 1px solid #e0e0e0;
-}
-main .wrap-feature table.breakpoints-table i:before {
-  margin-right: 0;
 }
 .reminder main .reminder-list {
   padding: 0;

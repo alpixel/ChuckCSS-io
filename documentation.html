@@ -148,7 +148,7 @@
                                         </li>
                                         <li>
                                             <a href="#chuckcss-default-setups-breakpoints">
-                                                Breakpoints (media-queries)
+                                                Breakpoints
                                             </a>
                                         </li>
                                         <li>
@@ -312,126 +312,276 @@
                             <p>
                                 ChuckCSS is mobile-first and is based on 4 breakpoints :
                             </p>
-                            <ul>
-                                <li>360px</li>
-                                <li>768px</li>
-                                <li>990px</li>
-                                <li>1200px</li>
-                            </ul>
-
-                            <table class="cc-equal-cols breakpoints-table">
-
+                            <table class="cc-striped">
+                                <thead>
+                                    <tr>
+                                        <th>breakpoint</th>
+                                        <th>suffix</th>
+                                        <th>description</th>
+                                    </tr>
+                                </thead>
                                 <tfoot>
-                                    <td colspan="5" class="cc-txt-center">
-                                        screen width (in px)
-                                    </td>
+                                    <tr>
+                                        <td>breakpoint</td>
+                                        <td>suffix</td>
+                                        <td>description</td>
+                                    </tr>
                                 </tfoot>
                                 <tbody>
                                     <tr>
-                                        <td>
-                                            0px
-                                        </td>
-                                        <td>
-                                            360px
-                                        </td>
-                                        <td>
-                                            768px
-                                        </td>
-                                        <td>
-                                            990px
-                                        </td>
-                                        <td>
-                                            1200px
-                                        </td>
+                                        <td>359px</td>
+                                        <td><span class="code">-xs</span></td>
+                                        <td>X-Small screens from <strong>0 to 359px</strong> (very tiny screens)</td>
                                     </tr>
                                     <tr>
-                                        <td class="no-padding">
-                                            <div class="cc-bg-primary columns cc-justify-between cc-txt-center">
-                                                <div class="cc-pa-0">
-                                                    <i class="ion-ios-arrow-thin-left"></i>
-                                                </div>
-                                                <div class="cc-pa-0 cc-6">
-                                                    <span>-xs</span>
-                                                </div>
-                                                <div class="cc-pa-0">
-                                                    <i class="ion-ios-arrow-thin-right"></i>
-                                                </div>
+                                        <td>767px</td>
+                                        <td><span class="code">-s</span></td>
+                                        <td>Small screens from <strong>360px to 767px</strong> (standard smartphones)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>989px</td>
+                                        <td><span class="code">-m</span></td>
+                                        <td>Medium screens from <strong>768px to 989px</strong> (tablet portrait)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1199px</td>
+                                        <td><span class="code">-l</span></td>
+                                        <td>Large screens from <strong>990px to 1199px</strong> (tablet landscape)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&gt; 1199px</td>
+                                        <td><span class="code">-xl</span></td>
+                                        <td>X-Large screens higher to <strong>1199px</strong> (standard desktop)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="alert alert-info fa-thumbs-up">
+                                If you compile sources by yourself, <strong>you can change the breakpoints values in the settings.less file.</strong>
+                            </div>
+                            <pre class="HTML">
+                                <code class="language-less"><!-- -->
+                                    /* Breakpoints definitions in settings.less file */
+                                    /*
+                                        -- @ Media Queries @ --
+                                    */
+                                    @xs-media-mw : 359px;     /* Max-width for xs screens */
+                                    @s-media-mw : 767px;      /* Max-width for small devices */
+                                    @m-media-mw : 989px;      /* Max-width for medium devices */
+                                    @l-media-mw : 1199px;     /* Max-width for large devices */
+                                </code>
+                            </pre>
+
+
+                            <!-- COLORS -->
+                            <h4 id="chuckcss-default-setups-colors" class="fa-angle-right">
+                                <a href="#chuckcss-default-setups-colors">
+                                    Colors
+                                </a>
+                            </h4>
+                            <p>
+                                By default, ChuckCSS has <strong>7 colors you can use.</strong> All colors are defined in the settings.less file.
+                            </p>
+
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="cc-w-40">
+                                            color name
+                                        </th>
+                                        <th>
+                                            color hexa
+                                        </th>
+                                        <th>
+                                            color render
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <td>
+                                            color name
+                                        </td>
+                                        <td>
+                                            color hexa
+                                        </td>
+                                        <td>
+                                            color render
+                                        </td>
+                                    </tr>
+                                </tfoot>
+
+                                <tbody>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            Primary
+                                        </td>
+                                        <td>
+                                            #29b7e1
+                                        </td>
+                                        <td>
+                                            <div class="cc-bg-primary cc-pa">
+                                                primary
                                             </div>
                                         </td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
                                     </tr>
                                     <tr>
-                                        <td class="no-padding" colspan="2">
-                                            <div class="cc-bg-orange columns cc-justify-between cc-txt-center">
-                                                <div class="cc-pa-0">
-                                                    <i class="ion-ios-arrow-thin-left"></i>
-                                                </div>
-                                                <div class="cc-pa-0 cc-6">
-                                                    <span>-s</span>
-                                                </div>
-                                                <div class="cc-pa-0">
-                                                    <i class="ion-ios-arrow-thin-right"></i>
-                                                </div>
+                                        <td class="reminder-class">
+                                            Green
+                                        </td>
+                                        <td>
+                                            #80ae37
+                                        </td>
+                                        <td>
+                                            <div class="cc-bg-green cc-pa">
+                                               green
                                             </div>
                                         </td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
                                     </tr>
                                     <tr>
-                                        <td class="no-padding" colspan="3">
-                                            <div class="cc-bg-purple columns cc-justify-between cc-txt-center">
-                                                <div class="cc-pa-0">
-                                                    <i class="ion-ios-arrow-thin-left"></i>
-                                                </div>
-                                                <div class="cc-pa-0 cc-6">
-                                                    <span>-m</span>
-                                                </div>
-                                                <div class="cc-pa-0">
-                                                    <i class="ion-ios-arrow-thin-right"></i>
-                                                </div>
+                                        <td class="reminder-class">
+                                            Red
+                                        </td>
+                                        <td>
+                                            #c41515
+                                        </td>
+                                        <td>
+                                            <div class="cc-bg-red cc-pa">
+                                                red
                                             </div>
                                         </td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
                                     </tr>
                                     <tr>
-                                        <td class="no-padding" colspan="4">
-                                            <div class="cc-bg-red columns cc-justify-between cc-txt-center">
-                                                <div class="cc-pa-0">
-                                                    <i class="ion-ios-arrow-thin-left"></i>
-                                                </div>
-                                                <div class="cc-pa-0 cc-6">
-                                                    <span>-l</span>
-                                                </div>
-                                                <div class="cc-pa-0">
-                                                    <i class="ion-ios-arrow-thin-right"></i>
-                                                </div>
+                                        <td class="reminder-class">
+                                            Blue
+                                        </td>
+                                        <td>
+                                            #3498db
+                                        </td>
+                                        <td>
+                                            <div class="cc-bg-blue cc-pa">
+                                                blue
                                             </div>
                                         </td>
-                                        <td>&nbsp;</td>
                                     </tr>
                                     <tr>
-                                        <td class="no-padding" colspan="5">
-                                            <div class="cc-bg-blue columns cc-justify-between cc-txt-center">
-                                                <div class="cc-pa-0">
-                                                    <i class="ion-ios-arrow-thin-left"></i>
-                                                </div>
-                                                <div class="cc-pa-0 cc-6">
-                                                    <span>-xl</span>
-                                                </div>
-                                                <div class="cc-pa-0">
-                                                    <i class="ion-ios-arrow-thin-right"></i>
-                                                </div>
+                                        <td class="reminder-class">
+                                            Purple
+                                        </td>
+                                        <td>
+                                            #8e44ad
+                                        </td>
+                                        <td>
+                                            <div class="cc-bg-purple cc-pa">
+                                                purple
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            Orange
+                                        </td>
+                                        <td>
+                                            #f39c12
+                                        </td>
+                                        <td>
+                                            <div class="cc-bg-orange cc-pa">
+                                                orange
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            Yellow
+                                        </td>
+                                        <td>
+                                            #f1c40f
+                                        </td>
+                                        <td>
+                                            <div class="cc-bg-yellow cc-pa">
+                                                yellow
                                             </div>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
 
+                            <div class="alert alert-info fa-thumbs-up">
+                                If you compile sources by yourself, <strong>you can change / add / remove colors in the settings.less file.</strong><br /><br />
+                                If you want to create new colors class <span class="code">class="cc-bg-mynewcolor"</span> and <span class="code">class="cc-mynewcolor"</span>, you have to add your new color definitions to the @aColors array (at the bottom of colors definitions).
+                            </div>
+                            <div class="alert alert-error fa-exclamation-circle">
+                                As you can see, <strong>there is also a @gray color,</strong> but it is voluntarily excluded to @aColors array.<br />
+                                It means that <span class="code">class="cc-gray"</span>(for texts color property) and <span class="code">class="cc-bg-gray"</span> (for background-color property) does not work in ChuckCSS.
+                            </div>
+                            <pre class="HTML collapsed">
+                                <code class="language-less"><!-- -->
+                                    /* Colors definitions in settings.less file */
+                                    /*
+                                        -- @ Colors @ --
+                                    */
+                                    /* Primary color */
+                                    @primary : #29b7e1;
+                                    @primary-na : primary;                  /* Name of the color, for @aColors array */
+                                    @primary-li : lighten(@primary,10%);    /* Lighten primary */
+                                    @primary-da : darken(@primary,10%);     /* Darken primary */
+
+                                    // Green
+                                    @green : #80ae37;
+                                    @green-na : green;                      /* Name of the color, for @aColors array */
+                                    @green-li : lighten(@green,10%);        /* Lighten green */
+                                    @green-da : darken(@green,10%);         /* Darken green */
+
+                                    // red
+                                    @red :   #c41515;
+                                    @red-na : red;                          /* Name of the color, for @aColors array */
+                                    @red-li : lighten(@red,10%);            /* Lighten red */
+                                    @red-da : darken(@red,10%);             /* Darken red */
+
+                                    // gray
+                                    @gray : #bababa;
+                                    @gray-na : gray;                        /* Name of the color, for @aColors array */
+                                    @gray-li : lighten(@gray,10%);          /* Lighten gray */
+                                    @gray-da : darken(@gray,10%);           /* Darken gray */
+
+                                    // blue
+                                    @blue : #3498db;
+                                    @blue-na : blue;                        /* Name of the color, for @aColors array */
+                                    @blue-li : lighten(@blue,10%);          /* Lighten blue */
+                                    @blue-da : darken(@blue,10%);           /* Darken blue */
+
+                                    // purple
+                                    @purple : #8e44ad;
+                                    @purple-na : purple;                    /* Name of the color, for @aColors array */
+                                    @purple-li : lighten(@purple,10%);      /* Lighten purple */
+                                    @purple-da : darken(@purple,10%);       /* Darken purple */
+
+                                    // orange
+                                    @orange : #f39c12;
+                                    @orange-na : orange;                    /* Name of the color, for @aColors array */
+                                    @orange-li : lighten(@orange,10%);      /* Lighten orange */
+                                    @orange-da : darken(@orange,10%);       /* Darken orange */
+
+                                    // yellow
+                                    @yellow : #f1c40f;
+                                    @yellow-na : yellow;                    /* Name of the color, for @aColors array */
+                                    @yellow-li : lighten(@yellow,10%);      /* Lighten yellow */
+                                    @yellow-da : darken(@yellow,10%);       /* Darken yellow */
+
+
+                                    // Colors array : Add any color you want \m/
+                                    // array(@color1-name @color1-value, @color2-name @color2-value,...);
+                                    @aColors :
+                                        @primary-na @primary,
+                                        @green-na @green,
+                                        @red-na @red,
+                                        @blue-na @blue,
+                                        @purple-na @purple,
+                                        @orange-na @orange,
+                                        @yellow-na @yellow;
+                                </code>
+                            </pre>
+                            <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
 
 
                         </div>

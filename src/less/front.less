@@ -90,6 +90,17 @@ body {
             }
         }
     }
+
+    span.code {
+        display:inline-block;
+        background-color:#2a2a2a;
+        font-family:monospace;
+        text-shadow:0 1px rgba(0, 0, 0, 0.3);
+        border-radius:2px;
+        padding:0 0.5em;
+        color:white;
+        font-size:1.3rem;
+    }
 }
 
 .inside {
@@ -529,34 +540,6 @@ main {
                 height:0px;
                 border-bottom:1px dashed @chuckgreen-da;
                 margin-top:5px;
-            }
-        }
-
-        table.breakpoints-table {
-            thead,
-            tfoot {
-                td,th {
-                    padding:1em 0;
-                }
-            }
-
-            tbody tr {
-                &:nth-child(1) {
-                    td {
-                        padding:1em 0;
-                        border:0;
-                    }
-                }
-                td{
-                    padding:0;
-                    border-right:1px solid #e0e0e0
-                }
-            }
-
-            i {
-                &:before {
-                    margin-right:0;
-                }
             }
         }
     }
