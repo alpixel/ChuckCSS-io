@@ -7856,62 +7856,6 @@ main .wrap-feature h4:after {
   border-bottom: 1px dashed #2fc0aa;
   margin-top: 5px;
 }
-.reminder main .reminder-list {
-  padding: 0;
-}
-.reminder main .reminder-list h3 a {
-  -webkit-transition: 0.2s all ease-out 0s;
-  transition: 0.2s all ease-out 0s;
-}
-.reminder main .reminder-list h3 a:before {
-  color: #bababa;
-}
-.reminder main .reminder-list h3 a:hover:before {
-  color: #2fc0aa;
-}
-@media screen and (min-width: 990px) {
-  .reminder main .reminder-list {
-    padding: 1em;
-  }
-}
-.reminder main table {
-  margin: 0;
-}
-.reminder main table td.reminder-class span {
-  display: inline-block;
-  background-color: #272822;
-  border-radius: 4px;
-  color: white;
-  padding: 3px 1em;
-  font-family: monospace;
-  font-size: 1.3rem;
-}
-.reminder main table tbody td:nth-child(2) {
-  font-weight: 600;
-}
-.reminder main table tbody td:nth-child(3) {
-  font-style: italic;
-  color: #a1a1a1;
-}
-.reminder main table tbody td:nth-child(3) strong {
-  font-weight: 600;
-  color: #29b7e1;
-}
-.reminder main table tbody td:nth-child(3) em {
-  color: black;
-}
-.reminder main table tbody td:nth-child(3) a {
-  color: black;
-  border-bottom: 1px dotted black;
-}
-.reminder main table tbody td.colspan {
-  padding-top: 50px;
-}
-.reminder main table tbody td.colspan a {
-  color: #bbbbbb;
-  font-size: 2rem;
-  font-weight: 300;
-}
 main .menu-summary #left-navbar.affix {
   position: fixed;
   top: 0;
@@ -7993,4 +7937,68 @@ main .menu-summary ul li a:hover {
 }
 .documentation main .menu-summary ul li ul {
   padding-left: 20px;
+}
+.reminder main .reminder-list {
+  padding: 0;
+}
+.reminder main .reminder-list h3 a {
+  -webkit-transition: 0.2s all ease-out 0s;
+  transition: 0.2s all ease-out 0s;
+}
+.reminder main .reminder-list h3 a:before {
+  color: #bababa;
+}
+.reminder main .reminder-list h3 a:hover:before {
+  color: #2fc0aa;
+}
+@media screen and (min-width: 990px) {
+  .reminder main .reminder-list {
+    padding: 1em;
+  }
+}
+.reminder main table {
+  margin: 0;
+}
+.reminder main table td.reminder-class span {
+  display: inline-block;
+  background-color: #272822;
+  border-radius: 4px;
+  color: white;
+  padding: 3px 1em;
+  font-family: monospace;
+  font-size: 1.3rem;
+}
+.reminder main table tbody td:nth-child(2) {
+  font-weight: 600;
+}
+.reminder main table tbody td:nth-child(3) {
+  font-style: italic;
+  color: #a1a1a1;
+}
+.reminder main table tbody td:nth-child(3) strong {
+  font-weight: 600;
+  color: #29b7e1;
+}
+.reminder main table tbody td:nth-child(3) em {
+  color: black;
+}
+.reminder main table tbody td:nth-child(3) a {
+  color: black;
+  border-bottom: 1px dotted black;
+}
+.reminder main table tbody td.colspan {
+  padding-top: 50px;
+}
+.reminder main table tbody td.colspan a {
+  color: #bbbbbb;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.documentation main .documentation-list {
+  padding: 0;
+}
+@media screen and (min-width: 990px) {
+  .documentation main .documentation-list {
+    padding: 1em;
+  }
 }

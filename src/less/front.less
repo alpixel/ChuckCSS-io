@@ -544,87 +544,6 @@ main {
         }
     }
 
-    // Specific for reminder page
-    .reminder & {
-
-        // section with tables
-        .reminder-list {
-            padding:0;
-
-            h3 a {
-                ._transition;
-
-                &:before {
-                    color:@gray;
-                }
-
-                &:hover {
-                    &:before {
-                        color:@chuckgreen-da;
-                    }
-                }
-            }
-
-            ._media-m-up({
-                padding:1em;
-            });
-        }
-
-
-        table {
-            margin:0;
-
-            td.reminder-class {
-                span {
-                    display:inline-block;
-                    background-color:#272822;
-                    border-radius:4px;
-                    color:white;
-                    padding:3px 1em;
-                    font-family:monospace;
-                    font-size:1.3rem;
-                }
-            }
-
-            tbody {
-                td:nth-child(2) {
-                    font-weight:600;
-                }
-
-                td:nth-child(3) {
-                    font-style:italic;
-                    color:@gray-da;
-
-                    strong {
-                        font-weight:600;
-                        color:@primary;
-                    }
-
-                    em {
-                        color:black;
-                    }
-
-                    a {
-                        color:black;
-                        border-bottom:1px dotted black;
-                    }
-
-                }
-
-                td.colspan {
-                    padding-top: 50px;
-
-                    a {
-                        color:#bbbbbb;
-                        font-size:2rem;
-                        font-weight: 300;
-
-                    }
-                }
-            }
-        }
-    }
-
     // Menu navigation
     .menu-summary {
 
@@ -735,4 +654,97 @@ main {
             }
         }
     }
+
+    // Specific for reminder page
+    .reminder & {
+
+        // section with tables
+        .reminder-list {
+            padding:0;
+
+            h3 a {
+                ._transition;
+
+                &:before {
+                    color:@gray;
+                }
+
+                &:hover {
+                    &:before {
+                        color:@chuckgreen-da;
+                    }
+                }
+            }
+
+            ._media-m-up({
+                padding:1em;
+            });
+        }
+
+
+        table {
+            margin:0;
+
+            td.reminder-class {
+                span {
+                    display:inline-block;
+                    background-color:#272822;
+                    border-radius:4px;
+                    color:white;
+                    padding:3px 1em;
+                    font-family:monospace;
+                    font-size:1.3rem;
+                }
+            }
+
+            tbody {
+                td:nth-child(2) {
+                    font-weight:600;
+                }
+
+                td:nth-child(3) {
+                    font-style:italic;
+                    color:@gray-da;
+
+                    strong {
+                        font-weight:600;
+                        color:@primary;
+                    }
+
+                    em {
+                        color:black;
+                    }
+
+                    a {
+                        color:black;
+                        border-bottom:1px dotted black;
+                    }
+
+                }
+
+                td.colspan {
+                    padding-top: 50px;
+
+                    a {
+                        color:#bbbbbb;
+                        font-size:2rem;
+                        font-weight: 300;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .documentation & {
+        .documentation-list {
+            padding:0;
+
+            ._media-m-up({
+                padding:1em;
+            });
+        }
+    }
+
+
 }
