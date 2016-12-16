@@ -147,6 +147,11 @@
                                             </a>
                                         </li>
                                         <li>
+                                            <a href="#chuckcss-default-setups-titles">
+                                                Titles Hn
+                                            </a>
+                                        </li>
+                                        <li>
                                             <a href="#chuckcss-default-setups-breakpoints">
                                                 Breakpoints
                                             </a>
@@ -162,8 +167,8 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#chuckcss-default-setups-others">
-                                                Others settings
+                                            <a href="#chuckcss-default-setups-helpers">
+                                                Helpers
                                             </a>
                                         </li>
                                     </ul>
@@ -272,7 +277,7 @@
                             </h3>
 
                             <p>
-                                All variables are defined in the <strong>settings.less</strong> file (root directory).
+                                All variables are defined in the <strong>settings.less</strong> file.
                             </p>
 
 
@@ -316,7 +321,7 @@
                                 Assuming the default font-size is set to "px" units, and is called "@font-size", the calculation rules are :<br />
                                 <strong>In pixels units :</strong> @font-size px<br />
                                 <strong>In em units :</strong> ((wanted font-size in pixels) / @font-size )em &lt;==&gt; Relative to the parent font-size!!<br />
-                                <strong>In rem units :</strong> ((wanted font-size in pixels) / 10)rem
+                                <strong>In rem units :</strong> ((wanted font-size in pixels) / 10)rem &lt;==&gt; Relative to the root font-size!!
                             </div>
                             <div class="alert alert-warning ion-ios-lightbulb">
                                 In ChuckCSS, the default font-size is set to <strong>15px.</strong>
@@ -379,8 +384,6 @@
                                 </tbody>
                             </table>
 
-
-
                             <pre class="HTML">
                                 <code class="language-less"><!-- -->
                                     /* Text definitions in settings.less file */
@@ -394,6 +397,90 @@
                                 </code>
                             </pre>
 
+                            <!-- TITLES Hn -->
+                            <h4 id="chuckcss-default-setups-titles" class="fa-angle-right">
+                                <a href="#chuckcss-default-setups-titles">
+                                    Titles Hn
+                                </a>
+                            </h4>
+                            <p>
+                                Titles are set in <strong>em units</strong>, in order to keep the typography adaptative.<br />
+                                The default color is the same as the &lt;body> : #3a3a3a
+                            </p>
+
+                            <table class="cc-striped">
+                                <thead>
+                                    <tr>
+                                        <th>element</th>
+                                        <th>font-size</th>
+                                        <th>line-height</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <td>element</td>
+                                        <td>font-size</td>
+                                        <td>line-height</td>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="code">&lt;h1></span><br /><span class="code">* class="h1-like"</span></td>
+                                        <td><strong>2em</strong><br />~= 30px<br />~= 3.0rem</td>
+                                        <td><strong>1.5</strong><br />~= 45px<br />~= 4.5rem</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="code">&lt;h2></span><br /><span class="code">* class="h2-like"</span></td>
+                                        <td><strong>1.8em</strong><br />~= 27px<br />~= 2.7rem</td>
+                                        <td><strong>1.5</strong><br />~= 40px<br />~= 4.0rem</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="code">&lt;h3></span><br /><span class="code">* class="h3-like"</span></td>
+                                        <td><strong>1.6em</strong><br />~= 24px<br />~= 2.4rem</td>
+                                        <td><strong>1.5</strong><br />~= 36px<br />~= 3.6rem</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="code">&lt;h4></span><br /><span class="code">* class="h4-like"</span></td>
+                                        <td><strong>1.4em</strong><br />~= 21px<br />~= 2.1rem</td>
+                                        <td><strong>1.5</strong><br />~= 31px<br />~= 3.1rem</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="code">&lt;h5></span><br /><span class="code">* class="h5-like"</span></td>
+                                        <td><strong>1.266em</strong><br />~= 19px<br />~= 1.9rem</td>
+                                        <td><strong>1.5</strong><br />~= 28px<br />~= 2.8rem</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="code">&lt;h6></span><br /><span class="code">* class="h6-like"</span></td>
+                                        <td><strong>1.2em</strong><br />~= 18px<br />~= 1.8rem</td>
+                                        <td><strong>1.5</strong><br />~=27px<br />~= 2.7rem</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <pre class="HTML">
+                                <code class="language-less"><!-- -->
+                                    /* Titles definitions in settings.less file */
+                                    /*
+                                        -- @ Titles @ --
+                                    */
+                                    @title-mc : @text-mc;                       /* Hn ~ Titles main color */
+                                    @title-h1-fs : unit(30/@text-fs-old, em);   // ~= 2em = 30px = 3rem
+                                    @title-h1-lh : 1.5;                         // ~= 45px = 4.5rem
+                                    @title-h2-fs : unit(27/@text-fs-old, em);   // ~= 1.8em = 27px = 2.7rem
+                                    @title-h2-lh : 1.5;                         // ~= 40px = 4rem
+                                    @title-h3-fs : unit(24/@text-fs-old, em);   // ~= 1.6em = 24px = 2.4rem
+                                    @title-h3-lh : 1.5;                         // ~= 36px = 3.6rem
+                                    @title-h4-fs : unit(21/@text-fs-old, em);   // ~= 1.4em = 21px = 2.1rem
+                                    @title-h4-lh : 1.5;                         // ~= 31px = 3.1rem
+                                    @title-h5-fs : unit(19/@text-fs-old, em);   // ~= 1.266em = 19px = 1.9rem
+                                    @title-h5-lh : 1.5;                         // ~= 28px = 2.8rem
+                                    @title-h6-fs : unit(18/@text-fs-old, em);   // ~= 1.2em = 18px = 1.8rem
+                                    @title-h6-lh : 1.5;                         // ~= 27px = 2.7rem
+
+                                    @subtitle-mc : lighten(@title-mc,25%);  /* Subtitle font-color */
+                                    @subtitle-fs : 70%;
+                                </code>
+                            </pre>
+
 
 
                             <!-- BREAKPOINTS -->
@@ -403,7 +490,7 @@
                                 </a>
                             </h4>
                             <p>
-                                ChuckCSS is mobile-first and is based on 4 breakpoints :
+                                ChuckCSS is mobile-first and is based on 4 breakpoints : <strong>360px, 768px, 990px and 1200px</strong>
                             </p>
                             <table class="cc-striped">
                                 <thead>
@@ -411,6 +498,7 @@
                                         <th>breakpoint</th>
                                         <th>suffix</th>
                                         <th>description</th>
+                                        <th>equivalent to</th>
                                     </tr>
                                 </thead>
                                 <tfoot>
@@ -418,33 +506,39 @@
                                         <td>breakpoint</td>
                                         <td>suffix</td>
                                         <td>description</td>
+                                        <td>equivalent to</td>
                                     </tr>
                                 </tfoot>
                                 <tbody>
                                     <tr>
                                         <td>359px</td>
                                         <td><span class="code">-xs</span></td>
-                                        <td>X-Small screens from <strong>0 to 359px</strong> (very tiny screens)</td>
+                                        <td>X-Small screens from <strong>0 to 359px</strong></td>
+                                        <td>Tiny screens</td>
                                     </tr>
                                     <tr>
                                         <td>767px</td>
                                         <td><span class="code">-s</span></td>
-                                        <td>Small screens from <strong>360px to 767px</strong> (standard smartphones)</td>
+                                        <td>Small screens from <strong>360px to 767px</strong></td>
+                                        <td>Standards smartphones</td>
                                     </tr>
                                     <tr>
                                         <td>989px</td>
                                         <td><span class="code">-m</span></td>
-                                        <td>Medium screens from <strong>768px to 989px</strong> (tablet portrait)</td>
+                                        <td>Medium screens from <strong>768px to 989px</strong></td>
+                                        <td>Tablet portrait and small tablets</td>
                                     </tr>
                                     <tr>
                                         <td>1199px</td>
                                         <td><span class="code">-l</span></td>
-                                        <td>Large screens from <strong>990px to 1199px</strong> (tablet landscape)</td>
+                                        <td>Large screens from <strong>990px to 1199px</strong></td>
+                                        <td>Tablet landscape and large tablets</td>
                                     </tr>
                                     <tr>
                                         <td>&gt; 1199px</td>
                                         <td><span class="code">-xl</span></td>
-                                        <td>X-Large screens higher to <strong>1199px</strong> (standard desktop)</td>
+                                        <td>X-Large screens higher or equal to <strong>1200px</strong></td>
+                                        <td>Standards desktop</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -711,88 +805,33 @@
                             </pre>
 
 
-                            <!-- OTHERS SETTINGS -->
-                            <h4 id="chuckcss-default-setups-others" class="fa-angle-right">
-                                <a href="#chuckcss-default-setups-others">
-                                    Others settings
+                            <!-- HELPERS -->
+                            <h4 id="chuckcss-default-setups-helpers" class="fa-angle-right">
+                                <a href="#chuckcss-default-setups-helpers">
+                                    Helpers in ChuckCSS
                                 </a>
                             </h4>
-                            <h5>Titles Hn</h5>
                             <p>
-                                Titles are set in <strong>em units</strong>, in order to keep the typography adaptative.<br />
-                                The default color is the same as the &lt;body> : #3a3a3a
+                                In ChuckCSS, helpers defines the default margin and padding properties, applied to texts helpers classes <span class="code">class="cc-pa"</span> and <span class="code">class="cc-ma"</span><br /><br />
+                                By default, all helpers are set to <strong>1em</strong>
                             </p>
 
-                            <table class="cc-striped">
-                                <thead>
-                                    <tr>
-                                        <th>element</th>
-                                        <th>font-size</th>
-                                        <th>line-height</th>
-                                    </tr>
-                                </thead>
-                                <tfoot>
-                                    <tr>
-                                        <td>element</td>
-                                        <td>font-size</td>
-                                        <td>line-height</td>
-                                    </tr>
-                                </tfoot>
-                                <tbody>
-                                    <tr>
-                                        <td><span class="code">&lt;h1></span><br /><span class="code">* class="h1-like"</span></td>
-                                        <td><strong>2em</strong><br />~= 30px<br />~= 3.0rem</td>
-                                        <td><strong>1.5</strong><br />~= 45px<br />~= 4.5rem</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="code">&lt;h2></span><br /><span class="code">* class="h2-like"</span></td>
-                                        <td><strong>1.8em</strong><br />~= 27px<br />~= 2.7rem</td>
-                                        <td><strong>1.5</strong><br />~= 40px<br />~= 4.0rem</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="code">&lt;h3></span><br /><span class="code">* class="h3-like"</span></td>
-                                        <td><strong>1.6em</strong><br />~= 24px<br />~= 2.4rem</td>
-                                        <td><strong>1.5</strong><br />~= 36px<br />~= 3.6rem</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="code">&lt;h4></span><br /><span class="code">* class="h4-like"</span></td>
-                                        <td><strong>1.4em</strong><br />~= 21px<br />~= 2.1rem</td>
-                                        <td><strong>1.5</strong><br />~= 31px<br />~= 3.1rem</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="code">&lt;h5></span><br /><span class="code">* class="h5-like"</span></td>
-                                        <td><strong>1.266em</strong><br />~= 19px<br />~= 1.9rem</td>
-                                        <td><strong>1.5</strong><br />~= 28px<br />~= 2.8rem</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="code">&lt;h6></span><br /><span class="code">* class="h6-like"</span></td>
-                                        <td><strong>1.2em</strong><br />~= 18px<br />~= 1.8rem</td>
-                                        <td><strong>1.5</strong><br />~=27px<br />~= 2.7rem</td>
-                                    </tr>
-                                </tbody>
-                            </table>
                             <pre class="HTML">
                                 <code class="language-less"><!-- -->
-                                    /* Titles definitions in settings.less file */
+                                    /* Helpers definitions in settings.less file */
                                     /*
-                                        -- @ Titles @ --
+                                        -- @ Helpers @ --
                                     */
-                                    @title-mc : @text-mc;                       /* Hn ~ Titles main color */
-                                    @title-h1-fs : unit(30/@text-fs-old, em);   // ~= 2em = 30px = 3rem
-                                    @title-h1-lh : 1.5;                         // ~= 45px = 4.5rem
-                                    @title-h2-fs : unit(27/@text-fs-old, em);   // ~= 1.8em = 27px = 2.7rem
-                                    @title-h2-lh : 1.5;                         // ~= 40px = 4rem
-                                    @title-h3-fs : unit(24/@text-fs-old, em);   // ~= 1.6em = 24px = 2.4rem
-                                    @title-h3-lh : 1.5;                         // ~= 36px = 3.6rem
-                                    @title-h4-fs : unit(21/@text-fs-old, em);   // ~= 1.4em = 21px = 2.1rem
-                                    @title-h4-lh : 1.5;                         // ~= 31px = 3.1rem
-                                    @title-h5-fs : unit(19/@text-fs-old, em);   // ~= 1.266em = 19px = 1.9rem
-                                    @title-h5-lh : 1.5;                         // ~= 28px = 2.8rem
-                                    @title-h6-fs : unit(18/@text-fs-old, em);   // ~= 1.2em = 18px = 1.8rem
-                                    @title-h6-lh : 1.5;                         // ~= 27px = 2.7rem
-
-                                    @subtitle-mc : lighten(@title-mc,25%);  /* Subtitle font-color */
-                                    @subtitle-fs : 70%;
+                                    @helper-pa : 1em;      /* Used for helpers cc-pa */
+                                    @helper-pat : 1em;     /* Used for helpers cc-pat */
+                                    @helper-par : 1em;     /* Used for helpers cc-par */
+                                    @helper-pab : 1em;     /* Used for helpers cc-pab */
+                                    @helper-pal : 1em;     /* Used for helpers cc-pal */
+                                    @helper-ma : 1em;      /* Used for helpers cc-ma */
+                                    @helper-mat : 1em;     /* Used for helpers cc-mat */
+                                    @helper-mar : 1em;     /* Used for helpers cc-mar */
+                                    @helper-mab : 1em;     /* Used for helpers cc-mab */
+                                    @helper-mal : 1em;     /* Used for helpers cc-mal */
                                 </code>
                             </pre>
 
