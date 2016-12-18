@@ -291,6 +291,33 @@
                                         </li>
                                         <li>
                                             <a href="#components-messages">Messages</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#components-messages-primary">
+                                                        Primary messages
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#components-messages-error">
+                                                        Error messages
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#components-messages-success">
+                                                        Success messages
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#components-messages-warning">
+                                                        Warning messages
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#components-messages-info">
+                                                        Info messages
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </li>
                                         <li>
                                             <a href="#components-modals">Modals</a>
@@ -1285,7 +1312,7 @@
                                 <div class="exemple-intro">
                                     <p>
                                         <span class="code">class="cc-{number}"</span> : applied all devices<br />
-                                        <span class="code">class="cc-{number}-{letter}"</span> : according screen width<br /><br />
+                                        <span class="code">class="cc-{number}-{letter}"</span> : according to screen width<br /><br />
                                         <strong>{number} :</strong> can be set from 1 to @cols-total (default : 12)<br />
                                         <strong>{letter} :</strong> <a href="#chuckcss-default-setups-breakpoints">can be set to "xs", "s", "m", "l", "xl"</a>
                                     </p>
@@ -1354,7 +1381,7 @@
                                 <div class="exemple-intro">
                                     <p>
                                         <span class="code">class="cc-offset-{number}"</span> : applied on all devices<br />
-                                        <span class="code">class="cc-offset-{number}-{letter}"</span> : according screen width<br /><br />
+                                        <span class="code">class="cc-offset-{number}-{letter}"</span> : according to screen width<br /><br />
                                         <strong>{number} :</strong> can be set from 1 to @cols-total (default : 12)<br />
                                         <strong>{letter} :</strong> <a href="#chuckcss-default-setups-breakpoints">can be set to "xs", "s", "m", "l", "xl"</a>
                                     </p>
@@ -1425,8 +1452,8 @@
                                     <p>
                                         <span class="code">class="cc-first"</span> : item in first position (all devices)<br />
                                         <span class="code">class="cc-last"</span> : item in last position (all devices)<br />
-                                        <span class="code">class="cc-first-{letter}"</span> : item in first position according screen width<br />
-                                        <span class="code">class="cc-last-{letter}"</span> : item in last position according screen width<br /><br />
+                                        <span class="code">class="cc-first-{letter}"</span> : item in first position according to screen width<br />
+                                        <span class="code">class="cc-last-{letter}"</span> : item in last position according to screen width<br /><br />
                                         <strong>{letter} :</strong> <a href="#chuckcss-default-setups-breakpoints">can be set to "xs", "s", "m", "l", "xl"</a>
                                     </p>
                                 </div>
@@ -1592,7 +1619,7 @@
                                 <div class="columns">
                                     <div class="columns cc-8">
                                         <div class="cc-bg-orange cc-4">4 in 8</div>
-                                        <div class="cc-bg-purple">auto | Ridiculus ridiculus sit! Sit? Parturient placerat! Duis urna quis ac proin, ac lorem nec, cum augue aliquam tristique, est. In adipiscing platea? Sit dignissim.</div>
+                                        <div class="cc-bg-purple cc-6">6 in 8 | Ridiculus ridiculus sit!</div>
                                         <div class="cc-bg-orange cc-2">2 in 8</div>
                                     </div>
                                     <div class="columns cc-4">
@@ -1610,7 +1637,7 @@
                                         &lt;div class="columns">
                                             &lt;div class="columns cc-8">
                                                 &lt;div class="cc-4">4 in 8&lt;/div>
-                                                &lt;div>auto | Ridiculus ...&lt;/div>
+                                                &lt;div class="cc-6">6 in 8 | Ridiculus ...&lt;/div>
                                                 &lt;div class="cc-2">2 in 8&lt;/div>
                                             &lt;/div>
                                             &lt;div class="columns cc-4">
@@ -1731,14 +1758,17 @@
                                         <span class="code">class="columns cc-align-stretch"</span> : Stretch all columns on Y axis
                                     </p>
                                     <div class="alert alert-warning ion-ios-lightbulb">
-                                        To make Y alignements successful, you have to combine this classes with the <span class="code">cc-align-*</span> with the <span class="code">columns</span> classes.<br /><br />
+                                        To make Y alignements successful, you have to combine this classes with the <span class="code">cc-align-*</span> with the <span class="code">columns</span> class.<br /><br />
                                         In this way, the item will react as a flex container.
                                     </div>
                                 </div>
 
                                 <div class="columns">
                                     <div class="cc-bg-primary cc-3">
-                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. 
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone.
+                                        <p class="cc-hidden-s-down">
+                                            Incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. 
+                                        </p>
                                     </div>
                                     <div class="cc-9 columns cc-align-start">
                                         <p class="cc-bg-blue">
@@ -1766,7 +1796,10 @@
 
                                 <div class="columns">
                                     <div class="cc-bg-primary cc-3">
-                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. 
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone.
+                                        <p class="cc-hidden-s-down">
+                                            Incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. 
+                                        </p>
                                     </div>
                                     <div class="cc-9 columns cc-align-center">
                                         <p class="cc-bg-blue">
@@ -1794,7 +1827,10 @@
 
                                 <div class="columns">
                                     <div class="cc-bg-primary cc-3">
-                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. 
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone.
+                                        <p class="cc-hidden-s-down">
+                                            Incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. 
+                                        </p>
                                     </div>
                                     <div class="cc-9 columns cc-align-end">
                                         <p class="cc-bg-blue">
@@ -1854,7 +1890,10 @@
 
                                 <div class="columns">
                                     <div class="cc-bg-primary cc-3">
-                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. 
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone.
+                                        <p class="cc-hidden-s-down">
+                                            Incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. 
+                                        </p>
                                     </div>
                                     <div class="cc-9 columns cc-align-stretch">
                                         <p class="cc-bg-blue">
@@ -1986,6 +2025,221 @@
                                     </code>
                                 </pre>
                                 <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+                            </div>
+
+                            <!-- MASONRY -->
+                            <div>
+                                <h3 id="components-masonry" class="fa-angle-right">
+                                    <a href="#components-masonry">
+                                        Masoury layouts
+                                    </a>
+                                </h3>
+                                <p class="cc-txt-center cc-mab-20">
+                                    <a href="reminder#grids-masonry" class="btn cc-thin cc-bg-primary">Go to reminder</a>
+                                </p>
+                                <div class="exemple-intro">
+                                    <p>
+                                        Masonry grids are experimental in CSS3. Please check browers compatilities with <a href="http://caniuse.com/#search=column-count" class="external-link">CanIUse</a><br /><br />
+                                        <span class="code">class="columns cc-masonry"</span> : Let the grid container work as a multiple columns layout<br />
+                                        <span class="code">class="columns cc-masonry cc-{number}-{letter}"</span> : Number of columns according to screen width<br /><br />
+                                        <strong>{number} :</strong> Number of columns in the masonry grid. Can be set from 1 to infinite<br />
+                                        <strong>{letter} :</strong> <a href="#chuckcss-default-setups-breakpoints">can be set to "xs", "s", "m", "l", "xl"</a>
+                                    </p>
+                                    <div class="alert alert-warning ion-ios-lightbulb">
+                                        To make masonry layout display successful, you have to combine this classes with the <span class="code">cc-masonry</span> with the <span class="code">columns</span> class.<br><br>
+                                    </div>
+                                </div>
+                                <div class="sep"></div>
+                                
+                                <h4>Basic masonry layout</h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        The exemple below show a masonry with :
+                                    </p>
+                                    <ul>
+                                        <li>5 columns on X-Large screens</li>
+                                        <li>4 columns on Large screens</li>
+                                        <li>3 columns on Medium screens</li>
+                                        <li>2 columns on Small screens</li>
+                                        <li>1 column on X-Small screens</li>
+                                    </ul>
+                                </div>
+                                <div class="columns cc-masonry cc-5-xl cc-4-l cc-3-m cc-2-s cc-1-xs">
+                                    <div class="cc-bg-blue" style="height:100px">I'm <strong>n°1</strong> in HTML</div>
+                                    <div class="cc-bg-blue" style="height:90px">I'm <strong>n°2</strong> in HTML</div>
+                                    <div class="cc-bg-blue" style="height:70px">I'm <strong>n°3</strong> in HTML</div>
+                                    <div class="cc-bg-blue" style="height:120px">I'm <strong>n°4</strong> in HTML</div>
+                                    <div class="cc-bg-blue" style="height:90px">I'm <strong>n°5</strong> in HTML</div>
+                                    <div class="cc-bg-blue" style="height:130px">I'm <strong>n°6</strong> in HTML</div>
+                                    <div class="cc-bg-blue" style="height:100px">I'm <strong>n°7</strong> in HTML</div>
+                                    <div class="cc-bg-blue" style="height:100px">I'm <strong>n°8</strong> in HTML</div>
+                                    <div class="cc-bg-blue" style="height:90px">I'm <strong>n°9</strong> in HTML</div>
+                                    <div class="cc-bg-blue" style="height:70px">I'm <strong>n°10</strong> in HTML</div>
+                                    <div class="cc-bg-blue" style="height:120px">I'm <strong>n°11</strong> in HTML</div>
+                                    <div class="cc-bg-blue" style="height:90px">I'm <strong>n°12</strong> in HTML</div>
+                                    <div class="cc-bg-blue" style="height:130px">I'm <strong>n°13</strong> in HTML</div>
+                                    <div class="cc-bg-blue" style="height:100px">I'm <strong>n°14</strong> in HTML</div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        <!-- Masonry layout -->
+                                        &lt;div class="columns cc-masonry cc-5-xl cc-4-l cc-3-m cc-2-s cc-1-xs">
+                                            &lt;div>I'm &lt;strong>n°1&lt;/strong> in HTML&lt;/div>
+                                            &lt;div>I'm &lt;strong>n°2&lt;/strong> in HTML&lt;/div>
+                                            &lt;div>I'm &lt;strong>n°3&lt;/strong> in HTML&lt;/div>
+                                            ...
+                                            &lt;div>I'm &lt;strong>n°12&lt;/strong> in HTML&lt;/div>
+                                            &lt;div>I'm &lt;strong>n°13&lt;/strong> in HTML&lt;/div>
+                                            &lt;div>I'm &lt;strong>n°14&lt;/strong> in HTML&lt;/div>
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+                            </div>
+
+                            <!-- MESSAGES -->
+                            <div>
+                                <h3 id="components-messages" class="fa-angle-right">
+                                    <a href="#components-messages">
+                                        Messages
+                                    </a>
+                                </h3>
+                                <p class="cc-txt-center cc-mab-20">
+                                    <a href="reminder#messages" class="btn cc-thin cc-bg-primary">Go to reminder</a>
+                                </p>
+                                <div class="exemple-intro">
+                                    <p>
+                                        ChuckCSS provides 5 types of messages :
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <strong>Primary messages :</strong> <span class="code">class="message message-primary"</span>
+                                        </li>
+                                        <li>
+                                            <strong>Info messages :</strong> <span class="code">class="message message-info"</span>
+                                        </li>
+                                        <li>
+                                            <strong>Warning messages :</strong> <span class="code">class="message message-warning"</span>
+                                        </li>
+                                        <li>
+                                            <strong>Error messages :</strong> <span class="code">class="message message-error"</span>
+                                        </li>
+                                        <li>
+                                            <strong>Success messages :</strong> <span class="code">class="message message-success"</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="sep"></div>
+
+                                <!-- Primary message -->
+                                <h4 id="components-messages-primary">
+                                    <a href="#components-messages-primary">
+                                        Primary messages
+                                    </a>
+                                </h4>
+                                <div class="message message-primary ion-ios-pricetags">
+                                    <strong>Primary color</strong> message with <strong>FontAwesome icon</strong>.<br />Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Primary messages -->
+                                        &lt;div class="message message-primary ion-ios-pricetags">
+                                            &lt;strong>Primary color&lt;/strong> message with &lt;strong>FontAwesome icon&lt;/strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. &lt;a href="#">This is a link&lt;/a> lorem et...
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <!-- Error message -->
+                                 <h4 id="components-messages-error">
+                                    <a href="#components-messages-error">
+                                        Error messages
+                                    </a>
+                                </h4>
+                                <div class="message message-error">
+                                    <i class="fa fa-hand-spock-o"></i> <strong>Error</strong> message. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
+                                    <p>A list exemple below :</p>
+                                    <ul>
+                                        <li><strong>Error 1 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
+                                        <li><strong>Error 2 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
+                                        <li><strong>Error 3 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
+                                    </ul>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Error messages -->
+                                        &lt;div class="message message-error">
+                                            &lt;i class="fa fa-hand-spock-o">&lt;/i> &lt;strong>Error&lt;/strong> message...
+                                            &lt;p>A list exemple below :&lt;/p>
+                                            &lt;ul>
+                                                &lt;li>&lt;strong>Error 1 :&lt;/strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.&lt;/li>
+                                                &lt;li>&lt;strong>Error 2 :&lt;/strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.&lt;/li>
+                                                &lt;li>&lt;strong>Error 3 :&lt;/strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.&lt;/li>
+                                            &lt;/ul>
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <!-- Success message -->
+                                <h4 id="components-messages-success">
+                                    <a href="#components-messages-success">
+                                        Success messages
+                                    </a>
+                                </h4>
+                                <div class="message message-success">
+                                    <i class="ion-android-checkmark-circle"></i>  <strong>Success</strong> message. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Success message -->
+                                        &lt;div class="message message-success">
+                                            &lt;i class="ion-android-checkmark-circle">&lt;/i>  &lt;strong>Success&lt;/strong> message...
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <!-- Warning message -->
+                                 <h4 id="components-messages-warning">
+                                    <a href="#components-messages-warning">
+                                        Warning messages
+                                    </a>
+                                </h4>
+                                <div class="message message-warning ion-android-bicycle">
+                                    <strong>Warning</strong> message with <strong>Ionicons icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Warning message -->
+                                        &lt;div class="message message-warning ion-android-bicycle">
+                                            &lt;strong>Warning&lt;/strong> message with &lt;strong>Ionicons icon&lt;/strong>. Nunc nunc ...
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <!-- Info message -->
+                                 <h4 id="components-messages-info">
+                                    <a href="#components-messages-info">
+                                        Info messages
+                                    </a>
+                                </h4>
+                                <div class="message message-info fa-exclamation-circle">
+                                    <strong>Status</strong> message with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.<br />Nunc nunc lundium aliquet elementum ac pulvinar proin. Lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Info message -->
+                                        &lt;div class="message message-info fa-exclamation-circle">
+                                            &lt;strong>Status&lt;/strong> message with &lt;strong>FontAwesome icon&lt;/strong>. Nunc nunc...
+                                        &lt;/div>
+                                    </code>
+                                </pre>
                             </div>
 
 
