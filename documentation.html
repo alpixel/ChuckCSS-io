@@ -321,6 +321,33 @@
                                         </li>
                                         <li>
                                             <a href="#components-modals">Modals</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#components-modals-basic">
+                                                        Modals structure
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#components-modals-width">
+                                                        Modals width
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#components-modals-disabled-overlay">
+                                                        Disabled overlay
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#components-modals-fixed-hf">
+                                                        Fixed Header & Footer
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#components-modals-nested">
+                                                        Nested modals
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </li>
                                         <li>
                                             <a href="#components-tabs">Tabs</a>
@@ -2242,6 +2269,242 @@
                                 </pre>
                             </div>
 
+                            <!-- MODALS -->
+                            <div>
+                                <h3 id="components-modals" class="fa-angle-right">
+                                    <a href="#components-modals">
+                                        Modals with ChuckCSS
+                                    </a>
+                                </h3>
+                                <p class="cc-txt-center cc-mab-20">
+                                    <a href="reminder#modals" class="btn cc-thin cc-bg-primary">Go to reminder</a>
+                                </p>
+                                <div class="exemple-intro">
+                                    <p>
+                                        Build modals with ChuckCSS is very easy.<br />
+                                        You just have to respect a specific syntax to display modals properly!
+                                    </p>
+                                    <div class="alert alert-warning ion-ios-lightbulb">
+                                        Include <strong>the minimalist chuckcss.js file</strong> for closing modals by clicking on the close button or onto the overlay.<br /><br />
+                                        Always try to place a modal's HTML code at the bottom or at the top of your document, but not immediatly after the button who call the modal opening.
+                                    </div>
+                                </div>
+                                <div class="sep"></div>
+                                
+                                <h4 id="components-modals-basic">
+                                    <a href="#components-modals-basic">
+                                        Modals structure
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        <span class="code">.modal-open</span> class is binded in the chuckcss.js file to fire the modal.<br />
+                                        <span class="code">data-target</span> attribute must contains the id of the modal you want to fire
+                                    </p>
+                                </div>
+                                <div class="cc-txt-center">
+                                    <button data-target="modal-id" class="cc-bg-primary modal-open">Launch classic modal</button>
+                                </div>
+                                <pre class="HTML collapsed">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Button -->
+                                        &lt;button data-target="modal-id" class="cc-bg-primary modal-open">Launch classic modal&lt;/button>
+
+                                        &lt;!-- Modal minimal structure -->
+                                        &lt;div id="modal-id" class="modal">
+                                            &lt;!-- Close button -->
+                                            &lt;button class="modal-close">&lt;/button>
+                                            &lt;!-- Overlay -->
+                                            &lt;div class="modal-overlay">&lt;/div>
+                                            &lt;!-- Modal content -->
+                                            &lt;div class="modal-content">
+                                                &lt;div class="modal-header">
+                                                    ...
+                                                &lt;/div>
+                                                &lt;div class="modal-body">
+                                                    ...
+                                                &lt;/div>
+                                                &lt;div class="modal-footer">
+                                                    ...
+                                                &lt;/div>
+                                            &lt;/div>
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+                                <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+
+                                <div class="sep"></div>
+
+                                <h4 id="components-modals-width">
+                                    <a href="#components-modals-width">
+                                        Modals width
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    ChuckCSS provide 3 sizes of modals :
+                                    <ul>
+                                        <li>
+                                            <span class="code">class="modal"</span> : Display a bacis modal of 50% width
+                                        </li>
+                                        <li>
+                                            <span class="code">class="modal modal-small"</span> : Display a small modal of 30% width
+                                        </li>
+                                        <li>
+                                            <span class="code">class="modal modal-large"</span> : Display a large modal of 80% width
+                                        </li>
+                                    </ul>
+
+                                    <div class="alert alert-warning ion-ios-lightbulb">
+                                        On small screens (&lt;768px), all modals are set to 90% width, regarless sizes classes.
+                                    </div>
+                                </div>
+                                <div class="columns">
+                                    <div class="cc-txt-center">
+                                        <button data-target="modal-id" class="cc-bg-primary modal-open">Launch classic modal (50%)</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button data-target="modal-id-small" class="cc-bg-primary modal-open">Launch small modal (30%)</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button data-target="modal-id-large" class="cc-bg-primary modal-open">Launch large modal (80%)</button>
+                                    </div>
+                                </div>
+                                <pre class="HTML collapsed">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Button : Classic modal -->
+                                        &lt;button data-target="modal-id" class="cc-bg-primary modal-open">Launch classic modal (50%)&lt;/button>
+                                        &lt;!-- Button : Small modal -->
+                                        &lt;button data-target="modal-id-small" class="cc-bg-primary modal-open">Launch small modal (30%)&lt;/button>
+                                        &lt;!-- Button : Large modal -->
+                                        &lt;button data-target="modal-id-large" class="cc-bg-primary modal-open">Launch classic modal (80%)&lt;/button>
+
+                                        &lt;!-- Classic modal -->
+                                        &lt;div id="modal-id" class="modal">
+                                            ...modal structure...
+                                        &lt;/div>
+
+                                        &lt;!-- Small modal -->
+                                        &lt;div id="modal-id-small" class="modal modal-small">
+                                            ...modal structure...
+                                        &lt;/div>
+
+                                        &lt;!-- Large modal -->
+                                        &lt;div id="modal-id-large" class="modal modal-large">
+                                            ...modal structure...
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+                                <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+
+                                <div class="sep"></div>
+
+                                <h4 id="components-modals-disabled-overlay">
+                                    <a href="#components-modals-disabled-overlay">
+                                        Disabled modals overlay
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <span class="code">data-disabled-overlay</span> : Disabled the modal closing by clicking on overlay
+                                </div>
+                                <div class="cc-txt-center">
+                                    <button data-target="modal-id-disabled" class="cc-bg-primary modal-open">Disabled the modal overlay</button>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Button : Disabled overlay-->
+                                        &lt;button data-target="modal-id-disabled" class="cc-bg-primary modal-open">Disabled the modal overlay&lt;/button>
+
+                                        &lt;!-- Modal -->
+                                        &lt;div id="modal-id-disabled" class="modal modal-small" data-disabled-overlay>
+                                            ...modal structure...
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="components-modals-fixed-hf">
+                                    <a href="#components-modals-fixed-hf">
+                                        Fixed Header & Footer on modals
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        <span class="code">data-fixed-hf</span> : Make the &lt;header> & &lt;footer> fixed into the modal.<br />
+                                        Very usefull when a modal display a very long content!
+                                    </p>
+                                    <div class="alert alert-warning ion-ios-lightbulb">
+                                        The modal structure change a little bit.<br />
+                                        Need a wrapper around the <span class="code">&lt;div class="modal-body">&lt;/div></span> element
+                                    </div>
+                                </div>
+                                <div class="cc-txt-center">
+                                    <button data-target="modal-id-fixed-hf" class="cc-bg-primary modal-open">Modal with fixed header & footer</button>
+                                </div>
+                                <pre class="HTML collapsed">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Button : modal with fixed header & footer overlay -->
+                                        &lt;button data-target="modal-id-fixed-hf" class="cc-bg-primary modal-open">Modal with fixed header & footer&lt;/button>
+
+                                        &lt;!-- Modal structure for fixing header and footer -->
+                                        &lt;div id="modal-id-fixed-hf" class="modal" data-fixed-hf>
+                                            &lt;!-- Close button -->
+                                            &lt;button class="modal-close">&lt;/button>
+                                            &lt;!-- Overlay -->
+                                            &lt;div class="modal-overlay">&lt;/div>
+                                            &lt;!-- Modal content -->
+                                            &lt;div class="modal-content">
+                                                &lt;div class="modal-header">
+                                                    I'm a default modal with fixed header & footer
+                                                &lt;/div>
+                                                &lt;!-- /!\ Add a wrapper around the modal body -->
+                                                &lt;section class="wrap-modal-body">
+                                                    &lt;div class="modal-body">
+                                                        ... very long text...                                                        
+                                                    &lt;/div>
+                                                &lt;/section>
+                                                &lt;div class="modal-footer cc-txt-center">
+                                                    &lt;button type="submit" class="cc-bg-primary fa-save">I'm a button&lt;/button>
+                                                &lt;/div>
+                                            &lt;/div>
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+                                <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+                                <div class="sep"></div>
+
+                                <h4 id="components-modals-nested">
+                                    <a href="#components-modals-nested">
+                                        Nested modals
+                                    </a>
+                                </h4>
+                                <div class="cc-txt-center">
+                                    <button data-target="modal-id-nested" class="cc-bg-primary modal-open">Open the first modal</button>
+                                </div>
+                                <pre class="HTML collapsed">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Button : first modal -->
+                                        &lt;button data-target="modal-id-nested" class="cc-bg-primary modal-open">Open the first modal&lt;/button>
+
+                                        &lt;!-- First modal -->
+                                        &lt;div id="modal-id-nested" class="modal">
+                                            ...modal structure...
+                                        &lt;/div>
+
+                                        &lt;!-- Second modal -->
+                                        &lt;div id="modal-id-2" class="modal">
+                                            ...modal structure...
+                                        &lt;/div>
+
+                                        &lt;!-- Third modal -->
+                                        &lt;div id="modal-id-3" class="modal">
+                                            ...modal structure...
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+                                <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+                            </div>
+
 
                             <!-- NEW SECTION -->
                             <!-- <div>
@@ -2288,6 +2551,191 @@
                 ChuckCSS is under <a href="https://opensource.org/licenses/mit-license.php" class="external-link">MIT Licence</a>
             </p>
         </footer>
+
+
+
+        <!-- Modals exemples -->
+        <div id="modal-id" class="modal">
+            <button class="modal-close"></button>
+
+            <div class="modal-overlay"></div>
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    I'm a default modal (50% width)
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Hamburger doner alcatra sirloin bresaola porchetta tenderloin. Ribeye bacon meatball ball tip beef ribs leberkas capicola corned beef.
+                    </p>
+
+                    <h3 class="cc-mat-30">A grid layout into a modal ?..</h3>
+
+                    <div class="columns cc-mat-30">
+
+                            <div class="cc-3-m cc-bg-chuckgreen">Hamburger</div>
+                            <div class="cc-3-m cc-bg-chuckgreen-da">Hamburger</div>
+                            <div class="cc-3-m cc-bg-chuckgreen">Hamburger</div>
+                            <div class="cc-3-m cc-bg-chuckgreen-da">Hamburger</div>
+
+                    </div>
+                </div>
+                <div class="modal-footer cc-txt-center">
+                    <button type="submit" class="cc-bg-primary fa-save">I'm a button</button>
+                </div>
+            </div>
+        </div>
+        <div id="modal-id-small" class="modal modal-small">
+            <button class="modal-close"></button>
+
+            <div class="modal-overlay"></div>
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    I'm a small modal (30% width)
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Hamburger doner alcatra sirloin bresaola porchetta tenderloin. Ribeye bacon meatball ball tip beef ribs leberkas capicola corned beef.
+                    </p>
+                </div>
+                <div class="modal-footer cc-txt-center">
+                    <button type="submit" class="cc-bg-primary fa-save">I'm a button</button>
+                </div>
+            </div>
+        </div>
+        <div id="modal-id-large" class="modal modal-large">
+            <button class="modal-close"></button>
+
+            <div class="modal-overlay"></div>
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    I'm a large modal (80% width)
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Hamburger doner alcatra sirloin bresaola porchetta tenderloin. Ribeye bacon meatball ball tip beef ribs leberkas capicola corned beef.
+                    </p>
+                </div>
+                <div class="modal-footer cc-txt-center">
+                    <button type="submit" class="cc-bg-primary fa-save">I'm a button</button>
+                </div>
+            </div>
+        </div>
+        <div id="modal-id-fixed-hf" class="modal" data-fixed-hf>
+            <button class="modal-close"></button>
+
+            <div class="modal-overlay"></div>
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    I'm a default modal with fixed header & footer
+                </div>
+                <section class="wrap-modal-body">
+                    <div class="modal-body">
+                        <p>
+                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                        </p>
+                    </div>
+                </section>
+                <div class="modal-footer cc-txt-center">
+                    <button type="submit" class="cc-bg-primary fa-save">I'm a button</button>
+                </div>
+            </div>
+        </div>
+        <div id="modal-id-disabled" class="modal" data-disabled-overlay>
+            <button class="modal-close"></button>
+
+            <div class="modal-overlay"></div>
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    Disabled overlay
+                </div>
+                <div class="modal-body">
+                    <p>
+                        You have to click on close button to close this modal.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="modal-id-nested" class="modal">
+            <button class="modal-close"></button>
+
+            <div class="modal-overlay"></div>
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    Hey! I'm the first modal
+                </div>
+                <div class="modal-body">
+                    <pre class="HTML">
+                        <code class="language-markup"><!-- -->
+                            &lt;!-- Button in footer -->
+                            &lt;button data-target="modal-id-2" class="cc-bg-primary modal-open">Open a second modal&lt;/button>
+                        </code>
+                    </pre>
+                </div>
+                <div class="modal-footer cc-txt-center">
+                    <button data-target="modal-id-2" class="cc-bg-primary modal-open">Open a second modal</button>
+                </div>
+            </div>
+        </div>
+        <div id="modal-id-2" class="modal">
+            <button class="modal-close"></button>
+
+            <div class="modal-overlay"></div>
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    Heyy!! I'm the second modal
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <strong>I'm the second modal with id="modal-id-2"</strong>
+                    </p>
+                    <pre class="HTML">
+                        <code class="language-markup"><!-- -->
+                            &lt;!-- Button in footer -->
+                            &lt;button data-target="modal-id-3" class="cc-bg-primary modal-open">
+                                Open a third modal with disabled overlay
+                            &lt;/button>
+                        </code>
+                    </pre>
+                </div>
+                <div class="modal-footer cc-txt-center">
+                    <button data-target="modal-id-3" class="cc-bg-primary modal-open">Open a third modal with disabled overlay</button>
+                </div>
+            </div>
+        </div>
+        <div id="modal-id-3" class="modal" data-disabled-overlay>
+            <button class="modal-close"></button>
+
+            <div class="modal-overlay"></div>
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    Heyyy!!! I'm the third and last modal
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <strong>I'm the third modal</strong> and you can't close me by clicking on overlay!
+                    </p>
+                </div>
+            </div>
+        </div>
 
 
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
