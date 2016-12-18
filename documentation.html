@@ -186,6 +186,9 @@
                                             <a href="#components-grids">Grids</a>
                                         </li>
                                         <li>
+                                            <a href="#components-masonry">Masonry</a>
+                                        </li>
+                                        <li>
                                             <a href="#components-messages">Messages</a>
                                         </li>
                                         <li>
@@ -460,7 +463,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <pre class="HTML">
+                            <pre class="HTML collapsed">
                                 <code class="language-less"><!-- -->
                                     /* Titles definitions in settings.less file */
                                     /*
@@ -484,6 +487,7 @@
                                     @subtitle-fs : 70%;
                                 </code>
                             </pre>
+                            <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
 
 
 
@@ -1174,7 +1178,7 @@
                                         X-Large (>=1200px) : <strong>8/12</strong>
                                     </div>
                                 </div>
-                                <pre class="HTML">
+                                <pre class="HTML collapsed">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Responsive grids -->
                                         &lt;div class="columns">
@@ -1196,6 +1200,7 @@
                                         &lt;/div>
                                     </code>
                                 </pre>
+                                <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
                                 
                                 <div class="sep"></div>
 
@@ -1240,7 +1245,7 @@
                                 </div>
 
                                 
-                                <pre class="HTML">
+                                <pre class="HTML collapsed">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Offsets grids -->
                                         &lt;div class="columns">
@@ -1261,6 +1266,7 @@
                                         &lt;/div>
                                     </code>
                                 </pre>
+                                <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
                                 
                                 <div class="sep"></div>
 
@@ -1293,7 +1299,7 @@
                                     <div class="cc-bg-purple cc-first-xl">XL:first</div>
                                 </div>
                                 
-                                <pre class="HTML">
+                                <pre class="HTML collapsed">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Ordering -->
                                         &lt;div class="columns">
@@ -1318,8 +1324,510 @@
                                         &lt;/div>
                                     </code>
                                 </pre>
+                                <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
                                 
                                 <div class="sep"></div>
+
+                                <h4>Columns alignments</h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        <span class="code">class="cc-left"</span> : pull item to the left (all devices)<br />
+                                        <span class="code">class="cc-right"</span> : pull item to the right (all devices)<br />
+                                        <span class="code">class="cc-center"</span> : center item (all devices)<br />
+                                        <span class="code">class="cc-left cc-w-auto"</span> : combine classes for a "float:left"-like<br />
+                                        <span class="code">class="cc-right cc-w-auto"</span> : combine classes for a "float:right"-like
+                                    </p>
+                                </div>
+
+                                <div class="columns cc-mat-20">
+                                    <div class="cc-bg-blue cc-6 cc-left">6 align left</div>
+                                </div>
+                                <div class="columns cc-mat-20">
+                                    <div class="cc-bg-blue cc-6 cc-right">6 align right</div>
+                                </div>
+                                <div class="columns cc-mat-20">
+                                    <div class="cc-bg-blue cc-6 cc-center">6 align center</div>
+                                </div>
+
+                                <div class="columns cc-mat-20">
+                                    <div class="cc-bg-blue cc-3 cc-left">3</div>
+                                    <div class="cc-bg-primary cc-4 cc-center">4 centered between 3 and 2</div>
+                                    <div class="cc-bg-blue cc-2 cc-right">2 right</div>
+                                </div>
+
+                                <div class="columns cc-mat-20">
+                                    <div class="cc-bg-blue cc-w-auto cc-left">auto align left<br />(float:left like)</div>
+                                    <div class="cc-bg-primary cc-w-auto cc-right">auto align right<br />(float:right like)</div>
+                                </div>
+                                
+                                
+                                <pre class="HTML collapsed">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Columns alignments -->
+                                        &lt;div class="columns">
+                                            &lt;div class="cc-6 cc-left">6 align left&lt;/div>
+                                        &lt;/div>
+                                        &lt;div class="columns">
+                                            &lt;div class="cc-6 cc-right">6 align right&lt;/div>
+                                        &lt;/div>
+                                        &lt;div class="columns">
+                                            &lt;div class="cc-6 cc-center">6 align center&lt;/div>
+                                        &lt;/div>
+
+                                        &lt;div class="columns">
+                                            &lt;div class="cc-3 cc-left">3&lt;/div>
+                                            &lt;div class="cc-4 cc-center">4 centered between 3 and 2&lt;/div>
+                                            &lt;div class="cc-2 cc-right">2 right&lt;/div>
+                                        &lt;/div>
+
+                                        &lt;div class="columns">
+                                            &lt;div class="cc-w-auto cc-left">auto align left&lt;br />(float:left like)&lt;/div>
+                                            &lt;div class="cc-w-auto cc-right">auto align right&lt;br />(float:right like)&lt;/div>
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+                                <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+                                
+                                <div class="sep"></div>
+
+                                <h4>Nested grids</h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        <span class="code">class="columns"</span> : Add "columns" class to an item. That's all!
+                                    </p>
+                                </div>
+
+                                <div class="columns cc-mat-20">
+                                    <div class="cc-bg-primary cc-3">3</div>
+                                    <div class="cc-bg-blue cc-9">9</div>
+                                </div>
+                                <div class="columns">
+                                    <div class="columns cc-3">
+                                        <div class="cc-bg-orange cc-6">6 in 3</div>
+                                        <div class="cc-bg-purple cc-6">6 in 3</div>
+                                    </div>
+                                    <div class="cc-9 columns">
+                                        <div class="cc-bg-chuckgreen cc-4">4 in 9</div>
+                                        <div class="cc-bg-chuckgreen-da cc-4">4 in 9</div>
+                                        <div class="cc-bg-chuckgreen cc-4">4 in 9</div>
+                                    </div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Nested grids -->
+                                        &lt;div class="columns">
+                                            &lt;div class="cc-3">3&lt;/div>
+                                            &lt;div class="cc-9">9&lt;/div>
+                                        &lt;/div>
+                                        &lt;div class="columns">
+                                            &lt;div class="columns cc-3">
+                                                &lt;div class="cc-6">6 in 3&lt;/div>
+                                                &lt;div class="cc-6">6 in 3&lt;/div>
+                                            &lt;/div>
+                                            &lt;div class="cc-9 columns">
+                                                &lt;div class="cc-4">4 in 9&lt;/div>
+                                                &lt;div class="cc-4">4 in 9&lt;/div>
+                                                &lt;div class="cc-4">4 in 9&lt;/div>
+                                            &lt;/div>
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+
+                                <div class="columns cc-mat-20">
+                                    <div class="cc-bg-primary cc-8">8</div>
+                                    <div class="cc-bg-blue cc-4">4</div>
+                                </div>
+                                <div class="columns">
+                                    <div class="columns cc-8">
+                                        <div class="cc-bg-orange cc-4">4 in 8</div>
+                                        <div class="cc-bg-purple">auto | Ridiculus ridiculus sit! Sit? Parturient placerat! Duis urna quis ac proin, ac lorem nec, cum augue aliquam tristique, est. In adipiscing platea? Sit dignissim.</div>
+                                        <div class="cc-bg-orange cc-2">2 in 8</div>
+                                    </div>
+                                    <div class="columns cc-4">
+                                        <div class="cc-bg-chuckgreen cc-6">6 in 4</div>
+                                        <div class="cc-bg-chuckgreen-da cc-6">6 in 4</div>
+                                    </div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Nested grids -->
+                                        &lt;div class="columns">
+                                            &lt;div class="cc-8">8&lt;/div>
+                                            &lt;div class="cc-4">4&lt;/div>
+                                        &lt;/div>
+                                        &lt;div class="columns">
+                                            &lt;div class="columns cc-8">
+                                                &lt;div class="cc-4">4 in 8&lt;/div>
+                                                &lt;div>auto | Ridiculus ...&lt;/div>
+                                                &lt;div class="cc-2">2 in 8&lt;/div>
+                                            &lt;/div>
+                                            &lt;div class="columns cc-4">
+                                                &lt;div class="cc-6">6 in 4&lt;/div>
+                                                &lt;div class="cc-6">6 in 4&lt;/div>
+                                            &lt;/div>
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+                                
+                                <div class="sep"></div>
+
+                                <h4>Remove multiligne</h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        <span class="code">class="cc-no-multiligne"</span> : remove multiligne on grid container
+                                    </p>
+                                </div>
+
+                                <div class="columns cc-no-multiligne">
+                                    <div class="cc-bg-blue cc-7">7</div>
+                                    <div class="cc-bg-primary cc-6">6 /!\ TOO LARGE</div>
+                                </div>
+                                
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Remove multiligne -->
+                                        &lt;div class="columns cc-no-multiligne">
+                                            &lt;div class="cc-7">7&lt;/div>
+                                            &lt;div class="cc-6">6 /!\ TOO LARGE&lt;/div>
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+                                
+                                <div class="sep"></div>
+
+                                <h4>Reverse columns</h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        <span class="code">class="cc-reverse"</span> : reverse items display on a grid
+                                    </p>
+                                </div>
+
+                                <div class="columns cc-reverse">
+                                    <div class="cc-bg-blue">First in html</div>
+                                    <div class="cc-bg-primary">Second in html</div>
+                                    <div class="cc-bg-blue">Third in html</div>
+                                    <div class="cc-bg-primary">Fourth in html</div>
+                                </div>
+                                
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Reverse columns -->
+                                        &lt;div class="columns cc-reverse">
+                                            &lt;div>First in html&lt;/div>
+                                            &lt;div>Second in html&lt;/div>
+                                            &lt;div>Third in html&lt;/div>
+                                            &lt;div>Fourth in html&lt;/div>
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+                                
+                                <div class="sep"></div>
+
+                                <h4>Columns alignments on X axis</h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        <span class="code">class="cc-justify-start"</span> : In a row, all items are pulled to the left<br />
+                                        <span class="code">class="cc-justify-center"</span> : In a row, all items are centered<br />
+                                        <span class="code">class="cc-justify-end"</span> : In a row, all items are pulled to the right<br />
+                                        <span class="code">class="cc-justify-between"</span> : In a row, all columns are evenly distributed in the line (first item is on the start line, last item on the end line)<br />
+                                        <span class="code">class="cc-justify-around"</span> : In a row, all columns are evenly distributed in the line with equal space around them
+                                    </p>
+                                </div>
+
+                                <div class="columns cc-justify-start">
+                                    <div class="cc-bg-blue cc-3">Start</div>
+                                    <div class="cc-bg-primary cc-3">Start</div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Items X alignments -->
+                                        &lt;div class="columns cc-justify-start">
+                                            &lt;div class="cc-3">Start&lt;/div>
+                                            &lt;div class="cc-3">Start&lt;/div>
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+
+                                <div class="columns cc-justify-center">
+                                    <div class="cc-bg-blue cc-3">Centered</div>
+                                    <div class="cc-bg-primary cc-3">Centered</div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Items X alignments -->
+                                        &lt;div class="columns cc-justify-center">
+                                            &lt;div class="cc-3">Centered&lt;/div>
+                                            &lt;div class="cc-3">Centered&lt;/div>
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+
+                                <div class="columns cc-justify-end">
+                                    <div class="cc-bg-blue cc-3">Ending</div>
+                                    <div class="cc-bg-primary cc-3">Ending</div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Items X alignments -->
+                                        &lt;div class="columns cc-justify-end">
+                                            &lt;div class="cc-3">Centered&lt;/div>
+                                            &lt;div class="cc-3">Centered&lt;/div>
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+                                
+
+                                <div class="columns cc-justify-between">
+                                    <div class="cc-bg-blue cc-3">Spacing on 100% width</div>
+                                    <div class="cc-bg-primary cc-5">Spacing on 100% width</div>
+                                    <div class="cc-bg-blue cc-3">Spacing on 100% width</div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Items X alignments -->
+                                        &lt;div class="columns cc-justify-between">
+                                            &lt;div class="cc-3">Spacing on 100% width&lt;/div>
+                                            &lt;div class="cc-5">Spacing on 100% width&lt;/div>
+                                            &lt;div class="cc-3">Spacing on 100% width&lt;/div>
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+
+
+                                <div class="columns cc-justify-around">
+                                    <div class="cc-bg-blue cc-3">Equal spacing</div>
+                                    <div class="cc-bg-primary cc-5">Equal spacing</div>
+                                    <div class="cc-bg-blue cc-3">Equal spacing</div>
+                                </div>
+                                
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Items X alignments -->
+                                        &lt;div class="columns cc-justify-around">
+                                            &lt;div class="cc-3">Equal spacing&lt;/div>
+                                            &lt;div class="cc-5">Equal spacing&lt;/div>
+                                            &lt;div class="cc-3">Equal spacing&lt;/div>
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+                                
+                                <div class="sep"></div>
+
+                                <h4>Columns alignments on Y axis</h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        <span class="code">class="columns cc-align-start"</span> : Position all items to the top of the grid container<br />
+                                        <span class="code">class="columns cc-align-center"</span> : Center all items on Y axis<br />
+                                        <span class="code">class="columns cc-align-end"</span> : Position all item to the bottom of the grid container<br />
+                                        <span class="code">class="columns cc-align-baseline"</span> : Position all items according to the baseline<br />
+                                        <span class="code">class="columns cc-align-stretch"</span> : Stretch all columns on Y axis
+                                    </p>
+                                    <div class="alert alert-warning ion-ios-lightbulb">
+                                        To make Y alignements successful, you have to combine this classes with the <span class="code">cc-align-*</span> with the <span class="code">columns</span> classes.<br /><br />
+                                        In this way, the item will react as a flex container.
+                                    </div>
+                                </div>
+
+                                <div class="columns">
+                                    <div class="cc-bg-primary cc-3">
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. 
+                                    </div>
+                                    <div class="cc-9 columns cc-align-start">
+                                        <p class="cc-bg-blue">
+                                            <strong>TOP CONTENT ALIGNMENT</strong><br /><br />
+                                            Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
+                                        </p>
+                                    </div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Items Y alignments -->
+                                        &lt;div class="columns">
+                                            &lt;div class="cc-3">
+                                                Bacon ipsum dolor...
+                                            &lt;/div>
+                                            &lt;div class="cc-9 columns cc-align-start">
+                                                &lt;p>
+                                                    &lt;strong>TOP CONTENT ALIGNMENT&lt;/strong>&lt;br />&lt;br />
+                                                    Bacon ipsum...
+                                                &lt;/p>
+                                            &lt;/div>
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+
+                                <div class="columns">
+                                    <div class="cc-bg-primary cc-3">
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. 
+                                    </div>
+                                    <div class="cc-9 columns cc-align-center">
+                                        <p class="cc-bg-blue">
+                                            <strong>CENTER CONTENT ALIGNMENT</strong><br /><br />
+                                            Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
+                                        </p>
+                                    </div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Items Y alignments -->
+                                        &lt;div class="columns">
+                                            &lt;div class="cc-3">
+                                                Bacon ipsum dolor...
+                                            &lt;/div>
+                                            &lt;div class="cc-9 columns cc-align-center">
+                                                &lt;p>
+                                                    &lt;strong>CENTER CONTENT ALIGNMENT&lt;/strong>&lt;br />&lt;br />
+                                                    Bacon ipsum...
+                                                &lt;/p>
+                                            &lt;/div>
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+
+                                <div class="columns">
+                                    <div class="cc-bg-primary cc-3">
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. 
+                                    </div>
+                                    <div class="cc-9 columns cc-align-end">
+                                        <p class="cc-bg-blue">
+                                            <strong>BOTTOM CONTENT ALIGNMENT</strong><br /><br />
+                                            Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
+                                        </p>
+                                    </div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Items Y alignments -->
+                                        &lt;div class="columns">
+                                            &lt;div class="cc-3">
+                                                Bacon ipsum dolor...
+                                            &lt;/div>
+                                            &lt;div class="cc-9 columns cc-align-end">
+                                                &lt;p>
+                                                    &lt;strong>BOTTOM CONTENT ALIGNMENT&lt;/strong>&lt;br />&lt;br />
+                                                    Bacon ipsum...
+                                                &lt;/p>
+                                            &lt;/div>
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+
+                                <div class="columns">
+                                    <div class="columns cc-align-baseline">
+                                        <p class="cc-bg-blue" style="line-height:2">
+                                            Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
+                                        </p>
+                                        <p class="cc-bg-primary">
+                                            Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
+                                        </p>
+                                        <p class="cc-bg-blue" style="line-height:3">
+                                            Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
+                                        </p>
+                                    </div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Items Y alignments -->
+                                        &lt;div class="columns">
+                                            &lt;div class="columns cc-align-baseline">
+                                                &lt;p style="line-height:2">
+                                                    Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
+                                                &lt;/p>
+                                                &lt;p>
+                                                    Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
+                                                &lt;/p>
+                                                &lt;p style="line-height:3">
+                                                    Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
+                                                &lt;/p>
+                                            &lt;/div>
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+
+                                <div class="columns">
+                                    <div class="cc-bg-primary cc-3">
+                                        Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. 
+                                    </div>
+                                    <div class="cc-9 columns cc-align-stretch">
+                                        <p class="cc-bg-blue">
+                                            <strong>STRETCH CONTENT ALIGNMENT</strong><br /><br />
+                                            Bacon ipsum dolor amet nisi t-bone meatball tri-tip.
+                                        </p>
+                                    </div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Items Y alignments -->
+                                        &lt;div class="columns">
+                                            &lt;div class="cc-3">
+                                                Bacon ipsum dolor...
+                                            &lt;/div>
+                                            &lt;div class="cc-9 columns cc-align-stretch">
+                                                &lt;p>
+                                                    &lt;strong>STRETCH CONTENT ALIGNMENT&lt;/strong>&lt;br />&lt;br />
+                                                    Bacon ipsum...
+                                                &lt;/p>
+                                            &lt;/div>
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4>Targeted item alignment on Y axis</h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        <span class="code">class="cc-align-self-top"</span> : Position targeted item to the top of the grid container<br />
+                                        <span class="code">class="cc-align-self-center"</span> : Center targeted item on Y axis<br />
+                                        <span class="code">class="cc-align-self-bottom"</span> : Position targeted item to the bottom of the grid container<br />
+                                        <span class="code">class="cc-align-self-baseline"</span> : Position targeted item according to the baseline<br />
+                                        <span class="code">class="cc-align-self-stretch"</span> : Stretch targeted item on Y axis
+                                    </p>
+                                </div>
+
+                                <div class="columns">
+                                    <div class="cc-bg-blue cc-align-self-top">
+                                        align self top<br /><br />
+                                        Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+                                    </div>
+                                    <div class="cc-bg-primary cc-align-self-bottom">
+                                        align self bottom
+                                    </div>
+                                    <div class="cc-bg-blue cc-align-self-center">
+                                        align self center
+                                    </div>
+                                    <div class="cc-bg-primary cc-align-self-stretch">                                        
+                                        align self stretch                                        
+                                    </div>
+                                    <div class="cc-bg-blue cc-align-self-baseline">
+                                        align self baseline
+                                    </div>
+                                </div>
+                                <pre class="HTML collapsed">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Targeted item Y alignments -->
+                                        &lt;div class="columns">
+                                            &lt;div class="cc-align-self-top">
+                                                align self top&lt;br />&lt;br />
+                                                Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui...
+                                            &lt;/div>
+                                            &lt;div class="cc-align-self-bottom">
+                                                align self bottom
+                                            &lt;/div>
+                                            &lt;div class="cc-align-self-center">
+                                                align self center
+                                            &lt;/div>
+                                            &lt;div class="cc-align-self-stretch">
+                                                align self stretch
+                                            &lt;/div>
+                                            &lt;div class="cc-align-self-baseline">
+                                                align self baseline
+                                            &lt;/div>
+                                        &lt;/div>
+                                       
+                                    </code>
+                                </pre>
+                                <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
                             </div>
 
 
