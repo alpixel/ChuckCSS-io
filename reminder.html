@@ -135,7 +135,7 @@
                                     <a href="#grids">Grids / Masonry layouts</a>
                                     <ul>
                                         <li>
-                                            <a href="#grids-masonry">Masonry layouts</a>
+                                            <a href="#grids-items-width-offset">Items width & offset</a>
                                         </li>
                                         <li>
                                             <a href="#grids-columns-x-alignments">Columns X alignments</a>
@@ -144,13 +144,13 @@
                                             <a href="#grids-columns-y-alignments">Columns Y alignments</a>
                                         </li>
                                         <li>
-                                            <a href="#grids-items-width-offset">Items width & offset</a>
+                                            <a href="#grids-items-x-alignments">Target item X alignment</a>
                                         </li>
                                         <li>
-                                            <a href="#grids-items-x-alignments">Items X alignments</a>
+                                            <a href="#grids-items-y-alignments">Target item Y alignment</a>
                                         </li>
                                         <li>
-                                            <a href="#grids-items-y-alignments">Items Y alignments</a>
+                                            <a href="#grids-masonry">Masonry layouts</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -366,43 +366,61 @@
                                             Reverse all columns order
                                         </td>
                                     </tr>
-                                    <tr id="grids-masonry">
+                                    <tr id="grids-items-width-offset">
                                         <td colspan="3" class="colspan">
-                                            <a href="#grids-masonry">Masonry layouts</a>
+                                            <a href="#grids-items-width-offset">
+                                                Items width & offset
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="reminder-class">
-                                            <span>class="cc-masonry"</span>
+                                            <span>class="cc-{number}"</span>
                                         </td>
                                         <td>
-                                            Grid container (row)
+                                            Grid item (child)
                                         </td>
                                         <td>
-                                            Display columns as a verticaly Masonry layout
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="reminder-class">
-                                            <span>class="cc-masonry cc-{number}"</span>
-                                        </td>
-                                        <td>
-                                            Grid container (row)
-                                        </td>
-                                        <td>
-                                            Display <em>{number}</em> columns as a verticaly Masonry layout<br />
+                                            Set the column width<br />
                                             <strong>{number} :</strong> can be set from 1 to {@cols-total} (default : 12)
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="reminder-class">
-                                            <span>class="cc-masonry cc-{number}-{letter}"</span>
+                                            <span>class="cc-{number}-{letter}"</span>
                                         </td>
                                         <td>
-                                            Grid container (row)
+                                            Grid item (child)
                                         </td>
                                         <td>
-                                            Display <em>{number}</em> columns as a verticaly Masonry layout on <em>{letter}</em> screen and up<br />
+                                            Set the column width <em>on {letter} screen and up</em><br />
+                                            <strong>{number} :</strong> can be set from 1 to {@cols-total} (default : 12)<br />
+                                            <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-offset-{number}"</span>
+                                        </td>
+                                        <td>
+                                            Grid item (child)
+                                        </td>
+                                        <td>
+                                            Set offset to column <em>on {letter} screen and up</em><br />
+                                            <strong>{number} :</strong> can be set from 1 to {@cols-total} (default : 12)<br />
+                                            <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-offset-{number}-{letter}"</span>
+                                        </td>
+                                        <td>
+                                            Grid item (child)
+                                        </td>
+                                        <td>
+                                            Set offset to column<br />
                                             <strong>{number} :</strong> can be set from 1 to {@cols-total} (default : 12)<br />
                                             <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>
@@ -531,70 +549,12 @@
                                             Stretch all columns <em>on Y axis</em>
                                         </td>
                                     </tr>
-                                    <tr id="grids-items-width-offset">
-                                        <td colspan="3" class="colspan">
-                                            <a href="#grids-items-width-offset">
-                                                Items width & offset
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="reminder-class">
-                                            <span>class="cc-{number}"</span>
-                                        </td>
-                                        <td>
-                                            Grid item (child)
-                                        </td>
-                                        <td>
-                                            Set the column width<br />
-                                            <strong>{number} :</strong> can be set from 1 to {@cols-total} (default : 12)
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="reminder-class">
-                                            <span>class="cc-{number}-{letter}"</span>
-                                        </td>
-                                        <td>
-                                            Grid item (child)
-                                        </td>
-                                        <td>
-                                            Set the column width <em>on {letter} screen and up</em><br />
-                                            <strong>{number} :</strong> can be set from 1 to {@cols-total} (default : 12)<br />
-                                            <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="reminder-class">
-                                            <span>class="cc-offset-{number}"</span>
-                                        </td>
-                                        <td>
-                                            Grid item (child)
-                                        </td>
-                                        <td>
-                                            Set offset to column <em>on {letter} screen and up</em><br />
-                                            <strong>{number} :</strong> can be set from 1 to {@cols-total} (default : 12)<br />
-                                            <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="reminder-class">
-                                            <span>class="cc-offset-{number}-{letter}"</span>
-                                        </td>
-                                        <td>
-                                            Grid item (child)
-                                        </td>
-                                        <td>
-                                            Set offset to column<br />
-                                            <strong>{number} :</strong> can be set from 1 to {@cols-total} (default : 12)<br />
-                                            <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
-                                        </td>
-                                    </tr>
+                                    
 
                                     <tr id="grids-items-x-alignments">
                                         <td colspan="3" class="colspan">
                                             <a href="#grids-items-x-alignments">
-                                                Items alignment on X axis
+                                                Targeted item alignment on X axis
                                             </a>
                                         </td>
                                     </tr>
@@ -705,7 +665,7 @@
                                     <tr id="grids-items-y-alignments">
                                         <td colspan="3" class="colspan">
                                             <a href="#grids-items-y-alignments">
-                                                Items alignment on Y axis
+                                                Targeted item alignment on Y axis
                                             </a>
                                         </td>
                                     </tr>
@@ -763,6 +723,47 @@
                                         </td>
                                         <td>
                                             This targeted column is stretched <em>on Y axis</em>
+                                        </td>
+                                    </tr>
+                                    <tr id="grids-masonry">
+                                        <td colspan="3" class="colspan">
+                                            <a href="#grids-masonry">Masonry layouts</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-masonry"</span>
+                                        </td>
+                                        <td>
+                                            Grid container (row)
+                                        </td>
+                                        <td>
+                                            Display columns as a verticaly Masonry layout
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-masonry cc-{number}"</span>
+                                        </td>
+                                        <td>
+                                            Grid container (row)
+                                        </td>
+                                        <td>
+                                            Display <em>{number}</em> columns as a verticaly Masonry layout<br />
+                                            <strong>{number} :</strong> can be set from 1 to {@cols-total} (default : 12)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-masonry cc-{number}-{letter}"</span>
+                                        </td>
+                                        <td>
+                                            Grid container (row)
+                                        </td>
+                                        <td>
+                                            Display <em>{number}</em> columns as a verticaly Masonry layout on <em>{letter}</em> screen and up<br />
+                                            <strong>{number} :</strong> can be set from 1 to {@cols-total} (default : 12)<br />
+                                            <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>
                                     </tr>
                                 </tbody>

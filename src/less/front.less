@@ -598,6 +598,14 @@ main {
             &.affix {
                 position:fixed;
                 top:0;
+
+                ._media-l-up({
+                    width:191px;
+                });
+                ._media-xl-up({
+                    width:268px;
+                });
+                
             }
         }
 
@@ -607,8 +615,6 @@ main {
 
         ul {
             font-size:1.4rem;
-            max-height: 78vh;
-            overflow-y: auto;
 
             li {
                 padding-top:10px;
@@ -625,7 +631,7 @@ main {
                         ._transition;
                     }
 
-                    ul {
+                    & > ul {
                         display:block;
                     }
                 }
@@ -693,14 +699,14 @@ main {
                     }
 
                     ul {
-                        padding-left:20px;
+                        padding-left:10px;
                     }
                 }
             }
         }
     }
 
-    // Specific for reminder page
+    // Raminder tables
     .reminder & {
         table {
             margin:0;

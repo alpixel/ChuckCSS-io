@@ -7864,6 +7864,9 @@ main .wrap-feature h2 a:hover:before {
 main .wrap-feature h3 {
   font-size: 1.3em;
 }
+main .wrap-feature h4 {
+  margin-bottom:20px;
+}
 .documentation main .wrap-feature h3 {
   color: #2fc0aa;
   margin: 60px 0 30px;
@@ -7882,6 +7885,7 @@ main .sep {
 main .exemple-intro {
   padding: 1em 0 1em 1em;
   border-left: 5px solid #2fc0aa;
+  margin-bottom:20px;
 }
 main .exemple-intro .alert:last-child {
   margin-bottom: 0;
@@ -7893,6 +7897,17 @@ main .menu-summary #left-navbar.affix {
   position: fixed;
   top: 0;
 }
+@media screen and (min-width: 990px) {
+  main .menu-summary #left-navbar.affix {
+    width:191px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main .menu-summary #left-navbar.affix {
+    width:268px;
+  }
+}
+
 main .menu-summary h3 {
   padding-top: 50px;
 }
@@ -7913,7 +7928,7 @@ main .menu-summary ul li.active > a {
   -webkit-transition: 0.2s all ease-out 0s;
   transition: 0.2s all ease-out 0s;
 }
-main .menu-summary ul li.active ul {
+main .menu-summary ul li.active > ul {
   display: block;
 }
 main .menu-summary ul li ul {
@@ -7966,7 +7981,7 @@ main .menu-summary ul li a:hover {
   margin-right: 5px;
 }
 .documentation main .menu-summary ul li ul {
-  padding-left: 20px;
+  padding-left: 10px;
 }
 .reminder main table {
   margin: 0;

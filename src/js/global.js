@@ -151,13 +151,11 @@
 
         // Affix + ScrollSpy
         if(currentWindowWidth > MWidthMax) {
-            if((264 + $('#left-navbar').outerHeight()) < currentWindowHeight) {
-                $('#left-navbar').affix({
-                    offset: {
-                        top: 264
-                    }
-                });
-            }
+            $('#left-navbar').affix({
+                offset: {
+                    top: 264
+                }
+            });
             $('body').scrollspy({
                 target: '#left-navbar',
                 offset : 250
