@@ -401,7 +401,30 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="#elements-buttons">Buttons</a>
+                                            <a href="#elements-buttons">Buttons / Btn links</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#elements-buttons-basic">Basic buttons / links</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-buttons-thickness">Buttons thickness</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-buttons-color">Colorized buttons</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-buttons-outlined">Outlined buttons</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-buttons-iconed">Iconed buttons</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-buttons-disabled">Disabled buttons</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-buttons-loading">Loading buttons</a>
+                                                </li>
+                                            </ul>
                                         </li>
                                         <li>
                                             <a href="#elements-forms">Forms</a>
@@ -3217,6 +3240,524 @@
                                         &lt;/blockquote>
                                     </code>
                                 </pre>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div>
+                                <h3 id="elements-buttons" class="fa-angle-right">
+                                    <a href="#elements-buttons">
+                                        Buttons / Btn Links
+                                    </a>
+                                </h3>
+                                <p class="cc-txt-center cc-mab-20">
+                                    <a href="reminder#buttons" class="btn cc-thin cc-bg-primary">Go to reminder</a>
+                                </p>
+
+                                <h4 id="elements-buttons-basic">
+                                    <a href="#elements-buttons-basic">
+                                        Basic buttons & "btn-like" links
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <span class="code">class="btn"</span> : Display a HTML link as a button
+                                </div>
+                                <div class="columns">
+                                    <div>
+                                        <a href="#" class="btn">"Btn-like" HTML link</a>
+                                    </div>
+                                    <div>
+                                        <button>Button</button>
+                                    </div>
+                                </div>
+
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Basic buttons & btn-like link -->
+                                        &lt;a href="#" class="btn">"Btn-like" HTML link&lt;/a>
+                                        &lt;button>Button&lt;/button>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-buttons-thickness">
+                                    <a href="#elements-buttons-thickness">
+                                        Buttons thickness
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <span class="code">class="cc-thin"</span> : Display a thin button
+                                </div>
+                                <div class="columns">
+                                    <div>
+                                        <a href="#" class="btn cc-thin">Thin HTML link</a>
+                                    </div>
+                                    <div>
+                                        <button class="cc-thin">Thin button</button>
+                                    </div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Thin button & HTML link -->
+                                        &lt;a href="#" class="btn cc-thin">Thin HTML link&lt;/a>
+                                        &lt;button class="cc-thin">Thin button&lt;/button>
+                                    </code>
+                                </pre>
+                                <div class="sep"></div>
+                                <div class="exemple-intro">
+                                    <span class="code">class="cc-fat"</span> : Display a fat button
+                                </div>
+                                <div class="columns">
+                                    <div>
+                                        <a href="#" class="btn cc-fat">Fat HTML link</a>
+                                    </div>
+                                    <div>
+                                        <button class="cc-fat">Fat button</button>
+                                    </div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Fat button & HTML link -->
+                                        &lt;a href="#" class="btn cc-fat">Fat HTML link&lt;/a>
+                                        &lt;button class="cc-fat">Fat button&lt;/button>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-buttons-color">
+                                    <a href="#elements-buttons-color">
+                                        Colorized buttons
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <span class="code">class="cc-bg-{color}"</span> : Display a colorized button<br /><br />
+                                    <strong>{color}</strong> : <a href="reminder#chuckcss-colors" class="external-link">A color defined in ChuckCSS framework</a>
+                                </div>
+                                <div class="columns">
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn cc-bg-primary">Primary</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn cc-bg-blue">Blue</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn cc-bg-green">Green</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn cc-bg-purple">Purple</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn cc-bg-red">Red</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn cc-bg-orange">Orange</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn cc-bg-yellow">Yellow</a>
+                                    </div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Colorized HTML link -->
+                                        &lt;a href="#" class="btn cc-bg-primary">Primary&lt;/a>
+                                        &lt;a href="#" class="btn cc-bg-blue">Blue&lt;/a>
+                                        &lt;a href="#" class="btn cc-bg-green">Green&lt;/a>
+                                        &lt;a href="#" class="btn cc-bg-purple">Purple&lt;/a>
+                                        &lt;a href="#" class="btn cc-bg-red">Red&lt;/a>
+                                        &lt;a href="#" class="btn cc-bg-orange">Orange&lt;/a>
+                                        &lt;a href="#" class="btn cc-bg-yellow">Yellow&lt;/a>
+                                    </code>
+                                </pre>
+                                <div class="columns">
+                                    <div class="cc-txt-center">
+                                        <button class="cc-bg-primary">Primary</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="cc-bg-blue">Blue</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="cc-bg-green">Green</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="cc-bg-purple">Purple</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="cc-bg-red">Red</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="cc-bg-orange">Orange</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="cc-bg-yellow">Yellow</button>
+                                    </div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Colorized button -->
+                                        &lt;button class="cc-bg-primary">Primary&lt;/button>
+                                        &lt;button class="cc-bg-blue">Blue&lt;/button>
+                                        &lt;button class="cc-bg-green">Green&lt;/button>
+                                        &lt;button class="cc-bg-purple">Purple&lt;/button>
+                                        &lt;button class="cc-bg-red">Red&lt;/button>
+                                        &lt;button class="cc-bg-orange">Orange&lt;/button>
+                                        &lt;button class="cc-bg-yellow">Yellow&lt;/button>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-buttons-outlined">
+                                    <a href="#elements-buttons-outlined">
+                                        Outlined buttons
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <span class="code">class="cc-outlined cc-bg-{color}"</span> : Display an outlined button (must be combined with a bg-color)<br /><br />
+                                    <strong>{color}</strong> : <a href="reminder#chuckcss-colors" class="external-link">A color defined in ChuckCSS framework</a>
+                                </div>
+                                <div class="columns">
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn cc-bg-primary cc-outlined">Outlined</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn cc-bg-blue cc-outlined">Outlined</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn cc-bg-green cc-outlined">Outlined</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn cc-bg-purple cc-outlined">Outlined</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn cc-bg-red cc-outlined">Outlined</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn cc-bg-orange cc-outlined">Outlined</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn cc-bg-yellow cc-outlined">Outlined</a>
+                                    </div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Outlined HTML link -->
+                                        &lt;a href="#" class="btn cc-outlined cc-bg-primary">Outlined&lt;/a>
+                                        &lt;a href="#" class="btn cc-outlined cc-bg-blue">Outlined&lt;/a>
+                                        &lt;a href="#" class="btn cc-outlined cc-bg-green">Outlined&lt;/a>
+                                        &lt;a href="#" class="btn cc-outlined cc-bg-purple">Outlined&lt;/a>
+                                        &lt;a href="#" class="btn cc-outlined cc-bg-red">Outlined&lt;/a>
+                                        &lt;a href="#" class="btn cc-outlined cc-bg-orange">Outlined&lt;/a>
+                                        &lt;a href="#" class="btn cc-outlined cc-bg-yellow">Outlined&lt;/a>
+                                    </code>
+                                </pre>
+                                <div class="columns">
+                                    <div class="cc-txt-center">
+                                        <button class="cc-bg-primary cc-outlined">Outlined</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="cc-bg-blue cc-outlined">Outlined</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="cc-bg-green cc-outlined">Outlined</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="cc-bg-purple cc-outlined">Outlined</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="cc-bg-red cc-outlined">Outlined</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="cc-bg-orange cc-outlined">Outlined</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="cc-bg-yellow cc-outlined">Outlined</button>
+                                    </div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Outlined button -->
+                                        &lt;button class="cc-outlined cc-bg-primary">Outlined&lt;/button>
+                                        &lt;button class="cc-outlined cc-bg-blue">Outlined&lt;/button>
+                                        &lt;button class="cc-outlined cc-bg-green">Outlined&lt;/button>
+                                        &lt;button class="cc-outlined cc-bg-purple">Outlined&lt;/button>
+                                        &lt;button class="cc-outlined cc-bg-red">Outlined&lt;/button>
+                                        &lt;button class="cc-outlined cc-bg-orange">Outlined&lt;/button>
+                                        &lt;button class="cc-outlined cc-bg-yellow">Outlined&lt;/button>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-buttons-iconed">
+                                    <a href="#elements-buttons-iconed">
+                                        Iconed buttons
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <span class="code">class="fa-*"</span> : Display a FontAwesome icon to the left<br />
+                                    <span class="code">class="icon-right fa-*"</span> : Display a FontAwesome icon to the right<br />
+                                    <span class="code">class="ion-*"</span> : Display an Ionicons icon to the left<br />
+                                    <span class="code">class="icon-right ion-*"</span> : Display an Ionicons icon to the right<br /><br />
+                                    <strong>fa-*</strong> : <a href="http://fontawesome.io/cheatsheet/" class="external-link">A FontAwesome classname icon</a><br />
+                                    <strong>ion-*</strong> : <a href="http://ionicons.com/cheatsheet.html" class="external-link">A Ionicons classname icon</a>
+
+                                    <div class="alert alert-warning ion-ios-lightbulb">
+                                        Icons are adaptative to the button thickness.
+                                    </div>
+                                </div>
+                                <div class="columns">
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn fa-car cc-thin">I'm thin</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn ion-android-bicycle">I'm normal</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn fa-cut cc-fat">I'm fat</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn ion-social-github cc-outlined">I'm outlined</a>
+                                    </div>
+                                </div>
+                                <div class="columns">
+                                    <div class="cc-txt-center">
+                                        <button class="fa-car cc-bg-primary cc-thin">I'm thin</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="ion-android-bicycle cc-bg-primary">I'm normal</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="fa-cut cc-bg-primary cc-fat">I'm fat</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="ion-social-github cc-bg-primary cc-outlined">I'm outlined</button>
+                                    </div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Iconed HTML link -->
+                                        &lt;a href="#" class="btn fa-car cc-thin">I'm thin&lt;/a>
+                                        &lt;a href="#" class="btn ion-android-bicycle">I'm normal&lt;/a>
+                                        &lt;a href="#" class="btn fa-cut cc-fat">I'm fat&lt;/a>
+                                        &lt;a href="#" class="btn ion-social-github cc-outlined">I'm outlined&lt;/a>
+
+                                        &lt;!-- Iconed buttons -->
+                                        &lt;button class="cc-bg-primary fa-car cc-thin">I'm thin&lt;/button>
+                                        &lt;button class="cc-bg-primary ion-android-bicycle">I'm normal&lt;/button>
+                                        &lt;button class="cc-bg-primary fa-cut cc-fat">I'm fat&lt;/button>
+                                        &lt;button class="cc-bg-primary ion-social-github cc-outlined">I'm outlined&lt;/button>
+                                    </code>
+                                </pre>
+
+                                <div class="alert alert-warning ion-ios-lightbulb">
+                                    <span class="code">&lt;button class="icon-right fa-*">&lt;/button></span> does not work properly on Mozilla Firefox. Icon is still displayed to the left and not to the right on this browser.
+                                </div>
+
+                                <div class="columns">
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="icon-right btn fa-car cc-thin">I'm thin</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="icon-right btn ion-android-bicycle">I'm normal</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="icon-right btn fa-cut cc-fat">I'm fat</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="icon-right btn ion-social-github cc-outlined">I'm outlined</a>
+                                    </div>
+                                </div>
+                                <div class="columns">
+                                    <div class="cc-txt-center">
+                                        <button class="icon-right fa-car cc-bg-primary cc-thin">I'm thin</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="icon-right ion-android-bicycle cc-bg-primary">I'm normal</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="icon-right fa-cut cc-bg-primary cc-fat">I'm fat</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="icon-right ion-social-github cc-bg-primary cc-outlined">I'm outlined</button>
+                                    </div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Right Iconed HTML link -->
+                                        &lt;a href="#" class="icon-right btn fa-car cc-thin">I'm thin&lt;/a>
+                                        &lt;a href="#" class="icon-right btn ion-android-bicycle">I'm normal&lt;/a>
+                                        &lt;a href="#" class="icon-right btn fa-cut cc-fat">I'm fat&lt;/a>
+                                        &lt;a href="#" class="icon-right btn ion-social-github cc-outlined">I'm outlined&lt;/a>
+
+                                        &lt;!-- Right Iconed buttons -->
+                                        &lt;button class="icon-right cc-bg-primary fa-car cc-thin">I'm thin&lt;/button>
+                                        &lt;button class="icon-right cc-bg-primary ion-android-bicycle">I'm normal&lt;/button>
+                                        &lt;button class="icon-right cc-bg-primary fa-cut cc-fat">I'm fat&lt;/button>
+                                        &lt;button class="icon-right cc-bg-primary ion-social-github cc-outlined">I'm outlined&lt;/button>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-buttons-disabled">
+                                    <a href="#elements-buttons-disabled">
+                                        Disabled buttons
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <span class="code">class="cc-disabled"</span> : Disabled button / link action
+                                </div>
+                                <div class="columns">
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn cc-disabled cc-bg-primary">Disabled</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn cc-disabled cc-outlined cc-bg-blue">Blue</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn cc-disabled cc-bg-green">Green</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn cc-disabled cc-outlined cc-bg-purple">Purple</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn cc-disabled cc-bg-red">Red</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn cc-disabled cc-outlined cc-bg-orange">Orange</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn cc-disabled cc-bg-yellow">Yellow</a>
+                                    </div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Disabled HTML link -->
+                                        &lt;a href="#" class="btn cc-disabled cc-bg-primary">Primary&lt;/a>
+                                        &lt;a href="#" class="btn cc-disabled cc-outlined cc-bg-blue">Blue&lt;/a>
+                                        &lt;a href="#" class="btn cc-disabled cc-bg-green">Green&lt;/a>
+                                        &lt;a href="#" class="btn cc-disabled cc-outlined cc-bg-purple">Purple&lt;/a>
+                                        &lt;a href="#" class="btn cc-disabled cc-bg-red">Red&lt;/a>
+                                        &lt;a href="#" class="btn cc-disabled cc-outlined cc-bg-orange">Orange&lt;/a>
+                                        &lt;a href="#" class="btn cc-disabled cc-bg-yellow">Yellow&lt;/a>
+                                    </code>
+                                </pre>
+                                <div class="columns">
+                                    <div class="cc-txt-center">
+                                        <button class="cc-disabled cc-bg-primary">Primary</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="cc-disabled cc-outlined cc-bg-blue">Blue</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="cc-disabled cc-bg-green">Green</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="cc-disabled cc-outlined cc-bg-purple">Purple</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="cc-disabled cc-bg-red">Red</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="cc-disabled cc-outlined cc-bg-orange">Orange</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="cc-disabled cc-bg-yellow">Yellow</button>
+                                    </div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Disabled button -->
+                                        &lt;button class="cc-disabled cc-bg-primary">Primary&lt;/button>
+                                        &lt;button class="cc-disabled cc-outlined cc-bg-blue">Blue&lt;/button>
+                                        &lt;button class="cc-disabled cc-bg-green">Green&lt;/button>
+                                        &lt;button class="cc-disabled cc-outlined cc-bg-purple">Purple&lt;/button>
+                                        &lt;button class="cc-disabled cc-bg-red">Red&lt;/button>
+                                        &lt;button class="cc-disabled cc-outlined cc-bg-orange">Orange&lt;/button>
+                                        &lt;button class="cc-disabled cc-bg-yellow">Yellow&lt;/button>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-buttons-loading">
+                                    <a href="#elements-buttons-loading">
+                                        Loading buttons
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        <span class="code">class="cc-loading"</span> : Display a loading button / link<br /><br />
+                                        For exemple, you can toggle a submit button with one line of javascript (simply by adding the <span class="code">cc-loading</span> class).
+                                    </p>
+                                </div>
+                                <div class="columns">
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn cc-loading">I'm loading</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn cc-bg-primary cc-loading">I'm loading</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn cc-bg-primary cc-loading cc-outlined">I'm loading</a>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <a href="#" class="btn cc-bg-primary cc-loading cc-disabled">I'm loading</a>
+                                    </div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Loading HTML link -->
+                                        &lt;a href="#" class="btn cc-loading">I'm loading&lt;/a>
+                                        &lt;a href="#" class="btn cc-bg-primary cc-loading">I'm loading&lt;/a>
+                                        &lt;a href="#" class="btn cc-bg-primary cc-loading cc-outlined">I'm loading&lt;/a>
+                                        &lt;a href="#" class="btn cc-bg-primary cc-loading cc-disabled">I'm loading&lt;/a>
+                                    </code>
+                                </pre>
+                                <div class="columns">
+                                    <div class="cc-txt-center">
+                                        <button class="cc-loading">I'm loading</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="cc-loading cc-bg-primary">I'm loading</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="cc-loading cc-bg-primary cc-outlined">I'm loading</button>
+                                    </div>
+                                    <div class="cc-txt-center">
+                                        <button class="cc-loading cc-bg-primary cc-disabled">I'm loading</button>
+                                    </div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Loading button -->
+                                        &lt;button class="cc-loading">I'm loading&lt;/button>
+                                        &lt;button class="cc-loading cc-bg-primary">I'm loading&lt;/button>
+                                        &lt;button class="cc-loading cc-bg-primary cc-outlined">I'm loading&lt;/button>
+                                        &lt;button class="cc-loading cc-bg-primary cc-disabled">I'm loading&lt;/button>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <p class="cc-txt-center">
+                                    <button class="cc-bg-primary js-loading-exemple fa-hand-o-right">Transfer funds to my bank account</button>
+                                </p>
+                                <pre class="HTML">
+                                    <code class="language-javascript"><!-- -->
+                                        // Buttons loading exemple
+                                        $('button').on('click',function(e){
+                                            $(this)
+                                                .toggleClass('cc-loading fa-hand-o-right')
+                                                .delay(2500)
+                                                .queue(function(nxt){
+                                                    $(this).text('Done!').toggleClass('fa-thumbs-up cc-disabled cc-loading');
+                                                });
+                                        });
+                                    </code>
+                                </pre>
+
                             </div>
 
                             <!-- NEW SECTION -->

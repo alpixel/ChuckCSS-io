@@ -162,5 +162,16 @@
             });
         }
 
+        // Buttons loading exemple
+        $('button.js-loading-exemple').on('click',function(e){
+            $(this)
+                .toggleClass('cc-loading fa-hand-o-right')
+                .delay(2500)
+                .queue(function(nxt){
+                    $(this).text('Done!').toggleClass('fa-thumbs-up cc-disabled cc-loading');
+                });
+
+        });
+
     });
 })(jQuery);
