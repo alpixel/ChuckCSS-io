@@ -166,7 +166,7 @@
         $('button.js-loading-exemple').on('click',function(e){
             var target = $(this);
 
-            target.toggleClass('cc-loading fa-hand-o-right cc-bg-red cc-bg-primary');
+            target.toggleClass('cc-loading fa-hand-o-right cc-bg-red cc-bg-primary js-loading-exemple');
 
             setTimeout(function(){
                 target
