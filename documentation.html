@@ -381,31 +381,45 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#">Elements</a>
+                                    <a href="#elements">Elements</a>
                                     <ul>
                                         <li>
-                                            <a href="#">Blockquotes</a>
+                                            <a href="#elements-blockquotes">Blockquotes</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#elements-blockquotes-basic">Basic blockquote</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-blockquotes-quoted">Quoted blockquote</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-blockquotes-color">Main color blockquote</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-blockquotes-reverse">Reverse blockquote</a>
+                                                </li>
+                                            </ul>
                                         </li>
                                         <li>
-                                            <a href="#">Buttons</a>
+                                            <a href="#elements-buttons">Buttons</a>
                                         </li>
                                         <li>
-                                            <a href="#">Forms</a>
+                                            <a href="#elements-forms">Forms</a>
                                         </li>
                                         <li>
-                                            <a href="#">Images</a>
+                                            <a href="#elements-images">Images</a>
                                         </li>
                                         <li>
-                                            <a href="#">Lists</a>
+                                            <a href="#elements-lists">Lists</a>
                                         </li>
                                         <li>
-                                            <a href="#">Loaders</a>
+                                            <a href="#elements-loaders">Loaders</a>
                                         </li>
                                         <li>
-                                            <a href="#">Tables</a>
+                                            <a href="#elements-tables">Tables</a>
                                         </li>
                                         <li>
-                                            <a href="#">Titles</a>
+                                            <a href="#elements-titles">Titles</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -3048,13 +3062,168 @@
                                 </pre>
                                 <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
                             </div>
+                        </div>
 
+                        <!-- ELEMENTS -->
+                        <div class="wrap-feature">
+                            <h2 id="elements">
+                                <a href="#elements" class="ion-link">Elements in ChuckCSS</a>
+                            </h2>
+
+                            <!-- Blockquotes -->
+                            <div>
+                                <h3 id="elements-blockquotes" class="fa-angle-right">
+                                    <a href="#elements-blockquotes">
+                                        Blockquotes
+                                    </a>
+                                </h3>
+                                <p class="cc-txt-center cc-mab-20">
+                                    <a href="reminder#blockquotes" class="btn cc-thin cc-bg-primary">Go to reminder</a>
+                                </p>
+                                <blockquote cite="http://www.w3schools.com/TAgs/tag_blockquote.asp">
+                                        &lt;blockquote> tag specifies a section that is quoted from another source.
+                                        <footer><a href="http://www.w3schools.com/TAgs/tag_blockquote.asp" class="external-link">http://www.w3schools.com</a></footer>
+                                </blockquote>
+                                <div class="exemple-intro">
+                                    <div class="alert alert-warning ion-ios-lightbulb">
+                                        By default, blockquotes are colorized with the @primary color.<br /><br />
+                                        <a href="reminder#chuckcss-colors" class="external-link">Use a color defined in ChuckCSS framework</a>
+                                    </div>
+                                </div>
+                                <div class="sep"></div>
+
+                                <h4 id="elements-blockquotes-basic">
+                                    <a href="#elements-blockquotes-basic">
+                                        Basic blockquote
+                                    </a>
+                                </h4>
+
+                                <blockquote>
+                                    Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin. Boudin pork belly pancetta turkey bacon tri-tip tail flank jowl kevin filet mignon.
+                                </blockquote>
+                                <blockquote>
+                                    Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin. Boudin pork belly pancetta turkey bacon tri-tip tail flank jowl kevin filet mignon.
+                                    <footer>Gitman, git superhero</footer>
+                                </blockquote>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Basic blockquote -->
+                                        &lt;blockquote>
+                                            Bacon ipsum dolor amet venison chuck...
+                                        &lt;/blockquote>
+                                        &lt;!-- Basic blockquote with footer -->
+                                        &lt;blockquote>
+                                            Bacon ipsum dolor amet venison chuck...
+                                            &lt;footer>Gitman, git superhero&lt;/footer>
+                                        &lt;/blockquote>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-blockquotes-quoted">
+                                    <a href="#elements-blockquotes-quoted">
+                                        Quoted blockquote
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        <span class="code">class="cc-quoted"</span> : Display a quoted blockquote
+                                    </p>
+                                </div>
+                                <blockquote class="cc-quoted">
+                                    Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin. Boudin pork belly pancetta turkey bacon tri-tip tail flank jowl kevin filet mignon.
+                                    <footer>Gitman, git superhero</footer>
+                                </blockquote>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Quoted blockquote -->
+                                        &lt;blockquote class="cc-quoted">
+                                            Bacon ipsum dolor amet venison chuck...
+                                            &lt;footer>Gitman, git superhero&lt;/footer>
+                                        &lt;/blockquote>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-blockquotes-color">
+                                    <a href="#elements-blockquotes-color">
+                                        Change blockquote main color
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        <span class="code">class="cc-{color}"</span> : Display a colorized blockquote<br /><br />
+                                        <strong>{color}</strong> : <a href="reminder#chuckcss-colors" class="external-link">A color defined in ChuckCSS framework</a>
+                                    </p>
+                                </div>
+                                <blockquote class="cc-purple">
+                                    Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin. Boudin pork belly pancetta turkey bacon tri-tip tail flank jowl kevin filet mignon.
+                                    <footer>Gitman, git superhero</footer>
+                                </blockquote>
+                                <blockquote class="cc-purple cc-quoted">
+                                    Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin. Boudin pork belly pancetta turkey bacon tri-tip tail flank jowl kevin filet mignon.
+                                    <footer>Gitman, git superhero</footer>
+                                </blockquote>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Colorized blockquote -->
+                                        &lt;blockquote class="cc-purple">
+                                            Bacon ipsum dolor amet venison chuck...
+                                            &lt;footer>Gitman, git superhero&lt;/footer>
+                                        &lt;/blockquote>
+
+                                        &lt;!-- Colorized & Quoted blockquote -->
+                                        &lt;blockquote class="cc-purple cc-quoted">
+                                            Bacon ipsum dolor amet venison chuck...
+                                            &lt;footer>Gitman, git superhero&lt;/footer>
+                                        &lt;/blockquote>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-blockquotes-reverse">
+                                    <a href="#elements-blockquotes-reverse">
+                                        Revers blockquote
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        <span class="code">class="cc-reverse"</span> : Reverse the blockquote
+                                    </p>
+                                </div>
+                                <blockquote class="cc-reverse">
+                                    Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin. Boudin pork belly pancetta turkey bacon tri-tip tail flank jowl kevin filet mignon.
+                                    <footer>Gitman, git superhero</footer>
+                                </blockquote>
+                                <blockquote class="cc-red cc-reverse cc-quoted">
+                                    Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin. Boudin pork belly pancetta turkey bacon tri-tip tail flank jowl kevin filet mignon.
+                                    <footer>Gitman, git superhero</footer>
+                                </blockquote>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Reverse blockquote -->
+                                        &lt;blockquote class="cc-reverse">
+                                            Bacon ipsum dolor amet venison chuck...
+                                            &lt;footer>Gitman, git superhero&lt;/footer>
+                                        &lt;/blockquote>
+
+                                        &lt;!-- Reverse & Colorized & Quoted blockquote -->
+                                        &lt;blockquote class="cc-red cc-reverse cc-quoted">
+                                            Bacon ipsum dolor amet venison chuck...
+                                            &lt;footer>Gitman, git superhero&lt;/footer>
+                                        &lt;/blockquote>
+                                    </code>
+                                </pre>
+                            </div>
 
                             <!-- NEW SECTION -->
                             <!-- <div>
-                                <h3 id="components-badges" class="fa-angle-right">
-                                    <a href="#components-badges">
-                                        Badges
+                                <h3 id="elements" class="fa-angle-right">
+                                    <a href="#elements">
+                                        TATA-YOYO
                                     </a>
                                 </h3>
                                 <p class="cc-txt-center cc-mab-20">
@@ -3067,8 +3236,8 @@
                                 </div>
                                 <div class="sep"></div>
 
-                                <h4>
-                                    <a href="#">
+                                <h4 id="elements">
+                                    <a href="#elements">
                                         Basic tabs
                                     </a>
                                 </h4>
