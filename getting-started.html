@@ -128,134 +128,173 @@
             </section>
 
             <section class="inside">
-                <div class="wrap-feature">
-                    <h2>
-                        Download ChuckCSS
-                    </h2>
-                    <div class="columns cc-txt-center">
-                        <div class="cc-4-m">
-                            <p>NPM Package</p>
-                            <a href="https://www.npmjs.com/package/ChuckCSS" class="btn external-link black">
-                                $ npm install ChuckCSS
-                            </a>
+                <div class="columns">
+                    <aside class="cc-3 menu-summary cc-hidden-m-down">
+                        <div id="left-navbar">
+                            <h3>Getting started</h3>
+                            <ul class="nav" role="tablist">
+                                <li class="active">
+                                    <a href="#start-download">
+                                        Download ChuckCSS
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#start-icons">
+                                        FontAwesome & Ionicons
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#start-dist-files">
+                                        Working with dist files
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#start-source-files">
+                                        Working with source files
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="cc-4-m">
-                            <p>Bower Package</p>
-                            <a href="https://github.com/alpixel/ChuckCSS" class="btn external-link black">
-                                $ bower install ChuckCSS
-                            </a>
+                    </aside>
+                    <section class="cc-12 cc-9-l">
+
+                        <div class="wrap-feature">
+                            <h2 id="start-download">
+                                <a href="#start-download" class="ion-link">
+                                    Download ChuckCSS
+                                </a>
+                            </h2>
+                            <div class="columns cc-txt-center">
+                                <div class="cc-4-m">
+                                    <p>NPM Package</p>
+                                    <a href="https://www.npmjs.com/package/ChuckCSS" class="btn external-link black">
+                                        $ npm install ChuckCSS
+                                    </a>
+                                </div>
+                                <div class="cc-4-m">
+                                    <p>Bower Package</p>
+                                    <a href="https://github.com/alpixel/ChuckCSS" class="btn external-link black">
+                                        $ bower install ChuckCSS
+                                    </a>
+                                </div>
+                                <div class="cc-4-m">
+                                    <p>GitHub repository</p>
+                                    <a class="github-button" href="https://github.com/alpixel/ChuckCSS/archive/master.zip" data-style="mega" aria-label="Download alpixel/ChuckCSS on GitHub">Download from GitHub</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="cc-4-m">
-                            <p>GitHub repository</p>
-                            <a class="github-button" href="https://github.com/alpixel/ChuckCSS/archive/master.zip" data-style="mega" aria-label="Download alpixel/ChuckCSS on GitHub">Download from GitHub</a>
+
+                        <div class="wrap-feature">
+                            <h2 id="start-icons">
+                                <a href="#start-icons" class="ion-link">
+                                    FontAwesome and Ionicons
+                                </a>
+                            </h2>
+                            <div class="alert alert-error">
+                                If you want to use icons with ChuckCSS, <strong>please include FontAwesome and/or Ionicons files.</strong><br /><br />
+                                If you install ChuckCSS via Bower or NPM, <strong>FontAwesome and Ionicons are downloaded as dependencies.</strong><br />Files will be in "node_modules" (npm) or "bower_components" (bower) folders.
+                            </div>
+                            <pre class="HTML">
+                                <code class="language-markup"><!-- -->
+                                    &lt;!-- Include FontAwesome & Ionicons CSS files -->
+                                    &lt;link rel="stylesheet" href="PATH/font-awesome.min.css" type="text/css" media="screen" />
+                                    &lt;link rel="stylesheet" href="PATH/ionicons.min.css" type="text/css" media="screen" />
+                                </code>
+                            </pre>
                         </div>
-                    </div>
+
+                        <div class="wrap-feature">
+                            <h2 id="start-dist-files">
+                                <a href="#start-dist-files" class="ion-link">
+                                    Working with dist files
+                                </a>
+                            </h2>
+                            <div class="alert alert-info">
+                                When ChuckCSS is download, the dist files to include are into the "dist" folder (css and js files).<br />
+                                <ul>
+                                    <li><strong>With NPM :</strong> node_modules/ChuckCSS/dist</li>
+                                    <li><strong>With Bower :</strong> bower_components/ChuckCSS/dist</li>
+                                </ul>
+                            </div>
+                            <pre class="HTML">
+                                <code class="language-markup"><!-- -->
+                                    &lt;!-- Include the ChuckCSS CSS file -->
+                                    &lt;link rel="stylesheet" href="PATH/dist/chuckcss.min.css" type="text/css" media="screen" />
+
+                                    &lt;!-- ** OPTIONNAL ** -->
+                                    &lt;!-- Print file -->
+                                    &lt;link rel="stylesheet" href="PATH/dist/print.css" type="text/css" media="print" />
+
+                                    &lt;!-- ** OPTIONNAL ** -->
+                                    &lt;!-- Just before the &lt;/body> close tag, include the ChuckCSS JS file -->
+                                    &lt;!-- The javascript file is optionnal. It manages modals (openings and closures) and alerts (closures) -->
+                                    &lt;!-- You can easily create your own javascript file to manage by yourself modals and alerts -->
+                                    &lt;script type="text/javascript" src="PATH/dist/chuckcss.js">&lt;/script>
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="wrap-feature">
+                            <h2 id="start-source-files">
+                                <a href="#start-source-files" class="ion-link">
+                                    Working with source files
+                                </a>
+                            </h2>
+                            <div class="alert alert-info">
+                                Working with source files give you the possibility to customize ChuckCSS with your own settings, colors, etc... but you have to be familiar with <a href="http://lesscss.org/" class="external-link">Less language.</a><br /><br />
+                                <strong>By compiling your own dist file with <a href="http://gruntjs.com/" class="external-link">Grunt</a> or <a href="http://gulpjs.com/" class="external-link">Gulp</a>, combined with <a href="https://github.com/postcss/autoprefixer" class="external-link">Autoprefixer</a>,</strong> you can use powerfull mixins to build websites easily and faster.
+
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/gulpjs/gulp/tree/master/docs" class="external-link">Gulp documentation</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://gruntjs.com/getting-started" class="external-link">Grunt documentation</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/postcss/autoprefixer" class="external-link">Autoprefixer documentation</a> : ChuckCSS uses Autoprefixer to deal with CSS vendor prefixes. If you use the Gulpfile.js downloaded with ChuckCSS, Autoprefixer is already include. If you use your own Gruntfile or Gulpfile, integrate Autoprefixer by yourself.
+                                    </li>
+                                </ul>
+                            </div>
+                            <pre class="HTML">
+                                <code class="language-markup"><!-- -->
+                                    &lt;!-- ChuckCSS tree files -->
+                                    chuckcss/
+                                    |
+                                    ├── front.less &lt;!-- all @imports, base file of ChuckCSS -->
+                                    ├── print.less &lt;!-- print.css source file -->
+                                    ├── settings.less &lt;!-- all variables definitions -->
+                                    |
+                                    ├── components/
+                                    ├──── alerts.less
+                                    ├──── badges.less
+                                    ├──── grids.less
+                                    ├──── messages.less
+                                    ├──── modals.less
+                                    ├──── tabs.less
+                                    |
+                                    ├── core/
+                                    ├──── animations.less &lt;!-- radio, checkbox, loaders animations -->
+                                    ├──── base.less &lt;!-- &lt;html> and &lt;body> general definitions -->
+                                    ├──── functions.less &lt;!-- powerful mixins files -->
+                                    ├──── generator.less &lt;!-- grids items width, texts helpers... -->
+                                    ├──── helpers.less
+                                    ├──── normalize.less
+                                    ├──── responsive.less &lt;!-- responsive mixins -->
+                                    |
+                                    ├── elements/
+                                    ├──── blockquotes.less
+                                    ├──── buttons.less
+                                    ├──── forms.less
+                                    ├──── images.less
+                                    ├──── loaders.less
+                                    ├──── tables.less
+                                    └──── titles.less
+                                </code>
+                            </pre>
+                        </div>
+                    </section>
                 </div>
-
-                <div class="wrap-feature">
-                    <h2>
-                        Working with dist files
-                    </h2>
-                    <div class="alert alert-info">
-                        When ChuckCSS is download, the dist files to include are into the "dist" folder (css and js files).<br />
-                        <ul>
-                            <li><strong>With NPM :</strong> node_modules/ChuckCSS/dist</li>
-                            <li><strong>With Bower :</strong> bower_components/ChuckCSS/dist</li>
-                        </ul>
-                    </div>
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            &lt;!-- Include the ChuckCSS CSS file -->
-                            &lt;link rel="stylesheet" href="PATH/dist/chuckcss.min.css" type="text/css" media="screen" />
-
-                            &lt;!-- ** OPTIONNAL ** -->
-                            &lt;!-- Print file -->
-                            &lt;link rel="stylesheet" href="PATH/dist/print.css" type="text/css" media="print" />
-
-                            &lt;!-- ** OPTIONNAL ** -->
-                            &lt;!-- Just before the &lt;/body> close tag, include the ChuckCSS JS file -->
-                            &lt;!-- The javascript file is optionnal. It manages modals (openings and closures) and alerts (closures) -->
-                            &lt;!-- You can easily create your own javascript file to manage by yourself modals and alerts -->
-                            &lt;script type="text/javascript" src="PATH/dist/chuckcss.js">&lt;/script>
-                        </code>
-                    </pre>
-                </div>
-                <div class="wrap-feature">
-                    <h2>
-                        Adding FontAwesome and Ionicons
-                    </h2>
-                    <div class="alert alert-error">
-                        If you want to use icons with ChuckCSS, <strong>please include FontAwesome and/or Ionicons files.</strong><br /><br />
-                        If you install ChuckCSS via Bower or NPM, <strong>FontAwesome and Ionicons are downloaded as dependencies.</strong><br />Files will be in "node_modules" (npm) or "bower_components" (bower) folders.
-                    </div>
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            &lt;!-- Include FontAwesome & Ionicons CSS files -->
-                            &lt;link rel="stylesheet" href="PATH/font-awesome.min.css" type="text/css" media="screen" />
-                            &lt;link rel="stylesheet" href="PATH/ionicons.min.css" type="text/css" media="screen" />
-                        </code>
-                    </pre>
-                </div>
-
-                <div class="wrap-feature">
-                    <h2>
-                        Working with source files
-                    </h2>
-                    <div class="alert alert-info">
-                        Working with source files give you the possibility to customize ChuckCSS with your own settings, colors, etc... but you have to be familiar with <a href="http://lesscss.org/" class="external-link">Less language.</a><br /><br />
-                        <strong>By compiling your own dist file with <a href="http://gruntjs.com/" class="external-link">Grunt</a> or <a href="http://gulpjs.com/" class="external-link">Gulp</a>, combined with <a href="https://github.com/postcss/autoprefixer" class="external-link">Autoprefixer</a>,</strong> you can use powerfull mixins to build websites easily and faster.
-
-                        <ul>
-                            <li>
-                                <a href="https://github.com/gulpjs/gulp/tree/master/docs" class="external-link">Gulp documentation</a>
-                            </li>
-                            <li>
-                                <a href="http://gruntjs.com/getting-started" class="external-link">Grunt documentation</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/postcss/autoprefixer" class="external-link">Autoprefixer documentation</a> : ChuckCSS uses Autoprefixer to deal with CSS vendor prefixes. If you use the Gulpfile.js downloaded with ChuckCSS, Autoprefixer is already include. If you use your own Gruntfile or Gulpfile, integrate Autoprefixer by yourself.
-                            </li>
-                        </ul>
-                    </div>
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            &lt;!-- ChuckCSS tree files -->
-                            chuckcss/
-                            |
-                            ├── front.less &lt;!-- all @imports, base file of ChuckCSS -->
-                            ├── print.less &lt;!-- print.css source file -->
-                            ├── settings.less &lt;!-- all variables definitions -->
-                            |
-                            ├── components/
-                            ├──── alerts.less
-                            ├──── badges.less
-                            ├──── grids.less
-                            ├──── messages.less
-                            ├──── modals.less
-                            ├──── tabs.less
-                            |
-                            ├── core/
-                            ├──── animations.less &lt;!-- radio, checkbox, loaders animations -->
-                            ├──── base.less &lt;!-- &lt;html> and &lt;body> general definitions -->
-                            ├──── functions.less &lt;!-- powerful mixins files -->
-                            ├──── generator.less &lt;!-- grids items width, texts helpers... -->
-                            ├──── helpers.less
-                            ├──── normalize.less
-                            ├──── responsive.less &lt;!-- responsive mixins -->
-                            |
-                            ├── elements/
-                            ├──── blockquotes.less
-                            ├──── buttons.less
-                            ├──── forms.less
-                            ├──── images.less
-                            ├──── loaders.less
-                            ├──── tables.less
-                            └──── titles.less
-                        </code>
-                    </pre>
-
-                </div>
-
             </section>
         </main>
 

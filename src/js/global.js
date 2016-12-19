@@ -158,7 +158,7 @@
             });
             $('body').scrollspy({
                 target: '#left-navbar',
-                offset : 250
+                offset : 300
             });
         }
 

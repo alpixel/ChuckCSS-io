@@ -408,7 +408,7 @@
                             </ul>
                         </div>
                     </aside>
-                    <section class="documentation-list cc-12 cc-9-l">
+                    <section class="cc-12 cc-9-l">
                         <!-- General presentation -->
                         <div class="wrap-feature">
                             <h2 id="general-presentation">
@@ -417,7 +417,8 @@
 
                             <p>
                                 ChuckCSS is a flexible, adaptative, mobile-first and easy to learn CSS framework.<br /><br />
-                                Including the <strong>chuckcss.min.css</strong> file in your projects provides you just what you need to build modern websites, with flexible grids and powerful class.<br /><br />
+                                Including the <strong>chuckcss.min.css</strong> file in your projects provides you just what you need to build modern websites, with flexible grids and powerful classes.<br /><br />
+                                ChuckCSS is based on <strong>Less language.</strong><br />
                                 <strong>If you are familiar with Less language,</strong> I recommend you to work directly with ChuckCSS source files, and compiling sources by yourself with Gulp or Grunt (or others css compilers). In this way, you can customize ChuckCSS with your own specific needs (colors, font-sizes, breakpoints, loaders speed animations, etc...).
                             </p>
 
@@ -1267,7 +1268,7 @@
                                 <pre class="HTML">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Badges exemples -->
-                                        &lt;p class="cc-bg-primary cc-pa"> 
+                                        &lt;p class="cc-bg-primary cc-pa">
                                             Nunc nunc lundium aliquet &lt;span class="badge">54&lt;/span> elementum ac pulvinar proin.
                                         &lt;/p>
                                         &lt;p>
@@ -1301,7 +1302,7 @@
                                     </div>
                                 </div>
                                 <div class="sep"></div>
-                                
+
                                 <h4 id="components-grids-basic">
                                     <a href="#components-grids-basic">
                                         Basic grids
@@ -1397,7 +1398,7 @@
                                     </code>
                                 </pre>
                                 <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
-                                
+
                                 <div class="sep"></div>
 
                                 <h4 id="components-grids-offset">
@@ -1427,7 +1428,7 @@
                                     <div class="cc-bg-chuckgreen-da">1</div>
                                     <div class="cc-bg-chuckgreen">1</div>
                                 </div>
-                                
+
 
                                 <div class="columns cc-mat-20">
                                     <div class="cc-bg-blue cc-offset-4">Offset 4</div>
@@ -1444,7 +1445,7 @@
                                     </div>
                                 </div>
 
-                                
+
                                 <pre class="HTML collapsed">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Offsets grids -->
@@ -1467,7 +1468,7 @@
                                     </code>
                                 </pre>
                                 <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
-                                
+
                                 <div class="sep"></div>
 
                                 <h4 id="components-grids-ordering">
@@ -1502,7 +1503,7 @@
                                     <div class="cc-bg-orange cc-first-l">L:first</div>
                                     <div class="cc-bg-purple cc-first-xl">XL:first</div>
                                 </div>
-                                
+
                                 <pre class="HTML collapsed">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Ordering -->
@@ -1512,7 +1513,7 @@
                                             &lt;div class="cc-first">I'm the first item but third in HTML!&lt;/div>
                                             &lt;div>Lorem ipsum..&lt;/div>
                                         &lt;/div>
-                                        
+
                                         &lt;div class="columns">
                                             &lt;div class="cc-last-s">S:last&lt;/div>
                                             &lt;div class="cc-last-m">M:last&lt;/div>
@@ -1529,7 +1530,7 @@
                                     </code>
                                 </pre>
                                 <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
-                                
+
                                 <div class="sep"></div>
 
                                 <h4 id="components-grids-no-multiligne">
@@ -1547,7 +1548,7 @@
                                     <div class="cc-bg-blue cc-7">7</div>
                                     <div class="cc-bg-primary cc-6">6 /!\ TOO LARGE</div>
                                 </div>
-                                
+
                                 <pre class="HTML">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Remove multiligne -->
@@ -1557,7 +1558,7 @@
                                         &lt;/div>
                                     </code>
                                 </pre>
-                                
+
                                 <div class="sep"></div>
 
                                 <h4 id="components-grids-reverse">
@@ -1572,24 +1573,24 @@
                                 </div>
 
                                 <div class="columns cc-reverse">
-                                    <div class="cc-bg-blue">First in html</div>
-                                    <div class="cc-bg-primary">Second in html</div>
-                                    <div class="cc-bg-blue">Third in html</div>
-                                    <div class="cc-bg-primary">Fourth in html</div>
+                                    <div class="cc-bg-blue cc-3">First in html</div>
+                                    <div class="cc-bg-primary cc-3">Second in html</div>
+                                    <div class="cc-bg-blue cc-3">Third in html</div>
+                                    <div class="cc-bg-primary cc-3">Fourth in html</div>
                                 </div>
-                                
+
                                 <pre class="HTML">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Reverse columns -->
                                         &lt;div class="columns cc-reverse">
-                                            &lt;div>First in html&lt;/div>
-                                            &lt;div>Second in html&lt;/div>
-                                            &lt;div>Third in html&lt;/div>
-                                            &lt;div>Fourth in html&lt;/div>
+                                            &lt;div class="cc-3">First in html&lt;/div>
+                                            &lt;div class="cc-3">Second in html&lt;/div>
+                                            &lt;div class="cc-3">Third in html&lt;/div>
+                                            &lt;div class="cc-3">Fourth in html&lt;/div>
                                         &lt;/div>
                                     </code>
                                 </pre>
-                                
+
                                 <div class="sep"></div>
 
                                 <h4 id="components-grids-nested-grids">
@@ -1674,7 +1675,7 @@
                                         &lt;/div>
                                     </code>
                                 </pre>
-                                
+
                                 <div class="sep"></div>
 
                                 <h4 id="components-grids-items-x-axis">
@@ -1733,7 +1734,7 @@
                                         &lt;/div>
                                     </code>
                                 </pre>
-                                
+
 
                                 <div class="columns cc-justify-between">
                                     <div class="cc-bg-blue cc-3">Spacing on 100% width</div>
@@ -1757,7 +1758,7 @@
                                     <div class="cc-bg-primary cc-5">Equal spacing</div>
                                     <div class="cc-bg-blue cc-3">Equal spacing</div>
                                 </div>
-                                
+
                                 <pre class="HTML">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Items X alignments -->
@@ -1768,7 +1769,7 @@
                                         &lt;/div>
                                     </code>
                                 </pre>
-                                
+
                                 <div class="sep"></div>
 
                                 <h4 id="components-grids-items-y-axis">
@@ -1794,7 +1795,7 @@
                                     <div class="cc-bg-primary cc-3">
                                         Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone.
                                         <p class="cc-hidden-s-down">
-                                            Incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. 
+                                            Incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong.
                                         </p>
                                     </div>
                                     <div class="cc-9 columns cc-align-start">
@@ -1825,7 +1826,7 @@
                                     <div class="cc-bg-primary cc-3">
                                         Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone.
                                         <p class="cc-hidden-s-down">
-                                            Incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. 
+                                            Incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong.
                                         </p>
                                     </div>
                                     <div class="cc-9 columns cc-align-center">
@@ -1856,7 +1857,7 @@
                                     <div class="cc-bg-primary cc-3">
                                         Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone.
                                         <p class="cc-hidden-s-down">
-                                            Incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. 
+                                            Incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong.
                                         </p>
                                     </div>
                                     <div class="cc-9 columns cc-align-end">
@@ -1919,7 +1920,7 @@
                                     <div class="cc-bg-primary cc-3">
                                         Bacon ipsum dolor amet nisi t-bone meatball tri-tip. Shank ad velit, et corned beef id brisket t-bone.
                                         <p class="cc-hidden-s-down">
-                                            Incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong. 
+                                            Incididunt proident tenderloin ground round leberkas spare ribs. In alcatra commodo meatball. Consequat ea frankfurter biltong.
                                         </p>
                                     </div>
                                     <div class="cc-9 columns cc-align-stretch">
@@ -1973,8 +1974,8 @@
                                     <div class="cc-bg-blue cc-w-auto cc-left">auto align left<br />(float:left like)</div>
                                     <div class="cc-bg-primary cc-w-auto cc-right">auto align right<br />(float:right like)</div>
                                 </div>
-                                
-                                
+
+
                                 <pre class="HTML collapsed">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Columns alignments -->
@@ -1991,7 +1992,7 @@
                                     </code>
                                 </pre>
                                 <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
-                                
+
                                 <div class="sep"></div>
 
                                 <h4 id="components-grids-item-y-axis">
@@ -2020,8 +2021,8 @@
                                     <div class="cc-bg-blue cc-align-self-center">
                                         align self center
                                     </div>
-                                    <div class="cc-bg-primary cc-align-self-stretch">                                        
-                                        align self stretch                                        
+                                    <div class="cc-bg-primary cc-align-self-stretch">
+                                        align self stretch
                                     </div>
                                     <div class="cc-bg-blue cc-align-self-baseline">
                                         align self baseline
@@ -2048,7 +2049,7 @@
                                                 align self baseline
                                             &lt;/div>
                                         &lt;/div>
-                                       
+
                                     </code>
                                 </pre>
                                 <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
@@ -2077,7 +2078,7 @@
                                     </div>
                                 </div>
                                 <div class="sep"></div>
-                                
+
                                 <h4>Basic masonry layout</h4>
                                 <div class="exemple-intro">
                                     <p>
@@ -2290,7 +2291,7 @@
                                     </div>
                                 </div>
                                 <div class="sep"></div>
-                                
+
                                 <h4 id="components-modals-basic">
                                     <a href="#components-modals-basic">
                                         Modals structure
@@ -2344,7 +2345,7 @@
                                     ChuckCSS provide 3 sizes of modals :
                                     <ul>
                                         <li>
-                                            <span class="code">class="modal"</span> : Display a bacis modal of 50% width
+                                            <span class="code">class="modal"</span> : Display a basic modal of 50% width
                                         </li>
                                         <li>
                                             <span class="code">class="modal modal-small"</span> : Display a small modal of 30% width
@@ -2460,7 +2461,7 @@
                                                 &lt;!-- /!\ Add a wrapper around the modal body -->
                                                 &lt;section class="wrap-modal-body">
                                                     &lt;div class="modal-body">
-                                                        ... very long text...                                                        
+                                                        ... very long text...
                                                     &lt;/div>
                                                 &lt;/section>
                                                 &lt;div class="modal-footer cc-txt-center">
@@ -2522,7 +2523,7 @@
                                     </p>
                                 </div>
                                 <div class="sep"></div>
-                                
+
                                 <h4>Exemple title</h4>
                                 <pre class="HTML">
                                     <code class="language-markup">

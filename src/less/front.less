@@ -599,13 +599,13 @@ main {
                 position:fixed;
                 top:0;
 
-                ._media-l-up({
+                ._media-m-up({
                     width:191px;
                 });
-                ._media-xl-up({
+                ._media-l-up({
                     width:268px;
                 });
-                
+
             }
         }
 
@@ -615,20 +615,37 @@ main {
 
         ul {
             font-size:1.4rem;
+            margin:0;
+
+            &.nav {
+                margin:1em 0;
+
+                & > li {
+                    border-bottom:1px dashed @chuckgreen-da;
+                    padding:0.7em 0;
+
+                    & > ul {
+                        & > li {
+                            padding-top:1em;
+
+                            &:nth-child(1) {
+                                padding-top:0;
+                            }
+                        }
+                    }
+                }
+            }
 
             li {
                 padding-top:10px;
+                list-style:none;
 
-                &:nth-child(1) {
-                    padding:0;
-                }
-
+                // Active menu
                 &.active {
                     color:@chuckgreen-da;
 
                     &> a {
                         color:@chuckgreen-da;
-                        ._transition;
                     }
 
                     & > ul {
@@ -639,10 +656,11 @@ main {
                 // Sub-menus
                 ul {
                     display:none;
+                    padding-left:10px;
+                    padding-top:0.5em;
 
                     li {
-                        padding-top:5px;
-                        list-style:none;
+                        padding-top:2px;
                     }
                 }
 
@@ -652,57 +670,22 @@ main {
                     &:hover {
                         color:@chuckgreen-da;
                     }
+
+                    &:before {
+                        ._fa('\f105', 1.6rem);
+                        margin-right:5px;
+                    }
                 }
             }
         }
 
-        .documentation & {
-            ul {
-                margin:0;
+        // Section after aside element : delete padding
+        & + section {
+            padding:0;
 
-                // Main categories
-                &.nav {
-                    margin:1em 0;
-
-                    & > li {
-                        border-bottom:1px dashed @chuckgreen-da;
-                        padding:1em 0;
-
-                        ul {
-                            padding-top:0.5em;
-                        }
-
-
-                        & > ul {
-                            & > li {
-                                padding-top:1em;
-
-                                &:nth-child(1) {
-                                    padding-top:0;
-                                }
-
-                                & > ul {
-                                }
-                            }
-                        }
-                    }
-                }
-
-                li {
-                    list-style:none;
-
-                    a {
-                        &:before {
-                            ._fa('\f105', 1.6rem);
-                            margin-right:5px;
-                        }
-                    }
-
-                    ul {
-                        padding-left:10px;
-                    }
-                }
-            }
+            ._media-m-up({
+                padding:1em;
+            });
         }
     }
 
@@ -760,15 +743,5 @@ main {
                 }
             }
         }
-    }
-
-
-    .reminder-list,
-    .documentation-list {
-        padding:0;
-
-        ._media-m-up({
-            padding:1em;
-        });
     }
 }

@@ -4321,6 +4321,26 @@ a.cc-bg-primary {
   color: white;
   background-color: #29b7e1;
 }
+h1.cc-bg-primary .badge,
+h2.cc-bg-primary .badge,
+h3.cc-bg-primary .badge,
+h4.cc-bg-primary .badge,
+h5.cc-bg-primary .badge,
+h6.cc-bg-primary .badge,
+p.cc-bg-primary .badge,
+div.cc-bg-primary .badge,
+section.cc-bg-primary .badge,
+aside.cc-bg-primary .badge,
+header.cc-bg-primary .badge,
+footer.cc-bg-primary .badge,
+article.cc-bg-primary .badge,
+main.cc-bg-primary .badge,
+span.cc-bg-primary .badge,
+i.cc-bg-primary .badge,
+a.cc-bg-primary .badge {
+  background-color: white;
+  color: #29b7e1;
+}
 /* lists */
 li.cc-bg-primary {
   background-color: #29b7e1;
@@ -4420,8 +4440,8 @@ a.btn.cc-bg-primary.cc-outlined.cc-loading:before,
 button.cc-bg-primary.cc-outlined.cc-loading:before {
   border-color: #29b7e1 #afe4f4 #afe4f4 #afe4f4;
 }
-a.btn.cc-bg-primary span.badge,
-button.cc-bg-primary span.badge {
+a.btn.cc-bg-primary .badge,
+button.cc-bg-primary .badge {
   background-color: white;
   color: #29b7e1;
 }
@@ -4560,6 +4580,26 @@ a.cc-bg-green {
   color: white;
   background-color: #80ae37;
 }
+h1.cc-bg-green .badge,
+h2.cc-bg-green .badge,
+h3.cc-bg-green .badge,
+h4.cc-bg-green .badge,
+h5.cc-bg-green .badge,
+h6.cc-bg-green .badge,
+p.cc-bg-green .badge,
+div.cc-bg-green .badge,
+section.cc-bg-green .badge,
+aside.cc-bg-green .badge,
+header.cc-bg-green .badge,
+footer.cc-bg-green .badge,
+article.cc-bg-green .badge,
+main.cc-bg-green .badge,
+span.cc-bg-green .badge,
+i.cc-bg-green .badge,
+a.cc-bg-green .badge {
+  background-color: white;
+  color: #80ae37;
+}
 /* lists */
 li.cc-bg-green {
   background-color: #80ae37;
@@ -4659,8 +4699,8 @@ a.btn.cc-bg-green.cc-outlined.cc-loading:before,
 button.cc-bg-green.cc-outlined.cc-loading:before {
   border-color: #80ae37 #c7e09e #c7e09e #c7e09e;
 }
-a.btn.cc-bg-green span.badge,
-button.cc-bg-green span.badge {
+a.btn.cc-bg-green .badge,
+button.cc-bg-green .badge {
   background-color: white;
   color: #80ae37;
 }
@@ -4799,6 +4839,26 @@ a.cc-bg-red {
   color: white;
   background-color: #c41515;
 }
+h1.cc-bg-red .badge,
+h2.cc-bg-red .badge,
+h3.cc-bg-red .badge,
+h4.cc-bg-red .badge,
+h5.cc-bg-red .badge,
+h6.cc-bg-red .badge,
+p.cc-bg-red .badge,
+div.cc-bg-red .badge,
+section.cc-bg-red .badge,
+aside.cc-bg-red .badge,
+header.cc-bg-red .badge,
+footer.cc-bg-red .badge,
+article.cc-bg-red .badge,
+main.cc-bg-red .badge,
+span.cc-bg-red .badge,
+i.cc-bg-red .badge,
+a.cc-bg-red .badge {
+  background-color: white;
+  color: #c41515;
+}
 /* lists */
 li.cc-bg-red {
   background-color: #c41515;
@@ -4898,8 +4958,8 @@ a.btn.cc-bg-red.cc-outlined.cc-loading:before,
 button.cc-bg-red.cc-outlined.cc-loading:before {
   border-color: #c41515 #f18181 #f18181 #f18181;
 }
-a.btn.cc-bg-red span.badge,
-button.cc-bg-red span.badge {
+a.btn.cc-bg-red .badge,
+button.cc-bg-red .badge {
   background-color: white;
   color: #c41515;
 }
@@ -5038,6 +5098,26 @@ a.cc-bg-blue {
   color: white;
   background-color: #3498db;
 }
+h1.cc-bg-blue .badge,
+h2.cc-bg-blue .badge,
+h3.cc-bg-blue .badge,
+h4.cc-bg-blue .badge,
+h5.cc-bg-blue .badge,
+h6.cc-bg-blue .badge,
+p.cc-bg-blue .badge,
+div.cc-bg-blue .badge,
+section.cc-bg-blue .badge,
+aside.cc-bg-blue .badge,
+header.cc-bg-blue .badge,
+footer.cc-bg-blue .badge,
+article.cc-bg-blue .badge,
+main.cc-bg-blue .badge,
+span.cc-bg-blue .badge,
+i.cc-bg-blue .badge,
+a.cc-bg-blue .badge {
+  background-color: white;
+  color: #3498db;
+}
 /* lists */
 li.cc-bg-blue {
   background-color: #3498db;
@@ -5137,8 +5217,8 @@ a.btn.cc-bg-blue.cc-outlined.cc-loading:before,
 button.cc-bg-blue.cc-outlined.cc-loading:before {
   border-color: #3498db #b6daf2 #b6daf2 #b6daf2;
 }
-a.btn.cc-bg-blue span.badge,
-button.cc-bg-blue span.badge {
+a.btn.cc-bg-blue .badge,
+button.cc-bg-blue .badge {
   background-color: white;
   color: #3498db;
 }
@@ -5277,6 +5357,26 @@ a.cc-bg-purple {
   color: white;
   background-color: #8e44ad;
 }
+h1.cc-bg-purple .badge,
+h2.cc-bg-purple .badge,
+h3.cc-bg-purple .badge,
+h4.cc-bg-purple .badge,
+h5.cc-bg-purple .badge,
+h6.cc-bg-purple .badge,
+p.cc-bg-purple .badge,
+div.cc-bg-purple .badge,
+section.cc-bg-purple .badge,
+aside.cc-bg-purple .badge,
+header.cc-bg-purple .badge,
+footer.cc-bg-purple .badge,
+article.cc-bg-purple .badge,
+main.cc-bg-purple .badge,
+span.cc-bg-purple .badge,
+i.cc-bg-purple .badge,
+a.cc-bg-purple .badge {
+  background-color: white;
+  color: #8e44ad;
+}
 /* lists */
 li.cc-bg-purple {
   background-color: #8e44ad;
@@ -5376,8 +5476,8 @@ a.btn.cc-bg-purple.cc-outlined.cc-loading:before,
 button.cc-bg-purple.cc-outlined.cc-loading:before {
   border-color: #8e44ad #cfacde #cfacde #cfacde;
 }
-a.btn.cc-bg-purple span.badge,
-button.cc-bg-purple span.badge {
+a.btn.cc-bg-purple .badge,
+button.cc-bg-purple .badge {
   background-color: white;
   color: #8e44ad;
 }
@@ -5516,6 +5616,26 @@ a.cc-bg-orange {
   color: white;
   background-color: #f39c12;
 }
+h1.cc-bg-orange .badge,
+h2.cc-bg-orange .badge,
+h3.cc-bg-orange .badge,
+h4.cc-bg-orange .badge,
+h5.cc-bg-orange .badge,
+h6.cc-bg-orange .badge,
+p.cc-bg-orange .badge,
+div.cc-bg-orange .badge,
+section.cc-bg-orange .badge,
+aside.cc-bg-orange .badge,
+header.cc-bg-orange .badge,
+footer.cc-bg-orange .badge,
+article.cc-bg-orange .badge,
+main.cc-bg-orange .badge,
+span.cc-bg-orange .badge,
+i.cc-bg-orange .badge,
+a.cc-bg-orange .badge {
+  background-color: white;
+  color: #f39c12;
+}
 /* lists */
 li.cc-bg-orange {
   background-color: #f39c12;
@@ -5615,8 +5735,8 @@ a.btn.cc-bg-orange.cc-outlined.cc-loading:before,
 button.cc-bg-orange.cc-outlined.cc-loading:before {
   border-color: #f39c12 #fad9a4 #fad9a4 #fad9a4;
 }
-a.btn.cc-bg-orange span.badge,
-button.cc-bg-orange span.badge {
+a.btn.cc-bg-orange .badge,
+button.cc-bg-orange .badge {
   background-color: white;
   color: #f39c12;
 }
@@ -5755,6 +5875,26 @@ a.cc-bg-yellow {
   color: white;
   background-color: #f1c40f;
 }
+h1.cc-bg-yellow .badge,
+h2.cc-bg-yellow .badge,
+h3.cc-bg-yellow .badge,
+h4.cc-bg-yellow .badge,
+h5.cc-bg-yellow .badge,
+h6.cc-bg-yellow .badge,
+p.cc-bg-yellow .badge,
+div.cc-bg-yellow .badge,
+section.cc-bg-yellow .badge,
+aside.cc-bg-yellow .badge,
+header.cc-bg-yellow .badge,
+footer.cc-bg-yellow .badge,
+article.cc-bg-yellow .badge,
+main.cc-bg-yellow .badge,
+span.cc-bg-yellow .badge,
+i.cc-bg-yellow .badge,
+a.cc-bg-yellow .badge {
+  background-color: white;
+  color: #f1c40f;
+}
 /* lists */
 li.cc-bg-yellow {
   background-color: #f1c40f;
@@ -5854,8 +5994,8 @@ a.btn.cc-bg-yellow.cc-outlined.cc-loading:before,
 button.cc-bg-yellow.cc-outlined.cc-loading:before {
   border-color: #f1c40f #f9e8a0 #f9e8a0 #f9e8a0;
 }
-a.btn.cc-bg-yellow span.badge,
-button.cc-bg-yellow span.badge {
+a.btn.cc-bg-yellow .badge,
+button.cc-bg-yellow .badge {
   background-color: white;
   color: #f1c40f;
 }
@@ -5994,6 +6134,26 @@ a.cc-bg-chuckgreen {
   color: white;
   background-color: #35d7be;
 }
+h1.cc-bg-chuckgreen .badge,
+h2.cc-bg-chuckgreen .badge,
+h3.cc-bg-chuckgreen .badge,
+h4.cc-bg-chuckgreen .badge,
+h5.cc-bg-chuckgreen .badge,
+h6.cc-bg-chuckgreen .badge,
+p.cc-bg-chuckgreen .badge,
+div.cc-bg-chuckgreen .badge,
+section.cc-bg-chuckgreen .badge,
+aside.cc-bg-chuckgreen .badge,
+header.cc-bg-chuckgreen .badge,
+footer.cc-bg-chuckgreen .badge,
+article.cc-bg-chuckgreen .badge,
+main.cc-bg-chuckgreen .badge,
+span.cc-bg-chuckgreen .badge,
+i.cc-bg-chuckgreen .badge,
+a.cc-bg-chuckgreen .badge {
+  background-color: white;
+  color: #35d7be;
+}
 /* lists */
 li.cc-bg-chuckgreen {
   background-color: #35d7be;
@@ -6093,8 +6253,8 @@ a.btn.cc-bg-chuckgreen.cc-outlined.cc-loading:before,
 button.cc-bg-chuckgreen.cc-outlined.cc-loading:before {
   border-color: #35d7be #b5f0e7 #b5f0e7 #b5f0e7;
 }
-a.btn.cc-bg-chuckgreen span.badge,
-button.cc-bg-chuckgreen span.badge {
+a.btn.cc-bg-chuckgreen .badge,
+button.cc-bg-chuckgreen .badge {
   background-color: white;
   color: #35d7be;
 }
@@ -6233,6 +6393,26 @@ a.cc-bg-chuckgreen-da {
   color: white;
   background-color: #2fc0aa;
 }
+h1.cc-bg-chuckgreen-da .badge,
+h2.cc-bg-chuckgreen-da .badge,
+h3.cc-bg-chuckgreen-da .badge,
+h4.cc-bg-chuckgreen-da .badge,
+h5.cc-bg-chuckgreen-da .badge,
+h6.cc-bg-chuckgreen-da .badge,
+p.cc-bg-chuckgreen-da .badge,
+div.cc-bg-chuckgreen-da .badge,
+section.cc-bg-chuckgreen-da .badge,
+aside.cc-bg-chuckgreen-da .badge,
+header.cc-bg-chuckgreen-da .badge,
+footer.cc-bg-chuckgreen-da .badge,
+article.cc-bg-chuckgreen-da .badge,
+main.cc-bg-chuckgreen-da .badge,
+span.cc-bg-chuckgreen-da .badge,
+i.cc-bg-chuckgreen-da .badge,
+a.cc-bg-chuckgreen-da .badge {
+  background-color: white;
+  color: #2fc0aa;
+}
 /* lists */
 li.cc-bg-chuckgreen-da {
   background-color: #2fc0aa;
@@ -6332,8 +6512,8 @@ a.btn.cc-bg-chuckgreen-da.cc-outlined.cc-loading:before,
 button.cc-bg-chuckgreen-da.cc-outlined.cc-loading:before {
   border-color: #2fc0aa #a0e8dd #a0e8dd #a0e8dd;
 }
-a.btn.cc-bg-chuckgreen-da span.badge,
-button.cc-bg-chuckgreen-da span.badge {
+a.btn.cc-bg-chuckgreen-da .badge,
+button.cc-bg-chuckgreen-da .badge {
   background-color: white;
   color: #2fc0aa;
 }
@@ -7864,9 +8044,6 @@ main .wrap-feature h2 a:hover:before {
 main .wrap-feature h3 {
   font-size: 1.3em;
 }
-main .wrap-feature h4 {
-  margin-bottom:20px;
-}
 .documentation main .wrap-feature h3 {
   color: #2fc0aa;
   margin: 60px 0 30px;
@@ -7875,6 +8052,9 @@ main .wrap-feature h4 {
 }
 .documentation main .wrap-feature h3 a {
   color: #2fc0aa;
+}
+main .wrap-feature h4 {
+  margin-bottom: 20px;
 }
 main .sep {
   width: 50%;
@@ -7885,7 +8065,7 @@ main .sep {
 main .exemple-intro {
   padding: 1em 0 1em 1em;
   border-left: 5px solid #2fc0aa;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 main .exemple-intro .alert:last-child {
   margin-bottom: 0;
@@ -7899,44 +8079,54 @@ main .menu-summary #left-navbar.affix {
 }
 @media screen and (min-width: 990px) {
   main .menu-summary #left-navbar.affix {
-    width:191px;
+    width: 191px;
   }
 }
 @media screen and (min-width: 1200px) {
   main .menu-summary #left-navbar.affix {
-    width:268px;
+    width: 268px;
   }
 }
-
 main .menu-summary h3 {
   padding-top: 50px;
 }
 main .menu-summary ul {
   font-size: 1.4rem;
+  margin: 0;
+}
+main .menu-summary ul.nav {
+  margin: 1em 0;
+}
+main .menu-summary ul.nav > li {
+  border-bottom: 1px dashed #2fc0aa;
+  padding: 0.7em 0;
+}
+main .menu-summary ul.nav > li > ul > li {
+  padding-top: 1em;
+}
+main .menu-summary ul.nav > li > ul > li:nth-child(1) {
+  padding-top: 0;
 }
 main .menu-summary ul li {
   padding-top: 10px;
-}
-main .menu-summary ul li:nth-child(1) {
-  padding: 0;
+  list-style: none;
 }
 main .menu-summary ul li.active {
   color: #2fc0aa;
 }
 main .menu-summary ul li.active > a {
   color: #2fc0aa;
-  -webkit-transition: 0.2s all ease-out 0s;
-  transition: 0.2s all ease-out 0s;
 }
 main .menu-summary ul li.active > ul {
   display: block;
 }
 main .menu-summary ul li ul {
   display: none;
+  padding-left: 10px;
+  padding-top: 0.5em;
 }
 main .menu-summary ul li ul li {
-  padding-top: 5px;
-  list-style: none;
+  padding-top: 2px;
 }
 main .menu-summary ul li a {
   -webkit-transition: 0.2s all ease-out 0s;
@@ -7945,29 +8135,7 @@ main .menu-summary ul li a {
 main .menu-summary ul li a:hover {
   color: #2fc0aa;
 }
-.documentation main .menu-summary ul {
-  margin: 0;
-}
-.documentation main .menu-summary ul.nav {
-  margin: 1em 0;
-}
-.documentation main .menu-summary ul.nav > li {
-  border-bottom: 1px dashed #2fc0aa;
-  padding: 1em 0;
-}
-.documentation main .menu-summary ul.nav > li ul {
-  padding-top: 0.5em;
-}
-.documentation main .menu-summary ul.nav > li > ul > li {
-  padding-top: 1em;
-}
-.documentation main .menu-summary ul.nav > li > ul > li:nth-child(1) {
-  padding-top: 0;
-}
-.documentation main .menu-summary ul li {
-  list-style: none;
-}
-.documentation main .menu-summary ul li a:before {
+main .menu-summary ul li a:before {
   display: inline-block;
   font-family: FontAwesome;
   font-style: normal;
@@ -7980,8 +8148,13 @@ main .menu-summary ul li a:hover {
   content: '\f105';
   margin-right: 5px;
 }
-.documentation main .menu-summary ul li ul {
-  padding-left: 10px;
+main .menu-summary + section {
+  padding: 0;
+}
+@media screen and (min-width: 990px) {
+  main .menu-summary + section {
+    padding: 1em;
+  }
 }
 .reminder main table {
   margin: 0;
@@ -8020,14 +8193,4 @@ main .menu-summary ul li a:hover {
   color: #bbbbbb;
   font-size: 2rem;
   font-weight: 300;
-}
-main .reminder-list,
-main .documentation-list {
-  padding: 0;
-}
-@media screen and (min-width: 990px) {
-  main .reminder-list,
-  main .documentation-list {
-    padding: 1em;
-  }
 }
