@@ -3517,7 +3517,7 @@
                                         <a href="#" class="btn fa-cut cc-fat">I'm fat</a>
                                     </div>
                                     <div class="cc-txt-center">
-                                        <a href="#" class="btn ion-social-github cc-outlined">I'm outlined</a>
+                                        <a href="#" class="btn ion-social-github cc-bg-primary">I'm colorized</a>
                                     </div>
                                 </div>
                                 <div class="columns">
@@ -3540,7 +3540,7 @@
                                         &lt;a href="#" class="btn fa-car cc-thin">I'm thin&lt;/a>
                                         &lt;a href="#" class="btn ion-android-bicycle">I'm normal&lt;/a>
                                         &lt;a href="#" class="btn fa-cut cc-fat">I'm fat&lt;/a>
-                                        &lt;a href="#" class="btn ion-social-github cc-outlined">I'm outlined&lt;/a>
+                                        &lt;a href="#" class="btn ion-social-github cc-bg-primary">I'm colorized&lt;/a>
 
                                         &lt;!-- Iconed buttons -->
                                         &lt;button class="cc-bg-primary fa-car cc-thin">I'm thin&lt;/button>
@@ -3565,7 +3565,7 @@
                                         <a href="#" class="icon-right btn fa-cut cc-fat">I'm fat</a>
                                     </div>
                                     <div class="cc-txt-center">
-                                        <a href="#" class="icon-right btn ion-social-github cc-outlined">I'm outlined</a>
+                                        <a href="#" class="icon-right btn ion-social-github cc-bg-primary">I'm colorized</a>
                                     </div>
                                 </div>
                                 <div class="columns">
@@ -3588,7 +3588,7 @@
                                         &lt;a href="#" class="icon-right btn fa-car cc-thin">I'm thin&lt;/a>
                                         &lt;a href="#" class="icon-right btn ion-android-bicycle">I'm normal&lt;/a>
                                         &lt;a href="#" class="icon-right btn fa-cut cc-fat">I'm fat&lt;/a>
-                                        &lt;a href="#" class="icon-right btn ion-social-github cc-outlined">I'm outlined&lt;/a>
+                                        &lt;a href="#" class="icon-right btn ion-social-github cc-bg-primary">I'm colorized&lt;/a>
 
                                         &lt;!-- Right Iconed buttons -->
                                         &lt;button class="icon-right cc-bg-primary fa-car cc-thin">I'm thin&lt;/button>
@@ -3610,7 +3610,7 @@
                                 </div>
                                 <div class="columns">
                                     <div class="cc-txt-center">
-                                        <a href="#" class="btn cc-disabled cc-bg-primary">Disabled</a>
+                                        <a href="#" class="btn cc-disabled cc-bg-primary">Primary</a>
                                     </div>
                                     <div class="cc-txt-center">
                                         <a href="#" class="btn cc-disabled cc-outlined cc-bg-blue">Blue</a>
@@ -3748,12 +3748,15 @@
                                     <code class="language-javascript"><!-- -->
                                         // Buttons loading exemple
                                         $('button').on('click',function(e){
-                                            $(this)
-                                                .toggleClass('cc-loading fa-hand-o-right')
-                                                .delay(2500)
-                                                .queue(function(nxt){
-                                                    $(this).text('Done!').toggleClass('fa-thumbs-up cc-disabled cc-loading');
-                                                });
+                                            var target = $(this);
+
+                                            target.toggleClass('cc-loading fa-hand-o-right cc-bg-red cc-bg-primary');
+
+                                            setTimeout(function(){
+                                                target
+                                                    .text('Done, thanks!')
+                                                    .toggleClass('fa-thumbs-up cc-disabled cc-loading cc-bg-red cc-bg-green');
+                                            },2500);
                                         });
                                     </code>
                                 </pre>

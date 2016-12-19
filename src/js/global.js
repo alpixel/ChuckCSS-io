@@ -164,13 +164,15 @@
 
         // Buttons loading exemple
         $('button.js-loading-exemple').on('click',function(e){
-            $(this)
-                .toggleClass('cc-loading fa-hand-o-right')
-                .delay(2500)
-                .queue(function(nxt){
-                    $(this).text('Done!').toggleClass('fa-thumbs-up cc-disabled cc-loading');
-                });
+            var target = $(this);
 
+            target.toggleClass('cc-loading fa-hand-o-right cc-bg-red cc-bg-primary');
+
+            setTimeout(function(){
+                target
+                    .text('Done, thanks!')
+                    .toggleClass('fa-thumbs-up cc-disabled cc-loading cc-bg-red cc-bg-green');
+            },2500);
         });
 
     });
