@@ -463,6 +463,17 @@
                                         </li>
                                         <li>
                                             <a href="#elements-images">Images</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#elements-images-no-responsive">Remove responsive</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-images-bordered">Bordered images</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-images-shadowed">Shadowed images</a>
+                                                </li>
+                                            </ul>
                                         </li>
                                         <li>
                                             <a href="#elements-lists">Lists</a>
@@ -2965,7 +2976,6 @@
 
                                 <div class="sep"></div>
 
-
                                 <div class="exemple-intro">
                                     <p>
                                         This exemple below show a tab with a :
@@ -4611,6 +4621,122 @@
                                 </pre>
                             </div>
 
+                            <!-- Images -->
+                            <div>
+                                <h3 id="elements-images" class="fa-angle-right">
+                                    <a href="#elements-images">
+                                        Images
+                                    </a>
+                                </h3>
+                                <p class="cc-txt-center cc-mab-20">
+                                    <a href="reminder#images" class="btn cc-thin cc-bg-primary">Go to reminder</a>
+                                </p>
+                                <div class="exemple-intro">
+                                    <p>
+                                        ChuckCSS apply a <span class="code">max-width:100%;height:auto</span> on all devices. In this way, by default, images are responsive.
+                                    </p>
+                                </div>
+                                <div class="sep"></div>
+
+                                <h4 id="elements-images-no-responsive">
+                                    <a href="#elements-images-no-responsive">
+                                        Remove responsive on images
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        <span class="code">class="cc-no-responsive"</span> : Delete the responsive caracteristic to an image
+                                    </p>
+                                </div>
+                                <div class="columns">
+                                    <div class="cc-6-m">
+                                        <p class="cc-txt-center">
+                                            Image below is <strong>not responsive</strong><br /><br />
+                                            <img src="img/virus-super-cat.jpg" alt="She is my cat and her name is Virus" class="cc-no-responsive"/>
+                                        </p>
+                                    </div>
+                                    <div class="cc-6-m">
+                                        <p class="cc-txt-center">
+                                            Classic image (responsive)<br /><br />
+                                            <img src="img/virus-super-cat.jpg" alt="She is my cat and her name is Virus"  />
+                                        </p>
+                                    </div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Image no responsive -->
+                                        &lt;img src="..." alt="..." class="cc-no-responsive"/>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-images-bordered">
+                                    <a href="#elements-images-bordered">
+                                        Bordered images
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        <span class="code">class="cc-bordered"</span> : Apply a border to an image
+                                    </p>
+                                </div>
+                                <div class="columns">
+                                    <div class="cc-6-m">
+                                        <p class="cc-txt-center">
+                                            Image below is <strong>bordered</strong><br /><br />
+                                            <img src="img/virus-super-cat-2.jpg" alt="She is my cat and her name is Virus" class="cc-bordered"/>
+                                        </p>
+                                    </div>
+                                    <div class="cc-6-m">
+                                        <p class="cc-txt-center">
+                                            Classic image<br /><br />
+                                            <img src="img/virus-super-cat-2.jpg" alt="She is my cat and her name is Virus" />
+                                        </p>
+                                    </div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Bordered image -->
+                                        &lt;img src="..." alt="..." class="cc-bordered"/>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-images-shadowed">
+                                    <a href="#elements-images-shadowed">
+                                        Shadowed images
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        <span class="code">class="cc-shadowed"</span> : Apply a shadow to an image
+                                    </p>
+                                </div>
+                                <div class="columns">
+                                    <div class="cc-6-m">
+                                        <p class="cc-txt-center">
+                                            Image below is <strong>shadowed</strong><br /><br />
+                                            <img src="img/virus-super-cat-3.jpg" alt="She is my cat and her name is Virus" class="cc-shadowed"/>
+                                        </p>
+                                    </div>
+                                    <div class="cc-6-m">
+                                        <p class="cc-txt-center">
+                                            Classic image<br /><br />
+                                            <img src="img/virus-super-cat-3.jpg" alt="She is my cat and her name is Virus" alt="My alt text" />
+                                        </p>
+                                    </div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Shadowed image -->
+                                        &lt;img src="..." alt="..." class="cc-shadowed"/>
+                                    </code>
+                                </pre>
+
+                            </div>
+
 
 
                             <!-- NEW SECTION -->
@@ -4660,184 +4786,186 @@
 
 
         <!-- Modals exemples -->
-        <div id="modal-id" class="modal">
-            <button class="modal-close"></button>
+        <div class="wrap-modals">
+            <div id="modal-id" class="modal">
+                <button class="modal-close"></button>
 
-            <div class="modal-overlay"></div>
+                <div class="modal-overlay"></div>
 
-            <div class="modal-content">
-                <div class="modal-header">
-                    I'm a default modal (50% width)
-                </div>
-                <div class="modal-body">
-                    <p>
-                        Hamburger doner alcatra sirloin bresaola porchetta tenderloin. Ribeye bacon meatball ball tip beef ribs leberkas capicola corned beef.
-                    </p>
-
-                    <h3 class="cc-mat-30">A grid layout into a modal ?..</h3>
-
-                    <div class="columns cc-mat-30">
-
-                            <div class="cc-3-m cc-bg-chuckgreen">Hamburger</div>
-                            <div class="cc-3-m cc-bg-chuckgreen-da">Hamburger</div>
-                            <div class="cc-3-m cc-bg-chuckgreen">Hamburger</div>
-                            <div class="cc-3-m cc-bg-chuckgreen-da">Hamburger</div>
-
+                <div class="modal-content">
+                    <div class="modal-header">
+                        I'm a default modal (50% width)
                     </div>
-                </div>
-                <div class="modal-footer cc-txt-center">
-                    <button type="submit" class="cc-bg-primary fa-save">I'm a button</button>
-                </div>
-            </div>
-        </div>
-        <div id="modal-id-small" class="modal modal-small">
-            <button class="modal-close"></button>
-
-            <div class="modal-overlay"></div>
-
-            <div class="modal-content">
-                <div class="modal-header">
-                    I'm a small modal (30% width)
-                </div>
-                <div class="modal-body">
-                    <p>
-                        Hamburger doner alcatra sirloin bresaola porchetta tenderloin. Ribeye bacon meatball ball tip beef ribs leberkas capicola corned beef.
-                    </p>
-                </div>
-                <div class="modal-footer cc-txt-center">
-                    <button type="submit" class="cc-bg-primary fa-save">I'm a button</button>
-                </div>
-            </div>
-        </div>
-        <div id="modal-id-large" class="modal modal-large">
-            <button class="modal-close"></button>
-
-            <div class="modal-overlay"></div>
-
-            <div class="modal-content">
-                <div class="modal-header">
-                    I'm a large modal (80% width)
-                </div>
-                <div class="modal-body">
-                    <p>
-                        Hamburger doner alcatra sirloin bresaola porchetta tenderloin. Ribeye bacon meatball ball tip beef ribs leberkas capicola corned beef.
-                    </p>
-                </div>
-                <div class="modal-footer cc-txt-center">
-                    <button type="submit" class="cc-bg-primary fa-save">I'm a button</button>
-                </div>
-            </div>
-        </div>
-        <div id="modal-id-fixed-hf" class="modal" data-fixed-hf>
-            <button class="modal-close"></button>
-
-            <div class="modal-overlay"></div>
-
-            <div class="modal-content">
-                <div class="modal-header">
-                    I'm a default modal with fixed header & footer
-                </div>
-                <div class="wrap-modal-body">
                     <div class="modal-body">
                         <p>
-                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
-                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
-                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
-                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
-                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
-                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
-                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
-                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
-                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
-                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
-                            Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
-                            Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                            Hamburger doner alcatra sirloin bresaola porchetta tenderloin. Ribeye bacon meatball ball tip beef ribs leberkas capicola corned beef.
+                        </p>
+
+                        <h3 class="cc-mat-30">A grid layout into a modal ?..</h3>
+
+                        <div class="columns cc-mat-30">
+
+                                <div class="cc-3-m cc-bg-chuckgreen">Hamburger</div>
+                                <div class="cc-3-m cc-bg-chuckgreen-da">Hamburger</div>
+                                <div class="cc-3-m cc-bg-chuckgreen">Hamburger</div>
+                                <div class="cc-3-m cc-bg-chuckgreen-da">Hamburger</div>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer cc-txt-center">
+                        <button type="submit" class="cc-bg-primary fa-save">I'm a button</button>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-id-small" class="modal modal-small">
+                <button class="modal-close"></button>
+
+                <div class="modal-overlay"></div>
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        I'm a small modal (30% width)
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Hamburger doner alcatra sirloin bresaola porchetta tenderloin. Ribeye bacon meatball ball tip beef ribs leberkas capicola corned beef.
+                        </p>
+                    </div>
+                    <div class="modal-footer cc-txt-center">
+                        <button type="submit" class="cc-bg-primary fa-save">I'm a button</button>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-id-large" class="modal modal-large">
+                <button class="modal-close"></button>
+
+                <div class="modal-overlay"></div>
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        I'm a large modal (80% width)
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Hamburger doner alcatra sirloin bresaola porchetta tenderloin. Ribeye bacon meatball ball tip beef ribs leberkas capicola corned beef.
+                        </p>
+                    </div>
+                    <div class="modal-footer cc-txt-center">
+                        <button type="submit" class="cc-bg-primary fa-save">I'm a button</button>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-id-fixed-hf" class="modal" data-fixed-hf>
+                <button class="modal-close"></button>
+
+                <div class="modal-overlay"></div>
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        I'm a default modal with fixed header & footer
+                    </div>
+                    <div class="wrap-modal-body">
+                        <div class="modal-body">
+                            <p>
+                                Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                                Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                                Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                                Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                                Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                                Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                                Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                                Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                                Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                                Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                                Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                                Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer cc-txt-center">
+                        <button type="submit" class="cc-bg-primary fa-save">I'm a button</button>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-id-disabled" class="modal" data-disabled-overlay>
+                <button class="modal-close"></button>
+
+                <div class="modal-overlay"></div>
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        Disabled overlay
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            You have to click on close button to close this modal.
                         </p>
                     </div>
                 </div>
-                <div class="modal-footer cc-txt-center">
-                    <button type="submit" class="cc-bg-primary fa-save">I'm a button</button>
+            </div>
+            <div id="modal-id-nested" class="modal">
+                <button class="modal-close"></button>
+
+                <div class="modal-overlay"></div>
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        Hey! I'm the first modal
+                    </div>
+                    <div class="modal-body">
+                        <pre class="HTML">
+                            <code class="language-markup"><!-- -->
+                                &lt;!-- Button in footer -->
+                                &lt;button data-target="modal-id-2" class="cc-bg-primary modal-open">Open a second modal&lt;/button>
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="modal-footer cc-txt-center">
+                        <button data-target="modal-id-2" class="cc-bg-primary modal-open">Open a second modal</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="modal-id-disabled" class="modal" data-disabled-overlay>
-            <button class="modal-close"></button>
+            <div id="modal-id-2" class="modal">
+                <button class="modal-close"></button>
 
-            <div class="modal-overlay"></div>
+                <div class="modal-overlay"></div>
 
-            <div class="modal-content">
-                <div class="modal-header">
-                    Disabled overlay
-                </div>
-                <div class="modal-body">
-                    <p>
-                        You have to click on close button to close this modal.
-                    </p>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        Heyy!! I'm the second modal
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <strong>I'm the second modal with id="modal-id-2"</strong>
+                        </p>
+                        <pre class="HTML">
+                            <code class="language-markup"><!-- -->
+                                &lt;!-- Button in footer -->
+                                &lt;button data-target="modal-id-3" class="cc-bg-primary modal-open">
+                                    Open a third modal with disabled overlay
+                                &lt;/button>
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="modal-footer cc-txt-center">
+                        <button data-target="modal-id-3" class="cc-bg-primary modal-open">Open a third modal with disabled overlay</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="modal-id-nested" class="modal">
-            <button class="modal-close"></button>
+            <div id="modal-id-3" class="modal" data-disabled-overlay>
+                <button class="modal-close"></button>
 
-            <div class="modal-overlay"></div>
+                <div class="modal-overlay"></div>
 
-            <div class="modal-content">
-                <div class="modal-header">
-                    Hey! I'm the first modal
-                </div>
-                <div class="modal-body">
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            &lt;!-- Button in footer -->
-                            &lt;button data-target="modal-id-2" class="cc-bg-primary modal-open">Open a second modal&lt;/button>
-                        </code>
-                    </pre>
-                </div>
-                <div class="modal-footer cc-txt-center">
-                    <button data-target="modal-id-2" class="cc-bg-primary modal-open">Open a second modal</button>
-                </div>
-            </div>
-        </div>
-        <div id="modal-id-2" class="modal">
-            <button class="modal-close"></button>
-
-            <div class="modal-overlay"></div>
-
-            <div class="modal-content">
-                <div class="modal-header">
-                    Heyy!! I'm the second modal
-                </div>
-                <div class="modal-body">
-                    <p>
-                        <strong>I'm the second modal with id="modal-id-2"</strong>
-                    </p>
-                    <pre class="HTML">
-                        <code class="language-markup"><!-- -->
-                            &lt;!-- Button in footer -->
-                            &lt;button data-target="modal-id-3" class="cc-bg-primary modal-open">
-                                Open a third modal with disabled overlay
-                            &lt;/button>
-                        </code>
-                    </pre>
-                </div>
-                <div class="modal-footer cc-txt-center">
-                    <button data-target="modal-id-3" class="cc-bg-primary modal-open">Open a third modal with disabled overlay</button>
-                </div>
-            </div>
-        </div>
-        <div id="modal-id-3" class="modal" data-disabled-overlay>
-            <button class="modal-close"></button>
-
-            <div class="modal-overlay"></div>
-
-            <div class="modal-content">
-                <div class="modal-header">
-                    Heyyy!!! I'm the third and last modal
-                </div>
-                <div class="modal-body">
-                    <p>
-                        <strong>I'm the third modal</strong> and you can't close me by clicking on overlay!
-                    </p>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        Heyyy!!! I'm the third and last modal
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <strong>I'm the third modal</strong> and you can't close me by clicking on overlay!
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

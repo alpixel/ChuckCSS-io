@@ -160,12 +160,10 @@
                     top: 264
                 }
             });
-            setTimeout(function(){
-                $('body').scrollspy({
-                    target: '#left-navbar',
-                    offset : 300
-                });
-            },300);
+            $('body').scrollspy({
+                target: '#left-navbar',
+                offset : 400
+            });
         }
 
         // Buttons loading exemple
