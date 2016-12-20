@@ -428,6 +428,17 @@
                                         </li>
                                         <li>
                                             <a href="#elements-forms">Forms</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#elements-forms-basic">Minimal syntax</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-forms-inline">Inline form items</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-forms-chained">Chained inputs</a>
+                                                </li>
+                                            </ul>
                                         </li>
                                         <li>
                                             <a href="#elements-images">Images</a>
@@ -3760,8 +3771,160 @@
                                         });
                                     </code>
                                 </pre>
-
                             </div>
+
+                            <!-- Buttons -->
+                            <div>
+                                <h3 id="elements-forms" class="fa-angle-right">
+                                    <a href="#elements-forms">
+                                        Forms
+                                    </a>
+                                </h3>
+                                <p class="cc-txt-center cc-mab-20">
+                                    <a href="reminder#forms" class="btn cc-thin cc-bg-primary">Go to reminder</a>
+                                </p>
+                                <div class="exemple-intro">
+                                    <p>
+                                        Build forms with ChuckCSS is easy. You just have to respect a specific syntax to render forms properly.<br /><br />
+                                        By default :
+                                    </p>
+                                    <ul>
+                                        <li>Form items are colorized with @primary color. You can change the form main color easily.</li>
+                                        <li>Label are displayed inline</li>
+                                        <li>Form-item wrappers are displayed as block</li>
+                                    </ul>
+
+                                    <p>On small screens (< 768px) :</p>
+                                    <ul>
+                                        <li>Label are displayed as block with 100% width</li>
+                                        <li>Inputs are displayed as block with 100% width</li>
+                                    </ul>
+                                </div>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-forms-basic">
+                                    <a href="#elements-forms-basic">
+                                        Forms minimum syntax
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <span class="code">class="form-item"</span> : wrap a couple of <span class="code">&lt;label></span> + <span class="code">&lt;input /></span>
+                                </div>
+
+                                <form>
+                                    <div class="form-item">
+                                        <label>Name</label>
+                                        <input type="text" value="" placeholder="Name" name="" />
+                                    </div>
+                                    <div class="form-item">
+                                        <label>Name</label>
+                                        <input type="text" value="" placeholder="Name" name="" />
+                                    </div>
+                                    <div class="form-item">
+                                        <input type="submit" value="Submit" name="submit-btn" />
+                                    </div>
+                                </form>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Basic Form -->
+                                        &lt;form>
+                                            &lt;div class="form-item">
+                                                &lt;label>Name&lt;/label>
+                                                &lt;input type="text" value="" placeholder="Name" name="" />
+                                            &lt;/div>
+                                            &lt;div class="form-item">
+                                                &lt;label>Name&lt;/label>
+                                                &lt;input type="text" value="" placeholder="Name" name="" />
+                                            &lt;/div>
+                                            &lt;div class="form-item">
+                                                &lt;input type="submit" value="Submit" name="submit-btn" />
+                                            &lt;/div>
+                                        &lt;/form>
+
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-forms-inline">
+                                    <a href="#elements-forms-inline">
+                                        Inline form items
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <span class="code">class="form-item cc-inline"</span> : wrap an inline couple of <span class="code">&lt;label></span> + <span class="code">&lt;input /></span>
+                                </div>
+
+                                <form>
+                                    <div class="form-item cc-inline">
+                                        <label>Name</label>
+                                        <input type="text" value="" placeholder="Name" name="" />
+                                    </div>
+                                    <div class="form-item cc-inline">
+                                        <label>Name</label>
+                                        <input type="text" value="" placeholder="Name" name="" />
+                                    </div>
+                                    <div class="form-item cc-inline">
+                                        <input type="submit" value="Submit" name="submit-btn" />
+                                    </div>
+                                </form>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Inline form items -->
+                                        &lt;form>
+                                            &lt;div class="form-item cc-inline">
+                                                ...same as before...
+                                            &lt;/div>
+                                            &lt;div class="form-item cc-inline">
+                                                ...same as before...
+                                            &lt;/div>
+                                            &lt;div class="form-item cc-inline">
+                                                ...same as before...
+                                            &lt;/div>
+                                        &lt;/form>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-forms-chained">
+                                    <a href="#elements-forms-chained">
+                                        Chained inputs
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <span class="code">class="form-item cc-chained"</span> : wrap an chain of <span class="code">&lt;input /></span>
+                                </div>
+
+                                <form>
+                                    <div class="form-item cc-chained">
+                                        <label>Label</label>
+                                        <input type="text" value="" placeholder="Name" name="" />
+                                        <input type="text" value="" placeholder="Name" name="" />
+                                        <input type="text" value="" placeholder="Name" name="" />
+                                        <input type="submit" value="Submit" name="submit-btn" />
+                                    </div>
+                                </form>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Chained inputs -->
+                                        &lt;form>
+                                            &lt;div class="form-item cc-chained">
+                                                &lt;label>Label&lt;/label>
+                                                &lt;input type="text" value="" placeholder="Name" name="" />
+                                                &lt;input type="text" value="" placeholder="Name" name="" />
+                                                &lt;input type="text" value="" placeholder="Name" name="" />
+                                                &lt;input type="submit" value="Submit" name="submit-btn" />
+                                            &lt;/div>
+                                        &lt;/form>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+                            </div>
+
+
 
                             <!-- NEW SECTION -->
                             <!-- <div>

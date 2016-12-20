@@ -17,7 +17,7 @@
             e.preventDefault();
             window.open($(this).attr("href"));
         });
-        $(document).on('click','a.no-link, a[href="GOTOLINK"], a[href="#"]',function(e){
+        $(document).on('click','.submit-btn, a.no-link, a[href="GOTOLINK"], a[href="#"]',function(e){
             e.preventDefault();
             e.stopPropagation();
         });
@@ -156,10 +156,12 @@
                     top: 264
                 }
             });
-            $('body').scrollspy({
-                target: '#left-navbar',
-                offset : 300
-            });
+            setTimeout(function(){
+                $('body').scrollspy({
+                    target: '#left-navbar',
+                    offset : 300
+                });
+            },300);
         }
 
         // Buttons loading exemple
