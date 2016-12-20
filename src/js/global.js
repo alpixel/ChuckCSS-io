@@ -17,7 +17,11 @@
             e.preventDefault();
             window.open($(this).attr("href"));
         });
-        $(document).on('click','.submit-btn, a.no-link, a[href="GOTOLINK"], a[href="#"]',function(e){
+        $(document).on('click','a.no-link, a[href="GOTOLINK"], a[href="#"]',function(e){
+            e.preventDefault();
+            e.stopPropagation();
+        });
+        $(document).on('submit','.documentation form',function(e){
             e.preventDefault();
             e.stopPropagation();
         });

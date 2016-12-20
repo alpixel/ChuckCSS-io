@@ -430,13 +430,34 @@
                                             <a href="#elements-forms">Forms</a>
                                             <ul>
                                                 <li>
-                                                    <a href="#elements-forms-basic">Minimal syntax</a>
+                                                    <a href="#elements-forms-syntax">Minimal syntax</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#elements-forms-inline">Inline form items</a>
+                                                    <a href="#elements-forms-basic">Basic fields</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-forms-inline">Chained form items</a>
                                                 </li>
                                                 <li>
                                                     <a href="#elements-forms-chained">Chained inputs</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-forms-radio">Radio inputs</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-forms-checkbox">Checkbox inputs</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-forms-ps">Prefix & Suffix inputs</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-forms-labels-block">Labels as block</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-forms-style-error">Error styles</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-forms-color">Change form main color</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -3773,7 +3794,7 @@
                                 </pre>
                             </div>
 
-                            <!-- Buttons -->
+                            <!-- Forms -->
                             <div>
                                 <h3 id="elements-forms" class="fa-angle-right">
                                     <a href="#elements-forms">
@@ -3791,7 +3812,7 @@
                                     <ul>
                                         <li>Form items are colorized with @primary color. You can change the form main color easily.</li>
                                         <li>Label are displayed inline</li>
-                                        <li>Form-item wrappers are displayed as block</li>
+                                        <li>Wrappers with <span class="code">class="form-item"</span> are displayed as block</li>
                                     </ul>
 
                                     <p>On small screens (< 768px) :</p>
@@ -3803,14 +3824,38 @@
 
                                 <div class="sep"></div>
 
-                                <h4 id="elements-forms-basic">
-                                    <a href="#elements-forms-basic">
-                                        Forms minimum syntax
+                                <h4 id="elements-forms-syntax">
+                                    <a href="#elements-forms-syntax">
+                                        Minimal forms syntax
                                     </a>
                                 </h4>
                                 <div class="exemple-intro">
-                                    <span class="code">class="form-item"</span> : wrap a couple of <span class="code">&lt;label></span> + <span class="code">&lt;input /></span>
+                                    In ChuckCSS, forms are composed of a succession of divisions with <span class="code">class="form-item"</span><br /><br />
+                                    <span class="code">class="form-item"</span> : wrap a couple of <span class="code">&lt;label></span> + a form field (input, select, textarea, ...)
                                 </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Minimal forms syntax -->
+                                        &lt;form>
+                                            &lt;div class="form-item">
+                                                ...label + input, select, textarea...
+                                            &lt;/div>
+                                            &lt;div class="form-item">
+                                                ...label + input, select, textarea...
+                                            &lt;/div>
+                                            &lt;div class="form-item">
+                                                ...label + input, select, textarea...
+                                            &lt;/div>
+                                        &lt;/form>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+                                <h4 id="elements-forms-basic">
+                                    <a href="#elements-forms-basic">
+                                        Basic fields
+                                    </a>
+                                </h4>
 
                                 <form>
                                     <div class="form-item">
@@ -3818,11 +3863,21 @@
                                         <input type="text" value="" placeholder="Name" name="" />
                                     </div>
                                     <div class="form-item">
-                                        <label>Name</label>
-                                        <input type="text" value="" placeholder="Name" name="" />
+                                        <label>Choose an option</label>
+                                        <select name="">
+                                            <option selected="selected" disabled="disabled">-- Choose --</option>
+                                            <option>Option 1</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                        </select>
                                     </div>
                                     <div class="form-item">
-                                        <input type="submit" value="Submit" name="submit-btn" />
+                                        <label>Your message</label>
+                                        <textarea name="textarea"></textarea>
+                                    </div>
+
+                                    <div class="form-item">
+                                        <input type="submit" value="Submit" name="" />
                                     </div>
                                 </form>
                                 <pre class="HTML">
@@ -3838,7 +3893,7 @@
                                                 &lt;input type="text" value="" placeholder="Name" name="" />
                                             &lt;/div>
                                             &lt;div class="form-item">
-                                                &lt;input type="submit" value="Submit" name="submit-btn" />
+                                                &lt;input type="submit" value="Submit" name="" />
                                             &lt;/div>
                                         &lt;/form>
 
@@ -3849,7 +3904,7 @@
 
                                 <h4 id="elements-forms-inline">
                                     <a href="#elements-forms-inline">
-                                        Inline form items
+                                        Chained form items
                                     </a>
                                 </h4>
                                 <div class="exemple-intro">
@@ -3890,7 +3945,7 @@
 
                                 <h4 id="elements-forms-chained">
                                     <a href="#elements-forms-chained">
-                                        Chained inputs
+                                        Chained inputs in a form-item
                                     </a>
                                 </h4>
                                 <div class="exemple-intro">
@@ -3922,6 +3977,638 @@
                                 </pre>
 
                                 <div class="sep"></div>
+
+                                <h4 id="elements-forms-radio">
+                                    <a href="#elements-forms-radio">
+                                        Radio inputs
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <span class="code">class="form-radio"</span> : Display a chained serie of label + radio input (on the same line)<br />
+                                    <span class="code">class="form-radio block"</span> : Display a label + radio input (one par line)<br />
+                                    <span class="code">class="form-radio disabled"</span> : Display a disabled block label + radio input<br />
+                                </div>
+
+                                <form>
+                                    <div class="form-item">
+                                        <div class="form-radio">
+                                            <label>
+                                                <input type="radio" name="radio" value="1" checked="checked" />
+                                                Choice 1 (checked)
+                                            </label>
+                                        </div>
+                                        <div class="form-radio">
+                                            <label>
+                                                <input type="radio" name="radio" value="2" />
+                                                Choice 2
+                                            </label>
+                                        </div>
+                                        <div class="form-radio disabled">
+                                            <label>
+                                                <input type="radio" name="radio" value="3" disabled="disabled" />
+                                                Choice 3 (disabled)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </form>
+                                <pre class="HTML collapsed">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Inline radio inputs -->
+                                        &lt;form>
+                                            &lt;div class="form-item">
+                                                &lt;div class="form-radio">
+                                                    &lt;label>
+                                                        &lt;input type="radio" name="radio" value="1" checked="checked" />
+                                                        Choice 1 (checked)
+                                                    &lt;/label>
+                                                &lt;/div>
+                                                &lt;div class="form-radio">
+                                                    &lt;label>
+                                                        &lt;input type="radio" name="radio" value="2" />
+                                                        Choice 2
+                                                    &lt;/label>
+                                                &lt;/div>
+                                                &lt;div class="form-radio disabled">
+                                                    &lt;label>
+                                                        &lt;input type="radio" name="radio" value="3" disabled="disabled" />
+                                                        Choice 3 (disabled)
+                                                    &lt;/label>
+                                                &lt;/div>
+                                            &lt;/div>
+                                        &lt;/form>
+                                    </code>
+                                </pre>
+                                <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+
+                                <form>
+                                    <div class="form-item">
+                                        <div class="form-radio block">
+                                            <label>
+                                                <input type="radio" name="radio2" value="1" checked="checked" />
+                                                Choice 1 (checked)
+                                            </label>
+                                        </div>
+                                        <div class="form-radio block">
+                                            <label>
+                                                <input type="radio" name="radio2" value="2" />
+                                                Choice 2
+                                            </label>
+                                        </div>
+                                        <div class="form-radio block disabled">
+                                            <label>
+                                                <input type="radio" name="radio2" value="3" disabled="disabled" />
+                                                Choice 3 (disabled)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </form>
+                                <pre class="HTML collapsed">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Block radio inputs -->
+                                        &lt;form>
+                                            &lt;div class="form-item">
+                                                &lt;div class="form-radio block">
+                                                    &lt;label>
+                                                        &lt;input type="radio" name="radio2" value="1" checked="checked" />
+                                                        Choice 1 (checked)
+                                                    &lt;/label>
+                                                &lt;/div>
+                                                &lt;div class="form-radio block">
+                                                    &lt;label>
+                                                        &lt;input type="radio" name="radio2" value="2" />
+                                                        Choice 2
+                                                    &lt;/label>
+                                                &lt;/div>
+                                                &lt;div class="form-radio block disabled">
+                                                    &lt;label>
+                                                        &lt;input type="radio" name="radio2" value="3" disabled="disabled" />
+                                                        Choice 3 (disabled)
+                                                    &lt;/label>
+                                                &lt;/div>
+                                            &lt;/div>
+                                        &lt;/form>
+                                    </code>
+                                </pre>
+                                <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-forms-checkbox">
+                                    <a href="#elements-forms-checkbox">
+                                        Checkbox inputs
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <span class="code">class="form-checkbox"</span> : Display a chained serie of label + checkbox input (on the same line)<br />
+                                    <span class="code">class="form-checkbox block"</span> : Display a block label + checkbox input (one par line)<br />
+                                    <span class="code">class="form-checkbox disabled"</span> : Display a disabled block label + checkbox input<br />
+                                </div>
+
+                                <form>
+                                    <div class="form-item">
+                                        <div class="form-checkbox">
+                                            <label>
+                                                <input type="checkbox" name="checkbox1" value="1" checked="checked" />
+                                                Choice 1 (checked)
+                                            </label>
+                                        </div>
+                                        <div class="form-checkbox">
+                                            <label>
+                                                <input type="checkbox" name="checkbox2" value="2" />
+                                                Choice 2
+                                            </label>
+                                        </div>
+                                        <div class="form-checkbox disabled">
+                                            <label>
+                                                <input type="checkbox" name="checkbox3" value="3" disabled="disabled" />
+                                                Choice 3 (disabled)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </form>
+                                <pre class="HTML collapsed">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Inline checkbox inputs -->
+                                        &lt;form>
+                                            &lt;div class="form-item">
+                                                &lt;div class="form-checkbox">
+                                                    &lt;label>
+                                                        &lt;input type="checkbox" name="checkbox1" value="1" checked="checked" />
+                                                        Choice 1 (checked)
+                                                    &lt;/label>
+                                                &lt;/div>
+                                                &lt;div class="form-checkbox">
+                                                    &lt;label>
+                                                        &lt;input type="checkbox" name="checkbox2" value="2" />
+                                                        Choice 2
+                                                    &lt;/label>
+                                                &lt;/div>
+                                                &lt;div class="form-checkbox disabled">
+                                                    &lt;label>
+                                                        &lt;input type="checkbox" name="checkbox3" value="3" disabled="disabled" />
+                                                        Choice 3 (disabled)
+                                                    &lt;/label>
+                                                &lt;/div>
+                                            &lt;/div>
+                                        &lt;/form>
+                                    </code>
+                                </pre>
+                                <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+
+                                <form>
+                                    <div class="form-item">
+                                        <div class="form-checkbox block">
+                                            <label>
+                                                <input type="checkbox" name="checkbox4" value="1" checked="checked" />
+                                                Choice 1 (checked)
+                                            </label>
+                                        </div>
+                                        <div class="form-checkbox block">
+                                            <label>
+                                                <input type="checkbox" name="checkbox5" value="2" />
+                                                Choice 2
+                                            </label>
+                                        </div>
+                                        <div class="form-checkbox block disabled">
+                                            <label>
+                                                <input type="checkbox" name="checkbox" value="3" disabled="disabled" />
+                                                Choice 3 (disabled)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </form>
+                                <pre class="HTML collapsed">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Block radio inputs -->
+                                        &lt;form>
+                                            &lt;div class="form-item">
+                                                &lt;div class="form-checkbox block">
+                                                    &lt;label>
+                                                        &lt;input type="checkbox" name="checkbox4" value="1" checked="checked" />
+                                                        Choice 1 (checked)
+                                                    &lt;/label>
+                                                &lt;/div>
+                                                &lt;div class="form-checkbox block">
+                                                    &lt;label>
+                                                        &lt;input type="checkbox" name="checkbox5" value="2" />
+                                                        Choice 2
+                                                    &lt;/label>
+                                                &lt;/div>
+                                                &lt;div class="form-checkbox block disabled">
+                                                    &lt;label>
+                                                        &lt;input type="checkbox" name="checkbox" value="3" disabled="disabled" />
+                                                        Choice 3 (disabled)
+                                                    &lt;/label>
+                                                &lt;/div>
+                                            &lt;/div>
+                                        &lt;/form>
+                                    </code>
+                                </pre>
+                                <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-forms-ps">
+                                    <a href="#elements-forms-ps">
+                                        Prefix & Suffix
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <span class="code">class="form-ps"</span> : wrap an chain of prefix / input / suffix<br /><br />
+                                    Prefix & suffix must be placed into <span class="code">&lt;span></span> elements.
+                                </div>
+
+                                <form>
+                                    <div class="form-item">
+                                        <label>Prefix and suffix</label>
+                                        <div class="form-ps">
+                                            <span>$</span>
+                                            <input type="text" placeholder="price" value="" name="">
+                                            <span>.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-item">
+                                        <label>Prefix only</label>
+                                        <div class="form-ps">
+                                            <span>$</span>
+                                            <input type="text" placeholder="price" value="" name="">
+                                        </div>
+                                    </div>
+                                    <div class="form-item">
+                                        <label>Suffix only</label>
+                                        <div class="form-ps">
+                                            <input type="text" placeholder="price" value="" name="">
+                                            <span>.00</span>
+                                        </div>
+                                    </div>
+                                </form>
+                                <pre class="HTML collapsed">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Prefix & suffix -->
+                                        &lt;form>
+                                            &lt;div class="form-item">
+                                                &lt;label>Prefix and suffix&lt;/label>
+                                                &lt;div class="form-ps">
+                                                    &lt;span>$&lt;/span>
+                                                    &lt;input type="text" placeholder="price" value="" name="">
+                                                    &lt;span>.00&lt;/span>
+                                                &lt;/div>
+                                            &lt;/div>
+                                            &lt;div class="form-item">
+                                                &lt;label>Prefix only&lt;/label>
+                                                &lt;div class="form-ps">
+                                                    &lt;span>$&lt;/span>
+                                                    &lt;input type="text" placeholder="price" value="" name="">
+                                                &lt;/div>
+                                            &lt;/div>
+                                            &lt;div class="form-item">
+                                                &lt;label>Suffix only&lt;/label>
+                                                &lt;div class="form-ps">
+                                                    &lt;input type="text" placeholder="price" value="" name="">
+                                                    &lt;span>.00&lt;/span>
+                                                &lt;/div>
+                                            &lt;/div>
+                                        &lt;/form>
+                                    </code>
+                                </pre>
+                                <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-forms-labels-block">
+                                    <a href="#elements-forms-labels-block">
+                                        Display label as a block
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <p><span class="code">&lt;label class="block"></span> : Display a label as a block element.</p>
+                                </div>
+
+                                <form>
+                                    <div class="form-item">
+                                        <label class="block">I'm a label displayed as a block element</label>
+                                        <input type="text" placeholder="placeholder" value="" name="">
+                                    </div>
+                                    <div class="form-item">
+                                        <label>I'm a default label (displayed as a inline element)</label>
+                                        <input type="text" placeholder="placeholder" value="" name="">
+                                    </div>
+                                </form>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Block label -->
+                                        &lt;form>
+                                            &lt;div class="form-item">
+                                                &lt;label class="block">I'm a label displayed as a block element&lt;/label>
+                                                &lt;input type="text" placeholder="placeholder" value="" name="" />
+                                            &lt;/div>
+                                            &lt;div class="form-item">
+                                                &lt;label>I'm a default label (displayed as a inline element)&lt;/label>
+                                                &lt;input type="text" placeholder="placeholder" value="" name="" />
+                                            &lt;/div>
+                                        &lt;/form>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-forms-style-error">
+                                    <a href="#elements-forms-style-error">
+                                        Error styles
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <p><span class="code">class="error"</span> : Show a form-item as an error.</p>
+                                </div>
+
+                                <form>
+                                    <div class="columns">
+                                        <div class="cc-6-m">
+                                            <div class="form-item">
+                                                <label>Name</label>
+                                                <input type="text" placeholder="placeholder" value="" name="" />
+                                            </div>
+                                        </div>
+                                        <div class="cc-6-m">
+                                            <div class="form-item error">
+                                                <label>Name</label>
+                                                <input type="text" placeholder="placeholder" value="" name="" />
+                                            </div>
+                                        </div>
+                                        <div class="cc-6-m">
+                                            <div class="form-item">
+                                                <label>Choose an option</label>
+                                                <select name="">
+                                                    <option selected="selected" disabled="disabled">-- Choose --</option>
+                                                    <option>Option 1</option>
+                                                    <option>Option 2</option>
+                                                    <option>Option 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="cc-6-m">
+                                            <div class="form-item error">
+                                                <label>Choose an option</label>
+                                                <select name="">
+                                                    <option selected="selected" disabled="disabled">-- Choose --</option>
+                                                    <option>Option 1</option>
+                                                    <option>Option 2</option>
+                                                    <option>Option 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="cc-6-m">
+                                            <div class="form-item">
+                                                <textarea placeholder="textarea"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="cc-6-m">
+                                            <div class="form-item error">
+                                                <textarea placeholder="textarea"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="cc-6-m">
+                                            <div class="form-item">
+                                                <div class="form-radio">
+                                                    <label>
+                                                        <input type="radio" value="2" name="radio"  />
+                                                        No error
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cc-6-m">
+                                            <div class="form-item">
+                                                <div class="form-radio error">
+                                                    <label>
+                                                        <input type="radio" value="1" name="radio" />
+                                                        Error radio
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cc-6-m">
+                                            <div class="form-item">
+                                                <div class="form-checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="2" name="checkbox" />
+                                                        No error
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cc-6-m">
+                                            <div class="form-item">
+                                                <div class="form-checkbox error">
+                                                    <label>
+                                                        <input type="checkbox" value="1" name="checkbox" />
+                                                        Error checkbox
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="cc-6-m">
+                                            <div class="form-item">
+                                                <div class="form-ps">
+                                                    <span>$</span>
+                                                    <input type="text" placeholder="price" value="" name="">
+                                                    <span>.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cc-6-m">
+                                            <div class="form-item error">
+                                                <div class="form-ps">
+                                                    <span>$</span>
+                                                    <input type="text" placeholder="price" value="" name="">
+                                                    <span>.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="cc-6-m">
+                                            <div class="form-item cc-chained">
+                                                <input type="text" value="" placeholder="Name" name="" />
+                                                <input type="submit" value="Submit" name="submit-btn" />
+                                            </div>
+                                        </div>
+                                        <div class="cc-6-m">
+                                            <div class="form-item cc-chained error">
+                                                <input type="text" value="" placeholder="Name" name="" />
+                                                <input type="submit" value="Submit" name="submit-btn" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <pre class="HTML collapsed">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Input Error style -->
+                                        &lt;div class="form-item error">
+                                            &lt;label>Name&lt;/label>
+                                            &lt;input type="text" placeholder="placeholder" value="" name="" />
+                                        &lt;/div>
+
+                                        &lt;!-- Select Error style -->
+                                        &lt;div class="form-item error">
+                                            &lt;label>Choose an option&lt;/label>
+                                            &lt;select name="">
+                                                &lt;option selected="selected" disabled="disabled">-- Choose --&lt;/option>
+                                                &lt;option>Option 1&lt;/option>
+                                                &lt;option>Option 2&lt;/option>
+                                                &lt;option>Option 3&lt;/option>
+                                            &lt;/select>
+                                        &lt;/div>
+
+                                        &lt;!-- Textarea Error style -->
+                                        &lt;div class="form-item error">
+                                            &lt;textarea placeholder="textarea">&lt;/textarea>
+                                        &lt;/div>
+
+                                        &lt;!-- Radio Error style -->
+                                        &lt;div class="form-item">
+                                            &lt;div class="form-radio error">
+                                                &lt;label>
+                                                    &lt;input type="radio" value="1" name="radio" />
+                                                    Error radio
+                                                &lt;/label>
+                                            &lt;/div>
+                                        &lt;/div>
+
+                                        &lt;!-- Checkbox Error style -->
+                                        &lt;div class="form-item">
+                                            &lt;div class="form-checkbox error">
+                                                &lt;label>
+                                                    &lt;input type="checkbox" value="1" name="checkbox" />
+                                                    Error checkbox
+                                                &lt;/label>
+                                            &lt;/div>
+                                        &lt;/div>
+
+                                        &lt;!-- Prefix/Suffix Error style -->
+                                        &lt;div class="form-item error">
+                                            &lt;div class="form-ps">
+                                                &lt;span>$&lt;/span>
+                                                &lt;input type="text" placeholder="price" value="" name="">
+                                                &lt;span>.00&lt;/span>
+                                            &lt;/div>
+                                        &lt;/div>
+
+                                        &lt;!-- Chained Inputs Error style -->
+                                        &lt;div class="form-item cc-chained error">
+                                            &lt;input type="text" value="" placeholder="Name" name="" />
+                                            &lt;input type="submit" value="Submit" name="submit-btn" />
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+                                <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-forms-color">
+                                    <a href="#elements-forms-color">
+                                        Change the form main color
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        <span class="code">class="cc-{color}"</span> : Applied to the <span class="code">form</span> element, change the form main color.<br /><br />
+                                        <strong>{color}</strong> : <a href="reminder#chuckcss-colors" class="external-link">A color defined in ChuckCSS framework</a>
+                                    </p>
+                                </div>
+
+                                <form class="cc-green">
+                                    <div class="columns">
+                                        <div class="cc-6-m">
+                                            <div class="form-item">
+                                                <label>Name</label>
+                                                <input type="text" placeholder="Focus me!" value="" name="" />
+                                            </div>
+                                        </div>
+                                        <div class="cc-6-m">
+                                            <div class="form-item">
+                                                <label>Choose an option</label>
+                                                <select name="">
+                                                    <option selected="selected" disabled="disabled">-- Choose --</option>
+                                                    <option>Option 1</option>
+                                                    <option>Option 2</option>
+                                                    <option>Option 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="cc-12">
+                                            <div class="form-item">
+                                                <textarea placeholder="Focus me!"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="cc-6-m">
+                                            <div class="form-item">
+                                                <div class="form-radio">
+                                                    <label>
+                                                        <input type="radio" value="2" name="radio"  checked="checked" />
+                                                        Radio 1
+                                                    </label>
+                                                </div>
+                                                <div class="form-radio">
+                                                    <label>
+                                                        <input type="radio" value="1" name="radio" />
+                                                        Radio 2
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cc-6-m">
+                                            <div class="form-item">
+                                                <div class="form-checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="2" name="checkbox" checked="checked" />
+                                                        Checkbox 1
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="1" name="checkbox" />
+                                                        Checkbox 2
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="cc-12">
+                                            <div class="form-item">
+                                                <div class="form-ps">
+                                                    <span>$</span>
+                                                    <input type="text" placeholder="Focus me!" value="" name="">
+                                                    <span>.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="cc-12">
+                                            <div class="form-item cc-chained">
+                                                <input type="text" value="" placeholder="Focus me!" name="" />
+                                                <input type="text" value="" placeholder="Focus me!" name="" />
+                                                <input type="text" value="" placeholder="Focus me!" name="" />
+                                                <input type="submit" value="Submit" name="submit-btn" />
+                                            </div>
+                                        </div>
+                                        <div class="cc-12">
+                                            <div class="form-item">
+                                                <button type="submit">I'm a submit button</button>
+                                                <input type="submit" value="I'm a submit input" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Main color -->
+                                        &lt;form class="cc-green">
+                                            ...form components...
+                                        &lt;/form>
+                                    </code>
+                                </pre>
                             </div>
 
 

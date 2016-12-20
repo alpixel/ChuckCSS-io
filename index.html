@@ -290,47 +290,55 @@
                 </div>
 
                 <div class="wrap-feature">
-                    <h3>Alerts box with ChuckCSS</h3>
+                    <h3>Modals with ChuckCSS</h3>
+
                     <div class="alert alert-info ion-alert-circled">
-                        On alert boxes, the "close" button require the <strong>chuckcss.js file</strong>.<br />
-                        Nevertheless, you can build alert box without the "close" button. In that case, you don't need to load the chuckcss.js file.
+                        Using modals required the <strong>chuckcss.js file.</strong>
                     </div>
+
                     <pre class="HTML collapsed">
                         <code class="language-markup"><!-- -->
-                            &lt;!-- Success -->
-                            &lt;div class="alert alert-success fa-thumbs-up">
-                                &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
-                                It's a success! Good job :)
+                            &lt;!-- Classic modal -->
+                            &lt;button data-target="modal-id" class="cc-bg-primary modal-open">Launch classic modal&lt;/button>
+
+                            &lt;!-- Modal minimal structure -->
+                            &lt;div id="modal-id" class="modal">
+                                &lt;!-- Close button -->
+                                &lt;button class="modal-close">&lt;/button>
+                                &lt;!-- Overlay -->
+                                &lt;div class="modal-overlay">&lt;/div>
+                                &lt;!-- Modal content -->
+                                &lt;div class="modal-content">
+                                    &lt;div class="modal-header">
+                                        ...
+                                    &lt;/div>
+                                    &lt;div class="modal-body">
+                                        ...
+                                    &lt;/div>
+                                    &lt;div class="modal-footer">
+                                        ...
+                                    &lt;/div>
+                                &lt;/div>
                             &lt;/div>
 
-                            &lt;!-- Error -->
-                            &lt;div class="alert alert-error fa-thumbs-down">
-                                &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
-                                It's an error!&lt;br />
-                                Please check the list below :
-                                &lt;ul>
-                                    &lt;li>&lt;strong>Error 1 :&lt;/strong> Nunc...&lt;/li>
-                                    &lt;li>&lt;strong>Error 2 :&lt;/strong> Nunc...&lt;/li>
-                                    &lt;li>&lt;strong>Error 3 :&lt;/strong> Nunc...&lt;/li>
-                                &lt;/ul>
-                            &lt;/div>
+                            &lt;!-- ALL EXEMPLES IN THE DOCUMENTATION SECTION -->
                         </code>
                     </pre>
                     <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
 
-                    <div class="alert alert-success fa-thumbs-up">
-                        <button class="close"><i class="ion-ios-close-outline"></i></button>
-                        It's a success! Good job :)
-                    </div>
-                    <div class="alert alert-error fa-thumbs-down">
-                        <button class="close"><i class="ion-ios-close-outline"></i></button>
-                        It's an error!<br />
-                        Please check the list below :
-                        <ul>
-                            <li><strong>Error 1 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
-                            <li><strong>Error 2 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
-                            <li><strong>Error 3 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
-                        </ul>
+                    <div class="columns">
+                        <div class="cc-txt-center">
+                            <button data-target="modal-id" class="cc-bg-primary modal-open">Launch classic modal</button>
+                        </div>
+                        <div class="cc-txt-center">
+                            <button data-target="modal-id-fixed-hf" class="cc-bg-primary modal-open">Fixed Header & Footer</button>
+                        </div>
+                        <div class="cc-txt-center">
+                            <button data-target="modal-id-no-closable" class="cc-bg-primary modal-open">Disabled overlay</button>
+                        </div>
+                        <div class="cc-txt-center">
+                            <button data-target="modal-id-nested" class="cc-bg-primary modal-open">Nested modals</button>
+                        </div>
                     </div>
                 </div>
 
@@ -401,55 +409,47 @@
                 </div>
 
                 <div class="wrap-feature">
-                    <h3>Modals with ChuckCSS</h3>
-
+                    <h3>Alerts box with ChuckCSS</h3>
                     <div class="alert alert-info ion-alert-circled">
-                        Using modals required the <strong>chuckcss.js file.</strong>
+                        On alert boxes, the "close" button require the <strong>chuckcss.js file</strong>.<br />
+                        Nevertheless, you can build alert box without the "close" button. In that case, you don't need to load the chuckcss.js file.
                     </div>
-
                     <pre class="HTML collapsed">
                         <code class="language-markup"><!-- -->
-                            &lt;!-- Classic modal -->
-                            &lt;button data-target="modal-id" class="cc-bg-primary modal-open">Launch classic modal&lt;/button>
-
-                            &lt;!-- Modal minimal structure -->
-                            &lt;div id="modal-id" class="modal">
-                                &lt;!-- Close button -->
-                                &lt;button class="modal-close">&lt;/button>
-                                &lt;!-- Overlay -->
-                                &lt;div class="modal-overlay">&lt;/div>
-                                &lt;!-- Modal content -->
-                                &lt;div class="modal-content">
-                                    &lt;div class="modal-header">
-                                        ...
-                                    &lt;/div>
-                                    &lt;div class="modal-body">
-                                        ...
-                                    &lt;/div>
-                                    &lt;div class="modal-footer">
-                                        ...
-                                    &lt;/div>
-                                &lt;/div>
+                            &lt;!-- Success -->
+                            &lt;div class="alert alert-success fa-thumbs-up">
+                                &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
+                                It's a success! Good job :)
                             &lt;/div>
 
-                            &lt;!-- ALL EXEMPLES IN THE DOCUMENTATION SECTION -->
+                            &lt;!-- Error -->
+                            &lt;div class="alert alert-error fa-thumbs-down">
+                                &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
+                                It's an error!&lt;br />
+                                Please check the list below :
+                                &lt;ul>
+                                    &lt;li>&lt;strong>Error 1 :&lt;/strong> Nunc...&lt;/li>
+                                    &lt;li>&lt;strong>Error 2 :&lt;/strong> Nunc...&lt;/li>
+                                    &lt;li>&lt;strong>Error 3 :&lt;/strong> Nunc...&lt;/li>
+                                &lt;/ul>
+                            &lt;/div>
                         </code>
                     </pre>
                     <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
 
-                    <div class="columns">
-                        <div class="cc-txt-center">
-                            <button data-target="modal-id" class="cc-bg-primary modal-open">Launch classic modal</button>
-                        </div>
-                        <div class="cc-txt-center">
-                            <button data-target="modal-id-fixed-hf" class="cc-bg-primary modal-open">Fixed Header & Footer</button>
-                        </div>
-                        <div class="cc-txt-center">
-                            <button data-target="modal-id-no-closable" class="cc-bg-primary modal-open">Disabled overlay</button>
-                        </div>
-                        <div class="cc-txt-center">
-                            <button data-target="modal-id-nested" class="cc-bg-primary modal-open">Nested modals</button>
-                        </div>
+                    <div class="alert alert-success fa-thumbs-up">
+                        <button class="close"><i class="ion-ios-close-outline"></i></button>
+                        It's a success! Good job :)
+                    </div>
+                    <div class="alert alert-error fa-thumbs-down">
+                        <button class="close"><i class="ion-ios-close-outline"></i></button>
+                        It's an error!<br />
+                        Please check the list below :
+                        <ul>
+                            <li><strong>Error 1 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
+                            <li><strong>Error 2 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
+                            <li><strong>Error 3 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
+                        </ul>
                     </div>
                 </div>
             </section>
