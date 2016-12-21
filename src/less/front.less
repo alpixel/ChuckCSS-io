@@ -745,3 +745,166 @@ main {
         }
     }
 }
+
+// Blocks visibilities exemples
+.wrap-blocks-visibilities {
+
+    .cc-bg-primary {
+        padding:1em;
+    }
+    .cc {
+        // Hidden elements on devices only
+        &-hidden {
+            display:block;
+            opacity:0.3;
+
+            // X-Small screens
+            &-xs {
+                // Hide on XS screens ONLY
+                &-only {
+                    ._media-xs-only({
+                        display:block;
+                        opacity:0.3;
+                    });
+                }
+                // Hide on XS screens and down
+                &-down {
+                    ._media-xs({
+                        opacity:0.3;
+                        display:block;
+                    });
+                }
+            }
+
+            // Small screens
+            &-s {
+                ._media-xs-up({
+                    opacity:0.3;
+                    display:block;
+                });
+
+                // Hide on S screens ONLY
+                &-only {
+                    ._media-s-only({
+                        opacity:0.3;
+                        display:block;
+                    });
+                }
+                // Hide on S screens and down
+                &-down {
+                    ._media-s({
+                        opacity:0.3;
+                        display:block;
+                    });
+                }
+            }
+
+            // Medium screens
+            &-m {
+                ._media-s-up({
+                    opacity:0.3;
+                    display:block;
+                });
+                // Hide on M screens ONLY
+                &-only {
+                    ._media-m-only({
+                        opacity:0.3;
+                        display:block;
+                    });
+                }
+                // Hide on M screens and down
+                &-down {
+                    ._media-m({
+                        opacity:0.3;
+                        display:block;
+                    });
+                }
+            }
+
+            // Large screens
+            &-l {
+                ._media-m-up({
+                    opacity:0.3;
+                    display:block;
+                });
+                // Hide on L screens ONLY
+                &-only {
+                    ._media-l-only({
+                        opacity:0.3;
+                        display:block;
+                    });
+                }
+                // Hide on L screens and down
+                &-down {
+                    ._media-l({
+                        opacity:0.3;
+                        display:block;
+                    });
+                }
+            }
+
+            // X-Large screens
+            &-xl {
+                ._media-l-up({
+                    opacity:0.3;
+                    display:block;
+                });
+
+                // Hide on screens > 1199px ONLY
+                &-only {
+                    ._media-l-up({
+                        opacity:0.3;
+                        display:block;
+                    });
+                }
+            }
+        }
+
+        // Shown elements on devices only
+        &-shown {
+            // Shown on XL screens ONLY
+            &-xl-only {
+                ._media-l({
+                    opacity:0.3;
+                    display:block;
+                });
+            }
+            // Shown on L screens ONLY
+            &-l-only {
+                opacity:0.3;
+                display:block;
+
+                ._media-l-only({
+                    opacity:1;
+                });
+            }
+            // Shown on M screens ONLY
+            &-m-only {
+                opacity:0.3;
+                display:block;
+
+                ._media-m-only({
+                    opacity:1;
+                });
+            }
+            // Shown on S screens ONLY
+            &-s-only {
+                opacity:0.3;
+                display:block;
+
+                ._media-s-only({
+                    opacity:1;
+                });
+            }
+            // Shown on XS screens ONLY
+            &-xs-only {
+                opacity:0.3;
+                display:block;
+
+                ._media-xs-only({
+                    opacity:1;
+                });
+            }
+        }
+    }
+}

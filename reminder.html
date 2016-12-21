@@ -209,16 +209,19 @@
                                     <a href="#icones">FontAwesome / Ionicons</a>
                                 </li>
                                 <li>
-                                    <a href="#block-helpers">Block helpers</a>
+                                    <a href="#blocks-helpers">Blocks helpers</a>
                                     <ul>
                                         <li>
-                                            <a href="#block-helpers-width">Blocks width</a>
+                                            <a href="#blocks-helpers-width">Blocks width</a>
                                         </li>
                                         <li>
-                                            <a href="#block-helpers-padding-margin">Blocks padding & margin</a>
+                                            <a href="#blocks-helpers-padding-margin">Blocks padding & margin</a>
                                         </li>
                                         <li>
-                                            <a href="#block-helpers-visibility">Blocks visibility</a>
+                                            <a href="#blocks-helpers-visibility">Blocks visibility</a>
+                                        </li>
+                                        <li>
+                                            <a href="#blocks-helpers-colors">Background-colors</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -1513,10 +1516,10 @@
                             </table>
                         </div>
 
-                        <!-- Block helpers -->
+                        <!-- Blocks helpers -->
                         <div class="wrap-feature">
-                            <h2 id="block-helpers">
-                                <a href="#block-helpers" class="ion-link">Block helpers</a>
+                            <h2 id="blocks-helpers">
+                                <a href="#blocks-helpers" class="ion-link">Blocks helpers</a>
                             </h2>
                             <pre class="HTML">
                                 <code class="language-markup"><!-- -->
@@ -1606,9 +1609,9 @@
                                         </td>
                                     </tr>
 
-                                    <tr id="block-helpers-width">
+                                    <tr id="blocks-helpers-width">
                                         <td colspan="3" class="colspan">
-                                            <a href="#block-helpers-width">
+                                            <a href="#blocks-helpers-width">
                                                 Blocks width
                                             </a>
                                         </td>
@@ -1682,9 +1685,9 @@
                                         </td>
                                     </tr>
 
-                                    <tr id="block-helpers-padding-margin">
+                                    <tr id="blocks-helpers-padding-margin">
                                         <td colspan="3" class="colspan">
-                                            <a href="#block-helpers-padding-margin">
+                                            <a href="#blocks-helpers-padding-margin">
                                                 Blocks padding & margin
                                             </a>
                                         </td>
@@ -1790,10 +1793,10 @@
                                         </td>
                                     </tr>
 
-                                    <tr id="block-helpers-visibility">
+                                    <tr id="blocks-helpers-visibility">
                                         <td colspan="3" class="colspan">
-                                            <a href="#block-helpers-visibility">
-                                                Blocks visibility - Can not be combined
+                                            <a href="#blocks-helpers-visibility">
+                                                Blocks visibility
                                             </a>
                                         </td>
                                     </tr>
@@ -1831,7 +1834,7 @@
                                         </td>
                                         <td>
                                             <em>Hide element</em> on <em>{letter}</em> screen ONLY<br />
-                                            <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
+                                            <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's', 'xs'
                                         </td>
                                     </tr>
                                     <tr>
@@ -1843,7 +1846,7 @@
                                         </td>
                                         <td>
                                             <em>Hide element</em> on <em>{letter}</em> screen and down<br />
-                                            <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
+                                            <strong>{letter} :</strong> can be set to 'l', 'm', 's', 'xs'
                                         </td>
                                     </tr>
                                     <tr>
@@ -1855,7 +1858,26 @@
                                         </td>
                                         <td>
                                             <em>Show element</em> on <em>{letter}</em> screen ONLY<br />
-                                            <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's'
+                                            <strong>{letter} :</strong> can be set to 'xl', 'l', 'm', 's', 'xs'
+                                        </td>
+                                    </tr>
+                                    <tr id="blocks-helpers-colors">
+                                        <td colspan="3" class="colspan">
+                                            <a href="#blocks-helpers-colors">
+                                                Apply bgcolors
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-bg-{color}"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Apply a <em>{color} background-color</em> to the element<br />
+                                            <strong>{color} :</strong> <a href="#chuckcss-colors">A color defined in ChuckCSS framework</a>
                                         </td>
                                     </tr>
 
@@ -1961,7 +1983,7 @@
                                     <tr id="texts-helpers-colors">
                                         <td colspan="3" class="colspan">
                                             <a href="#texts-helpers-colors">
-                                                Apply colors and bgcolors
+                                                Apply colors
                                             </a>
                                         </td>
                                     </tr>
@@ -1974,18 +1996,6 @@
                                         </td>
                                         <td>
                                             Write text in <em>{color}</em><br />
-                                            <strong>{color} :</strong> <a href="#chuckcss-colors">A color defined in ChuckCSS framework</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="reminder-class">
-                                            <span>class="cc-bg-{color}"</span>
-                                        </td>
-                                        <td>
-                                            *
-                                        </td>
-                                        <td>
-                                            Apply a <em>{color} background-color</em> to the element<br />
                                             <strong>{color} :</strong> <a href="#chuckcss-colors">A color defined in ChuckCSS framework</a>
                                         </td>
                                     </tr>
