@@ -494,9 +494,55 @@
                                         </li>
                                         <li>
                                             <a href="#elements-loaders">Loaders</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#elements-loaders-dots">Dots loader</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-loaders-spinner">Spinner loader</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-loaders-caterpillar">Caterpillar loader</a>
+                                                </li>
+                                            </ul>
                                         </li>
                                         <li>
                                             <a href="#elements-tables">Tables</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#elements-tables-basic">Basic tables</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-tables-responsive">Responsive tables</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-tables-bordered">Bordered tables</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-tables-unbordered">Unbordered tables</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-tables-equal-cols">Equal cols width</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-tables-valign-top">Align content to top</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-tables-hovered">Hovered tables</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-tables-color">Colorized tables</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-tables-striped">Striped rows</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-tables-striped-cols">Striped cols</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#elements-tables-color-row">Colorize a targeted row</a>
+                                                </li>
+                                            </ul>
                                         </li>
                                         <li>
                                             <a href="#elements-titles">Titles</a>
@@ -4897,7 +4943,7 @@
                                     </a>
                                 </h4>
                                 <div class="exemple-intro">
-                                    With ChuckCSS, you can easily replace basics list dots by every icon you want!<br /><br />
+                                    With ChuckCSS, you can easily replace basic list dots by every icon you want!<br /><br />
                                     <span class="code">&lt;li class="fa-*"></span> : Display a FontAwesome icon to the left for this item<br />
                                     <span class="code">&lt;li class="fa-* cc-{color}"></span> : Display a colorized FontAwesome icon to the left for this item<br />
                                     <span class="code">&lt;li class="ion-*"></span> : Display a Ionicons icon to the left for this item<br />
@@ -4951,6 +4997,1033 @@
                                     </code>
                                 </pre>
                                 <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+                            </div>
+
+                            <!-- Loaders -->
+                            <div>
+                                <h3 id="elements-loaders" class="fa-angle-right">
+                                    <a href="#elements-loaders">
+                                        Loaders
+                                    </a>
+                                </h3>
+                                <p class="cc-txt-center cc-mab-20">
+                                    <a href="reminder#loaders" class="btn cc-thin cc-bg-primary">Go to reminder</a>
+                                </p>
+                                <div class="exemple-intro">
+                                    <p>
+                                        ChuckCSS provides 3 loaders :
+                                    </p>
+                                    <ul>
+                                        <li><a href="#elements-loaders-dots">Dots loader</a></li>
+                                        <li><a href="#elements-loaders-spinner">Spinner loader</a></li>
+                                        <li><a href="#elements-loaders-caterpillar">Caterpillar loader</a></li>
+                                    </ul>
+                                    <p>Each loader has its own HTML structure</p>
+                                </div>
+                                <div class="sep"></div>
+
+                                <h4 id="elements-loaders-dots">
+                                    <a href="#elements-loaders-dots">
+                                        Dots loader
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    By default, number of dots is set to 12. You can change the number of dots, loader speed, and loader color by editing the settings.less files and compile source files by yourself.<br /><br />
+                                    <span class="code">class="cc-loader"</span> : dots loader main class<br />
+                                    <span class="code">class="dot dot-{number}"</span> : Include as many times as number if dots defined in the settings.less file (default : 12 dots)
+                                </div>
+                                <div class="cc-loader">
+                                    <div class="dot dot-1"></div>
+                                    <div class="dot dot-2"></div>
+                                    <div class="dot dot-3"></div>
+                                    <div class="dot dot-4"></div>
+                                    <div class="dot dot-5"></div>
+                                    <div class="dot dot-6"></div>
+                                    <div class="dot dot-7"></div>
+                                    <div class="dot dot-8"></div>
+                                    <div class="dot dot-9"></div>
+                                    <div class="dot dot-10"></div>
+                                    <div class="dot dot-11"></div>
+                                    <div class="dot dot-12"></div>
+                                </div>
+                                <pre class="HTML collapsed">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Dots loader -->
+                                        &lt;div class="cc-loader">
+                                            &lt;div class="dot dot-1">&lt;/div>
+                                            &lt;div class="dot dot-2">&lt;/div>
+                                            &lt;div class="dot dot-3">&lt;/div>
+                                            &lt;div class="dot dot-4">&lt;/div>
+                                            &lt;div class="dot dot-5">&lt;/div>
+                                            &lt;div class="dot dot-6">&lt;/div>
+                                            &lt;div class="dot dot-7">&lt;/div>
+                                            &lt;div class="dot dot-8">&lt;/div>
+                                            &lt;div class="dot dot-9">&lt;/div>
+                                            &lt;div class="dot dot-10">&lt;/div>
+                                            &lt;div class="dot dot-11">&lt;/div>
+                                            &lt;div class="dot dot-12">&lt;/div>
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+                                <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+
+                                <div class="sep"></div>
+
+
+                                <h4 id="elements-loaders-spinner">
+                                    <a href="#elements-loaders-spinner">
+                                        Spinner loader
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    You can change the spinners thickness, spinners color and loader rotation speed by editing the settings.less files and compile source files by yourself.<br /><br />
+                                    <span class="code">class="cc-loader"</span> : spinner loader main class<br />
+                                    <span class="code">class="spinner"</span> : Required class for child element
+                                </div>
+                                <div class="cc-loader">
+                                    <div class="spinner"></div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Spinner loader -->
+                                        &lt;div class="cc-loader">
+                                            &lt;div class="spinner">&lt;/div>
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-loaders-caterpillar">
+                                    <a href="#elements-loaders-caterpillar">
+                                        Caterpillar loader
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    You can change the loader color and animation speed by editing the settings.less files and compile source files by yourself.<br />
+                                    Caterpillar loader is comprised of 5 dots. You can not change the number of dots into the caterpillar loader.<br /><br />
+                                    <span class="code">class="cc-loader caterpillar"</span> : Caterpillar loader main class<br />
+                                    <span class="code">class="chain chain-{number}"</span> : Required class for child element
+                                </div>
+                                <div class="cc-loader caterpillar">
+                                    <div class="chain chain-1"></div>
+                                    <div class="chain chain-2"></div>
+                                    <div class="chain chain-3"></div>
+                                    <div class="chain chain-4"></div>
+                                    <div class="chain chain-5"></div>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Spinner loader -->
+                                        &lt;div class="cc-loader caterpillar">
+                                            &lt;div class="chain chain-1">&lt;/div>
+                                            &lt;div class="chain chain-2">&lt;/div>
+                                            &lt;div class="chain chain-3">&lt;/div>
+                                            &lt;div class="chain chain-4">&lt;/div>
+                                            &lt;div class="chain chain-5">&lt;/div>
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+                            </div>
+
+                            <!-- Tables -->
+                            <div>
+                                <h3 id="elements-tables" class="fa-angle-right">
+                                    <a href="#elements-tables">
+                                        Tables
+                                    </a>
+                                </h3>
+                                <p class="cc-txt-center cc-mab-20">
+                                    <a href="reminder#tables" class="btn cc-thin cc-bg-primary">Go to reminder</a>
+                                </p>
+                                <div class="sep"></div>
+
+                                <h4 id="elements-tables-basic">
+                                    <a href="#elements-tables-basic">
+                                        Basic tables
+                                    </a>
+                                </h4>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Country</th>
+                                            <th>Continent</th>
+                                            <th>Population</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>United States of America</td>
+                                            <td>North America</td>
+                                            <td>318.9 millions (2014)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>France</td>
+                                            <td>Europe</td>
+                                            <td>67 millions (2014)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Népal</td>
+                                            <td>Asia</td>
+                                            <td>28 millions (2014)</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>ID</td>
+                                            <td>Country</td>
+                                            <td>Continent</td>
+                                            <td>Population</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+
+                                <pre class="HTML collapsed">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Basic table structure -->
+                                        &lt;table>
+                                            &lt;thead>
+                                                &lt;tr>
+                                                    &lt;th>ID&lt;/th>
+                                                    &lt;th>Country&lt;/th>
+                                                    &lt;th>Continent&lt;/th>
+                                                    &lt;th>Population&lt;/th>
+                                                &lt;/tr>
+                                            &lt;/thead>
+                                            &lt;tbody>
+                                                &lt;tr>
+                                                    &lt;td>1&lt;/td>
+                                                    &lt;td>United States of America&lt;/td>
+                                                    &lt;td>North America&lt;/td>
+                                                    &lt;td>318.9 millions (2014)&lt;/td>
+                                                &lt;/tr>
+                                                &lt;tr>
+                                                    &lt;td>2&lt;/td>
+                                                    &lt;td>France&lt;/td>
+                                                    &lt;td>Europe&lt;/td>
+                                                    &lt;td>67 millions (2014)&lt;/td>
+                                                &lt;/tr>
+                                                &lt;tr>
+                                                    &lt;td>3&lt;/td>
+                                                    &lt;td>Népal&lt;/td>
+                                                    &lt;td>Asia&lt;/td>
+                                                    &lt;td>28 millions (2014)&lt;/td>
+                                                &lt;/tr>
+                                            &lt;/tbody>
+                                            &lt;tfoot>
+                                                &lt;tr>
+                                                    &lt;td>ID&lt;/td>
+                                                    &lt;td>Country&lt;/td>
+                                                    &lt;td>Continent&lt;/td>
+                                                    &lt;td>Population&lt;/td>
+                                                &lt;/tr>
+                                            &lt;/tfoot>
+                                        &lt;/table>
+                                    </code>
+                                </pre>
+                                <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-tables-responsive">
+                                    <a href="#elements-tables-responsive">
+                                        Responsive tables
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        Render tables properly on small screens is still a difficult thing.<br /><br />
+                                        ChuckCSS provides 2 approaches to render tables responsive, depending on your table complexity.<br /><br />
+                                        You are the only one decision-maker for which solution you will adopt :
+                                    </p>
+                                    <ul>
+                                        <li>If your table display simple content, you can use a specific class <span class="code">cc-responsive</span> on the table element itself. This method was first published by <a href="http://dbushell.com/2012/01/05/responsive-tables-2/" class="external-link">David Bushell</a></li>
+                                        <li>If your table is more complex (long content, lot of cells, etc...), you can wrap your table with a <span class="code">&lt;div class="wrap-table">&lt;/div></span> parent.</li>
+                                    </ul>
+                                </div>
+
+                                <h5>Simple responsive table</h5>
+                                <table class="cc-responsive">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Country</th>
+                                            <th>Continent</th>
+                                            <th>Population</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>United States of America</td>
+                                            <td>North America</td>
+                                            <td>318.9 millions (2014)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>France</td>
+                                            <td>Europe</td>
+                                            <td>67 millions (2014)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Népal</td>
+                                            <td>Asia</td>
+                                            <td>28 millions (2014)</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>ID</td>
+                                            <td>Country</td>
+                                            <td>Continent</td>
+                                            <td>Population</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Simple responsive table -->
+                                        &lt;table class="cc-responsive">
+                                            ...thead, tbody, tfoot...
+                                        &lt;/table>
+                                    </code>
+                                </pre>
+                                <div class="sep"></div>
+                                <h5>Complex responsive table</h5>
+                                <div class="wrap-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>ID</th>
+                                                <th>Country</th>
+                                                <th>Continent</th>
+                                                <th>Population</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <form>
+                                                        <div class="form-checkbox">
+                                                            <label><input type="checkbox" name="" value="" />
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </td>
+                                                <td>1</td>
+                                                <td>United States of America</td>
+                                                <td>North America</td>
+                                                <td>318.9 millions (2014)</td>
+                                                <td class="cc-txt-right">
+                                                    <a href="#" class="btn cc-bg-blue fa-eye">See</a>
+                                                    <a href="#" class="btn cc-bg-green fa-pencil">Edit</a>
+                                                    <a href="#" class="btn cc-bg-red fa-times">Delete</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <form>
+                                                        <div class="form-checkbox">
+                                                            <label><input type="checkbox" name="" value="" />
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </td>
+                                                <td>2</td>
+                                                <td>France</td>
+                                                <td>Europe</td>
+                                                <td>67 millions (2014)</td>
+                                                <td class="cc-txt-right">
+                                                    <a href="#" class="btn cc-bg-blue fa-eye">See</a>
+                                                    <a href="#" class="btn cc-bg-green fa-pencil">Edit</a>
+                                                    <a href="#" class="btn cc-bg-red fa-times">Delete</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <form>
+                                                        <div class="form-checkbox">
+                                                            <label><input type="checkbox" name="" value="" />
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </td>
+                                                <td>3</td>
+                                                <td>Népal</td>
+                                                <td>Asia</td>
+                                                <td>28 millions (2014)</td>
+                                                <td class="cc-txt-right">
+                                                    <a href="#" class="btn cc-bg-blue fa-eye">See</a>
+                                                    <a href="#" class="btn cc-bg-green fa-pencil">Edit</a>
+                                                    <a href="#" class="btn cc-bg-red fa-times">Delete</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td>
+                                                <td>ID</td>
+                                                <td>Country</td>
+                                                <td>Continent</td>
+                                                <td>Population</td>
+                                                <td></td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Complex responsive table -->
+                                        &lt;div class="wrap-table">
+                                            &lt;table>
+                                                ...thead, tbody, tfoot...
+                                            &lt;/table>
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-tables-bordered">
+                                    <a href="#elements-tables-bordered">
+                                        Bordered tables
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <span class="code">class="cc-bordered"</span> : Add table borders
+                                </div>
+                                <table class="cc-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Country</th>
+                                            <th>Continent</th>
+                                            <th>Population</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>United States of America</td>
+                                            <td>North America</td>
+                                            <td>318.9 millions (2014)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>France</td>
+                                            <td>Europe</td>
+                                            <td>67 millions (2014)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Népal</td>
+                                            <td>Asia</td>
+                                            <td>28 millions (2014)</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>ID</td>
+                                            <td>Country</td>
+                                            <td>Continent</td>
+                                            <td>Population</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Bordered table -->
+                                        &lt;table class="cc-bordered">
+                                            ...
+                                        &lt;/table>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-tables-unbordered">
+                                    <a href="#elements-tables-unbordered">
+                                        Unbordered tables
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <span class="code">class="cc-unbordered"</span> : Remove table borders
+                                </div>
+                                <table class="cc-unbordered">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Country</th>
+                                            <th>Continent</th>
+                                            <th>Population</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>United States of America</td>
+                                            <td>North America</td>
+                                            <td>318.9 millions (2014)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>France</td>
+                                            <td>Europe</td>
+                                            <td>67 millions (2014)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Népal</td>
+                                            <td>Asia</td>
+                                            <td>28 millions (2014)</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>ID</td>
+                                            <td>Country</td>
+                                            <td>Continent</td>
+                                            <td>Population</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Unbordered table -->
+                                        &lt;table class="cc-unbordered">
+                                            ...
+                                        &lt;/table>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-tables-equal-cols">
+                                    <a href="#elements-tables-equal-cols">
+                                        Cols with equal widths
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <span class="code">class="cc-equal-cols"</span> : Display all columns with the same width
+                                </div>
+                                <table class="cc-equal-cols">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Country</th>
+                                            <th>Continent</th>
+                                            <th>Population</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>United States of America</td>
+                                            <td>North America</td>
+                                            <td>318.9 millions (2014)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>France</td>
+                                            <td>Europe</td>
+                                            <td>67 millions (2014)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Népal</td>
+                                            <td>Asia</td>
+                                            <td>28 millions (2014)</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>ID</td>
+                                            <td>Country</td>
+                                            <td>Continent</td>
+                                            <td>Population</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Equal cols table -->
+                                        &lt;table class="cc-equal-cols">
+                                            ...
+                                        &lt;/table>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-tables-valign-top">
+                                    <a href="#elements-tables-valign-top">
+                                        Align content to top
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    By default, cells show content vertically centered.<br /><br />
+                                    <span class="code">class="cc-valign-top"</span> : Content into cells are aligned to the top
+                                </div>
+                                <table class="cc-valign-top">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Country</th>
+                                            <th>Continent</th>
+                                            <th>Population</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>United States of America</td>
+                                            <td>North America</td>
+                                            <td>318.9 millions
+                                                <br />
+                                                source : Wikipedia (2014)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>France</td>
+                                            <td>Europe</td>
+                                            <td>67 millions (2014)
+                                                <br />
+                                                source : Wikipedia (2014)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Népal</td>
+                                            <td>Asia</td>
+                                            <td>28 millions (2014)
+                                                <br />
+                                                source : Wikipedia (2014)
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>ID</td>
+                                            <td>Country</td>
+                                            <td>Continent</td>
+                                            <td>Population</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Align content to the top -->
+                                        &lt;table class="cc-valign-top">
+                                            ...
+                                        &lt;/table>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-tables-hovered">
+                                    <a href="#elements-tables-hovered">
+                                        Hovered tables
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    By default, cells show content vertically centered.<br /><br />
+                                    <span class="code">class="cc-hovered"</span> : Highlight a hovered row
+                                </div>
+                                <table class="cc-hovered">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Country</th>
+                                            <th>Continent</th>
+                                            <th>Population</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>United States of America</td>
+                                            <td>North America</td>
+                                            <td>318.9 millions</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>France</td>
+                                            <td>Europe</td>
+                                            <td>67 millions (2014)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Népal</td>
+                                            <td>Asia</td>
+                                            <td>28 millions (2014)</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>ID</td>
+                                            <td>Country</td>
+                                            <td>Continent</td>
+                                            <td>Population</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Hovered table -->
+                                        &lt;table class="cc-hovered">
+                                            ...
+                                        &lt;/table>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-tables-color">
+                                    <a href="#elements-tables-color">
+                                        Colorized tables
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        <span class="code">class="cc-{color}"</span> : Display a colorized table<br /><br />
+                                        <strong>{color}</strong> : <a href="reminder#chuckcss-colors" class="external-link">A color defined in ChuckCSS framework</a>
+                                    </p>
+                                </div>
+                                <table class="cc-purple">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Country</th>
+                                            <th>Continent</th>
+                                            <th>Population</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>United States of America</td>
+                                            <td>North America</td>
+                                            <td>318.9 millions</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>France</td>
+                                            <td>Europe</td>
+                                            <td>67 millions (2014)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Népal</td>
+                                            <td>Asia</td>
+                                            <td>28 millions (2014)</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>ID</td>
+                                            <td>Country</td>
+                                            <td>Continent</td>
+                                            <td>Population</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Colorized table -->
+                                        &lt;table class="cc-purple">
+                                            ...
+                                        &lt;/table>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-tables-striped">
+                                    <a href="#elements-tables-striped">
+                                        Striped rows
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        <span class="code">class="cc-striped"</span> : Display a table with striped rows
+                                    </p>
+                                </div>
+                                <table class="cc-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Country</th>
+                                            <th>Continent</th>
+                                            <th>Population</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>United States of America</td>
+                                            <td>North America</td>
+                                            <td>318.9 millions</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>France</td>
+                                            <td>Europe</td>
+                                            <td>67 millions (2014)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Népal</td>
+                                            <td>Asia</td>
+                                            <td>28 millions (2014)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>United States of America</td>
+                                            <td>North America</td>
+                                            <td>318.9 millions</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>France</td>
+                                            <td>Europe</td>
+                                            <td>67 millions (2014)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Népal</td>
+                                            <td>Asia</td>
+                                            <td>28 millions (2014)</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>ID</td>
+                                            <td>Country</td>
+                                            <td>Continent</td>
+                                            <td>Population</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Striped rows -->
+                                        &lt;table class="cc-striped">
+                                            ...
+                                        &lt;/table>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-tables-striped-cols">
+                                    <a href="#elements-tables-striped-cols">
+                                        Striped colums
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        <span class="code">class="cc-striped-col"</span> : Display a table with striped columns
+                                    </p>
+                                </div>
+                                <table class="cc-striped-col">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Country</th>
+                                            <th>Continent</th>
+                                            <th>Population</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>United States of America</td>
+                                            <td>North America</td>
+                                            <td>318.9 millions</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>France</td>
+                                            <td>Europe</td>
+                                            <td>67 millions (2014)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Népal</td>
+                                            <td>Asia</td>
+                                            <td>28 millions (2014)</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>ID</td>
+                                            <td>Country</td>
+                                            <td>Continent</td>
+                                            <td>Population</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Striped rows -->
+                                        &lt;table class="cc-striped-col">
+                                            ...
+                                        &lt;/table>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-tables-color-row">
+                                    <a href="#elements-tables-color-row">
+                                        Colorize a targeted row
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        <span class="code">class="cc-bg-{color}"</span> : Apply a background-color to this row<br /><br />
+                                        <a href="reminder#tables" class="external-link">As written in the reminder,</a> you have to apply this class to a &lt;tr> element.<br /><br />
+                                        <strong>{color}</strong> : <a href="reminder#chuckcss-colors" class="external-link">A color defined in ChuckCSS framework</a>
+                                    </p>
+                                </div>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Country</th>
+                                            <th>Continent</th>
+                                            <th>Population</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>United States of America</td>
+                                            <td>North America</td>
+                                            <td>318.9 millions</td>
+                                        </tr>
+                                        <tr class="cc-bg-green">
+                                            <td>2</td>
+                                            <td>France</td>
+                                            <td>Europe</td>
+                                            <td>67 millions (2014)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Népal</td>
+                                            <td>Asia</td>
+                                            <td>28 millions (2014)</td>
+                                        </tr>
+                                        <tr class="cc-bg-purple">
+                                            <td>1</td>
+                                            <td>United States of America</td>
+                                            <td>North America</td>
+                                            <td>318.9 millions</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>France</td>
+                                            <td>Europe</td>
+                                            <td>67 millions (2014)</td>
+                                        </tr>
+                                        <tr class="cc-bg-blue">
+                                            <td>3</td>
+                                            <td>Népal</td>
+                                            <td>Asia</td>
+                                            <td>28 millions (2014)</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>ID</td>
+                                            <td>Country</td>
+                                            <td>Continent</td>
+                                            <td>Population</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+
+                                <pre class="HTML collapsed">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Colorize a targeted row -->
+                                        &lt;table>
+                                            &lt;thead>
+                                                &lt;tr>
+                                                    &lt;th>ID&lt;/th>
+                                                    &lt;th>Country&lt;/th>
+                                                    &lt;th>Continent&lt;/th>
+                                                    &lt;th>Population&lt;/th>
+                                                &lt;/tr>
+                                            &lt;/thead>
+                                            &lt;tbody>
+                                                &lt;tr>
+                                                    &lt;td>1&lt;/td>
+                                                    &lt;td>United States of America&lt;/td>
+                                                    &lt;td>North America&lt;/td>
+                                                    &lt;td>318.9 millions&lt;/td>
+                                                &lt;/tr>
+                                                &lt;tr class="cc-bg-green">
+                                                    &lt;td>2&lt;/td>
+                                                    &lt;td>France&lt;/td>
+                                                    &lt;td>Europe&lt;/td>
+                                                    &lt;td>67 millions (2014)&lt;/td>
+                                                &lt;/tr>
+                                                &lt;tr>
+                                                    &lt;td>3&lt;/td>
+                                                    &lt;td>Népal&lt;/td>
+                                                    &lt;td>Asia&lt;/td>
+                                                    &lt;td>28 millions (2014)&lt;/td>
+                                                &lt;/tr>
+                                                &lt;tr class="cc-bg-purple">
+                                                    &lt;td>1&lt;/td>
+                                                    &lt;td>United States of America&lt;/td>
+                                                    &lt;td>North America&lt;/td>
+                                                    &lt;td>318.9 millions&lt;/td>
+                                                &lt;/tr>
+                                                &lt;tr>
+                                                    &lt;td>2&lt;/td>
+                                                    &lt;td>France&lt;/td>
+                                                    &lt;td>Europe&lt;/td>
+                                                    &lt;td>67 millions (2014)&lt;/td>
+                                                &lt;/tr>
+                                                &lt;tr class="cc-bg-blue">
+                                                    &lt;td>3&lt;/td>
+                                                    &lt;td>Népal&lt;/td>
+                                                    &lt;td>Asia&lt;/td>
+                                                    &lt;td>28 millions (2014)&lt;/td>
+                                                &lt;/tr>
+                                            &lt;/tbody>
+                                            &lt;tfoot>
+                                                &lt;tr>
+                                                    &lt;td>ID&lt;/td>
+                                                    &lt;td>Country&lt;/td>
+                                                    &lt;td>Continent&lt;/td>
+                                                    &lt;td>Population&lt;/td>
+                                                &lt;/tr>
+                                            &lt;/tfoot>
+                                        &lt;/table>
+                                    </code>
+                                </pre>
+                                <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+
+
                             </div>
 
 
@@ -5189,14 +6262,5 @@
 
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="dist/app.min.js"></script>
-        <!--
-        <script type="text/javascript" src="src/js/granim.js"></script>
-        <script type="text/javascript" src="src/js/chuckcss.js"></script>
-        <script type="text/javascript" src="src/js/cssua.js"></script>
-        <script type="text/javascript" src="src/js/fastclick.js"></script>
-        <script type="text/javascript" src="src/js/jquery.cookie.js"></script>
-        <script type="text/javascript" src="src/js/prism.js"></script>
-        <script type="text/javascript" src="src/js/global.js"></script>
-        -->
     </body>
 </html>
