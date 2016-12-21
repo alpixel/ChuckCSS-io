@@ -160,10 +160,6 @@
                     top: 264
                 }
             });
-            $('body').scrollspy({
-                target: '#left-navbar',
-                offset : 400
-            });
         }
 
         // Buttons loading exemple
