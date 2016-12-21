@@ -604,13 +604,13 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#">Icons</a>
+                                    <a href="#icons">Icons</a>
                                     <ul>
                                         <li>
-                                            <a href="#">FontAwesome</a>
+                                            <a href="#icons-fontawesome">FontAwesome</a>
                                         </li>
                                         <li>
-                                            <a href="#">Ionicons</a>
+                                            <a href="#icons-ionicons">Ionicons</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -6710,6 +6710,173 @@
 
                                 <div class="sep"></div>
                             </div> -->
+                        </div>
+
+                        <!-- ICONS -->
+                        <div class="wrap-feature">
+                            <h2 id="icons">
+                                <a href="#icons" class="ion-link">Icons in ChuckCSS</a>
+                            </h2>
+                            <p class="cc-txt-center cc-mab-20">
+                                <a href="reminder#icons" class="btn cc-thin cc-bg-primary">Go to reminder</a>
+                            </p>
+
+                            <div class="exemple-intro">
+                                ChuckCSS is compatible with two iconic librairies :
+                                <ul>
+                                    <li><a href="http://fontawesome.io/" class="external-link">FontAwesome</a></li>
+                                    <li><a href="http://ionicons.com/" class="external-link">Ionicons</a></li>
+                                </ul>
+
+                                <div class="alert alert-warning ion-ios-lightbulb">
+                                    Before using icons features with ChuckCSS, be sure you previously include the FontAwesome and/or Ionicons stylecheats files.
+                                </div>
+                            </div>
+
+                            <!-- Fontawesome -->
+                            <div>
+                                <h3 id="icons-fontawesome" class="fa-angle-right">
+                                    <a href="#icons-fontawesome">
+                                        FontAwesome
+                                    </a>
+                                </h3>
+
+                                <p>
+                                    If you are familiar with FontAwesome, you usualy use <span class="code">&lt;i class="fa fa-*">&lt;/i></span> to display icons from this library.
+                                </p>
+                                <p>
+                                    With ChuckCSS you can display icons without using this <span class="code">&lt;i></span> element.
+                                </p>
+
+                                <div class="alert alert-warning ion-ios-lightbulb">
+                                    With ChuckCSS, you don't have to use the first class <span class="code">fa</span>. You can use the <span class="code">fa-{icon}</span> only.
+                                </div>
+
+                                <div class="exemple-intro">
+                                    <span class="code">class="fa-{icon}"</span> : Display a FontAwesome icon to the left of this element<br /><br />
+                                    <strong>{icon} :</strong> the icon classname
+                                </div>
+
+                                <div class="sep"></div>
+
+                                <p class="fa-angle-right">
+                                    I'm a paragraph starting with the <span class="code">fa-angle-right</span> icon from FontAwesome
+                                </p>
+                                <div class="alert alert-success fa-check">
+                                    I'm a success alert starting with the <span class="code">fa-check</span> icon from FontAwesome
+                                </div>
+                                <p class="cc-mat">
+                                    <a href="#" class="btn fa-user cc-bg-purple">Sign In</a>
+                                    <a href="#" class="btn fa-user cc-bg-purple cc-outlined">Sign In</a>
+                                </p>
+                                <p class="cc-mat">
+                                    <button class="fa-save cc-bg-primary">Submit</button>
+                                    <button class="fa-save cc-bg-primary cc-outlined">Submit</button>
+                                </p>
+                                <ul>
+                                    <li class="fa-check cc-green">Bacon ipsum dolor amet pastrami swine beef pig biltong drumstick bacon rump.</li>
+                                    <li class="fa-check cc-green">Bacon ipsum dolor amet pastrami swine beef pig biltong drumstick bacon rump.</li>
+                                    <li class="fa-check cc-green">Bacon ipsum dolor amet pastrami swine beef pig biltong drumstick bacon rump.</li>
+                                </ul>
+
+                                <pre class="HTML collapsed">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- FontAwesome exemples -->
+                                        &lt;p class="fa-angle-right">
+                                            ...
+                                        &lt;/p>
+                                        &lt;div class="alert alert-success fa-check">
+                                            ...
+                                        &lt;/div>
+
+                                        &lt;a href="#" class="btn fa-user cc-bg-purple">Sign In&lt;/a>
+                                        &lt;a href="#" class="btn fa-user cc-bg-purple cc-outlined">Sign In&lt;/a>
+
+
+                                        &lt;button class="fa-save cc-bg-primary">Submit&lt;/button>
+                                        &lt;button class="fa-save cc-bg-primary cc-outlined">Submit&lt;/button>
+
+                                        &lt;ul>
+                                            &lt;li class="fa-check cc-green">Bacon ipsum...&lt;/li>
+                                            &lt;li class="fa-check cc-green">Bacon ipsum...&lt;/li>
+                                            &lt;li class="fa-check cc-green">Bacon ipsum...&lt;/li>
+                                        &lt;/ul>
+                                    </code>
+                                </pre>
+                                <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+
+                                <div class="sep"></div>
+                            </div>
+
+                            <!-- Ionicons -->
+                            <div>
+                                <h3 id="icons-ionicons" class="fa-angle-right">
+                                    <a href="#icons-ionicons">
+                                        Ionicons
+                                    </a>
+                                </h3>
+
+                                <p>
+                                    Ionicons is similar with FontAwesome library.  The main difference is the classname used to display icons.<br />
+                                    With Ionicons, use <span class="code">&lt;i class="ion-*">&lt;/i></span> to display an icon.
+                                </p>
+                                <p>
+                                    With ChuckCSS you can display icons without using this <span class="code">&lt;i></span> element.
+                                </p>
+
+
+                                <div class="exemple-intro">
+                                    <span class="code">class="ion-{icon}"</span> : Display a Ionicons icon to the left of this element<br /><br />
+                                    <strong>{icon} :</strong> the icon classname
+                                </div>
+
+                                <div class="sep"></div>
+
+                                <p class="ion-location">
+                                    I'm a paragraph starting with the <span class="code">ion-location</span> icon from Ionicons
+                                </p>
+                                <div class="alert alert-success ion-coffee">
+                                    I'm a success alert starting with the <span class="code">ion-coffee</span> icon from Ionicons
+                                </div>
+                                <p class="cc-mat">
+                                    <a href="#" class="btn ion-power cc-bg-purple">Sign In</a>
+                                    <a href="#" class="btn ion-power cc-bg-purple cc-outlined">Sign In</a>
+                                </p>
+                                <p class="cc-mat">
+                                    <button class="ion-ios-cloud-download cc-bg-primary">Download</button>
+                                    <button class="ion-ios-cloud-download cc-bg-primary cc-outlined">Download</button>
+                                </p>
+                                <ul>
+                                    <li class="ion-android-hand cc-red">Bacon ipsum dolor amet pastrami swine beef pig biltong drumstick bacon rump.</li>
+                                    <li class="ion-android-settings cc-purple">Bacon ipsum dolor amet pastrami swine beef pig biltong drumstick bacon rump.</li>
+                                    <li class="ion-ios-nutrition cc-blue">Bacon ipsum dolor amet pastrami swine beef pig biltong drumstick bacon rump.</li>
+                                </ul>
+
+                                <pre class="HTML collasped">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Ionicons exemples -->
+                                        &lt;p class="ion-location">
+                                            ...
+                                        &lt;/p>
+                                        &lt;div class="alert alert-success ion-coffee">
+                                            ...
+                                        &lt;/div>
+
+                                        &lt;a href="#" class="btn ion-power cc-bg-purple">Sign In&lt;/a>
+                                        &lt;a href="#" class="btn ion-power cc-bg-purple cc-outlined">Sign In&lt;/a>
+
+                                        &lt;button class="ion-ios-cloud-download cc-bg-primary">Download&lt;/button>
+                                        &lt;button class="ion-ios-cloud-download cc-bg-primary cc-outlined">Download&lt;/button>
+
+                                        &lt;ul>
+                                            &lt;li class="ion-android-hand cc-red">Bacon ipsum...&lt;/li>
+                                            &lt;li class="ion-android-settings cc-purple">Bacon ipsum...&lt;/li>
+                                            &lt;li class="ion-ios-nutrition cc-blue">Bacon ipsum...&lt;/li>
+                                        &lt;/ul>
+                                    </code>
+                                </pre>
+                                <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+                            </div>
                         </div>
                     </section>
                 </div>
