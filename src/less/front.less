@@ -887,3 +887,33 @@ main {
         }
     }
 }
+
+.backtotop {
+    position: fixed;
+    z-index:12;
+    bottom: -60px;
+    right: 20px;
+    background-color:@chuckgreen-da;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    text-align:center;
+    line-height:58px;
+    ._transition;
+
+    &.shown {
+        bottom:20px;
+    }
+
+    &:before {
+        ._reset;
+        color: white;
+        position: relative;
+        font-size: 2em;
+        ._transition;
+    }
+
+    &:hover {
+        background-color: @chuckgreen;
+    }
+}

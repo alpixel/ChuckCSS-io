@@ -8453,3 +8453,33 @@ main .menu-summary + section {
     opacity: 1;
   }
 }
+.backtotop {
+  position: fixed;
+  z-index: 12;
+  bottom: -60px;
+  right: 20px;
+  background-color: #2fc0aa;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 58px;
+  -webkit-transition: 0.2s all ease-out 0s;
+  transition: 0.2s all ease-out 0s;
+}
+.backtotop.shown {
+  bottom: 20px;
+}
+.backtotop:before {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: white;
+  position: relative;
+  font-size: 2em;
+  -webkit-transition: 0.2s all ease-out 0s;
+  transition: 0.2s all ease-out 0s;
+}
+.backtotop:hover {
+  background-color: #35d7be;
+}

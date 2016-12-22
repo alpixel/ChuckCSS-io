@@ -175,5 +175,14 @@
             },2500);
         });
 
+
+        // Back to top
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 50)
+                $('.backtotop').addClass('shown');
+            else
+                $('.backtotop').removeClass('shown');
+        });
+
     });
 })(jQuery);
