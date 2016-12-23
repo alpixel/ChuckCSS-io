@@ -106,7 +106,6 @@
         </header>
 
         <main>
-
             <section class="page-presentation">
                 <canvas id="anim-bg-1" class="anim-bg"></canvas>
                 <div class="inside">
@@ -114,9 +113,18 @@
                 </div>
             </section>
 
+            <div class="cc-hidden-l cc-txt-center phone-menu cc-pa">
+                <a href="#" class="btn cc-bg-primary cc-w-50">Jump to...<i class="fa fa-angle-right"></i></a>
+            </div>
+
             <section class="inside">
                 <div class="columns">
-                    <aside class="cc-3 menu-summary cc-hidden-m-down">
+                    <aside class="cc-3-l menu-summary">
+                        <p class="close-summary-menu cc-hidden-l">
+                            <a href="#">
+                                <i class="ion-android-close"></i>
+                            </a>
+                        </p>
                         <div id="left-navbar">
                             <h3>Documentation</h3>
                             <ul class="nav" role="tablist">
@@ -6233,6 +6241,11 @@
                                 </h4>
                                 <div class="exemple-intro">
                                     <p>
+                                        <span class="code">class="cc-w-quarter"</span> : Apply a width of 25.00%<br />
+                                        <span class="code">class="cc-w-third"</span> : Apply a width of 33.333%<br />
+                                        <span class="code">class="cc-w-half"</span> : Apply a width of 50.00%<br />
+                                        <span class="code">class="cc-w-twothird"</span> : Apply a width of 66.666%<br />
+                                        <span class="code">class="cc-w-threequarter"</span> : Apply a width of 75.00%<br />
                                         <span class="code">class="cc-w-{number}"</span> : Apply a width of {number}%<br /><br />
                                         <strong>{number}</strong> : From 0 to 100, multiple of 5
                                     </p>
@@ -6245,25 +6258,27 @@
                                 <div class="cc-pa cc-bg-primary cc-w-10 cc-txt-center cc-centered cc-hidden-s-down">
                                     10%
                                 </div>
+                                <div class="cc-pa cc-bg-primary cc-w-third cc-txt-center cc-centered cc-mat-20">
+                                    33.333%
+                                </div>
                                 <div class="cc-pa cc-bg-primary cc-w-40 cc-txt-center cc-centered cc-mat-20">
                                     40%
                                 </div>
-                                <div class="cc-pa cc-bg-primary cc-w-70 cc-txt-center cc-centered cc-mat-20">
-                                    70%
+                                <div class="cc-pa cc-bg-primary cc-w-twothird cc-txt-center cc-centered cc-mat-20">
+                                    66.666%
+                                </div>
+                                <div class="cc-pa cc-bg-primary cc-w-85 cc-txt-center cc-centered cc-mat-20">
+                                    85%
                                 </div>
 
                                 <pre class="HTML">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Blocks widths -->
-                                        &lt;div class="cc-w-10">
-                                            10%
-                                        &lt;/div>
-                                        &lt;div class="cc-w-40">
-                                            40%
-                                        &lt;/div>
-                                        &lt;div class="cc-w-70">
-                                            70%
-                                        &lt;/div>
+                                        &lt;div class="cc-w-10">10%&lt;/div>
+                                        &lt;div class="cc-w-third">33.333%&lt;/div>
+                                        &lt;div class="cc-w-40">40%&lt;/div>
+                                        &lt;div class="cc-w-twothird">66.666%&lt;/div>
+                                        &lt;div class="cc-w-85">85%&lt;/div>
                                     </code>
                                 </pre>
 
@@ -6877,11 +6892,9 @@
                 &copy; 2016 - ChuckCSS.io - All rights reserved - Made with &#10084; for <a href="https://www.alpixel.fr" class="external-link">ALPIXEL Agency</a>
             </p>
             <p>
-                ChuckCSS is under <a href="https://opensource.org/licenses/mit-license.php" class="external-link">MIT Licence</a>
+                ChuckCSS is under <a href="https://opensource.org/licenses/mit-license.php" class="external-link">MIT Licence</a> - <a href="https://github.com/alpixel/ChuckCSS" class="external-link">Hosted on GitHub</a>
             </p>
         </footer>
-
-
 
         <!-- Modals exemples -->
         <div class="wrap-modals">

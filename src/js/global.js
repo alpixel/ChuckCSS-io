@@ -74,6 +74,23 @@
             }
         });
 
+        // Sub-menu in pages
+        $(document).on('click', '.phone-menu a',function(e){
+            e.preventDefault();
+
+            if($('.menu-summary').hasClass('shown')) {
+                $('html,body').removeClass('menu-summary-opened');
+                $('.menu-summary').removeClass('shown')
+            } else {
+                $('html,body').addClass('menu-summary-opened');
+                $('.menu-summary').addClass('shown')
+            }
+        });
+        $(document).on('click', '.menu-summary.shown a',function(e){
+            $('html,body').removeClass('menu-summary-opened');
+            $('.menu-summary').removeClass('shown');
+        });
+
 
         // HOMEPAGE : Demo add / remove columns
         var homeCols = function(type) {
