@@ -1,7 +1,4 @@
 User-agent: *
 Disallow: /bower_components/
-Disallow: /dist/
 Disallow: /src/
-Disallow: /img/
 Disallow: /node_modules/
-Sitemap: http://chuckcss.io/sitemap.xml
