@@ -186,6 +186,9 @@
                                         <li>
                                             <a href="#modals-fixed-hf">Fixed Header &amp; Footer</a>
                                         </li>
+                                        <li>
+                                            <a href="#modals-fullscreen">Fullscreen</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li>
@@ -1223,7 +1226,7 @@
                                                 ...modal content...
                                             &lt;/div>
                                             &lt;div class="modal-footer">
-                                                ...
+                                                &lt;a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close&lt;/a>
                                             &lt;/div>
                                         &lt;/div>
                                     &lt;/div>
@@ -1247,7 +1250,7 @@
                                                 &lt;/div>
                                             &lt;/div>
                                             &lt;div class="modal-footer">
-                                                ...
+                                                &lt;a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close&lt;/a>
                                             &lt;/div>
                                         &lt;/div>
                                     &lt;/div>
@@ -1291,6 +1294,17 @@
                                         </td>
                                         <td>
                                             Default modal with <em>50% width</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>data-close-modal</span>
+                                        </td>
+                                        <td>
+                                            * (any element into the modal structure)
+                                        </td>
+                                        <td>
+                                            <em>Close the modal</em> by clicking on this element
                                         </td>
                                     </tr>
                                     <tr id="modals-width">
@@ -1356,6 +1370,24 @@
                                         </td>
                                         <td>
                                             <em>Make the Header and Footer fixed</em> into the modal <em>(need a wrapper around the modal-body element)</em>
+                                        </td>
+                                    </tr>
+                                    <tr id="modals-fullscreen">
+                                        <td colspan="3" class="colspan">
+                                            <a href="#modals-fullscreen">
+                                                Fullscreen modal
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>data-fullscreen</span>
+                                        </td>
+                                        <td>
+                                            &lt;div>
+                                        </td>
+                                        <td>
+                                            Show the modal in <em>fullscreen mode</em>
                                         </td>
                                     </tr>
                                 </tbody>

@@ -7,3 +7,5 @@ _notes
 node_modules
 ._*
 bower_components
+.vagrant
+npm-debug*

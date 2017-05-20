@@ -344,6 +344,11 @@
                                                         Nested modals
                                                     </a>
                                                 </li>
+                                                <li>
+                                                    <a href="#components-modals-fullscreen">
+                                                        Fullscreen modals
+                                                    </a>
+                                                </li>
                                             </ul>
                                         </li>
                                         <li>
@@ -2510,7 +2515,8 @@
                                 <div class="exemple-intro">
                                     <p>
                                         <span class="code">.modal-open</span> class is binded in the chuckcss.js file to fire the modal.<br />
-                                        <span class="code">data-target</span> attribute must contains the id of the modal you want to fire
+                                        <span class="code">data-target</span> attribute must contains the id of the modal you want to fire<br />
+                                        <span class="code">data-close-modal</span> attribute can be placed on any HTML element. On click, the modal is closed.
                                     </p>
                                 </div>
                                 <div class="cc-txt-center">
@@ -2536,7 +2542,7 @@
                                                     ...
                                                 &lt;/div>
                                                 &lt;div class="modal-footer">
-                                                    ...
+                                                    &lt;a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close&lt;/a>
                                                 &lt;/div>
                                             &lt;/div>
                                         &lt;/div>
@@ -2675,7 +2681,7 @@
                                                     &lt;/div>
                                                 &lt;/div>
                                                 &lt;div class="modal-footer cc-txt-center">
-                                                    &lt;button type="submit" class="cc-bg-primary fa-save">I'm a button&lt;/button>
+                                                    &lt;a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close&lt;/a>
                                                 &lt;/div>
                                             &lt;/div>
                                         &lt;/div>
@@ -2710,6 +2716,40 @@
                                         &lt;!-- Third modal -->
                                         &lt;div id="modal-id-3" class="modal">
                                             ...modal structure...
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+                                <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+
+                                <div class="sep"></div>
+
+                                <h4 id="components-modals-fullscreen">
+                                    <a href="#components-modals-fullscreen">
+                                        Fullscreen modals <span>(added in v3.0.5)</span>
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        <span class="code">data-fullscreen</span> : show a modal in "fullscreen" mode.<br />
+                                    </p>
+                                    <div class="alert alert-warning ion-ios-lightbulb">
+                                        The exemple below combines fullscreen mode with fixed header and footer !<br />
+                                        Just combine <span class="code">data-fullscreen</span> and <span class="code">data-fixed-hf</span> attributes and keep the <a href="#components-modals-fixed-hf">data-fixed-hf HTML structure</a>.
+                                    </div>
+                                </div>
+                                <div class="cc-txt-center">
+                                    <button data-target="modal-id-fullscreen" class="cc-bg-primary modal-open">Open a fullscreen modal mixed with fixed Header &amp; Footer</button>
+                                </div>
+                                <pre class="HTML collapsed">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Button : launch fullscreen modal -->
+                                        &lt;button data-target="modal-id-fullscreen" class="cc-bg-primary modal-open">
+                                            Open a fullscreen modal mixed with fixed Header &amp; Footer
+                                        &lt;/button>
+
+                                        &lt;!-- Modal structure for fullscreen combined with fixed Header &amp; Footer -->
+                                        &lt;div id="modal-id-fullscreen" class="modal" data-fixed-hf data-fullscreen>
+                                            ...'data-fixed-hf' modal structure...
                                         &lt;/div>
                                     </code>
                                 </pre>
@@ -6924,7 +6964,7 @@
                         </div>
                     </div>
                     <div class="modal-footer cc-txt-center">
-                        <button type="submit" class="cc-bg-primary fa-save">I'm a button</button>
+                        <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
                     </div>
                 </div>
             </div>
@@ -6994,7 +7034,7 @@
                         </div>
                     </div>
                     <div class="modal-footer cc-txt-center">
-                        <button type="submit" class="cc-bg-primary fa-save">I'm a button</button>
+                        <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
                     </div>
                 </div>
             </div>
@@ -7076,6 +7116,52 @@
                         <p>
                             <strong>I'm the third modal</strong> and you can't close me by clicking on overlay!
                         </p>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-id-fullscreen" class="modal" data-fixed-hf data-fullscreen>
+                <button class="modal-close"></button>
+
+                <div class="modal-overlay"></div>
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        I'm a default modal with fixed header &amp; footer
+                    </div>
+                    <div class="wrap-modal-body">
+                        <div class="modal-body">
+                            <p>
+                                Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                                Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                                Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                                Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                                Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                                Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                                Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                                Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                                Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                                Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                                Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                                Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                            </p>
+                            <p>
+                                Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                                Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                                Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                                Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                                Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                                Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                                Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                                Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                                Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                                Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                                Bacon ipsum dolor amet cupim pancetta corned beef tongue, capicola pork belly t-bone fatback drumstick venison kevin. Pork pig prosciutto, chicken kevin tail short loin venison alcatra fatback beef. Tenderloin tongue drumstick pancetta. Bacon boudin venison beef jerky tongue prosciutto.
+                                Beef ribs ribeye bacon corned beef pork belly landjaeger. Meatball strip steak picanha ribeye meatloaf spare ribs rump sausage chicken beef ribs tri-tip pastrami leberkas. Chicken filet mignon jerky kevin turducken pig ground round. Shoulder strip steak frankfurter ham drumstick, capicola t-bone pork belly turducken kielbasa cow corned beef. Filet mignon shank turkey andouille turducken.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer cc-txt-center">
+                        <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
                     </div>
                 </div>
             </div>
