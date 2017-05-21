@@ -294,7 +294,7 @@
                             &lt;!-- Modal minimal structure -->
                             &lt;div id="modal-id" class="modal">
                                 &lt;!-- Close button -->
-                                &lt;button class="modal-close">&lt;/button>
+                                &lt;button data-close-modal>&lt;/button>
                                 &lt;!-- Overlay -->
                                 &lt;div class="modal-overlay">&lt;/div>
                                 &lt;!-- Modal content -->
@@ -457,7 +457,7 @@
         <!-- Modals exemples -->
         <div class="wrap-modals">
             <div id="modal-id" class="modal">
-                <button class="modal-close"></button>
+                <button data-close-modal></button>
 
                 <div class="modal-overlay"></div>
 
@@ -482,12 +482,12 @@
                         </div>
                     </div>
                     <div class="modal-footer cc-txt-center">
-                        <button type="submit" class="cc-bg-primary fa-save">I'm a button</button>
+                        <a href="javascript:void(0)" data-close-modal class="btn cc-bg-red">Close</a>
                     </div>
                 </div>
             </div>
             <div id="modal-id-fixed-hf" class="modal" data-fixed-hf>
-                <button class="modal-close"></button>
+                <button data-close-modal></button>
 
                 <div class="modal-overlay"></div>
 
@@ -514,12 +514,12 @@
                         </div>
                     </div>
                     <div class="modal-footer cc-txt-center">
-                        <button type="submit" class="cc-bg-primary fa-save">I'm a button</button>
+                        <a href="javascript:void(0)" data-close-modal class="btn cc-bg-red">Close</a>
                     </div>
                 </div>
             </div>
             <div id="modal-id-no-closable" class="modal" data-disabled-overlay>
-                <button class="modal-close"></button>
+                <button data-close-modal></button>
 
                 <div class="modal-overlay"></div>
 
@@ -535,7 +535,7 @@
                 </div>
             </div>
             <div id="modal-id-nested" class="modal modal-large">
-                <button class="modal-close"></button>
+                <button data-close-modal></button>
 
                 <div class="modal-overlay"></div>
 
@@ -560,7 +560,7 @@
                 </div>
             </div>
             <div id="modal-id-2" class="modal">
-                <button class="modal-close"></button>
+                <button data-close-modal></button>
 
                 <div class="modal-overlay"></div>
 
@@ -589,7 +589,7 @@
                 </div>
             </div>
             <div id="modal-id-3" class="modal modal-small" data-disabled-overlay>
-                <button class="modal-close"></button>
+                <button data-close-modal></button>
 
                 <div class="modal-overlay"></div>
 

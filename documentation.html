@@ -2501,8 +2501,8 @@
                                         You just have to respect a specific syntax to display modals properly!
                                     </p>
                                     <div class="alert alert-warning ion-ios-lightbulb">
-                                        Include <strong>the minimalist chuckcss.js file</strong> for opening and closing modals.<br /><br />
-                                        Always try to place a modal's HTML code at the bottom or at the top of your document, but not immediatly after the button who call the modal opening.
+                                        Include <strong>the minimalist chuckcss.js file</strong> for modals openings and closures.<br /><br />
+                                        Place a modal's HTML at the bottom or at the top of your document, but not immediatly after the button who fire the modal.
                                     </div>
                                 </div>
                                 <div class="sep"></div>
@@ -2514,9 +2514,9 @@
                                 </h4>
                                 <div class="exemple-intro">
                                     <p>
-                                        <span class="code">.modal-open</span> class is binded in the chuckcss.js file to fire the modal.<br />
+                                        <span class="code">.modal-open</span> : Add this class to a button, link... to fire the targeted modal (this class is binded in the chuckcss.js file)<br />
                                         <span class="code">data-target</span> attribute must contains the id of the modal you want to fire<br />
-                                        <span class="code">data-close-modal</span> attribute can be placed on any HTML element. On click, the modal is closed.
+                                        <span class="code">data-close-modal</span> attribute can be placed on any HTML element inside the modal. On click, the modal is closed.
                                     </p>
                                 </div>
                                 <div class="cc-txt-center">
@@ -2530,7 +2530,7 @@
                                         &lt;!-- Modal minimal structure -->
                                         &lt;div id="modal-id" class="modal">
                                             &lt;!-- Close button -->
-                                            &lt;button class="modal-close">&lt;/button>
+                                            &lt;button data-close-modal>&lt;/button>
                                             &lt;!-- Overlay -->
                                             &lt;div class="modal-overlay">&lt;/div>
                                             &lt;!-- Modal content -->
@@ -2666,7 +2666,7 @@
                                         &lt;!-- Modal structure for fixing header and footer -->
                                         &lt;div id="modal-id-fixed-hf" class="modal" data-fixed-hf>
                                             &lt;!-- Close button -->
-                                            &lt;button class="modal-close">&lt;/button>
+                                            &lt;button data-close-modal>&lt;/button>
                                             &lt;!-- Overlay -->
                                             &lt;div class="modal-overlay">&lt;/div>
                                             &lt;!-- Modal content -->
@@ -6939,7 +6939,7 @@
         <!-- Modals exemples -->
         <div class="wrap-modals">
             <div id="modal-id" class="modal">
-                <button class="modal-close"></button>
+                <button data-close-modal></button>
 
                 <div class="modal-overlay"></div>
 
@@ -6969,7 +6969,7 @@
                 </div>
             </div>
             <div id="modal-id-small" class="modal modal-small">
-                <button class="modal-close"></button>
+                <button data-close-modal></button>
 
                 <div class="modal-overlay"></div>
 
@@ -6988,7 +6988,7 @@
                 </div>
             </div>
             <div id="modal-id-large" class="modal modal-large">
-                <button class="modal-close"></button>
+                <button data-close-modal></button>
 
                 <div class="modal-overlay"></div>
 
@@ -7007,7 +7007,7 @@
                 </div>
             </div>
             <div id="modal-id-fixed-hf" class="modal" data-fixed-hf>
-                <button class="modal-close"></button>
+                <button data-close-modal></button>
 
                 <div class="modal-overlay"></div>
 
@@ -7039,7 +7039,7 @@
                 </div>
             </div>
             <div id="modal-id-disabled" class="modal" data-disabled-overlay>
-                <button class="modal-close"></button>
+                <button data-close-modal></button>
 
                 <div class="modal-overlay"></div>
 
@@ -7055,7 +7055,7 @@
                 </div>
             </div>
             <div id="modal-id-nested" class="modal">
-                <button class="modal-close"></button>
+                <button data-close-modal></button>
 
                 <div class="modal-overlay"></div>
 
@@ -7077,7 +7077,7 @@
                 </div>
             </div>
             <div id="modal-id-2" class="modal">
-                <button class="modal-close"></button>
+                <button data-close-modal></button>
 
                 <div class="modal-overlay"></div>
 
@@ -7104,7 +7104,7 @@
                 </div>
             </div>
             <div id="modal-id-3" class="modal" data-disabled-overlay>
-                <button class="modal-close"></button>
+                <button data-close-modal></button>
 
                 <div class="modal-overlay"></div>
 
@@ -7120,7 +7120,7 @@
                 </div>
             </div>
             <div id="modal-id-fullscreen" class="modal" data-fixed-hf data-fullscreen>
-                <button class="modal-close"></button>
+                <button data-close-modal></button>
 
                 <div class="modal-overlay"></div>
 
