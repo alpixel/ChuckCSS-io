@@ -8191,6 +8191,7 @@ main .page-presentation {
   color: white;
   text-align: center;
   position: relative;
+  padding-bottom: 50px;
 }
 main .page-presentation span {
   font-size: 4rem;
