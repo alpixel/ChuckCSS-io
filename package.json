@@ -1,26 +1,27 @@
 {
-    "name": "chuckcss",
-    "version": "1.0.0",
-    "author": "ALPIXEL <dev@alpixel.fr>",
-    "private": true,
-    "repository": {
-        "type": "git",
-        "url": ""
-    },
-    "dependencies": {
-        "gifsicle": "^3.0.3",
-        "gulp": "^3.9.0",
-        "autoprefixer": "^3.1.0",
-        "gulp-autoprefixer": "3.1.0",
-        "gulp-concat": "^2.6.0",
-        "gulp-cssnano": "^2.1.1",
-        "gulp-less": "^3.0.3",
-        "gulp-rename": "^1.2.2",
-        "gulp-rev": "7.0.0",
-        "gulp-rewrite-css": "^0.0.8",
-        "gulp-shell": "^0.5.2",
-        "gulp-uglify": "^1.2.0",
-        "gulp-util": "^3.0.6",
-        "gulp-watch": "^4.3.5"
-    }
+  "name": "chuckcss",
+  "version": "1.0.0",
+  "author": "ALPIXEL <dev@alpixel.fr>",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "ChuckCSS": "^3.0.8",
+    "autoprefixer": "^3.1.0",
+    "gifsicle": "^3.0.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-less": "^3.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev": "7.0.0",
+    "gulp-rewrite-css": "^0.0.8",
+    "gulp-shell": "^0.5.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.6",
+    "gulp-watch": "^4.3.5"
+  }
 }
