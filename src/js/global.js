@@ -183,12 +183,12 @@
         $('button.js-loading-exemple').on('click',function(e){
             var target = $(this);
 
-            target.toggleClass('cc-loading fa-hand-o-right cc-bg-red cc-bg-primary js-loading-exemple');
+            target.toggleClass('cc-loading cc-bg-red cc-bg-primary js-loading-exemple');
 
             setTimeout(function(){
                 target
-                    .text('Done, thanks!')
-                    .toggleClass('fa-thumbs-up cc-disabled cc-loading cc-bg-red cc-bg-green');
+                    .html('<i class="far fa-handshake icon-left"></i> Done, thanks!')
+                    .toggleClass('cc-disabled cc-loading cc-bg-red cc-bg-green')
             },2500);
         });
 

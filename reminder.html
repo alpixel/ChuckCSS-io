@@ -97,7 +97,7 @@
                         <a href="https://github.com/alpixel/ChuckCSS" class="external-link">Download</a>
                     </li>
                     <li class="last">
-                        <a href="https://twitter.com/chuckcss" class=" external-link btn fab fa-twitter">Follow me on Twitter</a>
+                        <a href="https://twitter.com/chuckcss" class=" external-link btn"><i class="fab fa-twitter icon-left"></i>Follow me on Twitter</a>
                     </li>
                 </ul>
             </nav>
@@ -204,7 +204,7 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#icons">FontAwesome / Ionicons</a>
+                                    <a href="#icons">Icons alignments</a>
                                 </li>
                                 <li>
                                     <a href="#blocks-helpers">Blocks helpers</a>
@@ -291,7 +291,7 @@
                         <!-- Grids -->
                         <div class="wrap-feature">
                             <h2 id="grids">
-                                <a href="#grids" class="ion-link">Grids / Masonry layouts</a>
+                                <a href="#grids"><i class="ion-link icon-left"></i>Grids / Masonry layouts</a>
                             </h2>
                             <pre class="HTML">
                                 <code class="language-markup"><!-- -->
@@ -772,7 +772,7 @@
                         <!-- Alerts -->
                         <div class="wrap-feature">
                             <h2 id="alerts">
-                                <a href="#alerts" class="ion-link">Alerts</a>
+                                <a href="#alerts"><i class="ion-link icon-left"></i>Alerts</a>
                             </h2>
                             <pre class="HTML">
                                 <code class="language-markup"><!-- -->
@@ -830,7 +830,7 @@
                         <!-- Messages -->
                         <div class="wrap-feature">
                             <h2 id="messages">
-                                <a href="#messages" class="ion-link">Messages</a>
+                                <a href="#messages"><i class="ion-link icon-left"></i>Messages</a>
                             </h2>
                             <pre class="HTML">
                                 <code class="language-markup"><!-- -->
@@ -888,7 +888,7 @@
                         <!-- Badges -->
                         <div class="wrap-feature">
                             <h2 id="badges">
-                                <a href="#badges" class="ion-link">Badges</a>
+                                <a href="#badges"><i class="ion-link icon-left"></i>Badges</a>
                             </h2>
                             <pre class="HTML">
                                 <code class="language-markup"><!-- -->
@@ -943,7 +943,7 @@
                         <!-- Tabs -->
                         <div class="wrap-feature">
                             <h2 id="tabs">
-                                <a href="#tabs" class="ion-link">Tabs</a>
+                                <a href="#tabs"><i class="ion-link icon-left"></i>Tabs</a>
                             </h2>
                             <pre class="HTML">
                                 <code class="language-markup"><!-- -->
@@ -1202,7 +1202,7 @@
                         <!-- Modals -->
                         <div class="wrap-feature">
                             <h2 id="modals">
-                                <a href="#modals" class="ion-link">Modals</a>
+                                <a href="#modals"><i class="ion-link icon-left"></i>Modals</a>
                             </h2>
                             <pre class="HTML collapsed">
                                 <code class="language-markup"><!-- -->
@@ -1254,7 +1254,7 @@
                                     &lt;/div>
                                 </code>
                             </pre>
-                            <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+                            <p class="js-view-code"><a href="#" class="btn cc-bg-red"><i class="icon-left ion-arrow-expand"></i>View code</a></p>
                             <table class="cc-valign-top">
                                 <thead>
                                     <tr>
@@ -1395,7 +1395,7 @@
                         <!-- Loaders -->
                         <div class="wrap-feature">
                             <h2 id="loaders">
-                                <a href="#loaders" class="ion-link">Loaders</a>
+                                <a href="#loaders"><i class="ion-link icon-left"></i>Loaders</a>
                             </h2>
                             <div class="alert alert-info ion-alert-circled">
                                 Number of dots (only for dots loader),loaders colors, loaders speed <strong>can be set into the settings.less file.</strong>
@@ -1476,15 +1476,19 @@
                         <!-- Icons -->
                         <div class="wrap-feature">
                             <h2 id="icons">
-                                <a href="#icons" class="ion-link">FontAwesome / Ionicons</a>
+                                <a href="#icons"><i class="ion-link icon-left"></i>Icons alignments</a>
                             </h2>
                             <pre class="HTML">
                                 <code class="language-markup"><!-- -->
-                                    &lt;!-- Exemple with FA icon -->
-                                    &lt;p class="fa-angle-right">Paragraph with FA icon&lt;/p>
-
-                                    &lt;!-- Exemple with IO icon -->
-                                    &lt;p class="ion-link">Paragraph with IO icon&lt;/p>
+                                    &lt;!-- Icons alignments -->
+                                    &lt;button class="cc-bg-primary">
+                                        &lt;i class="fas fa-pencil-alt icon-left">&lt;/i>
+                                        Edit
+                                    &lt;/button>
+                                    &lt;button class="cc-bg-red">
+                                        Delete
+                                        &lt;i class="fas fa-pencil-alt icon-right">&lt;/i>
+                                    &lt;/button>
                                 </code>
                             </pre>
                             <table class="cc-valign-top">
@@ -1517,26 +1521,24 @@
                                 <tbody>
                                     <tr>
                                         <td class="reminder-class">
-                                            <span>class="fa-{icon}"</span>
+                                            <span>class="icon-left"</span>
                                         </td>
                                         <td>
                                             *
                                         </td>
                                         <td>
-                                            Display a <em>FontAwesome icon</em> at the start of the element<br />
-                                            <strong>{icon}</strong> : the icon classname
+                                            Add a <em>margin-right of 8 px</em> to the icon
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="reminder-class">
-                                            <span>class="ion-{icon}"</span>
+                                            <span>class="icon-right"</span>
                                         </td>
                                         <td>
                                             *
                                         </td>
                                         <td>
-                                            Display a <em>Ionicons icon</em> at the start of the element<br />
-                                            <strong>{icon}</strong> : the icon classname
+                                            Add a <em>margin-left of 8 px</em> to the icon
                                         </td>
                                     </tr>
                                 </tbody>
@@ -1546,7 +1548,7 @@
                         <!-- Blocks helpers -->
                         <div class="wrap-feature">
                             <h2 id="blocks-helpers">
-                                <a href="#blocks-helpers" class="ion-link">Blocks helpers</a>
+                                <a href="#blocks-helpers"><i class="ion-link icon-left"></i>Blocks helpers</a>
                             </h2>
                             <pre class="HTML">
                                 <code class="language-markup"><!-- -->
@@ -1915,7 +1917,7 @@
                         <!-- Texts helpers -->
                         <div class="wrap-feature">
                             <h2 id="texts-helpers">
-                                <a href="#texts-helpers" class="ion-link">Texts helpers</a>
+                                <a href="#texts-helpers"><i class="ion-link icon-left"></i>Texts helpers</a>
                             </h2>
                             <pre class="HTML">
                                 <code class="language-markup"><!-- -->
@@ -2033,7 +2035,7 @@
                         <!-- Images -->
                         <div class="wrap-feature">
                             <h2 id="images">
-                                <a href="#images" class="ion-link">Images</a>
+                                <a href="#images"><i class="ion-link icon-left"></i>Images</a>
                             </h2>
                             <pre class="HTML">
                                 <code class="language-markup"><!-- -->
@@ -2108,7 +2110,7 @@
                         <!-- Buttons / Links -->
                         <div class="wrap-feature">
                             <h2 id="buttons">
-                                <a href="#buttons" class="ion-link">Buttons / Links</a>
+                                <a href="#buttons"><i class="ion-link icon-left"></i>Buttons / Links</a>
                             </h2>
                             <pre class="HTML collapsed">
                                 <code class="language-markup"><!-- -->
@@ -2116,7 +2118,6 @@
                                     &lt;button>Classical button&lt;/button>
                                     &lt;button class="cc-bg-primary">Primary button&lt;/button>
                                     &lt;button class="cc-bg-primary cc-outlined">Outlined button&lt;/button>
-                                    &lt;button class="cc-bg-primary fa-times">Iconed button&lt;/button>
                                     &lt;button class="cc-bg-primary cc-disabled">Disabled button&lt;/button>
                                     &lt;button class="cc-bg-primary cc-loading">Loading&lt;/button>
 
@@ -2124,12 +2125,11 @@
                                     &lt;a href="#" class="btn">Classical Btn link&lt;/a>
                                     &lt;a href="#" class="btn cc-bg-primary">Primary link&lt;/a>
                                     &lt;a href="#" class="btn cc-bg-primary cc-outlined">Outlined link&lt;/a>
-                                    &lt;a href="#" class="btn cc-bg-primary fa-times">Iconed link&lt;/a>
                                     &lt;a href="#" class="btn cc-bg-primary cc-disabled">Disabled link&lt;/a>
                                     &lt;a href="#" class="btn cc-bg-primary cc-loading">Loading&lt;/a>
                                 </code>
                             </pre>
-                            <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+                            <p class="js-view-code"><a href="#" class="btn cc-bg-red"><i class="icon-left ion-arrow-expand"></i>View code</a></p>
                             <table class="cc-valign-top">
                                 <thead>
                                     <tr>
@@ -2206,7 +2206,7 @@
                                         </td>
                                         <td>
                                             <em>Colorized button</em><br />
-                                            <strong>{color} :</strong> <a href="#chuckcss-colors">A color defined in ChuckCSS framework</a>
+                                            <strong>{color} :</strong> <a href="#chuckcss-colors">A background-color defined in ChuckCSS framework</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -2220,46 +2220,6 @@
                                         </td>
                                         <td>
                                             <em>Outlined button</em>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="reminder-class">
-                                            <span>class="fa-*"</span>
-                                        </td>
-                                        <td>
-                                            &lt;button><br />
-                                            or<br />
-                                            &lt;a>
-                                        </td>
-                                        <td>
-                                            Display a <em>FontAwesome icon on the left</em>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="reminder-class">
-                                            <span>class="ion-*"</span>
-                                        </td>
-                                        <td>
-                                            &lt;button><br />
-                                            or<br />
-                                            &lt;a>
-                                        </td>
-                                        <td>
-                                            Display a <em>Ionicons icon on the left</em>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="reminder-class">
-                                            <span>class="icon-right"</span>
-                                        </td>
-                                        <td>
-                                            &lt;button><br />
-                                            or<br />
-                                            &lt;a>
-                                        </td>
-                                        <td>
-                                            Display <em>icon to the right</em><br />
-                                            <strong>Must be combined with class="fa-*" or class="ion-*"</strong>
                                         </td>
                                     </tr>
                                     <tr>
@@ -2295,7 +2255,7 @@
                         <!-- Forms -->
                         <div class="wrap-feature">
                             <h2 id="forms">
-                                <a href="#forms" class="ion-link">Forms</a>
+                                <a href="#forms"><i class="ion-link icon-left"></i>Forms</a>
                             </h2>
                             <pre class="HTML collapsed">
                                 <code class="language-markup"><!-- -->
@@ -2369,7 +2329,7 @@
                                     &lt;/form>
                                 </code>
                             </pre>
-                            <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+                            <p class="js-view-code"><a href="#" class="btn cc-bg-red"><i class="icon-left ion-arrow-expand"></i>View code</a></p>
                             <table class="cc-valign-top">
                                 <thead>
                                     <tr>
@@ -2609,7 +2569,7 @@
                         <!-- Tables -->
                         <div class="wrap-feature">
                             <h2 id="tables">
-                                <a href="#tables" class="ion-link">Tables</a>
+                                <a href="#tables"><i class="ion-link icon-left"></i>Tables</a>
                             </h2>
                             <pre class="HTML collapsed">
                                 <code class="language-markup"><!-- -->
@@ -2640,7 +2600,7 @@
                                     &lt;/table>
                                 </code>
                             </pre>
-                            <p class="js-view-code"><a href="#" class="btn cc-bg-red ion-arrow-expand">View code</a></p>
+                            <p class="js-view-code"><a href="#" class="btn cc-bg-red"><i class="icon-left ion-arrow-expand"></i>View code</a></p>
                             <table class="cc-valign-top">
                                 <thead>
                                     <tr>
@@ -2822,7 +2782,7 @@
                         <!-- Blockquotes -->
                         <div class="wrap-feature">
                             <h2 id="blockquotes">
-                                <a href="#blockquotes" class="ion-link">Blockquotes</a>
+                                <a href="#blockquotes"><i class="ion-link icon-left"></i>Blockquotes</a>
                             </h2>
                             <pre class="HTML">
                                 <code class="language-markup"><!-- -->
@@ -2902,7 +2862,7 @@
                         <!-- Lists -->
                         <div class="wrap-feature">
                             <h2 id="lists">
-                                <a href="#lists" class="ion-link">Lists</a>
+                                <a href="#lists"><i class="ion-link icon-left"></i>Lists</a>
                             </h2>
                             <pre class="HTML">
                                 <code class="language-markup"><!-- -->
@@ -2965,52 +2925,6 @@
                                             Display <em>list horizontaly</em>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td class="reminder-class">
-                                            <span>class="fa-*"</span>
-                                        </td>
-                                        <td>
-                                            &lt;li>
-                                        </td>
-                                        <td>
-                                            Replace default list style by <em>a FontAwesome icon</em>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="reminder-class">
-                                            <span>class="ion-*"</span>
-                                        </td>
-                                        <td>
-                                            &lt;li>
-                                        </td>
-                                        <td>
-                                            Replace default list style by <em>a Ionicons icon</em>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="reminder-class">
-                                            <span>class="fa-* cc-{color}"</span>
-                                        </td>
-                                        <td>
-                                            &lt;li>
-                                        </td>
-                                        <td>
-                                            Replace default list style by a <em>colorized FontAwesome icon</em><br />
-                                            <strong>{color} :</strong> <a href="#chuckcss-colors">A color defined in ChuckCSS framework</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="reminder-class">
-                                            <span>class="ion-* cc-{color}"</span>
-                                        </td>
-                                        <td>
-                                            &lt;li>
-                                        </td>
-                                        <td>
-                                            Replace default list style by a <em>colorized Ionicons icon</em><br />
-                                            <strong>{color} :</strong> <a href="#chuckcss-colors">A color defined in ChuckCSS framework</a>
-                                        </td>
-                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -3018,7 +2932,7 @@
                         <!-- Colors in ChuckCSS -->
                         <div class="wrap-feature">
                             <h2 id="chuckcss-colors">
-                                <a href="#chuckcss-colors" class="ion-link">Colors in ChuckCSS</a>
+                                <a href="#chuckcss-colors"><i class="ion-link icon-left"></i>Colors in ChuckCSS</a>
                             </h2>
                             <div class="alert alert-info">
                                 By default, ChuckCSS has 7 colors you can use. All colors are defined in the settings.less file.<br />
