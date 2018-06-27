@@ -20,6 +20,8 @@
 
 
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="//pro.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-87DrmpqHRiY8hPLIr7ByqhPIywuSsjuQAfMXAE0sMUpY3BM7nXjf+mLIUSvhDArs" crossorigin="anonymous">
+        <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" crossorigin="anonymous">
         <link rel="stylesheet" href="dist/front.min.css" type="text/css" media="screen" />
 
         <script type="text/javascript">
@@ -231,6 +233,9 @@
                                         </li>
                                         <li>
                                             <a href="#texts-helpers-colors">Colors</a>
+                                        </li>
+                                        <li>
+                                            <a href="#texts-helpers-size">Font-size</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -1928,6 +1933,10 @@
                                     &lt;!-- Apply colors -->
                                     &lt;p class="cc-primary">I'm written in primary color&lt;/p>
                                     &lt;p class="cc-bg-primary">I have a primary background-color&lt;/p>
+
+                                    &lt;!-- Texts font-size -->
+                                    &lt;p class="cc-fs-17">I'm written in font-size 1.7rem&lt;/p>
+                                    &lt;p class="cc-fs-25">I'm written in font-size 2.5rem&lt;/p>
                                 </code>
                             </pre>
                             <table class="cc-valign-top">
@@ -2026,6 +2035,25 @@
                                         <td>
                                             Write text in <em>{color}</em><br />
                                             <strong>{color} :</strong> <a href="#chuckcss-colors">A color defined in ChuckCSS framework</a>
+                                        </td>
+                                    </tr>
+                                    <tr id="texts-helpers-size">
+                                        <td colspan="3" class="colspan">
+                                            <a href="#texts-helpers-size">
+                                                Font-size
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-fs-{size}"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Apply a text font-size of <em>{size / 10}</em> rem<br />
+                                            <strong>{size} :</strong> from 0 to 100, this value will be disibled by 10 to apply a font-size in rem unit.
                                         </td>
                                     </tr>
                                 </tbody>
@@ -2821,17 +2849,6 @@
                                     </tr>
                                 </tfoot>
                                 <tbody>
-                                    <tr>
-                                        <td class="reminder-class">
-                                            <span>class="cc-quoted"</span>
-                                        </td>
-                                        <td>
-                                            &lt;blockquote>
-                                        </td>
-                                        <td>
-                                            <em>Add a "quote" icon</em>
-                                        </td>
-                                    </tr>
                                     <tr>
                                         <td class="reminder-class">
                                             <span>class="cc-{color}"</span>
