@@ -805,33 +805,33 @@
                                     <tbody>
                                         <tr>
                                             <td><span class="code">&lt;h1></span><br /><span class="code">* class="h1-like"</span></td>
-                                            <td><strong>2em</strong><br />~= 30px<br />~= 3.0rem</td>
+                                            <td><strong>3rem</strong><br />~= 30px</td>
                                             <td><strong>1.5</strong><br />~= 45px<br />~= 4.5rem</td>
                                         </tr>
                                         <tr>
                                             <td><span class="code">&lt;h2></span><br /><span class="code">* class="h2-like"</span></td>
-                                            <td><strong>1.8em</strong><br />~= 27px<br />~= 2.7rem</td>
+                                            <td><strong>2.7rem</strong><br />~= 27px</td>
                                             <td><strong>1.5</strong><br />~= 40px<br />~= 4.0rem</td>
                                         </tr>
                                         <tr>
                                             <td><span class="code">&lt;h3></span><br /><span class="code">* class="h3-like"</span></td>
-                                            <td><strong>1.6em</strong><br />~= 24px<br />~= 2.4rem</td>
-                                            <td><strong>1.5</strong><br />~= 36px<br />~= 3.6rem</td>
+                                            <td><strong>2.3rem</strong><br />~= 23px</td>
+                                            <td><strong>1.5</strong><br />~= 34px<br />~= 3.4rem</td>
                                         </tr>
                                         <tr>
                                             <td><span class="code">&lt;h4></span><br /><span class="code">* class="h4-like"</span></td>
-                                            <td><strong>1.4em</strong><br />~= 21px<br />~= 2.1rem</td>
-                                            <td><strong>1.5</strong><br />~= 31px<br />~= 3.1rem</td>
+                                            <td><strong>2rem</strong><br />~= 20px</td>
+                                            <td><strong>1.5</strong><br />~= 30px<br />~= 3.0rem</td>
                                         </tr>
                                         <tr>
                                             <td><span class="code">&lt;h5></span><br /><span class="code">* class="h5-like"</span></td>
-                                            <td><strong>1.266em</strong><br />~= 19px<br />~= 1.9rem</td>
+                                            <td><strong>1.9rem</strong><br />~= 19px</td>
                                             <td><strong>1.5</strong><br />~= 28px<br />~= 2.8rem</td>
                                         </tr>
                                         <tr>
                                             <td><span class="code">&lt;h6></span><br /><span class="code">* class="h6-like"</span></td>
-                                            <td><strong>1.2em</strong><br />~= 18px<br />~= 1.8rem</td>
-                                            <td><strong>1.5</strong><br />~=27px<br />~= 2.7rem</td>
+                                            <td><strong>1.7rem</strong><br />~= 17px</td>
+                                            <td><strong>1.5</strong><br />~=25px<br />~= 2.5rem</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -1581,9 +1581,9 @@
 
                                 <div class="exemple-intro">
                                     <p>
-                                        <span class="code">class="cc-{number}"</span> : applied all devices<br />
-                                        <span class="code">class="cc-{number}-{letter}"</span> : according to screen width<br /><br />
-                                        <strong>{number} :</strong> can be set from 1 to @cols-total (default : 12)<br />
+                                        <span class="code">class="cc-{int}"</span> : applied all devices<br />
+                                        <span class="code">class="cc-{int}-{letter}"</span> : according to screen width<br /><br />
+                                        <strong>{int} :</strong> can be set from 1 to @cols-total (default : 12)<br />
                                         <strong>{letter} :</strong> <a href="#chuckcss-default-setups-breakpoints">can be set to "xs", "s", "m", "l", "xl"</a>
                                     </p>
                                 </div>
@@ -1650,9 +1650,9 @@
                                 </h4>
                                 <div class="exemple-intro">
                                     <p>
-                                        <span class="code">class="cc-offset-{number}"</span> : applied on all devices<br />
-                                        <span class="code">class="cc-offset-{number}-{letter}"</span> : according to screen width<br /><br />
-                                        <strong>{number} :</strong> can be set from 1 to @cols-total (default : 12)<br />
+                                        <span class="code">class="cc-offset-{int}"</span> : applied on all devices<br />
+                                        <span class="code">class="cc-offset-{int}-{letter}"</span> : according to screen width<br /><br />
+                                        <strong>{int} :</strong> can be set from 1 to @cols-total (default : 12)<br />
                                         <strong>{letter} :</strong> <a href="#chuckcss-default-setups-breakpoints">can be set to "xs", "s", "m", "l", "xl"</a>
                                     </p>
                                 </div>
@@ -2322,8 +2322,8 @@
                                     <p>
                                         Masonry grids are experimental in CSS3. Please check browers compatilities with <a href="http://caniuse.com/#search=column-count" class="external-link">CanIUse</a><br /><br />
                                         <span class="code">class="columns cc-masonry"</span> : Let the grid container work as a multiple columns layout<br />
-                                        <span class="code">class="columns cc-masonry cc-{number}-{letter}"</span> : Number of columns according to screen width<br /><br />
-                                        <strong>{number} :</strong> Number of columns in the masonry grid. Can be set from 1 to infinite<br />
+                                        <span class="code">class="columns cc-masonry cc-{int}-{letter}"</span> : Number of columns according to screen width<br /><br />
+                                        <strong>{int} :</strong> Number of columns in the masonry grid. Can be set from 1 to infinite<br />
                                         <strong>{letter} :</strong> <a href="#chuckcss-default-setups-breakpoints">can be set to "xs", "s", "m", "l", "xl"</a>
                                     </p>
                                     <div class="alert alert-warning">
@@ -4987,7 +4987,7 @@
                                 <div class="exemple-intro">
                                     By default, number of dots is set to 12. You can change the number of dots, loader speed, and loader color by editing the settings.less files and compile source files by yourself.<br /><br />
                                     <span class="code">class="cc-loader"</span> : dots loader main class<br />
-                                    <span class="code">class="dot dot-{number}"</span> : Include as many times as number if dots defined in the settings.less file (default : 12 dots)
+                                    <span class="code">class="dot dot-{int}"</span> : Include as many times as number if dots defined in the settings.less file (default : 12 dots)
                                 </div>
                                 <div class="cc-loader">
                                     <div class="dot dot-1"></div>
@@ -5060,7 +5060,7 @@
                                     You can change the loader color and animation speed by editing the settings.less files and compile source files by yourself.<br />
                                     Caterpillar loader is comprised of 5 dots. You can not change the number of dots into the caterpillar loader.<br /><br />
                                     <span class="code">class="cc-loader caterpillar"</span> : Caterpillar loader main class<br />
-                                    <span class="code">class="chain chain-{number}"</span> : Required class for child element
+                                    <span class="code">class="chain chain-{int}"</span> : Required class for child element
                                 </div>
                                 <div class="cc-loader caterpillar">
                                     <div class="chain chain-1"></div>
@@ -6092,36 +6092,23 @@
                                 </h4>
                                 <div class="exemple-intro">
                                     <p>
-                                        <span class="code">class="cc-fs-{size}"</span> : Apply a font-size on a text<br /><br />
-                                        <strong>{size}</strong> : From 0 to 100, increment +1<br /><br />
-                                        <strong>Exemple :</strong> "cc-fs-10" == font-size: 1rem ~= font-size: 10px;
-
-
+                                        <span class="code">class="cc-fs-{int}"</span> : Apply a font-size on a text<br />
+                                        <span class="code">class="cc-fs-{int}-{bp}"</span> : Apply a font-size on a text according to screen width and upper (mobile-first)<br /><br />
+                                        <strong>{int}</strong> : From 0 to 100, increment +1<br />
+                                        <strong>{bp}</strong> : Breakpoint, can be set to 'xl', 'l', 'm', 's'<br /><br />
+                                        <strong>Exemple :</strong> "cc-fs-10" == font-size: 1rem ~= font-size: 10px;<br />
+                                        <strong>Exemple :</strong> "cc-fs-10 cc-fs-15-m" == font-size is set to 1rem (~=10px) by default, and to 1.5rem (~=15px) on screens > 767px<br />
                                     </p>
                                 </div>
 
-                                <p class="cc-fs-15">
-                                    Font-size : 1.5rem ~= 15px<br />
-                                    Cupim prosciutto biltong capicola. Andouille beef ribs tri-tip pig. Prosciutto corned beef chicken jerky burgdoggen leberkas.
-                                </p>
-                                <p class="cc-mat-20 cc-fs-19">
-                                    Font-size : 1.9rem ~= 19px<br />
-                                    Cupim prosciutto biltong capicola. Andouille beef ribs tri-tip pig. Prosciutto corned beef chicken jerky burgdoggen leberkas.
-                                </p>
-                                <p class="cc-mat-20 cc-fs-35">
-                                    Font-size: 3.5rem ~= 35px<br />
+                                <p class="cc-fs-15 cc-fs-20-m">
+                                    Font-size : default 1.5rem (~=15px), 2rem (~=20px) on screens > 767px <br />
                                     Cupim prosciutto biltong capicola. Andouille beef ribs tri-tip pig. Prosciutto corned beef chicken jerky burgdoggen leberkas.
                                 </p>
                                 <pre class="HTML">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Texts Font-size -->
-                                        &lt;p class="cc-fs-15">
-                                            ...
-                                        &lt;/p>
-                                        &lt;p class="cc-fs-19">
-                                            ...
-                                        &lt;/p>
-                                        &lt;p class="cc-fs-35">
+                                        &lt;p class="cc-fs-15 cc-fs-20-m">
                                             ...
                                         &lt;/p>
                                     </code>
@@ -6136,37 +6123,32 @@
                                 </h4>
                                 <div class="exemple-intro">
                                     <p>
-                                        <span class="code">class="cc-fw-{weight}"</span> : Apply a font-weight on a text<br /><br />
-                                        <strong>{weight}</strong> : From 100 to 900, increment +100<br /><br />
-                                        <strong>Exemple :</strong> "cc-fw-100" == font-weight: 100
-
-
+                                        <span class="code">class="cc-fw-{int}"</span> : Apply a font-weight on a text<br />
+                                        <span class="code">class="cc-fw-{int}-{bp}"</span> : Apply a font-weight on a text according to screen width and upper (mobile-first)<br /><br />
+                                        <strong>{int}</strong> : From 100 to 900, increment +100<br />
+                                        <strong>{bp}</strong> : Breakpoint, can be set to 'xl', 'l', 'm', 's'<br /><br />
+                                        <strong>Exemple :</strong> "cc-fw-100" == font-weight: 100<br />
+                                        <strong>Exemple :</strong> "cc-fw-100 cc-fw-400-m" == font-weight: 100 (default), and 400 for screens > 767px
                                     </p>
                                 </div>
 
-                                <p class="cc-fw-300">
-                                    Font-weight : 300<br />
+                                <p class="cc-mab-20 cc-fw-300 cc-fw-700-m">
+                                    Font-weight : 300 (default) and 700 for screens > 989px<br />
                                     Cupim prosciutto biltong capicola. Andouille beef ribs tri-tip pig. Prosciutto corned beef chicken jerky burgdoggen leberkas.
                                 </p>
-                                <p class="cc-fw-400">
-                                    Font-weight : 400<br />
+                                <p class="cc-fw-300 cc-fw-400-s cc-fw-600-m cc-fw-300-l">
+                                    Font-weight : 300 (default), 400 on screens > 359px, 600 on screens > 767px, 300 on screens > 989px<br />
                                     Cupim prosciutto biltong capicola. Andouille beef ribs tri-tip pig. Prosciutto corned beef chicken jerky burgdoggen leberkas.
                                 </p>
-                                <p class="cc-fw-700">
-                                    Font-weight : 700<br />
-                                    Cupim prosciutto biltong capicola. Andouille beef ribs tri-tip pig. Prosciutto corned beef chicken jerky burgdoggen leberkas.
-                                </p>
+                               
                                
                                 <pre class="HTML">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Texts Font-weight -->
-                                        &lt;p class="cc-fw-300">
+                                        &lt;p class="cc-fw-300 cc-fw-700-m">
                                             ...
                                         &lt;/p>
-                                        &lt;p class="cc-fw-400">
-                                            ...
-                                        &lt;/p>
-                                        &lt;p class="cc-fw-700">
+                                        &lt;p class="cc-fw-300 cc-fw-400-s cc-fw-600-m cc-fw-300-l">
                                             ...
                                         &lt;/p>
                                     </code>
@@ -6256,8 +6238,10 @@
                                         <span class="code">class="cc-w-half"</span> : Apply a width of 50.00%<br />
                                         <span class="code">class="cc-w-twothird"</span> : Apply a width of 66.666%<br />
                                         <span class="code">class="cc-w-threequarter"</span> : Apply a width of 75.00%<br />
-                                        <span class="code">class="cc-w-{number}"</span> : Apply a width of {number}%<br /><br />
-                                        <strong>{number}</strong> : From 0 to 100, multiple of 5
+                                        <span class="code">class="cc-w-{int}"</span> : Apply a width of {int}%<br />
+                                        <span class="code">class="cc-w-{int}-{bp}"</span> : Apply a width of {int}% according to screen width and upper (mobile-first)<br /><br />
+                                        <strong>{int}</strong> : From 0 to 100, multiple of 5<br />
+                                        <strong>{bp}</strong> : Breakpoint, can be set to 'xl', 'l', 'm', 's'
                                     </p>
 
                                     <div class="alert alert-warning">
@@ -6278,8 +6262,8 @@
                                 <div class="cc-pa cc-bg-primary cc-w-twothird cc-txt-center cc-centered cc-mat-20">
                                     66.666%
                                 </div>
-                                <div class="cc-pa cc-bg-primary cc-w-85 cc-txt-center cc-centered cc-mat-20">
-                                    85%
+                                <div class="cc-pa cc-bg-primary cc-w-50 cc-w-90-l cc-txt-center cc-centered cc-mat-20">
+                                    50% (default) and 90% on screens > 989px
                                 </div>
 
                                 <pre class="HTML">
@@ -6289,7 +6273,7 @@
                                         &lt;div class="cc-w-third">33.333%&lt;/div>
                                         &lt;div class="cc-w-40">40%&lt;/div>
                                         &lt;div class="cc-w-twothird">66.666%&lt;/div>
-                                        &lt;div class="cc-w-85">85%&lt;/div>
+                                        &lt;div class="cc-w-50 cc-w-90-l">50% (default) and 90% on screens > 989px&lt;/div>
                                     </code>
                                 </pre>
 
@@ -6303,12 +6287,15 @@
                                 <div class="exemple-intro">
                                     <p>
                                         <span class="code">class="cc-pa"</span> : Apply a padding of 1em on the 4 sides<br />
-                                        <span class="code">class="cc-pa-{number}"</span> : Apply a padding of {number}px on the 4 sides<br />
+                                        <span class="code">class="cc-pa-{int}"</span> : Apply a padding of {int}px on the 4 sides<br />
                                         <span class="code">class="cc-pa{letter}"</span> : Apply a padding of 1em on the {letter} side<br />
-                                        <span class="code">class="cc-pa{letter}-{number}"</span> : Apply a padding of {number}px on the {letter} side<br /><br />
+                                        <span class="code">class="cc-pa{letter}-{bp}"</span> : Apply a padding of 1em on the {letter} side according the screen width (mobile-first)<br />
+                                        <span class="code">class="cc-pa{letter}-{int}"</span> : Apply a padding of {int}px on the {letter} side<br />
+                                        <span class="code">class="cc-pa{letter}-{int}-{bp}"</span> : Apply a padding of {int}px on the {letter} side according the screen width (mobile-first)<br /><br />
 
-                                        <strong>{number}</strong> : From 0 to 50, multiple of 5<br />
-                                        <strong>{letter}</strong> : Can be set to 't' (for "top"), 'r' (for "right"), 'b' (for "bottom") or 'l' (for "left")
+                                        <strong>{int}</strong> : From 0 to 100, multiple of 5<br />
+                                        <strong>{letter}</strong> : Can be set to 't' (for "top"), 'r' (for "right"), 'b' (for "bottom") or 'l' (for "left")<br />
+                                        <strong>{bp}</strong> : Breakpoint, can be set to 'xl', 'l', 'm', 's'
                                     </p>
 
                                     <div class="alert alert-warning">
@@ -6329,8 +6316,8 @@
                                 <p class="cc-bg-primary cc-pal-30 cc-mat-20">
                                     I have a padding-left of 30px
                                 </p>
-                                <p class="cc-bg-primary cc-pa cc-pat-30 cc-mat-20">
-                                    I have a padding-top of 30px and 1em on the other three sides
+                                <p class="cc-bg-primary cc-pa cc-pat-30 cc-mat-20 cc-pa-40-m">
+                                    I have a padding-top of 30px and 1em on the other three sides, but i have a padding of 40px on my 4 sides on screens > 767px
                                 </p>
 
                                 <pre class="HTML collapsed">
@@ -6348,8 +6335,8 @@
                                         &lt;p class="cc-pal-30">
                                             I have a padding-left of 30px
                                         &lt;/p>
-                                        &lt;p class="cc-pa cc-pat-30">
-                                            I have a padding-top of 30px and 1em on the other three sides
+                                        &lt;p class="cc-pa cc-pat-30 cc-pa-40-m">
+                                            I have a padding-top of 30px and 1em on the other three sides, but i have a padding of 40px on my 4 sides on screens > 767px
                                         &lt;/p>
                                     </code>
                                 </pre>
@@ -6365,12 +6352,15 @@
                                 <div class="exemple-intro">
                                     <p>
                                         <span class="code">class="cc-ma"</span> : Apply a margin of 1em on the 4 sides<br />
-                                        <span class="code">class="cc-ma-{number}"</span> : Apply a margin of {number}px on the 4 sides<br />
+                                        <span class="code">class="cc-ma-{int}"</span> : Apply a margin of {int}px on the 4 sides<br />
                                         <span class="code">class="cc-ma{letter}"</span> : Apply a margin of 1em on the {letter} side<br />
-                                        <span class="code">class="cc-ma{letter}-{number}"</span> : Apply a margin of {number}px on the {letter} side<br /><br />
+                                        <span class="code">class="cc-ma{letter}-{bp}"</span> : Apply a margin of 1em on the {letter} side according the screen width (mobile-first)<br />
+                                        <span class="code">class="cc-ma{letter}-{int}"</span> : Apply a margin of {int}px on the {letter} side<br />
+                                        <span class="code">class="cc-ma{letter}-{int}-{bp}"</span> : Apply a margin of {int}px on the {letter} side according the screen width (mobile-first)<br /><br />
 
-                                        <strong>{number}</strong> : From 0 to 50, multiple of 5<br />
-                                        <strong>{letter}</strong> : Can be set to 't' (for "top"), 'r' (for "right"), 'b' (for "bottom") or 'l' (for "left")
+                                        <strong>{int}</strong> : From 0 to 100, multiple of 5<br />
+                                        <strong>{letter}</strong> : Can be set to 't' (for "top"), 'r' (for "right"), 'b' (for "bottom") or 'l' (for "left")<br />
+                                        <strong>{bp}</strong> : Breakpoint, can be set to 'xl', 'l', 'm', 's'
                                     </p>
 
                                     <div class="alert alert-warning">
@@ -6388,8 +6378,8 @@
                                 <p class="cc-bg-primary cc-pa cc-mat-20 cc-mab-50">
                                     I have a margin-top of 20px and a margin-bottom of 50px
                                 </p>
-                                <p class="cc-bg-primary cc-pa cc-mal-30 cc-mar-50">
-                                    I have a margin-left of 30px and a margin-right of 50px
+                                <p class="cc-bg-primary cc-pa cc-mal-30 cc-mar-50 cc-ma-20-m">
+                                    I have a margin-left of 30px and a margin-right of 50px, but a margin of 20px on screens > 767px
                                 </p>
 
                                 <pre class="HTML collapsed">
@@ -6404,8 +6394,8 @@
                                         &lt;p class="cc-mat-20 cc-mab-50">
                                             I have a margin-top of 20px and a margin-bottom of 50px
                                         &lt;/p>
-                                        &lt;p class="cc-mal-30 cc-mar-50">
-                                            I have a margin-left of 30px and a margin-right of 50px
+                                        &lt;p class="cc-mal-30 cc-mar-50 cc-ma-20-m">
+                                            I have a margin-left of 30px and a margin-right of 50px, but a margin of 20px on screens > 767px
                                         &lt;/p>
                                     </code>
                                 </pre>
