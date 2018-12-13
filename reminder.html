@@ -391,7 +391,7 @@
                                         </td>
                                         <td>
                                             Set the column width<br />
-                                            <strong>{int} :</strong> can be set from 1 to {@cols-total} (default : 12)
+                                            <strong>{int} :</strong> can be set from 1 to {@cols-total} (default: 12)
                                         </td>
                                     </tr>
                                     <tr>
@@ -403,7 +403,7 @@
                                         </td>
                                         <td>
                                             Set the column width <em>on {bp} screen and upper</em><br />
-                                            <strong>{int} :</strong> can be set from 1 to {@cols-total} (default : 12)<br />
+                                            <strong>{int} :</strong> can be set from 1 to {@cols-total} (default: 12)<br />
                                             <strong>{bp} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>
                                     </tr>
@@ -416,7 +416,7 @@
                                         </td>
                                         <td>
                                             Set offset to column<br />
-                                            <strong>{int} :</strong> can be set from 1 to {@cols-total} (default : 12)
+                                            <strong>{int} :</strong> can be set from 1 to {@cols-total} (default: 12)
                                         </td>
                                     </tr>
                                     <tr>
@@ -428,7 +428,7 @@
                                         </td>
                                         <td>
                                             Set offset to column <em>on {bp} screen and upper</em><br />
-                                            <strong>{int} :</strong> can be set from 1 to {@cols-total} (default : 12)<br />
+                                            <strong>{int} :</strong> can be set from 1 to {@cols-total} (default: 12)<br />
                                             <strong>{bp} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>
                                     </tr>
@@ -757,7 +757,7 @@
                                         </td>
                                         <td>
                                             Display <em>{int}</em> columns as a verticaly Masonry layout<br />
-                                            <strong>{int} :</strong> can be set from 1 to {@cols-total} (default : 12)
+                                            <strong>{int} :</strong> can be set from 1 to {@cols-total} (default: 12)
                                         </td>
                                     </tr>
                                     <tr>
@@ -769,7 +769,7 @@
                                         </td>
                                         <td>
                                             Display <em>{int}</em> columns as a verticaly Masonry layout on <em>{bp}</em> screen and upper<br />
-                                            <strong>{int} :</strong> can be set from 1 to {@cols-total} (default : 12)<br />
+                                            <strong>{int} :</strong> can be set from 1 to {@cols-total} (default: 12)<br />
                                             <strong>{bp} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>
                                     </tr>
@@ -1419,7 +1419,7 @@
                                         &lt;div class="dot dot-1">&lt;/div>
                                         &lt;div class="dot dot-2">&lt;/div>
                                         &lt;div class="dot dot-3">&lt;/div>
-                                        ...as long as {@loader-dots-count} variable (default : 12 dots)...
+                                        ...as long as {@loader-dots-count} variable (default: 12 dots)...
                                         &lt;div class="dot dot-12">&lt;/div>
                                     &lt;/div>
                                 </code>
@@ -1674,7 +1674,7 @@
                                             *
                                         </td>
                                         <td>
-                                            Apply a <em>width of {int}%</em> on <em>breakpoint screens and above</em> (mobile-first)<br />
+                                            Apply a <em>width of {int}%</em> on <em>breakpoint screens and upper</em> (mobile-first)<br />
                                             <strong>{int} :</strong> From 0 to 100, multiple of 5<br />
                                             <strong>{bp} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>
@@ -1750,8 +1750,20 @@
                                             *
                                         </td>
                                         <td>
-                                            Apply a padding of <em>{@helper-pa} (default : 1em) on the 4 sides</em><br />
+                                            Apply a padding of <em>{@helper-pa} (default: 1em) on the 4 sides</em><br />
                                             <strong>{@helper-pa} value can be changed in the settings.less file</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-pa-{bp}"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Apply a padding of <em>{@helper-pa} (default: 1em)</em> on <em>{bp} screens and upper</em> (mobile-first)<br />
+                                            <strong>{bp} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>
                                     </tr>
                                     <tr>
@@ -1764,6 +1776,19 @@
                                         <td>
                                             Apply a padding of <em>{@helper-pa} in the {side} side</em><br />
                                             <strong>{side} :</strong> can be set to 't' (for "top"), 'r' (for "right"), 'b' (for "bottom") or 'l' (for "left")
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-pa{side}-{bp}"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Apply a padding of <em>{@helper-pa} in the {side} side</em> on <em>{bp} screens and upper</em> (mobile-first)<br />
+                                            <strong>{side} :</strong> can be set to 't' (for "top"), 'r' (for "right"), 'b' (for "bottom") or 'l' (for "left")<br />
+                                            <strong>{bp} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>
                                     </tr>
                                     <tr>
@@ -1786,7 +1811,7 @@
                                             *
                                         </td>
                                         <td>
-                                            Apply a padding of <em>{int}px on the 4 sides</em> on <em>{bp} screens and above</em> (mobile-first)<br />
+                                            Apply a padding of <em>{int}px on the 4 sides</em> on <em>{bp} screens and upper</em> (mobile-first)<br />
                                             <strong>{int} :</strong> From 0 to 100, multiple of 5<br />
                                             <strong>{bp} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>
@@ -1813,9 +1838,9 @@
                                             *
                                         </td>
                                         <td>
-                                            Apply a padding of <em>{int}px to the {side} side</em> on <em>{bp} screens and above</em> (mobile-first)<br />
+                                            Apply a padding of <em>{int}px to the {side} side</em> on <em>{bp} screens and upper</em> (mobile-first)<br />
                                             <strong>{int} :</strong> From 0 to 100, multiple of 5<br />
-                                            <strong>{side} :</strong> can be set to 't' (for "top"), 'r' (for "right"), 'b' (for "bottom") or 'l' (for "left")
+                                            <strong>{side} :</strong> can be set to 't' (for "top"), 'r' (for "right"), 'b' (for "bottom") or 'l' (for "left")<br />
                                             <strong>{bp} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>
                                     </tr>
@@ -1830,8 +1855,20 @@
                                             *
                                         </td>
                                         <td>
-                                            Apply a margin of <em>{@helper-ma} (default : 1em) on the 4 sides</em><br />
+                                            Apply a margin of <em>{@helper-ma} (default: 1em) on the 4 sides</em><br />
                                             <strong>{@helper-ma} value can be changed in the settings.less file</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-ma-{bp}"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Apply a margin of <em>{@helper-ma} (default: 1em)</em> on <em>{bp} screens and upper</em> (mobile-first)<br />
+                                            <strong>{bp} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>
                                     </tr>
                                     <tr>
@@ -1844,6 +1881,19 @@
                                         <td>
                                             Apply a margin of <em>{@helper-ma} in the {side} side</em><br />
                                             <strong>{side} :</strong> can be set to 't' (for "top"), 'r' (for "right"), 'b' (for "bottom") or 'l' (for "left")
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-ma{side}-{bp}"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Apply a margin of <em>{@helper-ma} in the {side} side</em> on <em>{bp} screens and upper</em> (mobile-first)<br />
+                                            <strong>{side} :</strong> can be set to 't' (for "top"), 'r' (for "right"), 'b' (for "bottom") or 'l' (for "left")<br />
+                                            <strong>{bp} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>
                                     </tr>
                                     <tr>
@@ -1866,7 +1916,7 @@
                                             *
                                         </td>
                                         <td>
-                                            Apply a margin of <em>{int}px on the 4 sides</em> on <em>{bp} screens and above</em> (mobile-first)<br />
+                                            Apply a margin of <em>{int}px on the 4 sides</em> on <em>{bp} screens and upper</em> (mobile-first)<br />
                                             <strong>{int} :</strong> From 0 to 100, multiple of 5<br />
                                             <strong>{bp} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>
@@ -1893,9 +1943,9 @@
                                             *
                                         </td>
                                         <td>
-                                            Apply a margin of <em>{int}px to the {side} side</em> on <em>{bp} screens and above</em> (mobile-first)<br />
+                                            Apply a margin of <em>{int}px to the {side} side</em> on <em>{bp} screens and upper</em> (mobile-first)<br />
                                             <strong>{int} :</strong> From 0 to 100, multiple of 5<br />
-                                            <strong>{side} :</strong> can be set to 't' (for "top"), 'r' (for "right"), 'b' (for "bottom") or 'l' (for "left")
+                                            <strong>{side} :</strong> can be set to 't' (for "top"), 'r' (for "right"), 'b' (for "bottom") or 'l' (for "left")<br />
                                             <strong>{bp} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>
                                     </tr>
@@ -2091,6 +2141,19 @@
                                             <em>Justify</em> the text
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-txt-{align}-{bp}"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Apply a text alignment on <em>breakpoint screens and upper</em> (mobile-first)<br />
+                                            <strong>{align} :</strong> can be set to 'center', 'left', 'right', 'justify'<br />
+                                            <strong>{bp} :</strong> can be set to 'xl', 'l', 'm', 's'
+                                        </td>
+                                    </tr>
                                     <tr id="texts-helpers-colors">
                                         <td colspan="3" class="colspan">
                                             <a href="#texts-helpers-colors">
@@ -2137,7 +2200,7 @@
                                             *
                                         </td>
                                         <td>
-                                            Apply a text font-size of <em>{int / 10}</em> rem on <em>breakpoint screens and above</em> (mobile-first)<br />
+                                            Apply a text font-size of <em>{int / 10}</em> rem on <em>breakpoint screens and upper</em> (mobile-first)<br />
                                             <strong>{int} :</strong> from 0 to 100, this value will be disibled by 10 to apply a font-size in rem unit.
                                             <strong>{bp} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>
@@ -2169,7 +2232,7 @@
                                             *
                                         </td>
                                         <td>
-                                            Apply a font-weight to a text on <em>breakpoint screens and above</em> (mobile-first)<br />
+                                            Apply a font-weight to a text on <em>breakpoint screens and upper</em> (mobile-first)<br />
                                             <strong>{int} :</strong> from 100 to 900, increment +100<br />
                                             <strong>{bp} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>

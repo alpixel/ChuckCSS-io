@@ -6015,7 +6015,12 @@
                                         <span class="code">class="cc-txt-left"</span> : Align text to the left<br />
                                         <span class="code">class="cc-txt-right"</span> : Align text to the right<br />
                                         <span class="code">class="cc-txt-center"</span> : Center the text<br />
-                                        <span class="code">class="cc-txt-justify"</span> : Justify the text
+                                        <span class="code">class="cc-txt-justify"</span> : Justify the text<br />
+                                        <span class="code">class="cc-txt-{align}-{bp}"</span> : Text alignment according to screen width and upper (mobile-first)<br /><br />
+                                        <strong>{align}</strong> : can be set to 'center', 'left', 'right', 'justify'<br />
+                                        <strong>{bp}</strong> : Breakpoint, can be set to 'xl', 'l', 'm', 's'<br /><br />
+                                        <strong>Exemple :</strong> "cc-txt-center" == text-align:center<br />
+                                        <strong>Exemple :</strong> "cc-txt-right cc-txt-left-m" == right alignment for texts (default), and left alignment for screens > 767px
                                     </p>
                                     <div class="alert alert-warning">
                                         <i class="icon-left ion-ios-lightbulb"></i>
@@ -6024,28 +6029,21 @@
                                 </div>
 
                                 <p>
-                                    Bacon ipsum dolor amet spare ribs drumstick porchetta tongue shank.<br />
-                                    Cupim prosciutto biltong capicola. Andouille beef ribs tri-tip pig. Prosciutto corned beef chicken jerky burgdoggen leberkas.
+                                    Texts have a left aligments (defaut) on all screens.
                                 </p>
-                                <p class="cc-txt-right cc-mat-20">
-                                    Bacon ipsum dolor amet spare ribs drumstick porchetta tongue shank.<br />
-                                    Cupim prosciutto biltong capicola. Andouille beef ribs tri-tip pig. Prosciutto corned beef chicken jerky burgdoggen leberkas.
+                                <p class="cc-txt-right cc-mat-20 cc-txt-center-m">
+                                    Texts are right lined up, but centered on screens > 767px
                                 </p>
-                                <p class="cc-txt-center cc-mat-20">
-                                    Bacon ipsum dolor amet spare ribs drumstick porchetta tongue shank.<br />
-                                    Cupim prosciutto biltong capicola. Andouille beef ribs tri-tip pig. Prosciutto corned beef chicken jerky burgdoggen leberkas.
+                                <p class="cc-txt-center cc-mat-20 cc-txt-left-xl">
+                                    Texts are centered by default, but left lined up on screens > 1199px
                                 </p>
-                                <p class="cc-txt-justify cc-mat-20">
-                                    Bacon ipsum dolor amet spare ribs drumstick porchetta tongue shank.<br />
-                                    Cupim prosciutto biltong capicola. Andouille beef ribs tri-tip pig. Prosciutto corned beef chicken jerky burgdoggen leberkas. Cupim prosciutto biltong capicola. Andouille beef ribs tri-tip pig. Prosciutto corned beef chicken jerky burgdoggen leberkas. Cupim prosciutto biltong capicola. Andouille beef ribs tri-tip pig. Prosciutto corned beef chicken jerky burgdoggen leberkas.
-                                </p>
+                                
                                 <pre class="HTML">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Texts alignments -->
                                         &lt;p>...&lt;/p> &lt;== same as ==> &lt;p class="cc-txt-left">...&lt;/p>
-                                        &lt;p class="cc-txt-right">...&lt;/p>
-                                        &lt;p class="cc-txt-center">...&lt;/p>
-                                        &lt;p class="cc-txt-justify">...&lt;/p>
+                                        &lt;p class="cc-txt-right cc-txt-center-m">...&lt;/p>
+                                        &lt;p class="cc-txt-center cc-txt-left-xl">...&lt;/p>
                                     </code>
                                 </pre>
 
@@ -6287,7 +6285,9 @@
                                 <div class="exemple-intro">
                                     <p>
                                         <span class="code">class="cc-pa"</span> : Apply a padding of 1em on the 4 sides<br />
+                                        <span class="code">class="cc-pa-{bp}"</span> : Apply a padding of 1em on the 4 sides according the screen width (mobile-first)<br />
                                         <span class="code">class="cc-pa-{int}"</span> : Apply a padding of {int}px on the 4 sides<br />
+                                        <span class="code">class="cc-pa-{int}-{bp}"</span> : Apply a padding of {int}px on the 4 sides according the screen width (mobile-first)<br />
                                         <span class="code">class="cc-pa{letter}"</span> : Apply a padding of 1em on the {letter} side<br />
                                         <span class="code">class="cc-pa{letter}-{bp}"</span> : Apply a padding of 1em on the {letter} side according the screen width (mobile-first)<br />
                                         <span class="code">class="cc-pa{letter}-{int}"</span> : Apply a padding of {int}px on the {letter} side<br />
@@ -6310,11 +6310,8 @@
                                 <p class="cc-bg-primary cc-pa-30 cc-mat-20">
                                     I have a padding of 30px on the 4 sides
                                 </p>
-                                <p class="cc-bg-primary cc-pal cc-mat-20">
-                                    I have a padding-left of 1em
-                                </p>
-                                <p class="cc-bg-primary cc-pal-30 cc-mat-20">
-                                    I have a padding-left of 30px
+                                <p class="cc-bg-primary cc-pal cc-mat-20 cc-pa-m">
+                                    I have a padding-left of 1em, but a padding of 1em on screens > 767px
                                 </p>
                                 <p class="cc-bg-primary cc-pa cc-pat-30 cc-mat-20 cc-pa-40-m">
                                     I have a padding-top of 30px and 1em on the other three sides, but i have a padding of 40px on my 4 sides on screens > 767px
@@ -6329,8 +6326,8 @@
                                         &lt;p class="cc-pa-30">
                                             I have a padding of 30px on the 4 sides
                                         &lt;/p>
-                                        &lt;p class="cc-pal">
-                                            I have a padding-left of 1em
+                                        &lt;p class="cc-pal cc-pa-m">
+                                            I have a padding-left of 1em, but a padding of 1em on screens > 767px
                                         &lt;/p>
                                         &lt;p class="cc-pal-30">
                                             I have a padding-left of 30px
@@ -6352,7 +6349,9 @@
                                 <div class="exemple-intro">
                                     <p>
                                         <span class="code">class="cc-ma"</span> : Apply a margin of 1em on the 4 sides<br />
+                                        <span class="code">class="cc-ma-{bp}"</span> : Apply a margin of 1em on the 4 sides according the screen width (mobile-first)<br />
                                         <span class="code">class="cc-ma-{int}"</span> : Apply a margin of {int}px on the 4 sides<br />
+                                        <span class="code">class="cc-ma-{int}-{bp}"</span> : Apply a margin of {int}px on the 4 sides according the screen width (mobile-first)<br />
                                         <span class="code">class="cc-ma{letter}"</span> : Apply a margin of 1em on the {letter} side<br />
                                         <span class="code">class="cc-ma{letter}-{bp}"</span> : Apply a margin of 1em on the {letter} side according the screen width (mobile-first)<br />
                                         <span class="code">class="cc-ma{letter}-{int}"</span> : Apply a margin of {int}px on the {letter} side<br />
