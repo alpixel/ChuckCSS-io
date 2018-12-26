@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>ChuckCSS | Mobile-first, flexbox grids, responsive CSS framework</title>
+        <title>ChuckCSS.io | Mobile-first CSS framework, CSS helpers tools, flexbox grids, responsive</title>
         <meta name="description" content="ChuckCSS is a flexible, adaptative, mobile-first and easy to learn CSS framework. ChuckCSS included an advanced and responsive grid system based on the CSS3 flexbox property" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -20,7 +20,7 @@
 
 
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-        <link rel="stylesheet" href="//pro.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-87DrmpqHRiY8hPLIr7ByqhPIywuSsjuQAfMXAE0sMUpY3BM7nXjf+mLIUSvhDArs" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-LRlmVvLKVApDVGuspQFnRQJjkv0P7/YFrw84YYQtmYG4nK8c+M+NlmYDCv0rKWpG" crossorigin="anonymous">
         <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" crossorigin="anonymous">
         <link rel="stylesheet" href="dist/front.min.css" type="text/css" media="screen" />
 
@@ -86,7 +86,7 @@
 
                 <h1>
                     ChuckCSS
-                    <small>A mobile-first, responsive CSS framework, compiled with <a href="http://lesscss.org/" class="external-link">LESS</a> and <a href="https://github.com/postcss/autoprefixer" class="external-link">Autoprefixer</a>, based on FlexBox grids</small>
+                    <small>A mobile-first, responsive CSS framework with helpers tools, compiled with <a href="http://lesscss.org/" class="external-link">LESS</a> and <a href="https://github.com/postcss/autoprefixer" class="external-link">Autoprefixer</a>, based on FlexBox grids</small>
                 </h1>
 
                 <p>
@@ -99,7 +99,7 @@
                             NPM package
                         </p>
                         <a href="https://www.npmjs.com/package/ChuckCSS" class="btn external-link black">
-                            $ npm install ChuckCSS
+                            $ npm install ChuckCSS 
                         </a>
                     </div>
 
@@ -123,7 +123,7 @@
                         <div class="cc-12 introduction">
                             <h2>Why ChuckCSS and what is it?</h2>
                             <p>
-                                I'm Mickaël, a french front-end developer since 10 years. I currently work with a fantastic team in a french &amp; fresh web agency : <a href="https://www.alpixel.fr" class="external-link">ALPIXEL</a><br /><br />ChuckCSS is born from the desire to make my own CSS framework, to ensure the projects maintainabilities i'm working on, and to increase my work speed. ChuckCSS is the result of my experience in front-end developments since many years. ChuckCSS is a responsive and mobile-first CSS framework compiled with <a href="http://lesscss.org/" class="external-link">LESS</a> and <a href="https://github.com/postcss/autoprefixer" class="external-link">Autoprefixer</a>, based on FlexBox grids.<br /><br />
+                                I'm Mickaël, a french front-end developer since 12 years. I currently work with a fantastic team in a french &amp; fresh web agency : <a href="https://www.alpixel.fr" class="external-link">ALPIXEL</a><br /><br />ChuckCSS is born from the desire to make my own CSS framework, to ensure the projects maintainabilities i'm working on, and to increase my work speed. ChuckCSS is the result of my experience in front-end developments since many years. ChuckCSS is a responsive and mobile-first CSS framework compiled with <a href="http://lesscss.org/" class="external-link">LESS</a> and <a href="https://github.com/postcss/autoprefixer" class="external-link">Autoprefixer</a>, based on FlexBox grids.<br /><br />
                                 Even if i would like ChuckCSS perfect, <a href="https://github.com/alpixel/ChuckCSS/issues/new" class="external-link">please open an issue on Github</a> if you find a problem.
                             </p>
                         </div>
@@ -147,7 +147,7 @@
                             <h2>
                                 Mobile-first
                                 <small>
-                                    5 breakpoints for adaptative websites.
+                                    4 breakpoints for adaptative websites.
                                 </small>
                             </h2>
                         </div>
@@ -218,8 +218,10 @@
                 <div class="wrap-feature">
                     <h3>Grid with adaptative columns</h3>
                     <div class="alert alert-info">
-                        <i class="ion-alert-circled icon-left"></i>
-                        <strong>ChuckCSS has 4 breakpoints.</strong><br />This exemple shows only <em>medium</em> and <em>x-large</em> breakpoints
+                        <i class="ion-alert-circled"></i>
+                        <div>
+                            <strong>ChuckCSS has 4 breakpoints.</strong><br />This exemple shows only <em>medium</em> and <em>x-large</em> breakpoints
+                        </div>
                     </div>
                     <pre class="HTML collapsed">
                         <code class="language-markup"><!-- -->
@@ -275,8 +277,10 @@
                     <h3>Modals with ChuckCSS</h3>
 
                     <div class="alert alert-info">
-                        <i class="ion-alert-circled icon-left"></i>
-                        Using modals required the <strong>chuckcss.js file</strong> (only for opening and closure).<br />
+                        <i class="ion-alert-circled"></i>
+                        <div>
+                            Using modals required the <strong>chuckcss.js file</strong> (only for opening and closure).
+                        </div>
                     </div>
 
                     <pre class="HTML collapsed">
@@ -397,50 +401,60 @@
                 <div class="wrap-feature">
                     <h3>Alerts box with ChuckCSS</h3>
                     <div class="alert alert-info">
-                        <i class="ion-alert-circled icon-left"></i>
-                        On alert boxes, the "close" button require the <strong>chuckcss.js file</strong>.<br />
-                        Nevertheless, you can build alert box without the "close" button. In that case, you don't need to load the chuckcss.js file.
+                        <i class="ion-alert-circled"></i>
+                        <div>
+                            On alert boxes, the "data-close-alert" button require the <strong>chuckcss.js file</strong>.<br />
+                            Nevertheless, you can build alert box without the "data-close-alert" button. In that case, you don't need to load the chuckcss.js file.
+                        </div>
                     </div>
                     <pre class="HTML collapsed">
                         <code class="language-markup"><!-- -->
                             &lt;!-- Success -->
                             &lt;div class="alert alert-success">
-                                &lt;i class="fas fa-thumbs-up icon-left">&lt;/i>
-                                &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
-                                It's a success! Good job :)
+                                &lt;i class="fas fa-thumbs-up">&lt;/i>
+                                &lt;div>
+                                    It's a success! Good job :)
+                                &lt;/div>
+                                &lt;button data-close-alert role="button">&lt;i class="fas fa-times">&lt;/i>&lt;/button>
                             &lt;/div>
 
                             &lt;!-- Error -->
                             &lt;div class="alert alert-error">
-                                &lt;i class="fas fa-thumbs-down icon-left">&lt;/i>
-                                &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
-                                It's an error!&lt;br />
-                                Please check the list below :
-                                &lt;ul>
-                                    &lt;li>&lt;strong>Error 1 :&lt;/strong> Nunc...&lt;/li>
-                                    &lt;li>&lt;strong>Error 2 :&lt;/strong> Nunc...&lt;/li>
-                                    &lt;li>&lt;strong>Error 3 :&lt;/strong> Nunc...&lt;/li>
-                                &lt;/ul>
+                                &lt;i class="fas fa-spider-black-widow">&lt;/i>
+                                &lt;div>
+                                    It's an error!&lt;br />
+                                    Please check the list below :
+                                    &lt;ul>
+                                        &lt;li>&lt;strong>Error 1 :&lt;/strong> Nunc...&lt;/li>
+                                        &lt;li>&lt;strong>Error 2 :&lt;/strong> Nunc...&lt;/li>
+                                        &lt;li>&lt;strong>Error 3 :&lt;/strong> Nunc...&lt;/li>
+                                    &lt;/ul>
+                                &lt;/div>
+                                &lt;button data-close-alert role="button">&lt;i class="fas fa-times">&lt;/i>&lt;/button>
                             &lt;/div>
                         </code>
                     </pre>
                     <p class="js-view-code"><a href="#" class="btn cc-bg-red"><i class="ion-arrow-expand icon-left"></i>View code</a></p>
 
                     <div class="alert alert-success">
-                        <i class="fas fa-thumbs-up icon-left"></i>
-                        <button class="close"><i class="ion-ios-close-outline"></i></button>
-                        It's a success! Good job :)
+                        <i class="fas fa-thumbs-up"></i>
+                        <div>
+                            It's a success! Good job :)
+                        </div>
+                        <button data-close-alert role="button"><i class="fas fa-times"></i></button>
                     </div>
                     <div class="alert alert-error">
-                        <i class="fas fa-thumbs-down icon-left"></i>
-                        <button class="close"><i class="ion-ios-close-outline"></i></button>
-                        It's an error!<br />
-                        Please check the list below :
-                        <ul>
-                            <li><strong>Error 1 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
-                            <li><strong>Error 2 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
-                            <li><strong>Error 3 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
-                        </ul>
+                        <i class="fas fa-spider-black-widow"></i>
+                        <div>
+                            It's an error!<br />
+                            Please check the list below :
+                            <ul>
+                                <li><strong>Error 1 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
+                                <li><strong>Error 2 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
+                                <li><strong>Error 3 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
+                            </ul>
+                        </div>
+                        <button data-close-alert role="button"><i class="fas fa-times"></i></button>
                     </div>
                 </div>
             </section>
@@ -448,7 +462,7 @@
 
         <footer id="main-footer">
             <p>
-                &copy; 2018 - ChuckCSS.io - All rights reserved - Made with &#10084; for <a href="https://www.alpixel.fr" class="external-link">ALPIXEL Agency</a>
+                &copy; 2019 - ChuckCSS.io - All rights reserved - Made with &#10084; for <a href="https://www.alpixel.fr" class="external-link">ALPIXEL Agency</a>
             </p>
             <p>
                 ChuckCSS is under <a href="https://opensource.org/licenses/mit-license.php" class="external-link">MIT Licence</a> - <a href="https://github.com/alpixel/ChuckCSS" class="external-link">Hosted on GitHub</a>

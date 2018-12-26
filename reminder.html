@@ -129,7 +129,7 @@
                             <h3>Navigation</h3>
                             <ul class="nav" role="tablist">
                                 <li class="active">
-                                    <a href="#grids">Grids / Masonry layouts</a>
+                                    <a href="#grids">Grids layouts</a>
                                     <ul>
                                         <li>
                                             <a href="#grids-items-width-offset">Items width &amp; offset</a>
@@ -146,16 +146,10 @@
                                         <li>
                                             <a href="#grids-items-y-alignments">Target item Y alignment</a>
                                         </li>
-                                        <li>
-                                            <a href="#grids-masonry">Masonry layouts</a>
-                                        </li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a href="#alerts">Alerts</a>
-                                </li>
-                                <li>
-                                    <a href="#messages">Messages</a>
                                 </li>
                                 <li>
                                     <a href="#badges">Badges</a>
@@ -275,7 +269,7 @@
                                             <a href="#tables-styles">Tables general styles</a>
                                         </li>
                                         <li>
-                                            <a href="#tables-row-styles">Specific row style</a>
+                                            <a href="#tables-row-styles">Colorized row and cells</a>
                                         </li>
                                         <li>
                                             <a href="#tables-responsive">Responsive tables</a>
@@ -299,7 +293,7 @@
                         <!-- Grids -->
                         <div class="wrap-feature">
                             <h2 id="grids">
-                                <a href="#grids"><i class="ion-link icon-left"></i>Grids / Masonry layouts</a>
+                                <a href="#grids"><i class="ion-link icon-left"></i>Grids layouts</a>
                             </h2>
                             <pre class="HTML">
                                 <code class="language-markup"><!-- -->
@@ -732,47 +726,6 @@
                                             This targeted column is stretched <em>on Y axis</em>
                                         </td>
                                     </tr>
-                                    <tr id="grids-masonry">
-                                        <td colspan="3" class="colspan">
-                                            <a href="#grids-masonry">Masonry layouts</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="reminder-class">
-                                            <span>class="cc-masonry"</span>
-                                        </td>
-                                        <td>
-                                            Grid container (row)
-                                        </td>
-                                        <td>
-                                            Display columns as a verticaly Masonry layout
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="reminder-class">
-                                            <span>class="cc-masonry cc-{int}"</span>
-                                        </td>
-                                        <td>
-                                            Grid container (row)
-                                        </td>
-                                        <td>
-                                            Display <em>{int}</em> columns as a verticaly Masonry layout<br />
-                                            <strong>{int} :</strong> can be set from 1 to {@cols-total} (default: 12)
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="reminder-class">
-                                            <span>class="cc-masonry cc-{int}-{bp}"</span>
-                                        </td>
-                                        <td>
-                                            Grid container (row)
-                                        </td>
-                                        <td>
-                                            Display <em>{int}</em> columns as a verticaly Masonry layout on <em>{bp}</em> screen and upper<br />
-                                            <strong>{int} :</strong> can be set from 1 to {@cols-total} (default: 12)<br />
-                                            <strong>{bp} :</strong> can be set to 'xl', 'l', 'm', 's'
-                                        </td>
-                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -786,7 +739,11 @@
                                 <code class="language-markup"><!-- -->
                                     &lt;!-- General structure -->
                                     &lt;div class="alert alert-{type}">
-                                        ...your alert text...
+                                        &lt;i class="fas fa-thumbs-up">&lt;/i>
+                                        &lt;div>
+                                            ...something...
+                                        &lt;/div>
+                                        &lt;button data-close-alert role="button">&lt;i class="fas fa-times">&lt;/i>&lt;/button>
                                     &lt;/div>
                                 </code>
                             </pre>
@@ -828,64 +785,6 @@
                                         </td>
                                         <td>
                                             Display an <em>alert box</em><br />
-                                            <strong>{type} :</strong> can be set to 'primary', 'info', 'warning', 'error' or 'success'
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                            </table>
-                        </div>
-
-                        <!-- Messages -->
-                        <div class="wrap-feature">
-                            <h2 id="messages">
-                                <a href="#messages"><i class="ion-link icon-left"></i>Messages</a>
-                            </h2>
-                            <pre class="HTML">
-                                <code class="language-markup"><!-- -->
-                                    &lt;!-- General structure -->
-                                    &lt;div class="message message-{type}">
-                                        ...your message text...
-                                    &lt;/div>
-                                </code>
-                            </pre>
-                            <table class="cc-valign-top">
-                                <thead>
-                                    <tr>
-                                        <th class="cc-w-40">
-                                            class
-                                        </th>
-                                        <th class="cc-w-20">
-                                            apply to element
-                                        </th>
-                                        <th>
-                                            effect
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tfoot>
-                                    <tr>
-                                        <td>
-                                            class
-                                        </td>
-                                        <td>
-                                            apply to element
-                                        </td>
-                                        <td>
-                                            effect
-                                        </td>
-                                    </tr>
-                                </tfoot>
-
-                                <tbody>
-                                    <tr>
-                                        <td class="reminder-class">
-                                            <span>class="message message-{type}"</span>
-                                        </td>
-                                        <td>
-                                            &lt;div>
-                                        </td>
-                                        <td>
-                                            Display a <em>message box</em><br />
                                             <strong>{type} :</strong> can be set to 'primary', 'info', 'warning', 'error' or 'success'
                                         </td>
                                     </tr>
@@ -1405,8 +1304,11 @@
                             <h2 id="loaders">
                                 <a href="#loaders"><i class="ion-link icon-left"></i>Loaders</a>
                             </h2>
-                            <div class="alert alert-info ion-alert-circled">
-                                Number of dots (only for dots loader),loaders colors, loaders speed <strong>can be set into the settings.less file.</strong>
+                            <div class="alert alert-info">
+                                <i class=" ion-alert-circled"></i>
+                                <div>
+                                    Number of dots (only for dots loader), loaders colors, loaders speed <strong>can be set into the settings.less file.</strong>
+                                </div>
                             </div>
 
                             <h3 id="dots-loader">
@@ -1532,7 +1434,7 @@
                                             <span>class="icon-left"</span>
                                         </td>
                                         <td>
-                                            *
+                                            i
                                         </td>
                                         <td>
                                             Add a <em>margin-right of 8 px</em> to the icon
@@ -1543,7 +1445,7 @@
                                             <span>class="icon-right"</span>
                                         </td>
                                         <td>
-                                            *
+                                            i
                                         </td>
                                         <td>
                                             Add a <em>margin-left of 8 px</em> to the icon
@@ -1662,7 +1564,7 @@
                                         </td>
                                         <td>
                                             Apply a <em>width of {int}%</em><br />
-                                            <strong>{int} :</strong> From 0 to 100, multiple of 5
+                                            <strong>{int} :</strong> From 0 to 100, increment +1
 
                                         </td>
                                     </tr>
@@ -1675,7 +1577,7 @@
                                         </td>
                                         <td>
                                             Apply a <em>width of {int}%</em> on <em>breakpoint screens and upper</em> (mobile-first)<br />
-                                            <strong>{int} :</strong> From 0 to 100, multiple of 5<br />
+                                            <strong>{int} :</strong> From 0 to 100, increment +1<br />
                                             <strong>{bp} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>
                                     </tr>
@@ -2938,7 +2840,7 @@
                                     <tr id="tables-row-styles">
                                         <td colspan="3" class="colspan">
                                             <a href="#tables-row-styles">
-                                                Specific row style
+                                                Colorized row and cells
                                             </a>
                                         </td>
                                     </tr>
@@ -2947,10 +2849,10 @@
                                             <span>class="cc-bg-{color}"</span>
                                         </td>
                                         <td>
-                                            &lt;tr>
+                                            &lt;tr>, &lt;tr>, &lt;th>
                                         </td>
                                         <td>
-                                            Display row with <em>a specific background-color</em><br />
+                                            Display row or cell with <em>a specific background-color</em><br />
                                             <strong>{color} :</strong> <a href="#chuckcss-colors">A color defined in ChuckCSS framework</a>
                                         </td>
                                     </tr>
@@ -3133,8 +3035,10 @@
                                 <a href="#chuckcss-colors"><i class="ion-link icon-left"></i>Colors in ChuckCSS</a>
                             </h2>
                             <div class="alert alert-info">
-                                By default, ChuckCSS has 7 colors you can use. All colors are defined in the settings.less file.<br />
-                                <strong>By working with ChuckCSS sources files, you can easily add, remove, change colors as you want!</strong>
+                                <div>
+                                    By default, ChuckCSS has 7 colors you can use. All colors are defined in the settings.less file.<br />
+                                    <strong>By working with ChuckCSS sources files, you can easily add, remove, change colors as you want!</strong>
+                                </div>
                             </div>
                             <div class="wrap-table">
                                 <table>

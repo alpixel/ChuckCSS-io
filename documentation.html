@@ -284,39 +284,6 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="#components-masonry">Masonry</a>
-                                        </li>
-                                        <li>
-                                            <a href="#components-messages">Messages</a>
-                                            <ul>
-                                                <li>
-                                                    <a href="#components-messages-primary">
-                                                        Primary messages
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#components-messages-error">
-                                                        Error messages
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#components-messages-success">
-                                                        Success messages
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#components-messages-warning">
-                                                        Warning messages
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#components-messages-info">
-                                                        Info messages
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
                                             <a href="#components-modals">Modals</a>
                                             <ul>
                                                 <li>
@@ -535,6 +502,9 @@
                                                 <li>
                                                     <a href="#elements-tables-color-row">Colorize a targeted row</a>
                                                 </li>
+                                                <li>
+                                                    <a href="#elements-tables-color-cell">Colorize a targeted cell</a>
+                                                </li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -661,14 +631,16 @@
                                 </div>
 
                                 <div class="alert alert-warning">
-                                    <i class="icon-left ion-ios-lightbulb"></i>
-                                    In ChuckCSS, the &lt;body> element is set to :
-                                    <ul>
-                                        <li>font-family : Helvetica Neue</li>
-                                        <li>font-size : 15px (1.5rem)</li>
-                                        <li>line-height : 1.5</li>
-                                        <li>color : #3a3a3a</li>
-                                    </ul>
+                                    <i class="ion-ios-lightbulb"></i>
+                                    <div>
+                                        In ChuckCSS, the &lt;body> element is set to :
+                                        <ul>
+                                            <li>font-family : -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif</li>
+                                            <li>font-size : 15px (1.5rem)</li>
+                                            <li>line-height : 1.5</li>
+                                            <li>color : #3a3a3a</li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <p>
                                     The &lt;html> base font-size is set to 62.5%. By this way, the rems is similar to using px :
@@ -680,20 +652,26 @@
                                     <li>...</li>
                                 </ul>
                                 <div class="alert alert-info">
-                                    <i class="fas icon-left fa-thumbs-up"></i>
-                                    For your front-end developments, the best way is to define elements font-size <strong>in em units</strong> to keep the typography adaptative.
+                                    <i class="fas fa-thumbs-up"></i>
+                                    <div>
+                                        For your front-end developments, the best way is to define elements font-size <strong>in em units</strong> to keep the typography adaptative.
+                                    </div>
                                 </div>
 
                                 <h5>Convert pixels in em and rem units</h5>
                                 <div class="alert alert-info">
-                                    Assuming the default font-size is set to "px" units, and is called "@font-size", the calculation rules are :<br />
-                                    <strong>In pixels units :</strong> @font-size px<br />
-                                    <strong>In em units :</strong> ((wanted font-size in pixels) / @font-size )em &lt;==&gt; Relative to the parent font-size!!<br />
-                                    <strong>In rem units :</strong> ((wanted font-size in pixels) / 10)rem &lt;==&gt; Relative to the root font-size!!
+                                    <div>
+                                        Assuming the default font-size is set to "px" units, and is called "@font-size", the calculation rules are :<br />
+                                        <strong>In pixels units :</strong> @font-size px<br />
+                                        <strong>In em units :</strong> ((wanted font-size in pixels) / @font-size )em &lt;==&gt; Relative to the parent font-size!!<br />
+                                        <strong>In rem units :</strong> ((wanted font-size in pixels) / 10)rem &lt;==&gt; Relative to the root font-size!!
+                                    </div>
                                 </div>
                                 <div class="alert alert-warning">
-                                    <i class="icon-left ion-ios-lightbulb"></i>
-                                    In ChuckCSS, the default font-size is set to <strong>15px.</strong>
+                                    <i class="ion-ios-lightbulb"></i>
+                                    <div>
+                                        In ChuckCSS, the default font-size is set to <strong>15px.</strong>
+                                    </div>
                                 </div>
 
                                 <table class="cc-striped">
@@ -841,19 +819,19 @@
                                         /*
                                             -- @ Titles @ --
                                         */
-                                        @title-mc : @text-mc;                       /* Hn ~ Titles main color */
-                                        @title-h1-fs : unit(30/@text-fs-old, em);   // ~= 2em = 30px = 3rem
-                                        @title-h1-lh : 1.5;                         // ~= 45px = 4.5rem
-                                        @title-h2-fs : unit(27/@text-fs-old, em);   // ~= 1.8em = 27px = 2.7rem
-                                        @title-h2-lh : 1.5;                         // ~= 40px = 4rem
-                                        @title-h3-fs : unit(24/@text-fs-old, em);   // ~= 1.6em = 24px = 2.4rem
-                                        @title-h3-lh : 1.5;                         // ~= 36px = 3.6rem
-                                        @title-h4-fs : unit(21/@text-fs-old, em);   // ~= 1.4em = 21px = 2.1rem
-                                        @title-h4-lh : 1.5;                         // ~= 31px = 3.1rem
-                                        @title-h5-fs : unit(19/@text-fs-old, em);   // ~= 1.266em = 19px = 1.9rem
-                                        @title-h5-lh : 1.5;                         // ~= 28px = 2.8rem
-                                        @title-h6-fs : unit(18/@text-fs-old, em);   // ~= 1.2em = 18px = 1.8rem
-                                        @title-h6-lh : 1.5;                         // ~= 27px = 2.7rem
+                                        @title-mc : @text-mc; /* Hn ~ Titles main color */
+                                        @title-h1-fs : 3rem;
+                                        @title-h1-lh : 1.5;
+                                        @title-h2-fs : 2.7rem;
+                                        @title-h2-lh : 1.5;
+                                        @title-h3-fs : 2.3rem;
+                                        @title-h3-lh : 1.5;
+                                        @title-h4-fs : 2rem;
+                                        @title-h4-lh : 1.5;
+                                        @title-h5-fs : 1.9rem;
+                                        @title-h5-lh : 1.5;
+                                        @title-h6-fs : 1.7rem;
+                                        @title-h6-lh : 1.5;
 
                                         @subtitle-mc : lighten(@title-mc,25%);  /* Subtitle font-color */
                                         @subtitle-fs : 70%;
@@ -928,7 +906,9 @@
 
                                 <div class="alert alert-info">
                                     <i class="fas icon-left fa-thumbs-up"></i>
-                                    If you compile sources by yourself, <strong>you can change the breakpoints values in the settings.less file.</strong>
+                                    <div>
+                                        If you compile sources by yourself, <strong>you can change the breakpoints values in the settings.less file.</strong>
+                                    </div>
                                 </div>
                                 <pre class="HTML">
                                     <code class="language-less"><!-- -->
@@ -1082,14 +1062,18 @@
                                 </table>
 
                                 <div class="alert alert-info">
-                                    <i class="fas icon-left fa-thumbs-up"></i>
-                                    If you compile sources by yourself, <strong>you can change / add / remove colors in the settings.less file.</strong><br /><br />
-                                    If you want to create new colors class <span class="code">class="cc-bg-mynewcolor"</span> and <span class="code">class="cc-mynewcolor"</span>, you have to add your new color definitions to the @aColors array (at the bottom of colors definitions).
+                                    <i class="fas fa-thumbs-up"></i>
+                                    <div>
+                                        If you compile sources by yourself, <strong>you can change / add / remove colors in the settings.less file.</strong><br /><br />
+                                        If you want to create new colors class <span class="code">class="cc-bg-mynewcolor"</span> and <span class="code">class="cc-mynewcolor"</span>, you have to add your new color definitions to the @aColors array (at the bottom of colors definitions).
+                                    </div>
                                 </div>
                                 <div class="alert alert-error">
-                                    <i class="fas fa-exclamation-circle icon-left"></i>
-                                    As you can see, <strong>there is also a @gray color,</strong> but it is voluntarily excluded from @aColors array.<br />
-                                    It means that <span class="code">class="cc-gray"</span>(for texts color property) and <span class="code">class="cc-bg-gray"</span> (for background-color property) does not work in ChuckCSS.
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <div>
+                                        As you can see, <strong>there is also a @gray color,</strong> but it is voluntarily excluded from @aColors array.<br />
+                                        It means that <span class="code">class="cc-gray"</span>(for texts color property) and <span class="code">class="cc-bg-gray"</span> (for background-color property) does not work in ChuckCSS.
+                                    </div>
                                 </div>
                                 <pre class="HTML collapsed">
                                     <code class="language-less"><!-- -->
@@ -1177,7 +1161,6 @@
                                         <li><strong>12 columns</strong> in a row</li>
                                         <li>Each item has a default <strong>padding of 1 em</strong></li>
                                         <li>Columns gutters are <strong>set to 0em</strong></li>
-                                        <li>Masonry cols have a <strong>gap of 1.5rem</strong></li>
                                     </ul>
                                 </div>
 
@@ -1192,7 +1175,6 @@
                                         @cols-pa : 1em;             /* Each column padding  */
                                         @cols-mat : 0em;            /* Each column margin top */
                                         @cols-mab : @cols-mat;      /* Each column margin bottom */
-                                        @cols-masonry-gap : 1.5em;  /* Gap between each column with masonry layout */
                                     </code>
                                 </pre>
                             </div>
@@ -1272,10 +1254,13 @@
                                             <strong>Success alerts :</strong> <span class="code">class="alert alert-success"</span>
                                         </li>
                                     </ul>
-                                    <p class="alert alert-info">
-                                        <i class="ion-ios-lightbulb icon-left"></i>
-                                        The closing button requires the chuckss.js file.
-                                    </p>
+                                    <div class="alert alert-info">
+                                        <i class="ion-ios-lightbulb"></i>
+                                        <div>
+                                            The closing button requires the chuckss.js file.
+                                        </div>
+                                        <button data-close-alert role="button"><i class="fas fa-times"></i></button>
+                                    </div>
                                 </div>
 
                                 <div class="sep"></div>
@@ -1287,17 +1272,21 @@
                                     </a>
                                 </h4>
                                 <div class="alert alert-primary">
-                                    <button class="close"><i class="ion-ios-close-outline"></i></button>
-                                    <i class="fa-bolt fas icon-left"></i>
-                                    <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies.
+                                    <i class="fa-bolt fas"></i>
+                                    <div>
+                                        <strong>Primary color</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies.
+                                    </div>
+                                    <button data-close-alert role="button"><i class="fas fa-times"></i></button>
                                 </div>
                                 <pre class="HTML">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Primary alert -->
                                         &lt;div class="alert alert-primary">
-                                            &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
-                                            &lt;i class="fa-bolt fas icon-left">&lt;/i>
-                                            &lt;strong>Primary color&lt;/strong> alert with &lt;strong>FontAwesome icon&lt;/strong>. Nunc nunc...
+                                            &lt;i class="fa-bolt fas">&lt;/i>
+                                            &lt;div>
+                                                &lt;strong>Primary color&lt;/strong> alert with &lt;strong>FontAwesome icon&lt;/strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. &lt;a href="#">This is a link&lt;/a> lorem et, dapibus, ultricies.
+                                            &lt;/div>
+                                            &lt;button data-close-alert role="button">&lt;i class="fas fa-times">&lt;/i>&lt;/button>
                                         &lt;/div>
                                     </code>
                                 </pre>
@@ -1311,28 +1300,33 @@
                                     </a>
                                 </h4>
                                 <div class="alert alert-error">
-                                    <button class="close"><i class="ion-ios-close-outline"></i></button>
-                                    <i class="fas fa-hand-spock icon-left"></i>
-                                    <strong>Error</strong> alert. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies.
-                                    <p>A list exemple below :</p>
-                                    <ul>
-                                        <li><strong>Error 1 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
-                                        <li><strong>Error 2 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
-                                        <li><strong>Error 3 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
-                                    </ul>
+                                    <i class="fas fa-hand-spock"></i>
+                                    <div>
+                                        <strong>Error</strong> alert. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies.
+                                        <p>A list exemple below :</p>
+                                        <ul>
+                                            <li><strong>Error 1 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
+                                            <li><strong>Error 2 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
+                                            <li><strong>Error 3 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
+                                        </ul>
+                                    </div>
+                                    <button data-close-alert role="button"><i class="fas fa-times"></i></button>
                                 </div>
                                 <pre class="HTML">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Error alert -->
                                         &lt;div class="alert alert-error">
-                                            &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
-                                            &lt;i class="fas fa-hand-spock icon-right">&lt;/i> &lt;strong>Error&lt;/strong> alert. Nunc nunc ...
-                                            &lt;p>A list exemple below :&lt;/p>
-                                            &lt;ul>
-                                                &lt;li>&lt;strong>Error 1 :&lt;/strong> Nunc nunc...&lt;/li>
-                                                &lt;li>&lt;strong>Error 2 :&lt;/strong> Nunc nunc...&lt;/li>
-                                                &lt;li>&lt;strong>Error 3 :&lt;/strong> Nunc nunc...&lt;/li>
-                                            &lt;/ul>
+                                            &lt;i class="fas fa-hand-spock">&lt;/i>
+                                            &lt;div>
+                                                &lt;strong>Error&lt;/strong> alert. Nunc nunc lundium aliquet elementum ac pulvinar proin. &lt;a href="#">This is a link&lt;/a> lorem et, dapibus, ultricies.
+                                                &lt;p>A list exemple below :&lt;/p>
+                                                &lt;ul>
+                                                    &lt;li>&lt;strong>Error 1 :&lt;/strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.&lt;/li>
+                                                    &lt;li>&lt;strong>Error 2 :&lt;/strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.&lt;/li>
+                                                    &lt;li>&lt;strong>Error 3 :&lt;/strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.&lt;/li>
+                                                &lt;/ul>
+                                            &lt;/div>
+                                            &lt;button data-close-alert role="button">&lt;i class="fas fa-times">&lt;/i>&lt;/button>
                                         &lt;/div>
                                     </code>
                                 </pre>
@@ -1346,15 +1340,21 @@
                                     </a>
                                 </h4>
                                 <div class="alert alert-success">
-                                    <button class="close"><i class="ion-ios-close-outline"></i></button>
-                                    <i class="ion-android-checkmark-circle icon-left"></i> <strong>Success</strong> alert. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
+                                    <i class="ion-android-checkmark-circle"></i>
+                                    <div>
+                                        <strong>Success</strong> alert. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
+                                    </div>
+                                    <button data-close-alert role="button"><i class="fas fa-times"></i></button>
                                 </div>
                                 <pre class="HTML">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Success alert -->
                                         &lt;div class="alert alert-success">
-                                            &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
-                                            &lt;i class="ion-android-checkmark-circle icon-left">&lt;/i>  &lt;strong>Success&lt;/strong> alert. Nunc nunc ...
+                                            &lt;i class="ion-android-checkmark-circle">&lt;/i>
+                                            &lt;div>
+                                                &lt;strong>Success&lt;/strong> alert. Nunc nunc lundium aliquet elementum ac pulvinar proin. &lt;a href="#">This is a link&lt;/a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
+                                            &lt;/div>
+                                            &lt;button data-close-alert role="button">&lt;i class="fas fa-times">&lt;/i>&lt;/button>
                                         &lt;/div>
                                     </code>
                                 </pre>
@@ -1368,17 +1368,21 @@
                                     </a>
                                 </h4>
                                 <div class="alert alert-warning">
-                                    <button class="close"><i class="ion-ios-close-outline"></i></button>
-                                    <i class="ion-android-bicycle icon-left"></i>
-                                    <strong>Warning</strong> alert with <strong>Ionicons icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
+                                    <i class="ion-android-bicycle"></i>
+                                    <div>
+                                        <strong>Warning</strong> alert with <strong>Ionicons icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
+                                    </div>
+                                    <button data-close-alert role="button"><i class="fas fa-times"></i></button>
                                 </div>
                                 <pre class="HTML">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Warning alert -->
                                         &lt;div class="alert alert-warning">
-                                            &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
-                                            &lt;i class="ion-android-bicycle icon-left">&lt;/i>
-                                            &lt;strong>Warning&lt;/strong> alert with &lt;strong>Ionicons icon&lt;/strong>. Nunc nunc ...
+                                            &lt;i class="ion-android-bicycle">&lt;/i>
+                                            &lt;div>
+                                                &lt;strong>Warning&lt;/strong> alert with &lt;strong>Ionicons icon&lt;/strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. &lt;a href="#">This is a link&lt;/a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
+                                            &lt;/div>
+                                            &lt;button data-close-alert role="button">&lt;i class="fas fa-times">&lt;/i>&lt;/button>
                                         &lt;/div>
                                     </code>
                                 </pre>
@@ -1392,17 +1396,21 @@
                                     </a>
                                 </h4>
                                 <div class="alert alert-info">
-                                    <button class="close"><i class="ion-ios-close-outline"></i></button>
-                                    <i class="fa-exclamation-circle fas icon-left"></i>
-                                    <strong>Info</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies.
+                                    <i class="fa-exclamation-circle fas"></i>
+                                    <div>
+                                        <strong>Info</strong> alert with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies.
+                                    </div>
+                                    <button data-close-alert role="button"><i class="fas fa-times"></i></button>
                                 </div>
                                 <pre class="HTML">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Info alert -->
                                         &lt;div class="alert alert-info">
-                                            &lt;button class="close">&lt;i class="ion-ios-close-outline">&lt;/i>&lt;/button>
-                                            &lt;i class="fa-exclamation-circle fas icon-left">&lt;/i>
-                                            &lt;strong>Info&lt;/strong> alert with &lt;strong>FontAwesome icon&lt;/strong>. Nunc nunc ...
+                                            &lt;i class="fa-exclamation-circle fas">&lt;/i>
+                                            &lt;div>
+                                                &lt;strong>Info&lt;/strong> alert with &lt;strong>FontAwesome icon&lt;/strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. &lt;a href="#">This is a link&lt;/a> lorem et, dapibus, ultricies.
+                                            &lt;/div>
+                                            &lt;button data-close-alert role="button">&lt;i class="fas fa-times">&lt;/i>&lt;/button>
                                         &lt;/div>
                                     </code>
                                 </pre>
@@ -1422,7 +1430,7 @@
                                 </p>
                                 <div class="exemple-intro">
                                     Badges are usefull to highlight informations, counters, unread messages...<br /><br />
-                                    You just have to add a <span class="code">&lt;span class="badge"></span>
+                                    You just have to add a <span class="code">&lt;span class="badge">something&lt;/span></span>
                                 </div>
 
                                 <div class="sep"></div>
@@ -1500,7 +1508,7 @@
                                 </p>
                                 <p class="cc-mat-20">
                                     <button class="cc-bg-green">
-                                        Button <span class="badge">554</span>
+                                        Button <span class="badge cc-bg-red">554</span>
                                     </button>
                                 </p>
 
@@ -1512,7 +1520,7 @@
                                         &lt;/p>
                                         &lt;p>
                                             &lt;button class="cc-bg-green">
-                                                Button &lt;span class="badge">554&lt;/span>
+                                                Button &lt;span class="badge cc-bg-red">554&lt;/span>
                                             &lt;/button>
                                         &lt;/p>
                                     </code>
@@ -1538,9 +1546,11 @@
                                         In the exemples below, </strong>each column item have <strong>a background-color</strong> for a better learning and comprehension.
                                     </p>
                                     <div class="alert alert-warning">
-                                        <i class="icon-left ion-ios-lightbulb"></i>
-                                        By default, column items take 100% width on small screens and lower.<br />
-                                        Neverthless, you can easily override this default behaviour (with specific classes).
+                                        <i class="ion-ios-lightbulb"></i>
+                                        <div>
+                                            By default, column items take 100% width on small screens and lower.<br />
+                                            Neverthless, you can easily override this default behaviour (with specific classes).
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="sep"></div>
@@ -2032,9 +2042,11 @@
                                         <span class="code">class="columns cc-align-stretch"</span> : Stretch all columns on Y axis
                                     </p>
                                     <div class="alert alert-warning">
-                                        <i class="icon-left ion-ios-lightbulb"></i>
-                                        To make Y alignements successful, you have to combine <span class="code">cc-align-*</span> with <span class="code">columns</span>.<br /><br />
-                                        In this way, the item will react as a flex container.
+                                        <i class="ion-ios-lightbulb"></i>
+                                        <div>
+                                            To make Y alignements successful, you have to combine <span class="code">cc-align-*</span> with <span class="code">columns</span>.<br /><br />
+                                            In this way, the item will react as a flex container.
+                                        </div>
                                     </div>
                                 </div>
 
@@ -2306,235 +2318,6 @@
                                 <p class="js-view-code"><a href="#" class="btn cc-bg-red"><i class="icon-left ion-arrow-expand"></i>View code</a></p>
                             </div>
 
-                            <!-- MASONRY -->
-                            <div>
-                                <h3 id="components-masonry">
-                                    <i class="fas icon-left fa-angle-right"></i>
-
-                                    <a href="#components-masonry">
-                                        Masoury layouts
-                                    </a>
-                                </h3>
-                                <p class="cc-txt-center cc-mab-20">
-                                    <a href="reminder#grids-masonry" class="btn cc-thin cc-bg-primary">Go to reminder</a>
-                                </p>
-                                <div class="exemple-intro">
-                                    <p>
-                                        Masonry grids are experimental in CSS3. Please check browers compatilities with <a href="http://caniuse.com/#search=column-count" class="external-link">CanIUse</a><br /><br />
-                                        <span class="code">class="columns cc-masonry"</span> : Let the grid container work as a multiple columns layout<br />
-                                        <span class="code">class="columns cc-masonry cc-{int}-{letter}"</span> : Number of columns according to screen width<br /><br />
-                                        <strong>{int} :</strong> Number of columns in the masonry grid. Can be set from 1 to infinite<br />
-                                        <strong>{letter} :</strong> <a href="#chuckcss-default-setups-breakpoints">can be set to "xs", "s", "m", "l", "xl"</a>
-                                    </p>
-                                    <div class="alert alert-warning">
-                                        <i class="icon-left ion-ios-lightbulb"></i>
-                                        To make masonry layout display successful, you have to combine <span class="code">cc-masonry</span> with <span class="code">columns</span>.
-                                    </div>
-                                </div>
-                                <div class="sep"></div>
-
-                                <h4>Basic masonry layout</h4>
-                                <div class="exemple-intro">
-                                    <p>
-                                        The exemple below show a masonry with :
-                                    </p>
-                                    <ul>
-                                        <li>5 columns on X-Large screens</li>
-                                        <li>4 columns on Large screens</li>
-                                        <li>3 columns on Medium screens</li>
-                                        <li>2 columns on Small screens</li>
-                                        <li>1 column on X-Small screens</li>
-                                    </ul>
-                                </div>
-                                <div class="columns cc-masonry cc-5-xl cc-4-l cc-3-m cc-2-s cc-1-xs">
-                                    <div class="cc-bg-blue" style="height:100px">I'm <strong>n°1</strong> in HTML</div>
-                                    <div class="cc-bg-blue" style="height:90px">I'm <strong>n°2</strong> in HTML</div>
-                                    <div class="cc-bg-blue" style="height:70px">I'm <strong>n°3</strong> in HTML</div>
-                                    <div class="cc-bg-blue" style="height:120px">I'm <strong>n°4</strong> in HTML</div>
-                                    <div class="cc-bg-blue" style="height:90px">I'm <strong>n°5</strong> in HTML</div>
-                                    <div class="cc-bg-blue" style="height:130px">I'm <strong>n°6</strong> in HTML</div>
-                                    <div class="cc-bg-blue" style="height:100px">I'm <strong>n°7</strong> in HTML</div>
-                                    <div class="cc-bg-blue" style="height:100px">I'm <strong>n°8</strong> in HTML</div>
-                                    <div class="cc-bg-blue" style="height:90px">I'm <strong>n°9</strong> in HTML</div>
-                                    <div class="cc-bg-blue" style="height:70px">I'm <strong>n°10</strong> in HTML</div>
-                                    <div class="cc-bg-blue" style="height:120px">I'm <strong>n°11</strong> in HTML</div>
-                                    <div class="cc-bg-blue" style="height:90px">I'm <strong>n°12</strong> in HTML</div>
-                                    <div class="cc-bg-blue" style="height:130px">I'm <strong>n°13</strong> in HTML</div>
-                                    <div class="cc-bg-blue" style="height:100px">I'm <strong>n°14</strong> in HTML</div>
-                                </div>
-                                <pre class="HTML">
-                                    <code class="language-markup"><!-- -->
-                                        <!-- Masonry layout -->
-                                        &lt;div class="columns cc-masonry cc-5-xl cc-4-l cc-3-m cc-2-s cc-1-xs">
-                                            &lt;div>I'm &lt;strong>n°1&lt;/strong> in HTML&lt;/div>
-                                            &lt;div>I'm &lt;strong>n°2&lt;/strong> in HTML&lt;/div>
-                                            &lt;div>I'm &lt;strong>n°3&lt;/strong> in HTML&lt;/div>
-                                            ...
-                                            &lt;div>I'm &lt;strong>n°12&lt;/strong> in HTML&lt;/div>
-                                            &lt;div>I'm &lt;strong>n°13&lt;/strong> in HTML&lt;/div>
-                                            &lt;div>I'm &lt;strong>n°14&lt;/strong> in HTML&lt;/div>
-                                        &lt;/div>
-                                    </code>
-                                </pre>
-                            </div>
-
-                            <!-- MESSAGES -->
-                            <div>
-                                <h3 id="components-messages">
-                                    <i class="fas icon-left fa-angle-right"></i>
-
-                                    <a href="#components-messages">
-                                        Messages
-                                    </a>
-                                </h3>
-                                <p class="cc-txt-center cc-mab-20">
-                                    <a href="reminder#messages" class="btn cc-thin cc-bg-primary">Go to reminder</a>
-                                </p>
-                                <div class="exemple-intro">
-                                    <p>
-                                        ChuckCSS provides 5 types of messages :
-                                    </p>
-                                    <ul>
-                                        <li>
-                                            <strong>Primary messages :</strong> <span class="code">class="message message-primary"</span>
-                                        </li>
-                                        <li>
-                                            <strong>Info messages :</strong> <span class="code">class="message message-info"</span>
-                                        </li>
-                                        <li>
-                                            <strong>Warning messages :</strong> <span class="code">class="message message-warning"</span>
-                                        </li>
-                                        <li>
-                                            <strong>Error messages :</strong> <span class="code">class="message message-error"</span>
-                                        </li>
-                                        <li>
-                                            <strong>Success messages :</strong> <span class="code">class="message message-success"</span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="sep"></div>
-
-                                <!-- Primary message -->
-                                <h4 id="components-messages-primary">
-                                    <a href="#components-messages-primary">
-                                        Primary messages
-                                    </a>
-                                </h4>
-                                <div class="message message-primary">
-                                    <i class="ion-ios-pricetags icon-left"></i>
-                                    <strong>Primary color</strong> message with <strong>Ionicons icon</strong>.<br />Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
-                                </div>
-                                <pre class="HTML">
-                                    <code class="language-markup"><!-- -->
-                                        &lt;!-- Primary messages -->
-                                        &lt;div class="message message-primary">
-                                            &lt;i class="ion-ios-pricetags icon-left">&lt;/i>
-                                            &lt;strong>Primary color&lt;/strong> message with &lt;strong>Ionicons icon&lt;/strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. &lt;a href="#">This is a link&lt;/a> lorem et...
-                                        &lt;/div>
-                                    </code>
-                                </pre>
-
-                                <div class="sep"></div>
-
-                                <!-- Error message -->
-                                 <h4 id="components-messages-error">
-                                    <a href="#components-messages-error">
-                                        Error messages
-                                    </a>
-                                </h4>
-                                <div class="message message-error">
-                                    <i class="fa-hand-spock fas icon-left"></i> <strong>Error</strong> message. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
-                                    <p>A list exemple below :</p>
-                                    <ul>
-                                        <li><strong>Error 1 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
-                                        <li><strong>Error 2 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
-                                        <li><strong>Error 3 :</strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.</li>
-                                    </ul>
-                                </div>
-                                <pre class="HTML">
-                                    <code class="language-markup"><!-- -->
-                                        &lt;!-- Error messages -->
-                                        &lt;div class="message message-error">
-                                            &lt;i class="fas fa-hand-spock icon-left">&lt;/i>
-                                            &lt;strong>Error&lt;/strong> message...
-                                            &lt;p>A list exemple below :&lt;/p>
-                                            &lt;ul>
-                                                &lt;li>&lt;strong>Error 1 :&lt;/strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.&lt;/li>
-                                                &lt;li>&lt;strong>Error 2 :&lt;/strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.&lt;/li>
-                                                &lt;li>&lt;strong>Error 3 :&lt;/strong> Nunc nunc lundium aliquet elementum ac pulvinar proin.&lt;/li>
-                                            &lt;/ul>
-                                        &lt;/div>
-                                    </code>
-                                </pre>
-
-                                <div class="sep"></div>
-
-                                <!-- Success message -->
-                                <h4 id="components-messages-success">
-                                    <a href="#components-messages-success">
-                                        Success messages
-                                    </a>
-                                </h4>
-                                <div class="message message-success">
-                                    <i class="ion-android-checkmark-circle icon-left"></i>
-                                    <strong>Success</strong> message. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
-                                </div>
-                                <pre class="HTML">
-                                    <code class="language-markup"><!-- -->
-                                        &lt;!-- Success message -->
-                                        &lt;div class="message message-success">
-                                            &lt;i class="ion-android-checkmark-circle icon-left">&lt;/i>
-                                            &lt;strong>Success&lt;/strong> message...
-                                        &lt;/div>
-                                    </code>
-                                </pre>
-
-                                <div class="sep"></div>
-
-                                <!-- Warning message -->
-                                 <h4 id="components-messages-warning">
-                                    <a href="#components-messages-warning">
-                                        Warning messages
-                                    </a>
-                                </h4>
-                                <div class="message message-warning">
-                                    <i class="ion-android-bicycle icon-left"></i>
-                                    <strong>Warning</strong> message with <strong>Ionicons icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
-                                </div>
-                                <pre class="HTML">
-                                    <code class="language-markup"><!-- -->
-                                        &lt;!-- Warning message -->
-                                        &lt;div class="message message-warning">
-                                            &lt;i class="ion-android-bicycle icon-left">&lt;/i>
-                                            &lt;strong>Warning&lt;/strong> message with &lt;strong>Ionicons icon&lt;/strong>. Nunc nunc ...
-                                        &lt;/div>
-                                    </code>
-                                </pre>
-
-                                <div class="sep"></div>
-
-                                <!-- Info message -->
-                                 <h4 id="components-messages-info">
-                                    <a href="#components-messages-info">
-                                        Info messages
-                                    </a>
-                                </h4>
-                                <div class="message message-info">
-                                    <i class="fas fa-exclamation-circle icon-left"></i>
-                                    <strong>Status</strong> message with <strong>FontAwesome icon</strong>. Nunc nunc lundium aliquet elementum ac pulvinar proin. <a href="#">This is a link</a> lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.<br />Nunc nunc lundium aliquet elementum ac pulvinar proin. Lorem et, dapibus, ultricies. Sit mauris cras, ultricies enim ac elementum amet, vel, elementum sagittis.
-                                </div>
-                                <pre class="HTML">
-                                    <code class="language-markup"><!-- -->
-                                        &lt;!-- Info message -->
-                                        &lt;div class="message message-info">
-                                            &lt;i class="fas fa-exclamation-circle icon-left">&lt;/i>
-                                            &lt;strong>Status&lt;/strong> message with &lt;strong>FontAwesome icon&lt;/strong>. Nunc nunc...
-                                        &lt;/div>
-                                    </code>
-                                </pre>
-                            </div>
-
                             <!-- MODALS -->
                             <div>
                                 <h3 id="components-modals">
@@ -2553,9 +2336,11 @@
                                         You just have to respect a specific syntax to display modals properly!
                                     </p>
                                     <div class="alert alert-warning">
-                                        <i class="icon-left ion-ios-lightbulb"></i>
-                                        Include <strong>the minimalist chuckcss.js file</strong> for modals openings and closures.<br /><br />
-                                        Place a modal's HTML at the bottom or at the top of your document, but not immediatly after the button who fire the modal.
+                                        <i class="ion-ios-lightbulb"></i>
+                                        <div>
+                                            Include <strong>the minimalist chuckcss.js file</strong> for modals openings and closures.<br /><br />
+                                            Place a modal's HTML at the bottom or at the top of your document, but not immediatly after the button who fire the modal.
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="sep"></div>
@@ -2625,8 +2410,10 @@
                                     </ul>
 
                                     <div class="alert alert-warning">
-                                        <i class="icon-left ion-ios-lightbulb"></i>
-                                        On small screens (&lt;768px), all modals are set to 90% width, regarless sizes classes.
+                                        <i class="ion-ios-lightbulb"></i>
+                                        <div>
+                                            On small screens (&lt;768px), all modals are set to 90% width, regarless sizes classes.
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="columns">
@@ -2705,9 +2492,11 @@
                                         Very usefull when a modal display a very long content!
                                     </p>
                                     <div class="alert alert-warning">
-                                        <i class="icon-left ion-ios-lightbulb"></i>
-                                        The modal structure change a little bit.<br />
-                                        Need a wrapper around the <span class="code">&lt;div class="modal-body">&lt;/div></span> element
+                                        <i class="ion-ios-lightbulb"></i>
+                                        <div>
+                                            The modal structure change a little bit.<br />
+                                            Need a wrapper around the <span class="code">&lt;div class="modal-body">&lt;/div></span> element
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="cc-txt-center">
@@ -2788,9 +2577,11 @@
                                         <span class="code">data-fullscreen</span> : show a modal in "fullscreen" mode.<br />
                                     </p>
                                     <div class="alert alert-warning">
-                                        <i class="icon-left ion-ios-lightbulb"></i>
-                                        The exemple below combines fullscreen mode with fixed header and footer !<br />
-                                        Just combine <span class="code">data-fullscreen</span> and <span class="code">data-fixed-hf</span> attributes and keep the <a href="#components-modals-fixed-hf">data-fixed-hf HTML structure</a>.
+                                        <i class="ion-ios-lightbulb"></i>
+                                        <div>
+                                            The exemple below combines fullscreen mode with fixed header and footer !<br />
+                                            Just combine <span class="code">data-fullscreen</span> and <span class="code">data-fixed-hf</span> attributes and keep the <a href="#components-modals-fixed-hf">data-fixed-hf HTML structure</a>.
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="cc-txt-center">
@@ -2829,8 +2620,10 @@
                                         You can use tabs to display horizontal lists, menus, etc...
                                     </p>
                                     <div class="alert alert-warning">
-                                        <i class="icon-left ion-ios-lightbulb"></i>
-                                        Just add the active class <span class="code">class="active"</span> on the item element to highlight it.
+                                        <i class="ion-ios-lightbulb"></i>
+                                        <div>
+                                            Just add the active class <span class="code">class="active"</span> on the item element to highlight it.
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="sep"></div>
@@ -2892,7 +2685,7 @@
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Underlined tabs -->
                                         &lt;ul class="tabs cc-underlined">
-                                            ...same HTML structure...
+                                            ...same HTML structure as Basic tabs...
                                         &lt;/ul>
                                     </code>
                                 </pre>
@@ -2921,7 +2714,7 @@
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Bordered tabs -->
                                         &lt;ul class="tabs cc-bordered">
-                                            ...same HTML structure...
+                                            ...same HTML structure as Basic tabs...
                                         &lt;/ul>
                                     </code>
                                 </pre>
@@ -2968,17 +2761,17 @@
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Thin tabs -->
                                         &lt;ul class="tabs cc-thin">
-                                            ...same HTML structure...
+                                            ...same HTML structure as Basic tabs...
                                         &lt;/ul>
 
                                         &lt;!-- Combine thin and underlined tab -->
                                         &lt;ul class="tabs cc-underlined cc-thin">
-                                            ...same HTML structure...
+                                            ...same HTML structure as Basic tabs...
                                         &lt;/ul>
 
                                         &lt;!-- Combine thin and bordered tab -->
                                         &lt;ul class="tabs cc-bordered cc-thin">
-                                            ...same HTML structure...
+                                            ...same HTML structure as Basic tabs...
                                         &lt;/ul>
                                     </code>
                                 </pre>
@@ -3022,17 +2815,17 @@
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Fat tabs -->
                                         &lt;ul class="tabs cc-fat">
-                                            ...same HTML structure...
+                                            ...same HTML structure as Basic tabs...
                                         &lt;/ul>
 
                                         &lt;!-- Combine fat and underlined tab -->
                                         &lt;ul class="tabs cc-underlined cc-fat">
-                                            ...same HTML structure...
+                                            ...same HTML structure as Basic tabs...
                                         &lt;/ul>
 
                                         &lt;!-- Combine fat and bordered tab -->
                                         &lt;ul class="tabs cc-bordered cc-fat">
-                                            ...same HTML structure...
+                                            ...same HTML structure as Basic tabs...
                                         &lt;/ul>
                                     </code>
                                 </pre>
@@ -3048,9 +2841,11 @@
                                 <div class="exemple-intro">
                                     <span class="code">class="cc-{color}"</span> : Change tabs main color.
                                     <div class="alert alert-warning">
-                                        <i class="icon-left ion-ios-lightbulb"></i>
-                                        By default, tabs are colorized with the @primary color.<br /><br />
-                                        <a href="reminder#chuckcss-colors" class="external-link">Use a color defined in ChuckCSS framework</a>
+                                        <i class="ion-ios-lightbulb"></i>
+                                        <div>
+                                            By default, tabs are colorized with the @primary color.<br /><br />
+                                            <a href="reminder#chuckcss-colors" class="external-link">Use a color defined in ChuckCSS framework</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <ul class="tabs cc-purple">
@@ -3085,13 +2880,13 @@
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Change main color -->
                                         &lt;ul class="tabs cc-purple">
-                                            ...same HTML structure...
+                                            ...same HTML structure as Basic tabs...
                                         &lt;/ul>
                                         &lt;ul class="tabs cc-underlined cc-purple">
-                                            ...same HTML structure...
+                                            ...same HTML structure as Basic tabs...
                                         &lt;/ul>
                                         &lt;ul class="tabs cc-bordered cc-purple">
-                                            ...same HTML structure...
+                                            ...same HTML structure as Basic tabs...
                                         &lt;/ul>
                                     </code>
                                 </pre>
@@ -3105,15 +2900,15 @@
                                 </h4>
                                 <div class="exemple-intro">
                                     <span class="code">class="cc-align-left"</span> : Align items to the left (all devices)<br />
-                                    <span class="code">class="cc-align-left-{letter}"</span> : Align items to the left according to screen width<br />
+                                    <span class="code">class="cc-align-left-{bp}"</span> : Align items to the left according to screen width<br />
                                     <span class="code">class="cc-align-right"</span> : Align items to the right (all devices)<br />
-                                    <span class="code">class="cc-align-right-{letter}"</span> : Align items to the right according to screen width<br />
+                                    <span class="code">class="cc-align-right-{bp}"</span> : Align items to the right according to screen width<br />
                                     <span class="code">class="cc-align-center"</span> : Center items (all devices)<br />
-                                    <span class="code">class="cc-align-center-{letter}"</span> : Center items according to screen width<br />
+                                    <span class="code">class="cc-align-center-{bp}"</span> : Center items according to screen width<br />
                                     <span class="code">class="cc-align-stretch"</span> : Stretch items (all devices)<br />
-                                    <span class="code">class="cc-align-stretch-{letter}"</span> : Stretch items according to screen width<br />
+                                    <span class="code">class="cc-align-stretch-{bp}"</span> : Stretch items according to screen width<br />
                                     <span class="code">class="cc-last"</span> : Pull this item to the right as a "float:right"-like<br /><br />
-                                    <strong>{letter} :</strong> <a href="#chuckcss-default-setups-breakpoints">can be set to "s", "m", "l", "xl"</a>
+                                    <strong>{bp} (breakpoint):</strong> <a href="#chuckcss-default-setups-breakpoints">can be set to "s", "m", "l", "xl"</a>
                                 </div>
 
                                 <ul class="tabs cc-bordered cc-align-left">
@@ -3126,7 +2921,7 @@
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Items left alignment -->
                                         &lt;ul class="tabs cc-bordered cc-align-left">
-                                            ...same HTML structure...
+                                            ...same HTML structure as Basic tabs...
                                         &lt;/ul>
                                     </code>
                                 </pre>
@@ -3143,7 +2938,7 @@
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Items right alignment -->
                                         &lt;ul class="tabs cc-bordered cc-align-right">
-                                            ...same HTML structure...
+                                            ...same HTML structure as Basic tabs...
                                         &lt;/ul>
                                     </code>
                                 </pre>
@@ -3159,7 +2954,7 @@
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Items center alignment -->
                                         &lt;ul class="tabs cc-bordered cc-align-center">
-                                            ...same HTML structure...
+                                            ...same HTML structure as Basic tabs...
                                         &lt;/ul>
                                     </code>
                                 </pre>
@@ -3176,7 +2971,7 @@
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Items stretch alignment -->
                                         &lt;ul class="tabs cc-bordered cc-align-stretch">
-                                            ...same HTML structure...
+                                            ...same HTML structure as Basic tabs...
                                         &lt;/ul>
                                     </code>
                                 </pre>
@@ -3203,7 +2998,7 @@
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Screen alignement -->
                                         &lt;ul class="tabs cc-align-left-xl cc-align-right-l cc-align-stretch-m">
-                                            ...same HTML structure...
+                                            ...same HTML structure as Basic tabs...
                                         &lt;/ul>
                                     </code>
                                 </pre>
@@ -3243,8 +3038,10 @@
                                 <div class="exemple-intro">
                                     <span class="code">class="cc-pills"</span> : Display tabs items as pills.
                                     <div class="alert alert-warning">
-                                        <i class="icon-left ion-ios-lightbulb"></i>
-                                        By default, pills items are chained.
+                                        <i class="ion-ios-lightbulb"></i>
+                                        <div>
+                                            By default, pills items are chained.
+                                        </div>
                                     </div>
                                 </div>
                                 <ul class="tabs cc-pills cc-thin">
@@ -3270,17 +3067,17 @@
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Thin Pills tab -->
                                         &lt;ul class="tabs cc-pills cc-thin">
-                                            ...same HTML structure...
+                                            ...same HTML structure as Basic tabs...
                                         &lt;/ul>
 
                                         &lt;!-- Pills tab -->
                                         &lt;ul class="tabs cc-pills">
-                                            ...same HTML structure...
+                                            ...same HTML structure as Basic tabs...
                                         &lt;/ul>
 
                                         &lt;!-- Fat Pills tab -->
                                         &lt;ul class="tabs cc-pills cc-fat">
-                                            ...same HTML structure...
+                                            ...same HTML structure as Basic tabs...
                                         &lt;/ul>
                                     </code>
                                 </pre>
@@ -3319,17 +3116,17 @@
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Thin Pills tab -->
                                         &lt;ul class="tabs cc-pills cc-thin cc-unchained">
-                                            ...same HTML structure...
+                                            ...same HTML structure as Basic tabs...
                                         &lt;/ul>
 
                                         &lt;!-- Pills tab -->
                                         &lt;ul class="tabs cc-pills cc-unchained">
-                                            ...same HTML structure...
+                                            ...same HTML structure as Basic tabs...
                                         &lt;/ul>
 
                                         &lt;!-- Fat Pills tab -->
                                         &lt;ul class="tabs cc-pills cc-fat cc-unchained">
-                                            ...same HTML structure...
+                                            ...same HTML structure as Basic tabs...
                                         &lt;/ul>
                                     </code>
                                 </pre>
@@ -3361,9 +3158,11 @@
                                 </blockquote>
                                 <div class="exemple-intro">
                                     <div class="alert alert-warning">
-                                        <i class="icon-left ion-ios-lightbulb"></i>
-                                        By default, blockquotes are colorized with the @primary color.<br /><br />
-                                        <a href="reminder#chuckcss-colors" class="external-link">Use a color defined in ChuckCSS framework</a>
+                                        <i class="ion-ios-lightbulb"></i>
+                                        <div>
+                                            By default, blockquotes are colorized with the @primary color.<br /><br />
+                                            <a href="reminder#chuckcss-colors" class="external-link">Use a color defined in ChuckCSS framework</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="sep"></div>
@@ -4923,8 +4722,10 @@
                                     <span class="code">class="cc-horizontal"</span> : Display each item on the same line
 
                                     <div class="alert alert-warning">
-                                        <i class="icon-left ion-ios-lightbulb"></i>
-                                        On small screens (&lt; 768px), all items are dispayed as block
+                                        <i class="ion-ios-lightbulb"></i>
+                                        <div>
+                                            On small screens (&lt; 768px), all items are dispayed as block
+                                        </div>
                                     </div>
                                 </div>
                                 <ul class="cc-horizontal">
@@ -5858,7 +5659,7 @@
                                 <div class="exemple-intro">
                                     <p>
                                         <span class="code">class="cc-bg-{color}"</span> : Apply a background-color to this row<br /><br />
-                                        <a href="reminder#tables" class="external-link">As written in the reminder,</a> you have to apply this class to a &lt;tr> element.<br /><br />
+                                        <a href="reminder#tables" class="external-link">As written in the reminder,</a> you have to apply this class to a &lt;tr>, &lt;th> or &lt;td> element.<br /><br />
                                         <strong>{color}</strong> : <a href="reminder#chuckcss-colors" class="external-link">A color defined in ChuckCSS framework</a>
                                     </p>
                                 </div>
@@ -5981,6 +5782,105 @@
                                     </code>
                                 </pre>
                                 <p class="js-view-code"><a href="#" class="btn cc-bg-red"><i class="icon-left ion-arrow-expand"></i>View code</a></p>
+
+
+                                <div class="sep"></div>
+
+                                <h4 id="elements-tables-color-cell">
+                                    <a href="#elements-tables-color-cell">
+                                        Colorize a targeted cell
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        <span class="code">class="cc-bg-{color}"</span> : Apply a background-color to this cell<br /><br />
+                                        <a href="reminder#tables" class="external-link">As written in the reminder,</a> you have to apply this class to a &lt;tr>, &lt;th>, &lt;td> element.<br /><br />
+                                        <strong>{color}</strong> : <a href="reminder#chuckcss-colors" class="external-link">A color defined in ChuckCSS framework</a>
+                                    </p>
+                                </div>
+                                <table class="cc-responsive">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Country</th>
+                                            <th>Continent</th>
+                                            <th>Population</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>United States of America</td>
+                                            <td class="cc-bg-red">North America</td>
+                                            <td>318.9 millions</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="cc-bg-primary">2</td>
+                                            <td>France</td>
+                                            <td>Europe</td>
+                                            <td>67 millions (2014)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td class="cc-bg-purple">Népal</td>
+                                            <td class="cc-bg-green">Asia</td>
+                                            <td>28 millions (2014)</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>ID</td>
+                                            <td>Country</td>
+                                            <td>Continent</td>
+                                            <td>Population</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+
+                                <pre class="HTML collapsed">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Colorize a targeted row -->
+                                        &lt;table>
+                                            &lt;thead>
+                                                &lt;tr>
+                                                    &lt;th>ID&lt;/th>
+                                                    &lt;th>Country&lt;/th>
+                                                    &lt;th>Continent&lt;/th>
+                                                    &lt;th>Population&lt;/th>
+                                                &lt;/tr>
+                                            &lt;/thead>
+                                            &lt;tbody>
+                                                &lt;tr>
+                                                    &lt;td>1&lt;/td>
+                                                    &lt;td>United States of America&lt;/td>
+                                                    &lt;td class="cc-bg-red">North America&lt;/td>
+                                                    &lt;td>318.9 millions&lt;/td>
+                                                &lt;/tr>
+                                                &lt;tr>
+                                                    &lt;td class="cc-bg-primary">2&lt;/td>
+                                                    &lt;td>France&lt;/td>
+                                                    &lt;td>Europe&lt;/td>
+                                                    &lt;td>67 millions (2014)&lt;/td>
+                                                &lt;/tr>
+                                                &lt;tr>
+                                                    &lt;td>3&lt;/td>
+                                                    &lt;td class="cc-bg-purple">Népal&lt;/td>
+                                                    &lt;td class="cc-bg-green">Asia&lt;/td>
+                                                    &lt;td>28 millions (2014)&lt;/td>
+                                                &lt;/tr>
+                                            &lt;/tbody>
+                                            &lt;tfoot>
+                                                &lt;tr>
+                                                    &lt;td>ID&lt;/td>
+                                                    &lt;td>Country&lt;/td>
+                                                    &lt;td>Continent&lt;/td>
+                                                    &lt;td>Population&lt;/td>
+                                                &lt;/tr>
+                                            &lt;/tfoot>
+                                        &lt;/table>
+                                    </code>
+                                </pre>
+                                <p class="js-view-code"><a href="#" class="btn cc-bg-red"><i class="icon-left ion-arrow-expand"></i>View code</a></p>
                             </div>
                         </div>
 
@@ -6023,8 +5923,10 @@
                                         <strong>Exemple :</strong> "cc-txt-right cc-txt-left-m" == right alignment for texts (default), and left alignment for screens > 767px
                                     </p>
                                     <div class="alert alert-warning">
-                                        <i class="icon-left ion-ios-lightbulb"></i>
-                                        By default, all texts are left aligned.
+                                        <i class="ion-ios-lightbulb"></i>
+                                        <div>
+                                            By default, all texts are left aligned.
+                                        </div>
                                     </div>
                                 </div>
 
@@ -6188,8 +6090,10 @@
                                     </p>
 
                                     <div class="alert alert-warning">
-                                        <i class="icon-left ion-ios-lightbulb"></i>
-                                        In the exemples below, </strong>each element have <strong>a padding of 1em and a primary background-color</strong> for a better learning and comprehension.
+                                        <i class="ion-ios-lightbulb"></i>
+                                        <div>
+                                            In the exemples below, </strong>each element have <strong>a padding of 1em and a primary background-color</strong> for a better learning and comprehension.
+                                        </div>
                                     </div>
                                 </div>
 
@@ -6231,20 +6135,19 @@
                                 </h4>
                                 <div class="exemple-intro">
                                     <p>
-                                        <span class="code">class="cc-w-quarter"</span> : Apply a width of 25.00%<br />
                                         <span class="code">class="cc-w-third"</span> : Apply a width of 33.333%<br />
-                                        <span class="code">class="cc-w-half"</span> : Apply a width of 50.00%<br />
                                         <span class="code">class="cc-w-twothird"</span> : Apply a width of 66.666%<br />
-                                        <span class="code">class="cc-w-threequarter"</span> : Apply a width of 75.00%<br />
                                         <span class="code">class="cc-w-{int}"</span> : Apply a width of {int}%<br />
                                         <span class="code">class="cc-w-{int}-{bp}"</span> : Apply a width of {int}% according to screen width and upper (mobile-first)<br /><br />
-                                        <strong>{int}</strong> : From 0 to 100, multiple of 5<br />
+                                        <strong>{int}</strong> : From 0 to 100, increment of 1<br />
                                         <strong>{bp}</strong> : Breakpoint, can be set to 'xl', 'l', 'm', 's'
                                     </p>
 
                                     <div class="alert alert-warning">
-                                        <i class="icon-left ion-ios-lightbulb"></i>
-                                        In the exemples below, </strong>each element have <strong>a padding of 1em and a primary background-color</strong> for a better learning and comprehension.
+                                        <i class="ion-ios-lightbulb"></i>
+                                        <div>
+                                            In the exemples below, </strong>each element have <strong>a padding of 1em and a primary background-color</strong> for a better learning and comprehension.
+                                        </div>
                                     </div>
                                 </div>
 
@@ -6299,8 +6202,10 @@
                                     </p>
 
                                     <div class="alert alert-warning">
-                                        <i class="icon-left ion-ios-lightbulb"></i>
-                                        In the exemples below, </strong>each element have <strong>a background-color</strong> for a better learning and comprehension.
+                                        <i class="ion-ios-lightbulb"></i>
+                                        <div>
+                                            In the exemples below, </strong>each element have <strong>a background-color</strong> for a better learning and comprehension.
+                                        </div>
                                     </div>
                                 </div>
 
@@ -6363,8 +6268,10 @@
                                     </p>
 
                                     <div class="alert alert-warning">
-                                        <i class="icon-left ion-ios-lightbulb"></i>
-                                        In the exemples below, </strong>each element have <strong>a padding of 1 em and a primary background-color</strong> for a better learning and comprehension.
+                                        <i class="ion-ios-lightbulb"></i>
+                                        <div>
+                                            In the exemples below, </strong>each element have <strong>a padding of 1 em and a primary background-color</strong> for a better learning and comprehension.
+                                        </div>
                                     </div>
                                 </div>
 
@@ -6413,12 +6320,11 @@
                                         <strong>{color}</strong> : <a href="reminder#chuckcss-colors" class="external-link">A color defined in ChuckCSS framework</a>
                                     </p>
                                     <div class="alert alert-warning">
-                                        <i class="icon-left ion-ios-lightbulb"></i>
-                                        When you use these classes, the text color is set to white by default.
-                                    </div>
-                                    <div class="alert alert-warning">
-                                        <i class="icon-left ion-ios-lightbulb"></i>
-                                        In the exemples below, </strong>each element have <strong>a padding of 1 em</strong> for a better learning and comprehension.
+                                        <i class="ion-ios-lightbulb"></i>
+                                        <div>
+                                            When you use these classes, the text color is set to white by default.<br /><br />
+                                            In the exemples below, </strong>each element have <strong>a padding of 1 em</strong> for a better learning and comprehension.
+                                        </div>
                                     </div>
                                 </div>
 
@@ -6453,8 +6359,10 @@
                                     Block visibilities depends of the breakpoints used in ChuckCSS.
 
                                     <div class="alert alert-warning">
-                                        <i class="icon-left ion-ios-lightbulb"></i>
-                                        In the exemples below, <strong>hidden blocks will be shown with an opacity of 0.3</strong> for a better learning and comprehension.
+                                        <i class="ion-ios-lightbulb"></i>
+                                        <div>
+                                            In the exemples below, <strong>hidden blocks will be shown with an opacity of 0.3</strong> for a better learning and comprehension.
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="sep"></div>
@@ -6497,9 +6405,11 @@
                                     <strong>{letter} :</strong> <a href="#chuckcss-default-setups-breakpoints">can be set to "s", "m", "l", "xl"</a>
 
                                     <div class="alert alert-warning">
-                                        <i class="icon-left ion-ios-lightbulb"></i>
-                                        Set {letter} to 'xs' as no sense. It means : "Hide this block on XS screens and upper".<br />
-                                        It is the same as "cc-hidden" class : "hide this block on all devices (QED)"
+                                        <i class="ion-ios-lightbulb"></i>
+                                        <div>
+                                            Set {letter} to 'xs' as no sense. It means : "Hide this block on XS screens and upper".<br />
+                                            It is the same as "cc-hidden" class : "hide this block on all devices (QED)"
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="wrap-blocks-visibilities">
@@ -6600,9 +6510,11 @@
                                     <strong>{letter} :</strong> <a href="#chuckcss-default-setups-breakpoints">can be set to "xs", "s", "m", "l"</a>
 
                                     <div class="alert alert-warning">
-                                        <i class="icon-left ion-ios-lightbulb"></i>
-                                        Set {letter} to 'xl' as no sense. It means : "Hide this block on XL screens and lower".<br />
-                                        It is the same as "cc-hidden" class : "hide this block on all devices (QED)"
+                                        <i class="ion-ios-lightbulb"></i>
+                                        <div>
+                                            Set {letter} to 'xl' as no sense. It means : "Hide this block on XL screens and lower".<br />
+                                            It is the same as "cc-hidden" class : "hide this block on all devices (QED)"
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="wrap-blocks-visibilities">
@@ -6692,6 +6604,63 @@
                                 </div>
                             </div>
 
+                            <!-- ICONS -->
+                            <div class="wrap-feature">
+                                <h2 id="icons">
+                                    <a href="#icons"><i class="ion-link icon-left"></i>Icons in ChuckCSS</a>
+                                </h2>
+                                <p class="cc-txt-center cc-mab-20">
+                                    <a href="reminder#icons" class="btn cc-thin cc-bg-primary">Go to reminder</a>
+                                </p>
+
+
+
+                                <!-- Alignments -->
+                                <div>
+                                    <h3 id="icons-alignments">
+                                        <i class="fas icon-left fa-angle-right"></i>
+
+                                        <a href="#icons-alignments">
+                                            Icons alignments
+                                        </a>
+                                    </h3>
+
+                                    <div class="exemple-intro">
+                                        <span class="code">class="icon-left"</span> : the left icon has a margin-right of 8 px<br />
+                                        <span class="code">class="icon-right"</span> : the left icon has a margin-left of 8 px
+
+                                    </div>
+
+                                    <div class="sep"></div>
+
+                                    <p>
+                                        <button class="cc-bg-primary">
+                                            <i class="fas fa-pencil-alt icon-left"></i>
+                                            Edit
+                                        </button>
+                                        <button class="cc-bg-red">
+                                            Delete
+                                            <i class="fas fa-pencil-alt icon-right"></i>
+                                        </button>
+                                    </p>
+
+
+                                    <pre class="HTML">
+                                        <code class="language-markup"><!-- -->
+                                            &lt;!-- Icons alignments -->
+                                            &lt;button class="cc-bg-primary">
+                                                &lt;i class="fas fa-pencil-alt icon-left">&lt;/i>
+                                                Edit
+                                            &lt;/button>
+                                            &lt;button class="cc-bg-red">
+                                                Delete
+                                                &lt;i class="fas fa-pencil-alt icon-right">&lt;/i>
+                                            &lt;/button>
+                                        </code>
+                                    </pre>
+                                </div>
+                            </div>
+
                             <!-- NEW SECTION -->
                             <!-- <div>
                                 <h3 id="helpers">
@@ -6725,62 +6694,7 @@
                             </div> -->
                         </div>
 
-                        <!-- ICONS -->
-                        <div class="wrap-feature">
-                            <h2 id="icons">
-                                <a href="#icons"><i class="ion-link icon-left"></i>Icons in ChuckCSS</a>
-                            </h2>
-                            <p class="cc-txt-center cc-mab-20">
-                                <a href="reminder#icons" class="btn cc-thin cc-bg-primary">Go to reminder</a>
-                            </p>
-
-
-
-                            <!-- Alignments -->
-                            <div>
-                                <h3 id="icons-alignments">
-                                    <i class="fas icon-left fa-angle-right"></i>
-
-                                    <a href="#icons-alignments">
-                                        Icons alignments
-                                    </a>
-                                </h3>
-
-                                <div class="exemple-intro">
-                                    <span class="code">class="icon-left"</span> : the left icon has a margin-right of 8 px<br />
-                                    <span class="code">class="icon-right"</span> : the left icon has a margin-left of 8 px
-
-                                </div>
-
-                                <div class="sep"></div>
-
-                                <p>
-                                    <button class="cc-bg-primary">
-                                        <i class="fas fa-pencil-alt icon-left"></i>
-                                        Edit
-                                    </button>
-                                    <button class="cc-bg-red">
-                                        Delete
-                                        <i class="fas fa-pencil-alt icon-right"></i>
-                                    </button>
-                                </p>
-
-
-                                <pre class="HTML">
-                                    <code class="language-markup"><!-- -->
-                                        &lt;!-- Icons alignments -->
-                                        &lt;button class="cc-bg-primary">
-                                            &lt;i class="fas fa-pencil-alt icon-left">&lt;/i>
-                                            Edit
-                                        &lt;/button>
-                                        &lt;button class="cc-bg-red">
-                                            Delete
-                                            &lt;i class="fas fa-pencil-alt icon-right">&lt;/i>
-                                        &lt;/button>
-                                    </code>
-                                </pre>
-                            </div>
-                        </div>
+                        
                     </section>
                 </div>
             </section>
