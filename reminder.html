@@ -96,10 +96,10 @@
                         <a href="reminder" class="active">Reminder</a>
                     </li>
                     <li>
-                        <a href="https://github.com/alpixel/ChuckCSS" class="external-link">Download</a>
+                        <a href="https://github.com/alpixel/ChuckCSS" rel="nofollow" class="external-link">Download</a>
                     </li>
                     <li class="last">
-                        <a href="https://twitter.com/chuckcss" class=" external-link btn"><i class="fab fa-twitter icon-left"></i>Follow me on Twitter</a>
+                        <a href="https://twitter.com/chuckcss" rel="nofollow" class=" external-link btn"><i class="fab fa-twitter icon-left"></i>Follow me on Twitter</a>
                     </li>
                 </ul>
             </nav>
@@ -172,6 +172,9 @@
                                     <a href="#modals">Modals</a>
                                     <ul>
                                         <li>
+                                            <a href="#modals-launch">Launch modals</a>
+                                        </li>
+                                        <li>
                                             <a href="#modals-width">Modals width</a>
                                         </li>
                                         <li>
@@ -182,6 +185,9 @@
                                         </li>
                                         <li>
                                             <a href="#modals-fullscreen">Fullscreen</a>
+                                        </li>
+                                        <li>
+                                            <a href="#modals-openings">Openings effects</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -1114,7 +1120,7 @@
                             <pre class="HTML collapsed">
                                 <code class="language-markup"><!-- -->
                                     &lt;!-- Button for launching modal -->
-                                    &lt;button data-target="modal-id" class="modal-open">Launch modal&lt;/button>
+                                    &lt;button data-modal="modal-id" role="button">Launch modal&lt;/button>
 
                                     &lt;!-- Modal structure -->
                                     &lt;div id="modal-id" class="modal" data-disabled-overlay>
@@ -1190,6 +1196,31 @@
                                     </tr>
                                 </tfoot>
                                 <tbody>
+                                    <tr id="modals-launch">
+                                        <td colspan="3" class="colspan">
+                                            <a href="#modals-launch">
+                                                Launch modals
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>data-modal="MODAL_ID"</span>
+                                        </td>
+                                        <td>
+                                            &lt;button> (or any element who fired modal)
+                                        </td>
+                                        <td>
+                                            Fire modal on click
+                                        </td>
+                                    </tr>
+                                    <tr id="modals-class">
+                                        <td colspan="3" class="colspan">
+                                            <a href="#modals-class">
+                                                Modals class
+                                            </a>
+                                        </td>
+                                    </tr>
                                     <tr>
                                         <td class="reminder-class">
                                             <span>class="modal"</span>
@@ -1293,6 +1324,35 @@
                                         </td>
                                         <td>
                                             Show the modal in <em>fullscreen mode</em>
+                                        </td>
+                                    </tr>
+                                    <tr id="modals-openings">
+                                        <td colspan="3" class="colspan">
+                                            <a href="#modals-openings">
+                                                Openings effects
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>data-open="slideInRight"</span>
+                                        </td>
+                                        <td>
+                                            &lt;div>
+                                        </td>
+                                        <td>
+                                            Open the modal with a <em>"Slide In Right" effect</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>data-open="slideInLeft"</span>
+                                        </td>
+                                        <td>
+                                            &lt;div>
+                                        </td>
+                                        <td>
+                                            Open the modal with a <em>"Slide In Left" effect</em>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -3263,10 +3323,10 @@
 
         <footer id="main-footer">
             <p>
-                &copy; 2018 - ChuckCSS.io - All rights reserved - Made with &#10084; for <a href="https://www.alpixel.fr" class="external-link">ALPIXEL Agency</a>
+                &copy; 2018 - ChuckCSS.io - All rights reserved - Made with &#10084; for <a href="https://www.alpixel.fr" class="external-link" rel="nofollow">ALPIXEL Agency</a>
             </p>
             <p>
-                ChuckCSS is under <a href="https://opensource.org/licenses/mit-license.php" class="external-link">MIT Licence</a> - <a href="https://github.com/alpixel/ChuckCSS" class="external-link">Hosted on GitHub</a>
+                ChuckCSS is under <a href="https://opensource.org/licenses/mit-license.php" class="external-link" rel="nofollow">MIT Licence</a> - <a href="https://github.com/alpixel/ChuckCSS" class="external-link" rel="nofollow">Hosted on GitHub</a>
             </p>
         </footer>
 

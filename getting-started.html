@@ -96,10 +96,10 @@
                         <a href="reminder">Reminder</a>
                     </li>
                     <li>
-                        <a href="https://github.com/alpixel/ChuckCSS" class="external-link">Download</a>
+                        <a href="https://github.com/alpixel/ChuckCSS" rel="nofollow" class="external-link">Download</a>
                     </li>
                     <li class="last">
-                        <a href="https://twitter.com/chuckcss" class=" external-link btn"><i class="fab fa-twitter icon-left"></i>Follow me on Twitter</a>
+                        <a href="https://twitter.com/chuckcss" rel="nofollow" class="external-link btn"><i class="fab fa-twitter icon-left"></i>Follow me on Twitter</a>
                     </li>
                 </ul>
             </nav>
@@ -133,12 +133,16 @@
                                         Download ChuckCSS
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#start-dist-files">
-                                        Working with dist files
+                                <li class="active">
+                                    <a href="#start-jsdelivr">
+                                        Use a CDN
                                     </a>
                                 </li>
                                 <li>
+                                    <a href="#start-tree-files">
+                                        ChuckCSS tree files
+                                    </a>
+                                </li><li>
                                     <a href="#start-source-files">
                                         Working with source files
                                     </a>
@@ -158,47 +162,96 @@
                             <div class="columns cc-txt-center">
                                 <div>
                                     <p>NPM Package</p>
-                                    <a href="https://www.npmjs.com/package/ChuckCSS" class="btn external-link black">
+                                    <a href="https://www.npmjs.com/package/ChuckCSS" rel="nofollow" class="btn external-link black">
                                         $ npm install ChuckCSS
                                     </a>
                                 </div>
 
                                 <div>
+                                    <p>
+                                        YARN package
+                                    </p>
+                                    <a href="https://yarnpkg.com/en/package/ChuckCSS" crel="nofollow" lass="btn external-link black">
+                                        $ yarn add ChuckCSS 
+                                    </a>
+                                </div>
+
+                                <div>
                                     <p>GitHub repository</p>
-                                    <a class="github-button" href="https://github.com/alpixel/ChuckCSS/archive/master.zip" data-size="large" aria-label="Download alpixel/ChuckCSS on GitHub">Download from GitHub</a>
+                                    <a class="github-button" href="https://github.com/alpixel/ChuckCSS/archive/master.zip" rel="nofollow" data-size="large" aria-label="Download alpixel/ChuckCSS on GitHub">Download from GitHub</a>
                                 </div>
                             </div>
                         </div>
 
-                       
                         <div class="wrap-feature">
-                            <h2 id="start-dist-files">
-                                <a href="#start-dist-files"><i class="ion-link icon-left"></i>
-                                    Working with dist files
+                            <h2 id="start-jsdelivr">
+                                <a href="#start-jsdelivr"><i class="ion-link icon-left"></i>
+                                    Use ChuckCSS with a CDN (Content Delivery Network)
                                 </a>
                             </h2>
                             <div class="alert alert-info">
                                 <div>
-                                    When ChuckCSS is download, the dist files to include are into the "dist" folder (css and js files).<br />
-                                    <ul>
-                                        <li><strong>With NPM :</strong> node_modules/ChuckCSS/dist</li>
-                                    </ul>
+                                    ChuckCSS is available on jsDelivr : <a href="https://www.jsdelivr.com/package/npm/ChuckCSS" rel="nofollow" class="external-link">https://www.jsdelivr.com/package/npm/ChuckCSS</a>
                                 </div>
                             </div>
                             <pre class="HTML">
                                 <code class="language-markup"><!-- -->
                                     &lt;!-- Include the ChuckCSS CSS file -->
-                                    &lt;link rel="stylesheet" href="PATH/dist/chuckcss.min.css" type="text/css" media="screen" />
+                                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ChuckCSS/dist/chuckcss.min.css" integrity="sha384-9Q5efsUnTOxxKSBqSr+Xu5C6NhT9C7ZpXmOJlQDLWsN43EpVBS1C/uqmwfuJJdw4" crossorigin="anonymous">
 
                                     &lt;!-- ** OPTIONNAL ** -->
                                     &lt;!-- Print file -->
-                                    &lt;link rel="stylesheet" href="PATH/dist/print.css" type="text/css" media="print" />
+                                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ChuckCSS/dist/print.css" integrity="sha384-v3V621jdwau+HZBAsgh1A2BAbGS203f9aH7aedLd1AIWLQYDnluBvLmdMkgkN3hU" crossorigin="anonymous">
 
                                     &lt;!-- ** OPTIONNAL ** -->
                                     &lt;!-- Just before the &lt;/body> close tag, include the ChuckCSS JS file -->
                                     &lt;!-- The javascript file is optionnal. It manages modals (openings and closures) and alerts (closures) -->
                                     &lt;!-- You can easily create your own javascript file to manage by yourself modals and alerts -->
-                                    &lt;script type="text/javascript" src="PATH/dist/chuckcss.js">&lt;/script>
+                                    &lt;script src="https://cdn.jsdelivr.net/npm/ChuckCSS/dist/chuckcss.js" integrity="sha384-ADz7aKD9VLw6IBaYl8pwAckpQVIk9vjGsvvNtj3lPPWWgcgu9ZgvNnR+AP7oz7x+" crossorigin="anonymous">&lt;/script>
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="wrap-feature">
+                            <h2 id="start-tree-files">
+                                <a href="#start-tree-files"><i class="ion-link icon-left"></i>
+                                    ChuckCSS tree files
+                                </a>
+                            </h2>
+                            <pre class="HTML">
+                                <code class="language-markup"><!-- -->
+                                    &lt;!-- ChuckCSS tree files -->
+                                    chuckcss/
+                                    |
+                                    ├── front.less &lt;!-- all @imports, base file of ChuckCSS -->
+                                    ├── print.less &lt;!-- print.css source file -->
+                                    ├── settings.less &lt;!-- all variables definitions -->
+                                    |
+                                    ├── components/
+                                    ├──────── alerts.less
+                                    ├──────── badges.less
+                                    ├──────── grids.less
+                                    ├──────── modals.less
+                                    ├──────── tabs.less
+                                    |
+                                    ├── core/
+                                    ├──────── animations.less &lt;!-- radio, checkbox, loaders animations -->
+                                    ├──────── base.less &lt;!-- &lt;html> and &lt;body> general definitions -->
+                                    ├──────── functions.less &lt;!-- powerful mixins file -->
+                                    ├──────── generator.less &lt;!-- grids items width, texts helpers... -->
+                                    ├──────── helpers.less
+                                    ├──────── icons.less &lt;!-- icons file -->
+                                    ├──────── responsive.less &lt;!-- responsive mixins -->
+                                    |
+                                    ├── elements/
+                                    ├──────── blockquotes.less
+                                    ├──────── buttons.less
+                                    ├──────── forms.less
+                                    ├──────── images.less
+                                    ├──────── lists.less
+                                    ├──────── loaders.less
+                                    ├──────── tables.less
+                                    └──────── titles.less
                                 </code>
                             </pre>
                         </div>
@@ -211,56 +264,108 @@
                             </h2>
                             <div class="alert alert-info">
                                 <div>
-                                    Working with source files give you the possibility to customize ChuckCSS with your own settings, colors, etc... but you have to be familiar with <a href="http://lesscss.org/" class="external-link">Less language.</a><br /><br />
-                                    <strong>By compiling your own dist file with <a href="http://gruntjs.com/" class="external-link">Grunt</a> or <a href="http://gulpjs.com/" class="external-link">Gulp</a>, combined with <a href="https://github.com/postcss/autoprefixer" class="external-link">Autoprefixer</a>,</strong> you can use powerfull mixins to build websites easily and faster.
+                                    Working with source files give you the possibility to customize ChuckCSS with your own settings, colors, etc... but you have to be familiar with <a rel="nofollow" href="http://lesscss.org/" class="external-link">Less language.</a><br /><br />
+                                    <strong>By compiling your own dist file with <a href="https://gruntjs.com/" rel="nofollow" class="external-link">Grunt</a> or <a href="https://gulpjs.com/" class="external-link">Gulp</a>, combined with <a href="https://github.com/postcss/autoprefixer" rel="nofollow" class="external-link">Autoprefixer</a>,</strong> you can use powerfull mixins to build websites easily and faster.
 
                                     <ul>
                                         <li>
-                                            <a href="https://github.com/gulpjs/gulp/tree/master/docs" class="external-link">Gulp documentation</a>
+                                            <a href="https://gulpjs.com/" rel="nofollow" class="external-link">Gulp documentation</a>
                                         </li>
                                         <li>
-                                            <a href="http://gruntjs.com/getting-started" class="external-link">Grunt documentation</a>
+                                            <a href="http://gruntjs.com/getting-started" rel="nofollow" class="external-link">Grunt documentation</a>
                                         </li>
                                         <li>
-                                            <a href="https://github.com/postcss/autoprefixer" class="external-link">Autoprefixer documentation</a> : ChuckCSS uses Autoprefixer to deal with CSS vendor prefixes. If you use the Gulpfile.js downloaded with ChuckCSS, Autoprefixer is already include. If you use your own Gruntfile or Gulpfile, integrate Autoprefixer by yourself.
+                                            <a href="https://github.com/postcss/autoprefixer" rel="nofollow" class="external-link">Autoprefixer documentation</a> : ChuckCSS uses Autoprefixer to deal with CSS vendor prefixes. If you use the Gulpfile.js downloaded with ChuckCSS, Autoprefixer is already include. If you use your own Gruntfile or Gulpfile, integrate Autoprefixer by yourself.
                                         </li>
                                     </ul>
                                 </div>
                             </div>
+
+                            <p class="cc-mat-50">
+                                Assuming your local project get a tree like that :
+                            </p>
                             <pre class="HTML">
                                 <code class="language-markup"><!-- -->
-                                    &lt;!-- ChuckCSS tree files -->
-                                    chuckcss/
+                                    &lt;!-- Your local project files -->
+                                    local-project/
                                     |
-                                    ├── front.less &lt;!-- all @imports, base file of ChuckCSS -->
-                                    ├── print.less &lt;!-- print.css source file -->
-                                    ├── settings.less &lt;!-- all variables definitions -->
+                                    | ...somes files and folders...
                                     |
-                                    ├── components/
-                                    ├──── alerts.less
-                                    ├──── badges.less
-                                    ├──── grids.less
-                                    ├──── modals.less
-                                    ├──── tabs.less
-                                    |
-                                    ├── core/
-                                    ├──── animations.less &lt;!-- radio, checkbox, loaders animations -->
-                                    ├──── base.less &lt;!-- &lt;html> and &lt;body> general definitions -->
-                                    ├──── fontawesome.less &lt;!-- icons file -->
-                                    ├──── functions.less &lt;!-- powerful mixins file -->
-                                    ├──── generator.less &lt;!-- grids items width, texts helpers... -->
-                                    ├──── helpers.less
-                                    ├──── responsive.less &lt;!-- responsive mixins -->
-                                    |
-                                    ├── elements/
-                                    ├──── blockquotes.less
-                                    ├──── buttons.less
-                                    ├──── forms.less
-                                    ├──── images.less
-                                    ├──── lists.less
-                                    ├──── loaders.less
-                                    ├──── tables.less
-                                    └──── titles.less
+                                    ├── less/
+                                    ├──────── main.less
+                                    └──────── my-own-settings.less
+                                </code>
+                            </pre>
+
+                            <p class="cc-mat-20">
+                                In your <strong>main.less</strong> file, include the <strong>front.less</strong> from ChuckCSS dist repository, and <strong>your own settings file</strong>.
+                            </p>
+                            <pre class="HTML language-less">
+                                <code class="language-less"><!-- -->
+                                    /* main.less */
+                                    @charset "UTF-8";
+                                    
+                                    // Import front.less file from ChuckCSS
+                                    @import "./node_modules/ChuckCSS/chuckcss/front";
+                                    // You can create your own settings file, to override ChuckCSS settings
+                                    @import "my-own-settings";
+
+
+                                    // Now you can use all ChuckCSS mixins, animations, class, etc...
+                                    p {
+                                        ._reset; // <-- ._reset() is a ChuckCSS mixin (defined into functions.less)
+                                        background-color: @red; // <-- You can use ChuckCSS predefined colors (defined into native ChuckCSS settings.less file or into your own settings file my-own-settings.less)
+                                        ._transition; // <-- ._transition() is a ChuckCSS mixin (animate smoothly when the element state changes) (defined into functions.less)
+                                        // or use a custom animation with parameters
+                                        ._transition(0.6s, background-color, linear, 0.5s);
+
+                                        &:hover {
+                                            background-color: @green; // <-- background-color will change smoothly on hover
+                                        }
+                                    }
+                                </code>
+                            </pre>
+
+                            <p class="cc-mat-20">
+                                Now you can <strong>override the ChuckCSS default settings</strong>, with your own values, by adding variables into your settings file.
+                            </p>
+                            <pre class="HTML language-less">
+                                <code class="language-less"><!-- -->
+                                    /* exemple of my-own-settings.less */
+                                    /*
+                                      * Extend the ChuckCSS settings.less file *
+                                      *** OVERRIDE CHUCKCSS VARS ***
+                                      * Specific vars
+                                    */
+
+                                    /*
+                                        -- @ Colors @ --
+                                    */
+                                    // orange
+                                    @orange : #ff810d;
+                                    @orange-na : orange;
+                                    /* Primary color */
+                                    @primary : @orange;
+                                    @primary-na : primary;
+                                    // Green
+                                    @green : #80ae37;
+                                    @green-na : green;
+
+                                    // By filling the @aColors array, you can use cc-bg-{color} and cc-{color} class onto your HTML elements with your own colors
+                                    @aColors :
+                                        @primary-na @primary,
+                                        @green-na @green,
+                                        @orange-na @orange;
+
+
+                                    // If you want to change the default text colors and font-size applied to the &lt;body>
+                                    /*
+                                        -- @ Texts @ --
+                                    */
+                                    @text-mc: #1A1A1A;   /* Texts ~ Main color (hexa, rgb, rgba...) */
+                                    @text-fs-old : 17px; /* Texts font-size ~ Used for old browsers that doesn't support rem units */
+
+                                    // The body will have a font-size of 1.7rem (17px), and texts will be written with color #1A1A1A
                                 </code>
                             </pre>
                         </div>
@@ -271,10 +376,10 @@
 
         <footer id="main-footer">
             <p>
-                &copy; 2019 - ChuckCSS.io - All rights reserved - Made with &#10084; for <a href="https://www.alpixel.fr" class="external-link">ALPIXEL Agency</a>
+                &copy; 2019 - ChuckCSS.io - All rights reserved - Made with &#10084; for <a href="https://www.alpixel.fr" rel="nofollow" class="external-link">ALPIXEL Agency</a>
             </p>
             <p>
-                ChuckCSS is under <a href="https://opensource.org/licenses/mit-license.php" class="external-link">MIT Licence</a> - <a href="https://github.com/alpixel/ChuckCSS" class="external-link">Hosted on GitHub</a>
+                ChuckCSS is under <a rel="nofollow" href="https://opensource.org/licenses/mit-license.php" class="external-link">MIT Licence</a> - <a rel="nofollow" href="https://github.com/alpixel/ChuckCSS" class="external-link">Hosted on GitHub</a>
             </p>
         </footer>
 

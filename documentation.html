@@ -316,6 +316,11 @@
                                                         Fullscreen modals
                                                     </a>
                                                 </li>
+                                                <li>
+                                                    <a href="#components-modals-openings">
+                                                        Openings Effects
+                                                    </a>
+                                                </li>
                                             </ul>
                                         </li>
                                         <li>
@@ -595,6 +600,9 @@
                                 Including the <strong>chuckcss.min.css</strong> file in your projects provides you just what you need to build modern websites, with flexible grids and powerful classes.<br /><br />
                                 ChuckCSS is based on <strong>Less language.</strong><br />
                                 <strong>If you are familiar with Less language,</strong> I recommend you to work directly with ChuckCSS source files, and compiling sources by yourself with Gulp or Grunt (or others css compilers). In this way, you can customize ChuckCSS with your own specific needs (colors, font-sizes, breakpoints, loaders speed animations, etc...).
+                            </p>
+                            <p class="cc-mat-20">
+                                <a href="/getting-started#start-source-files" class="btn cc-bg-primary">More information here</a>
                             </p>
 
                             <h3><i class="fas fa-angle-right icon-left"></i> Why Less ? Why not SASS ? Why not both ?</h3>
@@ -2352,18 +2360,17 @@
                                 </h4>
                                 <div class="exemple-intro">
                                     <p>
-                                        <span class="code">.modal-open</span> : Add this class to a button, link... to fire the targeted modal (this class is binded in the chuckcss.js file)<br />
-                                        <span class="code">data-target</span> attribute must contains the id of the modal you want to fire<br />
+                                        <span class="code">data-modal="MODAL_ID"</span> Add this attribute to a button, link... to fire a modal. Ths value must contains the id of the modal you want to fire<br />
                                         <span class="code">data-close-modal</span> attribute can be placed on any HTML element inside the modal. On click, the modal is closed.
                                     </p>
                                 </div>
                                 <div class="cc-txt-center">
-                                    <button data-target="modal-id" class="cc-bg-primary modal-open">Launch classic modal</button>
+                                    <button data-modal="modal-id" class="cc-bg-primary" role="button">Launch classic modal</button>
                                 </div>
                                 <pre class="HTML collapsed">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Button -->
-                                        &lt;button data-target="modal-id" class="cc-bg-primary modal-open">Launch classic modal&lt;/button>
+                                        &lt;button data-modal="modal-id" class="cc-bg-primary" role="button">Launch classic modal&lt;/button>
 
                                         &lt;!-- Modal minimal structure -->
                                         &lt;div id="modal-id" class="modal">
@@ -2418,23 +2425,23 @@
                                 </div>
                                 <div class="columns">
                                     <div class="cc-txt-center">
-                                        <button data-target="modal-id" class="cc-bg-primary modal-open">Launch classic modal (50%)</button>
+                                        <button data-modal="modal-id" class="cc-bg-primary" role="button">Launch classic modal (50%)</button>
                                     </div>
                                     <div class="cc-txt-center">
-                                        <button data-target="modal-id-small" class="cc-bg-primary modal-open">Launch small modal (30%)</button>
+                                        <button data-modal="modal-id-small" class="cc-bg-primary" role="button">Launch small modal (30%)</button>
                                     </div>
                                     <div class="cc-txt-center">
-                                        <button data-target="modal-id-large" class="cc-bg-primary modal-open">Launch large modal (80%)</button>
+                                        <button data-modal="modal-id-large" class="cc-bg-primary" role="button">Launch large modal (80%)</button>
                                     </div>
                                 </div>
                                 <pre class="HTML collapsed">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Button : Classic modal -->
-                                        &lt;button data-target="modal-id" class="cc-bg-primary modal-open">Launch classic modal (50%)&lt;/button>
+                                        &lt;button data-modal="modal-id" class="cc-bg-primary" role="button">Launch classic modal (50%)&lt;/button>
                                         &lt;!-- Button : Small modal -->
-                                        &lt;button data-target="modal-id-small" class="cc-bg-primary modal-open">Launch small modal (30%)&lt;/button>
+                                        &lt;button data-modal="modal-id-small" class="cc-bg-primary" role="button">Launch small modal (30%)&lt;/button>
                                         &lt;!-- Button : Large modal -->
-                                        &lt;button data-target="modal-id-large" class="cc-bg-primary modal-open">Launch classic modal (80%)&lt;/button>
+                                        &lt;button data-modal="modal-id-large" class="cc-bg-primary" role="button">Launch classic modal (80%)&lt;/button>
 
                                         &lt;!-- Classic modal -->
                                         &lt;div id="modal-id" class="modal">
@@ -2465,12 +2472,12 @@
                                     <span class="code">data-disabled-overlay</span> : Disabled the modal closing by clicking on overlay
                                 </div>
                                 <div class="cc-txt-center">
-                                    <button data-target="modal-id-disabled" class="cc-bg-primary modal-open">Disabled the modal overlay</button>
+                                    <button data-modal="modal-id-disabled" class="cc-bg-primary" role="button">Disabled the modal overlay</button>
                                 </div>
                                 <pre class="HTML">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Button : Disabled overlay-->
-                                        &lt;button data-target="modal-id-disabled" class="cc-bg-primary modal-open">Disabled the modal overlay&lt;/button>
+                                        &lt;button data-modal="modal-id-disabled" class="cc-bg-primary" role="button">Disabled the modal overlay&lt;/button>
 
                                         &lt;!-- Modal -->
                                         &lt;div id="modal-id-disabled" class="modal modal-small" data-disabled-overlay>
@@ -2500,12 +2507,12 @@
                                     </div>
                                 </div>
                                 <div class="cc-txt-center">
-                                    <button data-target="modal-id-fixed-hf" class="cc-bg-primary modal-open">Modal with fixed header &amp; footer</button>
+                                    <button data-modal="modal-id-fixed-hf" class="cc-bg-primary" role="button">Modal with fixed header &amp; footer</button>
                                 </div>
                                 <pre class="HTML collapsed">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Button : modal with fixed header &amp; footer overlay -->
-                                        &lt;button data-target="modal-id-fixed-hf" class="cc-bg-primary modal-open">Modal with fixed header &amp; footer&lt;/button>
+                                        &lt;button data-modal="modal-id-fixed-hf" class="cc-bg-primary" role="button">Modal with fixed header &amp; footer&lt;/button>
 
                                         &lt;!-- Modal structure for fixing header and footer -->
                                         &lt;div id="modal-id-fixed-hf" class="modal" data-fixed-hf>
@@ -2540,12 +2547,12 @@
                                     </a>
                                 </h4>
                                 <div class="cc-txt-center">
-                                    <button data-target="modal-id-nested" class="cc-bg-primary modal-open">Open the first modal</button>
+                                    <button data-modal="modal-id-nested" class="cc-bg-primary" role="button">Open the first modal</button>
                                 </div>
                                 <pre class="HTML collapsed">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Button : first modal -->
-                                        &lt;button data-target="modal-id-nested" class="cc-bg-primary modal-open">Open the first modal&lt;/button>
+                                        &lt;button data-modal="modal-id-nested" class="cc-bg-primary" role="button">Open the first modal&lt;/button>
 
                                         &lt;!-- First modal -->
                                         &lt;div id="modal-id-nested" class="modal">
@@ -2585,18 +2592,149 @@
                                     </div>
                                 </div>
                                 <div class="cc-txt-center">
-                                    <button data-target="modal-id-fullscreen" class="cc-bg-primary modal-open">Open a fullscreen modal mixed with fixed Header &amp; Footer</button>
+                                    <button data-modal="modal-id-fullscreen" class="cc-bg-primary" role="button">Open a fullscreen modal mixed with fixed Header &amp; Footer</button>
                                 </div>
                                 <pre class="HTML collapsed">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Button : launch fullscreen modal -->
-                                        &lt;button data-target="modal-id-fullscreen" class="cc-bg-primary modal-open">
+                                        &lt;button data-modal="modal-id-fullscreen" class="cc-bg-primary" role="button">
                                             Open a fullscreen modal mixed with fixed Header &amp; Footer
                                         &lt;/button>
 
                                         &lt;!-- Modal structure for fullscreen combined with fixed Header &amp; Footer -->
                                         &lt;div id="modal-id-fullscreen" class="modal" data-fixed-hf data-fullscreen>
-                                            ...'data-fixed-hf' modal structure...
+                                            &lt;!-- Close button -->
+                                            &lt;button data-close-modal>&lt;/button>
+                                            &lt;!-- Overlay -->
+                                            &lt;div class="modal-overlay">&lt;/div>
+                                            &lt;!-- Modal content -->
+                                            &lt;div class="modal-content">
+                                                &lt;div class="modal-header">
+                                                    I'm a default modal with fixed header &amp; footer
+                                                &lt;/div>
+                                                &lt;!-- /!\ Add a wrapper around the modal body -->
+                                                &lt;div class="wrap-modal-body">
+                                                    &lt;div class="modal-body">
+                                                        ... very long text...
+                                                    &lt;/div>
+                                                &lt;/div>
+                                                &lt;div class="modal-footer cc-txt-center">
+                                                    &lt;a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close&lt;/a>
+                                                &lt;/div>
+                                            &lt;/div>
+                                        &lt;/div>
+                                    </code>
+                                </pre>
+                                <p class="js-view-code"><a href="#" class="btn cc-bg-red"><i class="icon-left ion-arrow-expand"></i>View code</a></p>
+
+                                <div class="sep"></div>
+
+
+                                <h4 id="components-modals-openings">
+                                    <a href="#components-modals-openings">
+                                        Openings effects <span>(added in v3.5.0)</span>
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        <span class="code">data-open="slideInLeft"</span> : change the opening effect by a "slide in left" effect<br />
+                                        <span class="code">data-open="slideInRight"</span> : change the opening effect by a "slide in right" effect<br />
+                                    </p>
+                                </div>
+
+                                <div class="cc-txt-center">
+                                    <button class="cc-bg-primary" data-modal="modal-slideinright" role="button">"SlideInRight" opening</button>
+                                    <button class="cc-bg-primary" data-modal="modal-slideinleft" role="button">"SlideInLeft" opening</button>
+                                </div>
+                                <div class="cc-txt-center cc-mat-20">
+                                    <button class="cc-bg-primary" data-modal="modal-slideinright-fs" role="button">"SlideInRight & Fullscreen" modal</button>
+                                    <button class="cc-bg-primary" data-modal="modal-slideinleft-fs" role="button">"SlideInLeft & Fullscreen" modal</button>
+                                </div>
+                                <pre class="HTML collapsed">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;button class="cc-bg-primary" data-modal="modal-slideinright" role="button">"SlideInRight" opening&lt;/button>
+                                        &lt;button class="cc-bg-primary" data-modal="modal-slideinleft" role="button">"SlideInLeft" opening&lt;/button>
+                                        &lt;button class="cc-bg-primary" data-modal="modal-slideinright-fs" role="button">"SlideInRight & Fullscreen" modal&lt;/button>
+                                        &lt;button class="cc-bg-primary" data-modal="modal-slideinleft-fs" role="button">"SlideInLeft & Fullscreen" modal&lt;/button>
+
+                                        &lt;!-- SIMPLE SLIDE IN RIGHT EXEMPLE -->
+                                        &lt;div id="modal-slideinright" class="modal" data-open="slideInRight">
+                                            &lt;button data-close-modal>&lt;/button>
+                                            &lt;div class="modal-overlay">&lt;/div>
+                                            &lt;div class="modal-content">
+                                                &lt;div class="modal-header">
+                                                    ...
+                                                &lt;/div>
+                                                &lt;div class="modal-body">
+                                                    &lt;p>
+                                                        ...
+                                                    &lt;/p>
+                                                &lt;/div>
+                                                &lt;div class="modal-footer cc-txt-center">
+                                                    &lt;a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close&lt;/a>
+                                                &lt;/div>
+                                            &lt;/div>
+                                        &lt;/div>
+
+                                        &lt;!-- SLIDE IN RIGHT EXEMPLE COMBINED WITH FULLSCREEN & FIXED HEADER & FOOTER -->
+                                        &lt;div id="modal-slideinright-fs" class="modal" data-open="slideInRight" data-fixed-hf data-fullscreen>
+                                            &lt;button data-close-modal>&lt;/button>
+                                            &lt;div class="modal-overlay">&lt;/div>
+                                            &lt;div class="modal-content">
+                                                &lt;div class="modal-header">
+                                                    ...
+                                                &lt;/div>
+                                                &lt;section class="wrap-modal-body">
+                                                    &lt;div class="modal-body">
+                                                        &lt;p>
+                                                            ...
+                                                        &lt;/p>
+                                                    &lt;/div>
+                                                &lt;/section>
+                                                &lt;div class="modal-footer cc-txt-center">
+                                                    &lt;a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close&lt;/a>
+                                                &lt;/div>
+                                            &lt;/div>
+                                        &lt;/div>
+            
+                                        &lt;!-- SIMPLE SLIDE IN LEFT EXEMPLE -->
+                                        &lt;div id="modal-slideinleft" class="modal" data-open="slideInLeft">
+                                            &lt;button data-close-modal>&lt;/button>
+                                            &lt;div class="modal-overlay">&lt;/div>
+                                            &lt;div class="modal-content">
+                                                &lt;div class="modal-header">
+                                                    ...
+                                                &lt;/div>
+                                                &lt;div class="modal-body">
+                                                    &lt;p>
+                                                        ...
+                                                    &lt;/p>
+                                                &lt;/div>
+                                                &lt;div class="modal-footer cc-txt-center">
+                                                    &lt;a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close&lt;/a>
+                                                &lt;/div>
+                                            &lt;/div>
+                                        &lt;/div>
+
+                                        &lt;!-- SLIDE IN LEFT EXEMPLE COMBINED WITH FULLSCREEN & FIXED HEADER & FOOTER -->
+                                        &lt;div id="modal-slideinleft-fs" class="modal" data-open="slideInLeft" data-fixed-hf data-fullscreen>
+                                            &lt;button data-close-modal>&lt;/button>
+                                            &lt;div class="modal-overlay">&lt;/div>
+                                            &lt;div class="modal-content">
+                                                &lt;div class="modal-header">
+                                                    ...
+                                                &lt;/div> 
+                                                &lt;section class="wrap-modal-body">
+                                                    &lt;div class="modal-body">
+                                                        &lt;p>
+                                                            ...
+                                                        &lt;/p>
+                                                    &lt;/div>
+                                                &lt;/section>
+                                                &lt;div class="modal-footer cc-txt-center">
+                                                    &lt;a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close&lt;/a>
+                                                &lt;/div>
+                                            &lt;/div>
                                         &lt;/div>
                                     </code>
                                 </pre>
@@ -6711,6 +6849,7 @@
 
         <!-- Modals exemples -->
         <div class="wrap-modals">
+
             <div id="modal-id" class="modal">
                 <button data-close-modal></button>
 
@@ -6756,7 +6895,7 @@
                         </p>
                     </div>
                     <div class="modal-footer cc-txt-center">
-                        <button type="submit" class="cc-bg-primary fa-save">I'm a button</button>
+                        <button type="submit" class="cc-bg-primary">I'm a button</button>
                     </div>
                 </div>
             </div>
@@ -6775,7 +6914,7 @@
                         </p>
                     </div>
                     <div class="modal-footer cc-txt-center">
-                        <button type="submit" class="cc-bg-primary fa-save">I'm a button</button>
+                        <button type="submit" class="cc-bg-primary">I'm a button</button>
                     </div>
                 </div>
             </div>
@@ -6840,12 +6979,12 @@
                         <pre class="HTML">
                             <code class="language-markup"><!-- -->
                                 &lt;!-- Button in footer -->
-                                &lt;button data-target="modal-id-2" class="cc-bg-primary modal-open">Open a second modal&lt;/button>
+                                &lt;button data-modal="modal-id-2" class="cc-bg-primary" role="button">Open a second modal&lt;/button>
                             </code>
                         </pre>
                     </div>
                     <div class="modal-footer cc-txt-center">
-                        <button data-target="modal-id-2" class="cc-bg-primary modal-open">Open a second modal</button>
+                        <button data-modal="modal-id-2" class="cc-bg-primary" role="button">Open a second modal</button>
                     </div>
                 </div>
             </div>
@@ -6865,14 +7004,14 @@
                         <pre class="HTML">
                             <code class="language-markup"><!-- -->
                                 &lt;!-- Button in footer -->
-                                &lt;button data-target="modal-id-3" class="cc-bg-primary modal-open">
+                                &lt;button data-modal="modal-id-3" class="cc-bg-primary" role="button">
                                     Open a third modal with disabled overlay
                                 &lt;/button>
                             </code>
                         </pre>
                     </div>
                     <div class="modal-footer cc-txt-center">
-                        <button data-target="modal-id-3" class="cc-bg-primary modal-open">Open a third modal with disabled overlay</button>
+                        <button data-modal="modal-id-3" class="cc-bg-primary" role="button">Open a third modal with disabled overlay</button>
                     </div>
                 </div>
             </div>
@@ -6936,6 +7075,124 @@
                     <div class="modal-footer cc-txt-center">
                         <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
                     </div>
+                </div>
+            </div>
+            <!-- slide in right -->
+            <div id="modal-slideinright" class="modal" data-open="slideInRight">
+                <button data-close-modal></button>
+
+                <div class="modal-overlay"></div>
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        I'm a default modal (50% width)
+                    </div>
+
+                    
+                    <div class="modal-body">
+                        <p>
+                            Hamburger doner alcatra sirloin bresaola porchetta tenderloin. Ribeye bacon meatball ball tip beef ribs leberkas capicola corned beef.
+                        </p>
+                       
+                    </div>
+                    <div class="modal-footer cc-txt-center">
+                        <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="modal-slideinright-fs" class="modal" data-open="slideInRight" data-fixed-hf data-fullscreen>
+                <button data-close-modal></button>
+
+                <div class="modal-overlay"></div>
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        I'm a default modal (50% width)
+                    </div>
+
+                    
+                    <section class="wrap-modal-body">
+                        <div class="modal-body">
+                            <p>
+                                Hamburger doner alcatra sirloin bresaola porchetta tenderloin. Ribeye bacon meatball ball tip beef ribs leberkas capicola corned beef.
+                                Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus.
+
+                                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+
+                                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+
+                                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+
+                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </section>
+                    <div class="modal-footer cc-txt-center">
+                        <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- slide in left -->
+            <div id="modal-slideinleft" class="modal" data-open="slideInLeft">
+                <button data-close-modal></button>
+
+                <div class="modal-overlay"></div>
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        I'm a default modal (50% width)
+                    </div>
+
+                    
+                    <div class="modal-body">
+                        <p>
+                            Hamburger doner alcatra sirloin bresaola porchetta tenderloin. Ribeye bacon meatball ball tip beef ribs leberkas capicola corned beef.
+                        </p>
+                       
+                    </div>
+                    <div class="modal-footer cc-txt-center">
+                        <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="modal-slideinleft-fs" class="modal" data-open="slideInLeft" data-fixed-hf data-fullscreen>
+                <button data-close-modal></button>
+
+                <div class="modal-overlay"></div>
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        I'm a default modal (50% width)
+                    </div>
+
+                    
+                    <section class="wrap-modal-body">
+                        <div class="modal-body">
+                            <p>
+                                Hamburger doner alcatra sirloin bresaola porchetta tenderloin. Ribeye bacon meatball ball tip beef ribs leberkas capicola corned beef.
+                                Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus.
+
+                                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+
+                                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+
+                                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+
+                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </section>
+                    <div class="modal-footer cc-txt-center">
+                        <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
+                    </div>
+                    
                 </div>
             </div>
         </div>
