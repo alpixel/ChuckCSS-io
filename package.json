@@ -8,7 +8,7 @@
     "url": ""
   },
   "dependencies": {
-    "ChuckCSS": "^3.5.0",
+    "ChuckCSS": "^3.5.1",
     "autoprefixer": "^9.3.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "3.1.0",
