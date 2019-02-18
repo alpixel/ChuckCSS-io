@@ -171,7 +171,7 @@
                                     <p>
                                         YARN package
                                     </p>
-                                    <a href="https://yarnpkg.com/en/package/ChuckCSS" crel="nofollow" lass="btn external-link black">
+                                    <a href="https://yarnpkg.com/en/package/ChuckCSS" rel="nofollow" class="btn external-link black">
                                         $ yarn add ChuckCSS 
                                     </a>
                                 </div>
@@ -197,17 +197,17 @@
                             <pre class="HTML">
                                 <code class="language-markup"><!-- -->
                                     &lt;!-- Include the ChuckCSS CSS file -->
-                                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ChuckCSS/dist/chuckcss.min.css" integrity="sha384-9Q5efsUnTOxxKSBqSr+Xu5C6NhT9C7ZpXmOJlQDLWsN43EpVBS1C/uqmwfuJJdw4" crossorigin="anonymous">
+                                    &lt;link media="screen" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ChuckCSS/dist/chuckcss.min.css" integrity="sha384-9Q5efsUnTOxxKSBqSr+Xu5C6NhT9C7ZpXmOJlQDLWsN43EpVBS1C/uqmwfuJJdw4" crossorigin="anonymous">
 
                                     &lt;!-- ** OPTIONNAL ** -->
                                     &lt;!-- Print file -->
-                                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ChuckCSS/dist/print.css" integrity="sha384-v3V621jdwau+HZBAsgh1A2BAbGS203f9aH7aedLd1AIWLQYDnluBvLmdMkgkN3hU" crossorigin="anonymous">
+                                    &lt;link media="print" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ChuckCSS/dist/print.css" integrity="sha384-v3V621jdwau+HZBAsgh1A2BAbGS203f9aH7aedLd1AIWLQYDnluBvLmdMkgkN3hU" crossorigin="anonymous">
 
                                     &lt;!-- ** OPTIONNAL ** -->
                                     &lt;!-- Just before the &lt;/body> close tag, include the ChuckCSS JS file -->
                                     &lt;!-- The javascript file is optionnal. It manages modals (openings and closures) and alerts (closures) -->
                                     &lt;!-- You can easily create your own javascript file to manage by yourself modals and alerts -->
-                                    &lt;script src="https://cdn.jsdelivr.net/npm/ChuckCSS/dist/chuckcss.js" integrity="sha384-ADz7aKD9VLw6IBaYl8pwAckpQVIk9vjGsvvNtj3lPPWWgcgu9ZgvNnR+AP7oz7x+" crossorigin="anonymous">&lt;/script>
+                                    &lt;script src="https://cdn.jsdelivr.net/npm/ChuckCSS/dist/chuckcss.js" integrity="sha384-ADz7aKD9VLw6IBaYl8pwAckpQVIk9vjGsvvNtj3lPPWWgcgu9ZgvNnR+AP7oz7x+" crossorigin="anonymous" defer>&lt;/script>
                                 </code>
                             </pre>
                         </div>
@@ -234,13 +234,14 @@
                                     ├──────── modals.less
                                     ├──────── tabs.less
                                     |
-                                    ├── core/
+                                    ├── main/
                                     ├──────── animations.less &lt;!-- radio, checkbox, loaders animations -->
                                     ├──────── base.less &lt;!-- &lt;html> and &lt;body> general definitions -->
                                     ├──────── functions.less &lt;!-- powerful mixins file -->
                                     ├──────── generator.less &lt;!-- grids items width, texts helpers... -->
-                                    ├──────── helpers.less
-                                    ├──────── icons.less &lt;!-- icons file -->
+                                    ├──────── helpers.less &lt;!-- block helpers : visibility, width... -->
+                                    ├──────── icons.less &lt;!-- simple icons placement -->
+                                    ├──────── normalize.less &lt;!-- reset css -->
                                     ├──────── responsive.less &lt;!-- responsive mixins -->
                                     |
                                     ├── elements/
@@ -351,7 +352,8 @@
                                     @green : #80ae37;
                                     @green-na : green;
 
-                                    // By filling the @aColors array, you can use cc-bg-{color} and cc-{color} class onto your HTML elements with your own colors
+                                    // By filling the @aColors array, you can use cc-bg-{color} and cc-{color} class onto
+                                    // your HTML elements with your own colors
                                     @aColors :
                                         @primary-na @primary,
                                         @green-na @green,
@@ -363,9 +365,28 @@
                                         -- @ Texts @ --
                                     */
                                     @text-mc: #1A1A1A;   /* Texts ~ Main color (hexa, rgb, rgba...) */
-                                    @text-fs-old : 17px; /* Texts font-size ~ Used for old browsers that doesn't support rem units */
+                                    @text-fs : 1.7rem; /* Texts font-size  */
 
                                     // The body will have a font-size of 1.7rem (17px), and texts will be written with color #1A1A1A
+
+
+                                    // You can easily define different font-size regarding the screen width by filling vars below
+
+                                    // Font-size && line-height for phone screens (>= 360px)
+                                    @text-fs-s: 1.6rem;     /* Textes font-size (applied to &lt;body>) */
+                                    @text-lh-s : 1.5;       /* Texts line-height : ~= font-size*1.5 */
+
+                                    // Font-size && line-height for medium screens (>= 768px)
+                                    @text-fs-m: 1.6rem;     /* Textes font-size (applied to &lt;body>) */
+                                    @text-lh-m : 1.5;       /* Texts line-height : ~= font-size*1.5 */
+
+                                    // Font-size && line-height for large screens (>= 989px)
+                                    @text-fs-l: 1.6rem;     /* Textes font-size (applied to &lt;body>) */
+                                    @text-lh-l : 1.5;       /* Texts line-height : ~= font-size*1.5 */
+
+                                    // Font-size && line-height for x-large screens (>= 1200px)
+                                    @text-fs-xl: 1.6rem;    /* Textes font-size (applied to &lt;body>) */
+                                    @text-lh-xl : 1.5;      /* Texts line-height : ~= font-size*1.5 */
                                 </code>
                             </pre>
                         </div>

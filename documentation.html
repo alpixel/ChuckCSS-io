@@ -644,7 +644,7 @@
                                         In ChuckCSS, the &lt;body> element is set to :
                                         <ul>
                                             <li>font-family : -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif</li>
-                                            <li>font-size : 15px (1.5rem)</li>
+                                            <li>font-size : 16px (1.6rem)</li>
                                             <li>line-height : 1.5</li>
                                             <li>color : #3a3a3a</li>
                                         </ul>
@@ -678,7 +678,7 @@
                                 <div class="alert alert-warning">
                                     <i class="ion-ios-lightbulb"></i>
                                     <div>
-                                        In ChuckCSS, the default font-size is set to <strong>15px.</strong>
+                                        In ChuckCSS, the default font-size is set to <strong>16px.</strong>
                                     </div>
                                 </div>
 
@@ -751,9 +751,26 @@
                                             -- @ Texts @ --
                                         */
                                         @text-mc: #3a3a3a;                      /* Texts ~ Main color (hexa, rgb, rgba...) */
-                                        @text-fs-old : 15px;                    /* Texts font-size ~ Used for old browsers that doesn't support rem units */
-                                        @text-fs: unit(@text-fs-old/10,rem);    /* Textes font-size (applied to &lt;body>) */
-                                        @text-lh : 1.5;                         /* Texts line-height : ~= font-size*1.5 */
+
+                                        // Font-size && line-height for small screens (<= 359px)
+                                        @text-fs: 1.6rem;       /* applied to &lt;body> */
+                                        @text-lh : 1.5;         /* Texts line-height : ~= font-size*1.5 */
+
+                                        // Font-size && line-height for phone screens (>= 360px)
+                                        @text-fs-s: 1.6rem;     /* Textes font-size (applied to &lt;body>) */
+                                        @text-lh-s : 1.5;       /* Texts line-height : ~= font-size*1.5 */
+
+                                        // Font-size && line-height for medium screens (>= 768px)
+                                        @text-fs-m: 1.6rem;     /* Textes font-size (applied to &lt;body>) */
+                                        @text-lh-m : 1.5;       /* Texts line-height : ~= font-size*1.5 */
+
+                                        // Font-size && line-height for large screens (>= 989px)
+                                        @text-fs-l: 1.6rem;     /* Textes font-size (applied to &lt;body>) */
+                                        @text-lh-l : 1.5;       /* Texts line-height : ~= font-size*1.5 */
+
+                                        // Font-size && line-height for x-large screens (>= 1200px)
+                                        @text-fs-xl: 1.6rem;    /* Textes font-size (applied to &lt;body>) */
+                                        @text-lh-xl : 1.5;      /* Texts line-height : ~= font-size*1.5 */
                                     </code>
                                 </pre>
                             </div>
