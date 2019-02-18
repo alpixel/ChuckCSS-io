@@ -139,6 +139,11 @@
                                     </a>
                                     <ul>
                                         <li>
+                                            <a href="#chuckcss-default-setups-class">
+                                                Default prefix class
+                                            </a>
+                                        </li>
+                                        <li>
                                             <a href="#chuckcss-default-setups-typography">
                                                 Typography
                                             </a>
@@ -621,6 +626,40 @@
                             <p>
                                 All variables are defined in the <strong>settings.less</strong> file.
                             </p>
+
+                            <!-- DEFAULT CLASS -->
+                            <div>
+                                <h3 id="chuckcss-default-setups-class">
+                                    <a href="#chuckcss-default-setups-class">
+                                        <i class="fas fa-angle-right icon-left"></i>
+                                        Default prefix class
+                                    </a>
+                                </h3>
+                                <div class="exemple-intro">
+                                    <p>
+                                        ChuckCSS uses the default prefix <span class="code">cc</span> and add automatically a dash (-) after, for all the usefull and powerfull class used into its framework.<br/><br />
+                                        This prefix is set into the <strong>settings.less</strong> file.<br />
+                                        
+                                    By this way, you can use all class 
+                                    <span class="code">cc-pat</span>, 
+                                    <span class="code">cc-fs-4</span>, 
+                                    <span class="code">cc-primary</span>, ..., 
+                                    shown into this documentation.<br /><br />
+                                        You can change it by yourself and compile ChuckCSS if you want to use your own prefix for class.
+                                    </p>
+                                </div>
+
+                                <pre class="HTML">
+                                    <code class="language-less"><!-- -->
+                                        /* Prefix definition in settings.less file */
+                                        /*
+                                            -- @ Class prefix @ --
+                                        */
+                                        @css-prefix: cc; // Write prefix without quotes
+                                    </code>
+                                </pre>
+                                
+                            </div>
 
                             <!-- TYPOGRAPHY -->
                             <div>

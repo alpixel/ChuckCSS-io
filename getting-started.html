@@ -340,6 +340,12 @@
                                     */
 
                                     /*
+                                        -- @ Class prefix @ --
+                                    */
+                                    @css-prefix: yolo; // Change the prefix class
+                                    // Now you can use your own class 'yolo-txt-center', 'yolo-inside'.. and all usefull ChuckCSS class
+
+                                    /*
                                         -- @ Colors @ --
                                     */
                                     // orange
@@ -352,15 +358,12 @@
                                     @green : #80ae37;
                                     @green-na : green;
 
-                                    // By filling the @aColors array, you can use cc-bg-{color} and cc-{color} class onto
-                                    // your HTML elements with your own colors
+                                    // By filling the @aColors array, you can use cc-bg-{color} and cc-{color} class with your own colors
                                     @aColors :
                                         @primary-na @primary,
                                         @green-na @green,
                                         @orange-na @orange;
 
-
-                                    // If you want to change the default text colors and font-size applied to the &lt;body>
                                     /*
                                         -- @ Texts @ --
                                     */
@@ -368,7 +371,6 @@
                                     @text-fs : 1.7rem; /* Texts font-size  */
 
                                     // The body will have a font-size of 1.7rem (17px), and texts will be written with color #1A1A1A
-
 
                                     // You can easily define different font-size regarding the screen width by filling vars below
 
