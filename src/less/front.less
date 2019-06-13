@@ -127,7 +127,7 @@ body {
 
     // large screen
     ._media-l-up({
-        ._inside((@l-media-mw + 1));
+        ._inside((@breakpoints[l] + 1));
     });
 }
 
@@ -425,7 +425,7 @@ main {
             }
 
             ._media-s-up({
-                font-size:@title-h2-fs;
+                font-size:@h2[fs];
             });
         }
 
@@ -708,7 +708,7 @@ main {
 
                 td:nth-child(3) {
                     font-style:italic;
-                    color:@gray-da;
+                    color:darken(#bababa,10%);
 
                     strong {
                         font-weight:600;
