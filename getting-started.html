@@ -223,8 +223,10 @@
                                     &lt;!-- ChuckCSS tree files -->
                                     chuckcss/
                                     |
+                                    ├── front-light.less &lt;!-- all @imports, light version of ChuckCSS -->
                                     ├── front.less &lt;!-- all @imports, base file of ChuckCSS -->
                                     ├── print.less &lt;!-- print.css source file -->
+                                    ├── settings-light.less &lt;!-- all variables definitions for light version -->
                                     ├── settings.less &lt;!-- all variables definitions -->
                                     |
                                     ├── components/
@@ -238,6 +240,7 @@
                                     ├──────── animations.less &lt;!-- radio, checkbox, loaders animations -->
                                     ├──────── base.less &lt;!-- &lt;html> and &lt;body> general definitions -->
                                     ├──────── functions.less &lt;!-- powerful mixins file -->
+                                    ├──────── generator-light.less &lt;!-- light generator classes... -->
                                     ├──────── generator.less &lt;!-- grids items width, texts helpers... -->
                                     ├──────── helpers.less &lt;!-- block helpers : visibility, width... -->
                                     ├──────── icons.less &lt;!-- simple icons placement -->
@@ -306,7 +309,7 @@
                                     /* main.less */
                                     @charset "UTF-8";
                                     
-                                    // Import front.less file from ChuckCSS
+                                    // Import front.less of front-light.less (if you want to work without grids) file from ChuckCSS
                                     @import "./node_modules/ChuckCSS/chuckcss/front";
                                     // You can create your own settings file, to override ChuckCSS settings
                                     @import "my-own-settings";
@@ -348,47 +351,52 @@
                                     /*
                                         -- @ Colors @ --
                                     */
-                                    // orange
-                                    @orange : #ff810d;
-                                    @orange-na : orange;
                                     /* Primary color */
-                                    @primary : @orange;
-                                    @primary-na : primary;
-                                    // Green
-                                    @green : #80ae37;
-                                    @green-na : green;
+                                    @primary: #29b7e1;
+                                    @primary-na: primary;   /* Name of the color, for @aColors array */
 
-                                    // By filling the @aColors array, you can use cc-bg-{color} and cc-{color} class with your own colors
-                                    @aColors :
+                                    // Green
+                                    @green: #80ae37;
+                                    @green-na: green;   /* Name of the color, for @aColors array */
+
+                                    // red
+                                    @red:   #c41515;
+                                    @red-na: red;   /* Name of the color, for @aColors array */
+
+                                    // gray
+                                    @gray: #bababa;
+
+                                    // blue
+                                    @blue: #3498db;
+                                    @blue-na: blue;     /* Name of the color, for @aColors array */
+
+
+                                    // Colors array: Add any color you want \m/
+                                    // array(@color1-name @color1-value, @color2-name @color2-value,...);
+                                    @aColors:
                                         @primary-na @primary,
                                         @green-na @green,
-                                        @orange-na @orange;
+                                        @red-na @red,
+                                        @blue-na @blue;
+
+
 
                                     /*
                                         -- @ Texts @ --
                                     */
-                                    @text-mc: #1A1A1A;   /* Texts ~ Main color (hexa, rgb, rgba...) */
-                                    @text-fs : 1.7rem; /* Texts font-size  */
-
-                                    // The body will have a font-size of 1.7rem (17px), and texts will be written with color #1A1A1A
-
-                                    // You can easily define different font-size regarding the screen width by filling vars below
-
-                                    // Font-size && line-height for phone screens (>= 360px)
-                                    @text-fs-s: 1.6rem;     /* Textes font-size (applied to &lt;body>) */
-                                    @text-lh-s : 1.5;       /* Texts line-height : ~= font-size*1.5 */
-
-                                    // Font-size && line-height for medium screens (>= 768px)
-                                    @text-fs-m: 1.6rem;     /* Textes font-size (applied to &lt;body>) */
-                                    @text-lh-m : 1.5;       /* Texts line-height : ~= font-size*1.5 */
-
-                                    // Font-size && line-height for large screens (>= 989px)
-                                    @text-fs-l: 1.6rem;     /* Textes font-size (applied to &lt;body>) */
-                                    @text-lh-l : 1.5;       /* Texts line-height : ~= font-size*1.5 */
-
-                                    // Font-size && line-height for x-large screens (>= 1200px)
-                                    @text-fs-xl: 1.6rem;    /* Textes font-size (applied to &lt;body>) */
-                                    @text-lh-xl : 1.5;      /* Texts line-height : ~= font-size*1.5 */
+                                    @text: {
+                                        mc: #3a3a3a; /* Texts ~ Main color (hexa, rgb, rgba...) */
+                                        fs: 1.6rem; // Font-size && line-height for small screens (<= 359px)
+                                        lh: 1.5;
+                                        fs-s: 1.6rem; // Font-size && line-height for phone screens (>= 360px)
+                                        lh-s: 1.5;
+                                        fs-m: 1.6rem; // Font-size && line-height for medium screens (>= 768px)
+                                        lh-m: 1.5;
+                                        fs-l: 1.6rem; // Font-size && line-height for large screens (>= 989px)
+                                        lh-l: 1.5;
+                                        fs-xl: 1.6rem; // Font-size && line-height for x-large screens (>= 1200px)
+                                        lh-xl: 1.5;
+                                    }
                                 </code>
                             </pre>
                         </div>
