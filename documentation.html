@@ -534,6 +534,9 @@
                                                 <li>
                                                     <a href="#helpers-texts-weight">Texts font-weight</a>
                                                 </li>
+                                                <li>
+                                                    <a href="#helpers-texts-line-height">Texts line-height</a>
+                                                </li>
                                             </ul>
                                         </li>
                                         <li>
@@ -636,11 +639,11 @@
                                     <p>
                                         ChuckCSS uses the default prefix <span class="code">cc</span> and add automatically a dash (-) after, for all the usefull and powerfull class used into its framework.<br/><br />
                                         This prefix is set into the <strong>settings.less</strong> file.<br />
-                                        
-                                    By this way, you can use all class 
-                                    <span class="code">cc-pat</span>, 
-                                    <span class="code">cc-fs-4</span>, 
-                                    <span class="code">cc-primary</span>, ..., 
+
+                                    By this way, you can use all class
+                                    <span class="code">cc-pat</span>,
+                                    <span class="code">cc-fs-4</span>,
+                                    <span class="code">cc-primary</span>, ...,
                                     shown into this documentation.<br /><br />
                                         You can change it by yourself and compile ChuckCSS if you want to use your own prefix for class.
                                     </p>
@@ -655,7 +658,7 @@
                                         @css-prefix: cc; // Write prefix without quotes
                                     </code>
                                 </pre>
-                                
+
                             </div>
 
                             <!-- TYPOGRAPHY -->
@@ -2778,7 +2781,7 @@
                                                 &lt;/div>
                                             &lt;/div>
                                         &lt;/div>
-            
+
                                         &lt;!-- SIMPLE SLIDE IN LEFT EXEMPLE -->
                                         &lt;div id="modal-slideinleft" class="modal" data-open="slideInLeft">
                                             &lt;button data-close-modal>&lt;/button>
@@ -2805,7 +2808,7 @@
                                             &lt;div class="modal-content">
                                                 &lt;div class="modal-header">
                                                     ...
-                                                &lt;/div> 
+                                                &lt;/div>
                                                 &lt;section class="wrap-modal-body">
                                                     &lt;div class="modal-body">
                                                         &lt;p>
@@ -3432,7 +3435,7 @@
                                     Bacon ipsum dolor amet venison chuck cow picanha tenderloin beef ribs tongue flank short ribs. Meatball ribeye pancetta swine chuck turkey hamburger boudin. Boudin pork belly pancetta turkey bacon tri-tip tail flank jowl kevin filet mignon.
                                     <footer>Gitman, git superhero</footer>
                                 </blockquote>
-                                
+
                                 <pre class="HTML">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Colorized blockquote -->
@@ -5050,7 +5053,7 @@
                                     </code>
                                 </pre>
 
-                                
+
                             </div>
 
                             <!-- Tables -->
@@ -6108,7 +6111,7 @@
                                 <p class="cc-txt-center cc-mat-20 cc-txt-left-xl">
                                     Texts are centered by default, but left lined up on screens > 1199px
                                 </p>
-                                
+
                                 <pre class="HTML">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Texts alignments -->
@@ -6209,8 +6212,8 @@
                                     Font-weight : 300 (default), 400 on screens > 359px, 600 on screens > 767px, 300 on screens > 989px<br />
                                     Cupim prosciutto biltong capicola. Andouille beef ribs tri-tip pig. Prosciutto corned beef chicken jerky burgdoggen leberkas.
                                 </p>
-                               
-                               
+
+
                                 <pre class="HTML">
                                     <code class="language-markup"><!-- -->
                                         &lt;!-- Texts Font-weight -->
@@ -6218,6 +6221,37 @@
                                             ...
                                         &lt;/p>
                                         &lt;p class="cc-fw-300 cc-fw-400-s cc-fw-600-m cc-fw-300-l">
+                                            ...
+                                        &lt;/p>
+                                    </code>
+                                </pre>
+
+                                <div class="sep"></div>
+
+                                <h4 id="helpers-texts-line-height">
+                                    <a href="#helpers-texts-line-height">
+                                        Texts line-height
+                                    </a>
+                                </h4>
+                                <div class="exemple-intro">
+                                    <p>
+                                        <span class="code">class="cc-lh-{int}"</span> : Apply a line-height {int/10} onto an element<br />
+                                        <span class="code">class="cc-lh-{int}-{bp}"</span> : Apply a line-height onto an element according to screen width and upper (mobile-first)<br /><br />
+                                        <strong>{int}</strong> : From 0 to 40, increment +1<br />
+                                        <strong>{bp}</strong> : Breakpoint, can be set to 'xl', 'l', 'm', 's'<br /><br />
+                                        <strong>Exemple :</strong> "cc-lh-10" == line-height: 1<br />
+                                        <strong>Exemple :</strong> "cc-lh-10 cc-lh-15-m" == line-height is set to 1 by default, and to 1.5 on screens > 767px<br />
+                                    </p>
+                                </div>
+
+                                <p class="cc-lh-15 cc-lh-20-l cc-lh-30-xl">
+                                    Line-height : default 1.5, 2 on screens > 989px, 3 on screens > 1199px<br />
+                                    Cupim prosciutto biltong capicola. Andouille beef ribs tri-tip pig. Prosciutto corned beef chicken jerky burgdoggen leberkas. Cupim prosciutto biltong capicola. Andouille beef ribs tri-tip pig. Prosciutto corned beef chicken jerky burgdoggen leberkas. Cupim prosciutto biltong capicola. Andouille beef ribs tri-tip pig. Prosciutto corned beef chicken jerky burgdoggen leberkas.
+                                </p>
+                                <pre class="HTML">
+                                    <code class="language-markup"><!-- -->
+                                        &lt;!-- Texts Line-height -->
+                                        &lt;p class="cc-lh-15 cc-lh-20-l cc-lh-30-xl">
                                             ...
                                         &lt;/p>
                                     </code>
@@ -6863,7 +6897,7 @@
                             </div> -->
                         </div>
 
-                        
+
                     </section>
                 </div>
             </section>
@@ -7119,17 +7153,17 @@
                         I'm a default modal (50% width)
                     </div>
 
-                    
+
                     <div class="modal-body">
                         <p>
                             Hamburger doner alcatra sirloin bresaola porchetta tenderloin. Ribeye bacon meatball ball tip beef ribs leberkas capicola corned beef.
                         </p>
-                       
+
                     </div>
                     <div class="modal-footer cc-txt-center">
                         <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
                     </div>
-                    
+
                 </div>
             </div>
             <div id="modal-slideinright-fs" class="modal" data-open="slideInRight" data-fixed-hf data-fullscreen>
@@ -7142,7 +7176,7 @@
                         I'm a default modal (50% width)
                     </div>
 
-                    
+
                     <section class="wrap-modal-body">
                         <div class="modal-body">
                             <p>
@@ -7164,7 +7198,7 @@
                     <div class="modal-footer cc-txt-center">
                         <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
                     </div>
-                    
+
                 </div>
             </div>
             <!-- slide in left -->
@@ -7178,17 +7212,17 @@
                         I'm a default modal (50% width)
                     </div>
 
-                    
+
                     <div class="modal-body">
                         <p>
                             Hamburger doner alcatra sirloin bresaola porchetta tenderloin. Ribeye bacon meatball ball tip beef ribs leberkas capicola corned beef.
                         </p>
-                       
+
                     </div>
                     <div class="modal-footer cc-txt-center">
                         <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
                     </div>
-                    
+
                 </div>
             </div>
             <div id="modal-slideinleft-fs" class="modal" data-open="slideInLeft" data-fixed-hf data-fullscreen>
@@ -7201,7 +7235,7 @@
                         I'm a default modal (50% width)
                     </div>
 
-                    
+
                     <section class="wrap-modal-body">
                         <div class="modal-body">
                             <p>
@@ -7223,7 +7257,7 @@
                     <div class="modal-footer cc-txt-center">
                         <a href="javascript:void(0)" class="btn cc-bg-red" data-close-modal>Close</a>
                     </div>
-                    
+
                 </div>
             </div>
         </div>

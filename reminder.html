@@ -237,6 +237,9 @@
                                         <li>
                                             <a href="#texts-helpers-weight">Font-weight</a>
                                         </li>
+                                        <li>
+                                            <a href="#texts-helpers-line-height">Line-height</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li>
@@ -1361,7 +1364,7 @@
                             <h2 id="loaders">
                                 <a href="#loaders"><i class="ion-link icon-left"></i>Loaders</a>
                             </h2>
-                            
+
 
                             <h3 id="spinner-loader">
                                 <a href="#spinner-loader">Spinner loader</a>
@@ -1449,7 +1452,7 @@
                                             <span>class="icon-left"</span>
                                         </td>
                                         <td>
-                                            i
+                                            &lt;i />
                                         </td>
                                         <td>
                                             Add a <em>margin-right of 8 px</em> to the icon
@@ -1460,7 +1463,7 @@
                                             <span>class="icon-right"</span>
                                         </td>
                                         <td>
-                                            i
+                                            &lt;i />
                                         </td>
                                         <td>
                                             Add a <em>margin-left of 8 px</em> to the icon
@@ -1761,7 +1764,7 @@
                                             <strong>{bp} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>
                                     </tr>
-                                    
+
 
 
                                     <tr>
@@ -1977,6 +1980,14 @@
                                     &lt;!-- Texts font-size -->
                                     &lt;p class="cc-fs-17">I'm written in font-size 1.7rem&lt;/p>
                                     &lt;p class="cc-fs-25">I'm written in font-size 2.5rem&lt;/p>
+
+                                    &lt;!-- Texts font-weight -->
+                                    &lt;p class="cc-fw-500">I'm written in font-weight 500&lt;/p>
+                                    &lt;p class="cc-fs-700-xl">I'm written in font-weight 700 on large screens&lt;/p>
+
+                                    &lt;!-- Texts line-height -->
+                                    &lt;p class="cc-lh-20">I'm written with a line-height of 2&lt;/p>
+                                    &lt;p class="cc-lh-15-m cc-lh-30-xl">I'm written with a line-height of 1.5 on screen > 767px and line-height of 3 on screen > 1199px&lt;/p>
                                 </code>
                             </pre>
                             <table class="cc-valign-top">
@@ -2066,7 +2077,7 @@
                                             *
                                         </td>
                                         <td>
-                                            Apply a text alignment on <em>breakpoint screens and upper</em> (mobile-first)<br />
+                                            Apply a text alignment on <em>{bp} screens and upper</em> (mobile-first)<br />
                                             <strong>{align} :</strong> can be set to 'center', 'left', 'right', 'justify'<br />
                                             <strong>{bp} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>
@@ -2117,7 +2128,7 @@
                                             *
                                         </td>
                                         <td>
-                                            Apply a text font-size of <em>{int / 10}</em> rem on <em>breakpoint screens and upper</em> (mobile-first)<br />
+                                            Apply a text font-size of <em>{int / 10}</em> rem on <em>{bp} screens and upper</em> (mobile-first)<br />
                                             <strong>{int} :</strong> from 0 to 100, this value will be disibled by 10 to apply a font-size in rem unit.
                                             <strong>{bp} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>
@@ -2149,8 +2160,40 @@
                                             *
                                         </td>
                                         <td>
-                                            Apply a font-weight to a text on <em>breakpoint screens and upper</em> (mobile-first)<br />
+                                            Apply a font-weight to a text on <em>{bp} screens and upper</em> (mobile-first)<br />
                                             <strong>{int} :</strong> from 100 to 900, increment +100<br />
+                                            <strong>{bp} :</strong> can be set to 'xl', 'l', 'm', 's'
+                                        </td>
+                                    </tr>
+                                    <tr id="texts-helpers-line-height">
+                                        <td colspan="3" class="colspan">
+                                            <a href="#texts-helpers-line-height">
+                                                Line-height
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-lh-{int}"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Apply a text line-height of <em>{int / 10}</em> (unitless)<br />
+                                            <strong>{int} :</strong> from 0 to 40, this value will be disibled by 10 to apply a line-height unitless.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="reminder-class">
+                                            <span>class="cc-lh-{int}-{bp}"</span>
+                                        </td>
+                                        <td>
+                                            *
+                                        </td>
+                                        <td>
+                                            Apply a line-height of <em>{int / 10}</em> onto an element on <em>{bp} screens and upper</em> (mobile-first)<br />
+                                            <strong>{int} :</strong> from 0 to 40, this value will be disibled by 10 to apply a line-height (unitless).<br />
                                             <strong>{bp} :</strong> can be set to 'xl', 'l', 'm', 's'
                                         </td>
                                     </tr>
@@ -3086,7 +3129,7 @@
 
                                     <tbody>
                                         <tr>
-                                            <td class="reminder-class">
+                                            <td>
                                                 Primary
                                             </td>
                                             <td>
@@ -3112,7 +3155,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="reminder-class">
+                                            <td>
                                                 Green
                                             </td>
                                             <td>
@@ -3138,7 +3181,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="reminder-class">
+                                            <td>
                                                 Red
                                             </td>
                                             <td>
@@ -3164,7 +3207,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="reminder-class">
+                                            <td>
                                                 Blue
                                             </td>
                                             <td>
@@ -3190,8 +3233,8 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="reminder-class">
-                                                Purple
+                                            <td>
+                                                Purple <span class="badge cc-bg-red">Not in light version</span>
                                             </td>
                                             <td>
                                                 #8e44ad
@@ -3216,8 +3259,8 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="reminder-class">
-                                                Orange
+                                            <td>
+                                                Orange <span class="badge cc-bg-red">Not in light version</span>
                                             </td>
                                             <td>
                                                 #f39c12
@@ -3242,8 +3285,8 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="reminder-class">
-                                                Yellow
+                                            <td>
+                                                Yellow <span class="badge cc-bg-red">Not in light version</span>
                                             </td>
                                             <td>
                                                 #f1c40f
